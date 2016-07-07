@@ -1,0 +1,95 @@
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running '/opt/Xilinx/Vivado_HLS/2015.3/bin/unwrapped/lnx64.o/vivado_hls'
+            for user 'ctnguyen' on host 'finance.eit.uni-kl.de' (Linux_x86_64 version 2.6.32-573.12.1.el6.x86_64) on Thu Jul 07 10:27:43 CEST 2016
+            in directory '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab2'
+@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+@I [HLS-10] Opening project '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab2/matrixmul_prj'.
+@I [HLS-10] Opening solution '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab2/matrixmul_prj/solution1'.
+@I [SYN-201] Setting up clock 'default' with a period of 13.3333ns.
+@I [HLS-10] Setting target device to 'xc7k160tfbg484-1'
+@I [SIM-47] Using XSIM for RTL simulation.
+@I [SIM-14] Instrumenting C test bench ...
+   Build using "/opt/Xilinx/Vivado_HLS/2015.3/lnx64/tools/gcc/bin/g++"
+   Compiling apatb_matrixmul.cpp
+   Compiling matrixmul.cpp_pre.cpp.tb.cpp
+   Compiling matrixmul_test.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
+@I [SIM-302] Starting C TB testing ... 
+Test passes.
+@I [SIM-333] Generating C post check test bench ...
+@I [SIM-12] Generating RTL test bench ...
+@I [SIM-322] Starting VHDL simulation. 
+@I [SIM-15] Starting XSIM ...
+Vivado Simulator 2015.3
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2015.3/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_matrixmul_top -prj matrixmul.prj --lib ieee_proposed=./ieee_proposed -s matrixmul 
+Determining compilation order of HDL files.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running fuse with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    C_INCLUDE_PATH
+    LIBRARY_PATH
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab2/matrixmul_prj/solution1/sim/vhdl/AESL_sim_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab2/matrixmul_prj/solution1/sim/vhdl/matrixmul.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity matrixmul
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab2/matrixmul_prj/solution1/sim/vhdl/matrixmul.autotb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity apatb_matrixmul_top
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab2/matrixmul_prj/solution1/sim/vhdl/matrixmul_mux_3to1_sel2_8_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity matrixmul_mux_3to1_sel2_8_1
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab2/matrixmul_prj/solution1/sim/vhdl/AESL_autofifo_res.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity AESL_autofifo_res
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab2/matrixmul_prj/solution1/sim/vhdl/AESL_autofifo_b.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity AESL_autofifo_b
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab2/matrixmul_prj/solution1/sim/vhdl/AESL_autofifo_a.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity AESL_autofifo_a
+Starting static elaboration
+WARNING: [VRFC 10-1303] range is empty (null range) [/proj/xcohdstaff/fengc/head/HEAD/data/vhdl/src/ieee/distributable/numeric_std.vhd:3462]
+WARNING: [VRFC 10-1303] range is empty (null range) [/proj/xcohdstaff/fengc/head/HEAD/data/vhdl/src/ieee/distributable/numeric_std.vhd:3462]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_textio
+Compiling architecture rtl of entity xil_defaultlib.matrixmul_mux_3to1_sel2_8_1 [\matrixmul_mux_3to1_sel2_8_1(1,1...]
+Compiling architecture behav of entity xil_defaultlib.matrixmul [matrixmul_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_autofifo_a [\AESL_autofifo_a("../tv/cdatafil...]
+Compiling architecture behav of entity xil_defaultlib.AESL_autofifo_b [\AESL_autofifo_b("../tv/cdatafil...]
+Compiling architecture behav of entity xil_defaultlib.AESL_autofifo_res [\AESL_autofifo_res("../tv/cdataf...]
+Compiling architecture behav of entity xil_defaultlib.apatb_matrixmul_top
+Built simulation snapshot matrixmul
+
+****** Webtalk v2015.3 (64-bit)
+  **** SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
+  **** IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab2/matrixmul_prj/solution1/sim/vhdl/xsim.dir/matrixmul/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Jul  7 10:27:55 2016...
+
+****** xsim v2015.3 (64-bit)
+  **** SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
+  **** IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/matrixmul/xsim_script.tcl
+# xsim {matrixmul} -maxdeltaid 10000 -autoloadwcfg -tclbatch {matrixmul.tcl}
+Vivado Simulator 2015.3
+Time resolution is 1 ps
+source matrixmul.tcl
+## run all
+Note: simulation done!
+Time: 380190 ps  Iteration: 1  Process: /apatb_matrixmul_top/generate_sim_done_proc  File: /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab2/matrixmul_prj/solution1/sim/vhdl/matrixmul.autotb.vhd
+Failure: NORMAL EXIT (note: failure is to force the simulator to stop)
+Time: 380190 ps  Iteration: 1  Process: /apatb_matrixmul_top/generate_sim_done_proc  File: /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab2/matrixmul_prj/solution1/sim/vhdl/matrixmul.autotb.vhd
+$finish called at time : 380190 ps
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu Jul  7 10:27:58 2016...
+@I [SIM-316] Starting C post checking ...
+Test passes.
+@I [SIM-1000] *** C/RTL co-simulation finished: PASS ***
+@I [LIC-101] Checked in feature [HLS]
