@@ -50,14 +50,19 @@ void fir (
   coef_t c[N],
   data_t x
   ) {
+#pragma HLS INTERFACE ap_vld port=x
+#pragma HLS INTERFACE ap_vld port=y
+#pragma HLS RESOURCE variable=c core=RAM_1P_BRAM
 
   static data_t shift_reg[N];
+#pragma HLS ARRAY_PARTITION variable=shift_reg dim=1
   acc_t acc;
   data_t data;
   int i;
   
   acc=0;
   Shift_Accum_Loop: for (i=N-1;i>=0;i--) {
+#pragma HLS PIPELINE II=1
 		if (i==0) {
 			shift_reg[0]=x;
      	data = x;
