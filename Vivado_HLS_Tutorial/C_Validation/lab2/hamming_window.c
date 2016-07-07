@@ -45,18 +45,30 @@ ALL TIMES.
 #include "hamming_window.h" // Provides default WINDOW_LEN if not user defined
 
 // Translation module function prototypes:
+// [Static Declaration] just to ensure this function is only visible in current
+// translation unit
+// Static keyword can be deleted -- Trung comment
 static void hamming_rom_init(in_data_t rom_array[]);
 
 // Function definitions:
-void hamming_window(out_data_t outdata[WINDOW_LEN], in_data_t indata[WINDOW_LEN])
+void hamming_window(
+		out_data_t outdata[WINDOW_LEN],     // output -- array = BRAM access
+		in_data_t indata[WINDOW_LEN])		// input -- array = BRAM access
 {
+   // Keyword static here just ensure this variable ins only visible in current function
    static in_data_t window_coeff[WINDOW_LEN];
    unsigned i;
 
    // In order to ensure that 'window_coeff' is inferred and properly
-   // initialized as a ROM, it is recommended that the arrya initialization
+   // initialized as a ROM, it is recommended that the array initialization
    // be done in a sub-function with global (wrt this source file) scope.
    hamming_rom_init(window_coeff);
+
+//  hamming_window_label1:for (i = 0; i < WINDOW_LEN; i++) {
+//	 float real_val = 0.54f -
+//		0.46f * cos(2.0f * M_PI * i / (float)(WINDOW_LEN - 1));
+//	 window_coeff[i] = (in_data_t)(WIN_COEFF_SCALE * real_val);
+//  }
 
    for (i = 0; i < WINDOW_LEN; i++) {
 #pragma AP pipeline
@@ -67,6 +79,7 @@ void hamming_window(out_data_t outdata[WINDOW_LEN], in_data_t indata[WINDOW_LEN]
 // This initialization function will be optimized away during high level
 // sythesis (HLS), resulting in the underlying memory being inferred as a ROM
 // by RTL synthesis.
+// What happen if we optimize here?????
 static void hamming_rom_init(in_data_t rom_array[WINDOW_LEN])
 {
    int i;

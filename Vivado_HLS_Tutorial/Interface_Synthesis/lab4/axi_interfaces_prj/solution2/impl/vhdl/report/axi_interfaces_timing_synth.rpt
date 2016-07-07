@@ -1,0 +1,67 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
+| Date         : Wed Jun 29 19:39:22 2016
+| Host         : finance.eit.uni-kl.de running 64-bit Scientific Linux release 6.7 (Carbon)
+| Command      : report_timing -file ./report/axi_interfaces_timing_synth.rpt
+| Design       : axi_interfaces
+| Device       : 7k160t-fbg484
+| Speed File   : -1  PRODUCTION 1.12 2014-09-11
+--------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             0.597ns  (required time - arrival time)
+  Source:                 ap_reg_ioackin_d_o_7_TREADY_reg/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            ap_reg_ioackin_d_o_0_TREADY_reg/R
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (ap_clk rise@4.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.836ns  (logic 0.540ns (19.041%)  route 2.296ns (80.959%))
+  Logic Levels:           3  (LUT2=1 LUT4=1 LUT6=1)
+  Clock Path Skew:        -0.166ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.453ns = ( 5.453 - 4.000 ) 
+    Source Clock Delay      (SCD):    1.619ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=160, unset)          1.619     1.619    ap_clk
+                         FDRE                                         r  ap_reg_ioackin_d_o_7_TREADY_reg/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.281     1.900 r  ap_reg_ioackin_d_o_7_TREADY_reg/Q
+                         net (fo=3, unplaced)         0.550     2.450    axi_interfaces_AXILiteS_s_axi_U/ap_reg_ioackin_d_o_7_TREADY_reg_0
+                         LUT4 (Prop_lut4_I1_O)        0.153     2.603 r  axi_interfaces_AXILiteS_s_axi_U/d_i_7_TREADY_INST_0_i_1/O
+                         net (fo=1, unplaced)         0.664     3.267    axi_interfaces_AXILiteS_s_axi_U/d_i_7_TREADY_INST_0_i_1_n_2
+                         LUT6 (Prop_lut6_I0_O)        0.053     3.320 r  axi_interfaces_AXILiteS_s_axi_U/d_i_7_TREADY_INST_0/O
+                         net (fo=136, unplaced)       0.447     3.767    axi_interfaces_AXILiteS_s_axi_U/d_i_7_TREADY
+                         LUT2 (Prop_lut2_I0_O)        0.053     3.820 r  axi_interfaces_AXILiteS_s_axi_U/ap_reg_ioackin_d_o_0_TREADY_i_1/O
+                         net (fo=8, unplaced)         0.635     4.455    ap_reg_ioackin_d_o_7_TREADY
+                         FDRE                                         r  ap_reg_ioackin_d_o_0_TREADY_reg/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     4.000     4.000 r  
+                                                      0.000     4.000 r  ap_clk (IN)
+                         net (fo=160, unset)          1.453     5.453    ap_clk
+                         FDRE                                         r  ap_reg_ioackin_d_o_0_TREADY_reg/C
+                         clock pessimism              0.000     5.453    
+                         clock uncertainty           -0.035     5.418    
+                         FDRE (Setup_fdre_C_R)       -0.366     5.052    ap_reg_ioackin_d_o_0_TREADY_reg
+  -------------------------------------------------------------------
+                         required time                          5.052    
+                         arrival time                          -4.455    
+  -------------------------------------------------------------------
+                         slack                                  0.597    
+
+
+
+

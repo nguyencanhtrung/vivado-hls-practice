@@ -42,16 +42,20 @@ THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS PART OF THIS FILE AT
 ALL TIMES.
 
 *******************************************************************************/
+/**
+ *  LAB 1 and LAB 2 testbench
+ */
 #include <iostream>
 #include <iomanip>
 using namespace std;
 
 #include "window_fn_top.h"
 
-#ifdef FLOAT_DATA
+	// It is defined in window_fn_top.h to trigger the simulation choosing either :
+#ifdef FLOAT_DATA					// Define standard C data type
 #define ABS_ERR_THRESH 0.0
 #else
-#define ABS_ERR_THRESH 0.001
+#define ABS_ERR_THRESH 0.001		// Define arbitrary data type
 #endif
 
 #define WINDOW_FN_DEBUG 1

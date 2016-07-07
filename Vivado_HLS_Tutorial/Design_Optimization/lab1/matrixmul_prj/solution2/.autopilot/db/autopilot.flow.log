@@ -1,0 +1,749 @@
+@I [HLS-0] Workspace /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2 opened at Thu Jul 07 10:08:33 CEST 2016
+@I [HLS-100] Command "config_clock -quiet -name default -period 13.333333333333334 -unit ns -default=false "
+@I [SYN-201] Setting up clock 'default' with a period of 13.3333ns.
+@I [HLS-100] Command 'config_clock' returned 0; elapsed 0Total elapsed time: 0.724 sec.
+@I [HLS-100] Command "open_platform DefaultPlatform "
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 0.725 sec.
+@I [HLS-100] Command "import_lib /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/kintex7/kintex7 "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx.lib "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/xilinx_interface.lib "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/plb46.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.726 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/fsl.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.726 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/axi4.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.727 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/maxi.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.727 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/saxilite.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.727 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.727 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/dsp48.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.727 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/ip/dds_compiler.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.728 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/ip/xfft.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.728 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/ip/xfir.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.728 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.730 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx_old.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.733 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx_vivado.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.734 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx.hlp "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/target_info.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.738 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/xilinx_interface.hlp "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/maxi.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.738 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/saxilite.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.738 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.738 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/dsp48.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.739 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.740 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/kintex7/dsp48e1.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.740 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.740 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 50950} {LUT 203800}    {FF 407600} {DSP48E 840}    {BRAM 890}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.740 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed medium "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.740 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.01Total elapsed time: 0.742 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/kintex7/kintex7.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 0.744 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.744 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.747 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.752 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 0.759 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.02Total elapsed time: 0.759 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 0.770 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 0.779 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.11Total elapsed time: 0.924 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/tps/tcl/tcllib1.11.1/struct/list.tcl "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.941 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 0.942 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/tps/tcl/tcllib1.11.1/math/bignum.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.954 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.03Total elapsed time: 0.962 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/ip/dds_compiler.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 0.966 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.966 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.2Total elapsed time: 0.966 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.967 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.2Total elapsed time: 0.968 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.2Total elapsed time: 0.968 sec.
+@I [HLS-100] Command "open_platform DefaultPlatform "
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 0.968 sec.
+@I [HLS-100] Command "import_lib /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/kintex7/kintex7_fpv6 "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx_fpv7.lib "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx_hp.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.969 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.972 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx_fpv.hlp "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx.hlp "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/target_info.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.978 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/xilinx_interface.hlp "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/maxi.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.978 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/saxilite.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.979 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.979 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/dsp48.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.979 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.980 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.980 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/kintex7/kintex7_hp.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.981 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.02Total elapsed time: 0.986 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/kintex7/kintex7_fpv6.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.988 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.988 sec.
+@I [HLS-100] Command "set_part xc7k160tfbg484-1 "
+@I [HLS-100] Command "add_library xilinx/kintex7/kintex7:xc7k160t:fbg484:-1 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.991 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.02Total elapsed time: 1.6 sec.
+@I [HLS-100] Command "license_exists ap_opencl "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 1.17 sec.
+@I [HLS-100] Command "license_exists ap_sdsoc "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 1.28 sec.
+@I [HLS-100] Command "license_exists AUTOESL_NI "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.01Total elapsed time: 1.38 sec.
+@I [HLS-100] Command "license_exists HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 1.39 sec.
+@I [HLS-100] Command "open_platform DefaultPlatform "
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 1.39 sec.
+@I [HLS-100] Command "import_lib /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/kintex7/kintex7 "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx.lib "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/xilinx_interface.lib "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/plb46.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.40 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/fsl.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.40 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/axi4.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.40 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/maxi.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.40 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/saxilite.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.41 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.41 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/dsp48.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.41 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/ip/dds_compiler.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.41 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/ip/xfft.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.41 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/ip/xfir.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.42 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.43 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx_old.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.46 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx_vivado.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.46 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx.hlp "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/target_info.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.49 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/xilinx_interface.hlp "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/maxi.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.49 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/saxilite.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.49 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.49 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/dsp48.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.50 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.51 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/kintex7/dsp48e1.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.51 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.51 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 50950} {LUT 203800}    {FF 407600} {DSP48E 840}    {BRAM 890}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.51 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed medium "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.51 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.01Total elapsed time: 1.53 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/kintex7/kintex7.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.55 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.56 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.58 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.62 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.69 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.69 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.79 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.87 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.11Total elapsed time: 1.206 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.03Total elapsed time: 1.240 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/ip/dds_compiler.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.243 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.243 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.18Total elapsed time: 1.243 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.245 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.18Total elapsed time: 1.245 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.18Total elapsed time: 1.245 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.246 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 25350} {LUT 101400}    {FF 202800} {DSP48E 600}    {BRAM 650}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.246 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed slow "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.246 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.22Total elapsed time: 1.247 sec.
+@I [HLS-100] Command "add_library xilinx/kintex7/kintex7_fpv6 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.247 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.01Total elapsed time: 1.265 sec.
+@I [HLS-100] Command "license_exists ap_opencl "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.01Total elapsed time: 1.275 sec.
+@I [HLS-100] Command "license_exists ap_sdsoc "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 1.286 sec.
+@I [HLS-100] Command "license_exists AUTOESL_NI "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.01Total elapsed time: 1.296 sec.
+@I [HLS-100] Command "license_exists HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 1.296 sec.
+@I [HLS-100] Command "open_platform DefaultPlatform "
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 1.296 sec.
+@I [HLS-100] Command "import_lib /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/kintex7/kintex7_fpv6 "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx_fpv7.lib "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx_hp.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.297 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.300 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx_fpv.hlp "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx.hlp "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/target_info.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.306 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/xilinx_interface.hlp "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/maxi.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.307 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/saxilite.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.307 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.307 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/dsp48.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.308 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.308 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.309 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/kintex7/kintex7_hp.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.310 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.02Total elapsed time: 1.315 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/kintex7/kintex7_fpv6.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.317 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.317 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.05Total elapsed time: 1.318 sec.
+@I [HLS-10] Setting target device to 'xc7k160tfbg484-1'
+@I [HLS-100] Command 'set_part' returned 0; elapsed 0.27Total elapsed time: 1.319 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.319 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 25350} {LUT 101400}    {FF 202800} {DSP48E 600}    {BRAM 650}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.319 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed slow "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.319 sec.
+@I [HLS-100] Command 'open_solution' returned 0; elapsed 0.5Total elapsed time: 1.320 sec.
+@I [HLS-100] Command "set_part xc7k160tfbg484-1 "
+@I [HLS-100] Command "add_library xilinx/kintex7/kintex7:xc7k160t:fbg484:-1 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.322 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.01Total elapsed time: 1.337 sec.
+@I [HLS-100] Command "license_exists ap_opencl "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 1.348 sec.
+@I [HLS-100] Command "license_exists ap_sdsoc "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 1.366 sec.
+@I [HLS-100] Command "license_exists AUTOESL_NI "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.01Total elapsed time: 1.377 sec.
+@I [HLS-100] Command "license_exists HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 1.377 sec.
+@I [HLS-100] Command "open_platform DefaultPlatform "
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 1.378 sec.
+@I [HLS-100] Command "import_lib /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/kintex7/kintex7 "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx.lib "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/xilinx_interface.lib "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/plb46.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.378 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/fsl.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.379 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/axi4.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.379 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/maxi.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.379 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/saxilite.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.380 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.380 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/dsp48.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.380 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/ip/dds_compiler.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.380 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/ip/xfft.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.380 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/ip/xfir.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.381 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.383 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx_old.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.385 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx_vivado.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.385 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx.hlp "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/target_info.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.388 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/xilinx_interface.hlp "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/maxi.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.388 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/saxilite.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.388 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.388 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/dsp48.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.389 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.390 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/kintex7/dsp48e1.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.390 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.390 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 50950} {LUT 203800}    {FF 407600} {DSP48E 840}    {BRAM 890}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.390 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed medium "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.390 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.02Total elapsed time: 1.392 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/kintex7/kintex7.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.394 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.394 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.396 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.400 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.407 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.407 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.416 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.424 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.11Total elapsed time: 1.535 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.03Total elapsed time: 1.568 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/ip/dds_compiler.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.572 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.572 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.17Total elapsed time: 1.572 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.573 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.17Total elapsed time: 1.574 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.17Total elapsed time: 1.574 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.574 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 25350} {LUT 101400}    {FF 202800} {DSP48E 600}    {BRAM 650}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.574 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed slow "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.574 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.21Total elapsed time: 1.575 sec.
+@I [HLS-100] Command "add_library xilinx/kintex7/kintex7_fpv6 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.576 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.01Total elapsed time: 1.587 sec.
+@I [HLS-100] Command "license_exists ap_opencl "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.01Total elapsed time: 1.597 sec.
+@I [HLS-100] Command "license_exists ap_sdsoc "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 1.610 sec.
+@I [HLS-100] Command "license_exists AUTOESL_NI "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.01Total elapsed time: 1.621 sec.
+@I [HLS-100] Command "license_exists HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 1.621 sec.
+@I [HLS-100] Command "open_platform DefaultPlatform "
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 1.622 sec.
+@I [HLS-100] Command "import_lib /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/kintex7/kintex7_fpv6 "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx_fpv7.lib "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx_hp.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.623 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.626 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx_fpv.hlp "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx.hlp "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/target_info.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.632 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/xilinx_interface.hlp "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/maxi.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.633 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/saxilite.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.633 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.633 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/dsp48.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.634 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.634 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.635 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/kintex7/kintex7_hp.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.636 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.02Total elapsed time: 1.642 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/kintex7/kintex7_fpv6.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.644 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.644 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.05Total elapsed time: 1.644 sec.
+@I [HLS-100] Command 'set_part' returned 0; elapsed 0.26Total elapsed time: 1.644 sec.
+@I [HLS-100] Command "create_clock -period 75MHz -name default "
+@I [HLS-100] Command 'create_clock' returned 0; elapsed 0Total elapsed time: 1.646 sec.
+@I [HLS-100] Command "source ./matrixmul_prj/solution2/directives.tcl "
+@I [HLS-100] Command "set_directive_unroll matrixmul/Product "
+@I [HLS-100] Command 'set_directive_unroll' returned 0; elapsed 0Total elapsed time: 1.646 sec.
+@I [HLS-100] Command "set_directive_pipeline matrixmul/Col "
+@I [HLS-100] Command 'set_directive_pipeline' returned 0; elapsed 0Total elapsed time: 1.646 sec.
+@I [HLS-100] Command "set_directive_array_reshape -dim 2 matrixmul a "
+@I [HLS-100] Command 'set_directive_array_reshape' returned 0; elapsed 0Total elapsed time: 1.646 sec.
+@I [HLS-100] Command "set_directive_array_reshape -dim 1 matrixmul b "
+@I [HLS-100] Command 'set_directive_array_reshape' returned 0; elapsed 0Total elapsed time: 1.647 sec.
+@I [HLS-100] Command "set_directive_pipeline matrixmul/Col "
+@I [HLS-100] Command 'set_directive_pipeline' returned 0; elapsed 0Total elapsed time: 1.647 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.647 sec.
+@I [HLS-100] Command "csynth_design "
+@I [HLS-100] Command "elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 "
+@I [HLS-10] Analyzing design file 'matrixmul.cpp' ... 
+@0 [HLS-0] Analyzing design file 'matrixmul.cpp' ... 
+@I [HLS-0] Compiling one TU...
+@I [HLS-0] 
+Checking before pre-process: exec clang -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado_HLS/2015.3/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit   -I "/opt/Xilinx/Vivado_HLS/2015.3/lnx64/tools/systemc/include" -I "/opt/Xilinx/Vivado_HLS/2015.3/include" -I "/opt/Xilinx/Vivado_HLS/2015.3/include/ap_sysc" -fexceptions -I "/opt/Xilinx/Vivado_HLS/2015.3/common/technology/autopilot" -include etc/autopilot_ssdm_op.h "matrixmul.cpp"  -o "/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.pp.00.o"
+
+@I [HLS-100] Command "is_encrypted /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.pp.00.o "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0Total elapsed time: 1.742 sec.
+@I [HLS-0] Syntax Checker time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec clang -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado_HLS/2015.3/lnx64/tools/gcc" -hls -fno-exceptions  -D__llvm__  -CC -E "matrixmul.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado_HLS/2015.3/common/technology/autopilot" -I "/opt/Xilinx/Vivado_HLS/2015.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h  -o "/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.pp.0.cpp"
+
+@I [HLS-0] GCC PP time: 0 seconds per iteration
+@I [HLS-0] Setting directive 'UNROLL' 
+@I [HLS-0] Setting directive 'PIPELINE' 
+@I [HLS-0] Setting directive 'ARRAY_RESHAPE' reshape=positionBooleanCmd variable=positionBooleanTextRequireda complete=positionBoolean0type dim=2 
+@I [HLS-0] Setting directive 'ARRAY_RESHAPE' reshape=positionBooleanCmd variable=positionBooleanTextRequiredb complete=positionBoolean0type dim=1 
+@I [HLS-0] Setting directive 'PIPELINE' 
+@I [HLS-100] Command "list_core -type functional_unit "
+@I [HLS-100] Command 'list_core' returned 0; elapsed 0Total elapsed time: 1.816 sec.
+@I [HLS-0] Marker-Pragma convertor: /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.pp.0.cpp /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.pp.0.cpp.ap-line.cpp /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.pp.0.cpp.ap-line.cpp.CXX 1
+@I [HLS-0] 
+Source processor: exec /opt/Xilinx/Vivado_HLS/2015.3/tps/lnx64/jre/bin/java -Xmx512m -classpath   "/opt/Xilinx/Vivado_HLS/2015.3/lib/classes/autopilot.sourceprocessor.jar:/opt/Xilinx/Vivado_HLS/2015.3/lib/classes/org.eclipse.cdt.core_5.3.0.xilinx_patch.jar:/opt/Xilinx/Vivado_HLS/2015.3/lib/classes/org.eclipse.core.runtime_3.7.0.v20110110.jar:/opt/Xilinx/Vivado_HLS/2015.3/lib/classes/org.eclipse.equinox.common_3.6.0.v20110523.jar:/opt/Xilinx/Vivado_HLS/2015.3/lib/classes/com.ibm.icu_4.4.2.v20110208.jar:/opt/Xilinx/Vivado_HLS/2015.3/lib/classes/jargs.jar:/opt/Xilinx/Vivado_HLS/2015.3/lnx64/tools/eclipse/plugins/org.eclipse.emf.common_2.10.1.v20150123-0348.jar:/opt/Xilinx/Vivado_HLS/2015.3/lnx64/tools/eclipse/plugins/org.eclipse.emf.ecore_2.10.2.v20150123-0348.jar:/opt/Xilinx/Vivado_HLS/2015.3/lnx64/tools/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.10.2.v20150123-0348.jar:/opt/Xilinx/Vivado_HLS/2015.3/lnx64/tools/eclipse/plugins/com.autoesl.autopilot.ui.directiveFileModel_1.0.0.jar:/opt/Xilinx/Vivado_HLS/2015.3/lnx64/tools/eclipse/plugins/com.autoesl.autopilot.ui.common_1.0.0.jar"  autopilot.sourceprocessor.CParser  "/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.pp.0.cpp.ap-line.cpp"  -m "matrixmul" -o "/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.pp.0.cpp.ap-cdt.cpp" --pp --directive /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/solution2.directive --source /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul.cpp --error /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db --funcunit "AddSub AddSub_DSP AddSubnS DAddSub_fulldsp DAddSub_nodsp DDiv DExp_fulldsp DExp_meddsp DExp_nodsp DLog_fulldsp DLog_meddsp DLog_nodsp DMul_fulldsp DMul_maxdsp DMul_meddsp DMul_nodsp DRSqrt DRecip DSqrt DivnS FAddSub_fulldsp FAddSub_nodsp FDiv FExp_fulldsp FExp_meddsp FExp_nodsp FLog_fulldsp FLog_meddsp FLog_nodsp FMul_fulldsp FMul_maxdsp FMul_meddsp FMul_nodsp FRSqrt_fulldsp FRSqrt_nodsp FRecip_fulldsp FRecip_nodsp FSqrt HAddSub_nodsp HDiv HMul_fulldsp HMul_maxdsp HMul_nodsp HSqrt Mul Mul2S Mul3S Mul4S Mul5S Mul6S Mul_LUT MulnS MuxnS" --ve --vetcl /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db --ca --es --gf --df --pd --p2d /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db --sd --scff /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/.systemc_flag --ad
+
+@I [HLS-0] Marker-Pragma convertor: /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.pp.0.cpp.ap-cdt.cpp /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.pragma.0.cpp /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.pragma.0.cpp.ap-line.CXX 0
+@I [HLS-100] Command "source /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.520 sec.
+@I [HLS-0] CDT processor time: 2 seconds per iteration
+@I [HLS-0] Pragma handling time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec clang -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado_HLS/2015.3/lnx64/tools/gcc" -hls -fno-exceptions  -D__llvm__  -CC -E "/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.pragma.1.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado_HLS/2015.3/common/technology/autopilot" -I "/opt/Xilinx/Vivado_HLS/2015.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h  -o "/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.pragma.2.cpp"
+
+@I [HLS-0] exec clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado_HLS/2015.3/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado_HLS/2015.3/common/technology/autopilot" -I "/opt/Xilinx/Vivado_HLS/2015.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -g -o "/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.g.bc"
+@I [HLS-100] Command "source /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/ve_warning.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.796 sec.
+@I [HLS-10] Validating synthesis directives ...
+@0 [HLS-0] Validating synthesis directives ...
+@I [HLS-100] Command "source /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.797 sec.
+@I [HLS-0] Linking all ...
+@I [HLS-0] exec llvm-ld  "/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.bc"  -disable-opt  -L/opt/Xilinx/Vivado_HLS/2015.3/lnx64/lib -lm_basic -o "/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/a.o.pre"
+@I [HLS-0] Link time: 0 seconds per iteration
+@I [HLS-0] Linking all ...
+@I [HLS-0] exec llvm-ld  "/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.g.bc"  -disable-opt  -L/opt/Xilinx/Vivado_HLS/2015.3/lnx64/lib -lm_basic -o "/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/a.g.pre"
+@I [HLS-0] Link time: 0 seconds per iteration
+@I [HLS-100] Command "opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 "
+@I [HLS-100] Command "cleanup_all_models "
+@I [HLS-100] Command 'cleanup_all_models' returned 0; elapsed 0Total elapsed time: 4.925 sec.
+@I [HLS-10] Starting code transformations ...
+@0 [HLS-0] Starting code transformations ...
+@I [HLS-0] std xform: transform -hls -share-std-xform -always-inline -promote-dbg-pointer  -interface-preproc  -scalarrepl -mem2reg -keep-read-access -instcombine -dce  -promote-dbg-pointer  -bitop-raise  -indvars -loop-simplify -xunroll  -constprop -instcombine -simplifycfg -indvars  -simplifycfg -dce -globaldce  -basicaa  -simplifycfg -mem2reg -globalopt  -global-constprop -deadargelim -instcombine -simplifycfg  -prune-eh -simplifycfg  -scalarrepl -instcombine -reassociate -licm  -simplifycfg -loop-simplify -indvars -instcombine  -simplifycfg -mem2reg -loop-simplify -indvars -instcombine  -gvn -gvn -instcombine -adce  -break-crit-edges  -simplifycfg -loop-delete  -global-array-opt -dce -dse -adce  -find-syn-modules -top matrixmul  -deadargelim  -mem2reg -instcombine -dce  -presyn-prepare -auto-rom-infer  -interface-preproc  -syn-check -check-rec-only  -find-region -simplifycfg -func-extr -function-inline  -globaldce -mem2reg -instcombine -dce   -gvn -globaldce -adce -adse  -constprop -instcombine -bit-constprop  -instcombine -dce -simplifycfg -bitop-raise  -simplifycfg -dce -loop-delete -reassociate  -globalopt -global-privatize -mem2reg -dce  -global-constprop -pointer-simplify -constprop -dce  -func-inst -deadargelim  -promote-dbg-pointer  -norm-name   /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/a.g.0.bc -o /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/a.g.1.bc -f  -phase std-opt
+@I [HLS-0] Std xform time: 0 seconds per iteration
+@I [HLS-100] Command "is_encrypted /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/a.g.1.bc "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0Total elapsed time: 4.986 sec.
+@I [HLS-10] Checking synthesizability ...
+@0 [HLS-0] Checking synthesizability ...
+@I [HLS-0] syn check 1/2: transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce  -mem2reg -instcombine  -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce  -array-normalize -instcombine -dce  -array-seg-normalize -instcombine -dce  -array-flatten -instcombine -dce  -array-burst -dce  -deadargelim -promote-global-argument  -function-inline -globaldce -dce  -doublePtrSimplify -doublePtrElim -dce  -doublePtrSimplify -promote-dbg-pointer  -dce -scalarrepl -dse -adse -instcombine  -ptrLegalization  -simplifycfg -dce -instcombine  -pointer-simplify -ptrArgReplace -dce -instcombine   -disaggr -scalarrepl -norm-name -dce  -mem2reg -instcombine -ptrLegalization   -simplifycfg -deadargelim  -instcombine -dce -inst-simplify  -function-uniquify -directive-preproc -mem2reg -dse -dce  -globaldce    /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/a.g.1.bc -o /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/a.g.2.prechk.bc -f
+@I [HLS-0] Syn check 1/2 time: 0 seconds per iteration
+@I [HLS-0] syn check 2/2: transform -syn-check   /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/a.g.2.prechk.bc -o /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/a.g.2.bc -f  -phase syn-check
+@I [HLS-0] Syn check 2/2 time: 0 seconds per iteration
+@I [HLS-0] Compiler optimizing ...
+@I [HLS-0] Share syncheck's 1.bc for syn flow: copy /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/a.g.1.bc to /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/a.o.1.bc
+@I [HLS-0] presyn 1: transform -hls -tmp /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db -type-info  -function-uniquify -directive-preproc -mem2reg -dse -dce  -disaggr -scalarrepl -norm-name -deadargelim  -mem2reg -instcombine -dce -auto-rom-infer -dce -function-uniquify  -clib-intrinsic-prepare -dce  -func-buffer -dce -array-normalize  -func-legal -instcombine -gvn -constprop -dce   -ptrArgReplace -mem2reg -instcombine -dce  -array-seg-normalize -deadargelim  -instcombine -dce  -pointer-simplify -dce  -port-alignment -dce  -interface-preproc  -data-pack -instcombine -dce   -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce  -loop-simplify -indvars -instcombine  -gvn -loop-simplify -mem2reg -dce -simplifycfg  -find-region -instcombine  -auto-loop-pipeline  -inst-simplify  -interface-preproc  -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll  -constprop -instcombine -simplifycfg -indvars  -simplifycfg -dce -globaldce  -attach-range  -gvn -disable-agg-range -inst-simplify  -constprop -simplifycfg -dce  -pointer-simplify -dce  -globalopt -constprop -dce  -array-promote -constprop -instcombine -dce  -ptrArgReplace -mem2reg  -instcombine -simplifycfg -dce  -auto-par -instcombine -dce  -array-transform-check  -array-reshape -instcombine -simplifycfg -dce  -ptrArgReplace -deadargelim -mem2reg  -instcombine -simplifycfg -dce   -duplicate-dataflow-processes -globaldce  -array-partition -instcombine -simplifycfg -dce  -ptrArgReplace -global-constprop -deadargelim -mem2reg  -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg  -instcombine -simplifycfg -dce   -globalopt -constprop -dce  -array-promote -constprop -instcombine -dce  -ptrArgReplace -mem2reg  -instcombine -simplifycfg -dce   -mem-intrinsic-preproc -dce  -global-privatize  -mem2reg -globaldce  -promote-global-argument  -ptrArgReplace -mem2reg -instcombine -dce  -globalopt -mergereturn -simplify-global-access -mem2reg -dce  -pointer-simplify -dce  -functionattrs  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce  -inst-simplify -dce -norm-name  -function-inline -globaldce  -func-inst -constprop -instcombine -simplifycfg -dce  -func-legal -dce   -loop-bound  -arraycheck -bitwidthmin -on-by-dataflow  -loop-delete -instcombine -simplifycfg -dce -loop-simplify -clean-region -simplifycfg -loop-stream -instcombine -simplifycfg -dce -globaldce  -stream-intrinsic-preproc -dce  -check-ap-stream -loop-simplify -eliminate-keepreads   -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim  -check-dataflow-syntax  -legalize-stream-variable -legalize-global -legalize-global-1  -extract-subproc -dce -dead-channel-elimination  -canonicalize-gep -globaldce -dce -gvn -deadargelim  -scalar-propagation -deadargelim -globaldce -mem2reg  -check-dataflow-channels -function-stream -dce -globaldce  -prop-fifo-spec -internal-stream-gen  -canonicalize-gep -globaldce -dce -gvn -deadargelim   -mergereturn -indvars -loop-simplify  -array-stream -instcombine -simplifycfg -dce  -bundle-memfifo-ops -deadargelim    -function-uniquify -directive-preproc -mem2reg -dse -dce  -group-axi-access    -licm -simplifycfg -dce -loop-delete  -norm-name  /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/a.o.1.bc -o /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/a.o.1.tmp.bc -f
+@I [XFORM-502] Unrolling all sub-loops inside loop 'Col' (matrixmul.cpp:56) in function 'matrixmul' for pipelining.
+@I [XFORM-501] Unrolling loop 'Product' (matrixmul.cpp:59) in function 'matrixmul' completely.
+@I [XFORM-131] Reshaping array 'b' (matrixmul.cpp:50) in dimension 1 completely.
+@I [XFORM-131] Reshaping array 'a' (matrixmul.cpp:49) in dimension 2 completely.
+@I [HLS-0] Presyn 1 time: 0 seconds per iteration
+@I [HLS-0] presyn 2: transform -hls -keep-callgraph -scalarrepl -mem2reg  -port-alignment -attach-range -dce  -pipe-mux-gen  -indvars -loop-bound  -inst-simplify -instcombine -dce  -merge-array-access -mem2reg -dce  -clean-region -mergereturn -if-conv  -instcombine -dce -constprop  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce  -scalarrepl -mem2reg  -global-constprop -deadargelim -deadargelim  -instcombine -dce -simplifycfg    -ptrArgReplace -mem2reg -function-inline  -globaldce -mem2reg -instcombine -dce -expr-balance  -instcombine -dce  -bitwidthmin  -directive-preproc  -inst-rectify -instcombine -dce  -functionattrs  -constprop -instcombine -bit-constprop  -simplify-global-access  -globalopt -globaldce  -inst-simplify -instcombine -elimdeaddata -dce  -loop-delete -simplifycfg   -norm-name /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/a.o.1.tmp.bc -o /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/a.o.2.bc -f  -phase presyn
+@I [HLS-0] Presyn 2 time: 0 seconds per iteration
+@I [HLS-100] Command "is_encrypted /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/a.o.2.bc "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0Total elapsed time: 5.298 sec.
+@I [HLS-0] build ssdm: transform -hls  -function-uniquify -auto-function-inline -globaldce  -ptrArgReplace -mem2reg -instcombine -dce  -array-flatten -gvn -instcombine -dce  -loop-simplify -indvars -licm -loop-dep  -loop-bound -licm -loop-simplify -flattenloopnest  -array-map -dce -func-legal  -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify   -array-burst -promote-global-argument -dce  -axi4-lower -array-seg-normalize  -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm  -inst-simplify -dce  -globaldce -array-stream -eliminate-keepreads -instcombine  -dce   -deadargelim -doublePtrSimplify  -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer  -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg  -instcombine  -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine  -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound  -loop-simplify -loop-preproc  -constprop -global-constprop -gvn -mem2reg -instcombine -dce  -loop-merge -dce  -bitwidthmin  -deadargelim -dce  -scalar-propagation -deadargelim -globaldce -mem2reg  -interface-preproc -interface-gen  -deadargelim -directive-preproc -inst-simplify -dce  -gvn -mem2reg -instcombine -dce -adse  -loop-bound  -instcombine -cfgopt -simplifycfg -loop-simplify  -clean-region -io-protocol  -find-region -mem2reg  -bitop-raise  -inst-simplify -inst-rectify -instcombine -adce -deadargelim  -loop-simplify -phi-opt -bitop-raise  -cfgopt -simplifycfg -strip-dead-prototypes  -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline  -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa  -inst-simplify -simplifycfg   -mergereturn -inst-simplify -inst-rectify  -dce -bitop-lower  -loop-rewind -pointer-simplify -dce -cfgopt  -read-loop-dep -dce -bitwidth -norm-name -legalize    -cdfg-build  /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/a.o.2.bc -o /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/a.o.3.bc -f  -phase build-ssdm
+@I [XFORM-541] Flattening a loop nest 'Row' (matrixmul.cpp:54:37) in function 'matrixmul'.
+@I [HLS-0] Build ssdm time: 0 seconds per iteration
+@I [HLS-100] Command "is_encrypted /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/a.o.3.bc "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0Total elapsed time: 5.468 sec.
+@I [HLS-0] Finish building internal data model.
+@I [HLS-100] Command 'opt_and_import_c' returned 0; elapsed 0.45Total elapsed time: 5.496 sec.
+@I [HLS-111] Elapsed time: 2.02 seconds; current memory usage: 0.179 MB.
+@I [HLS-100] Command 'elaborate' returned 0; elapsed 0.78Total elapsed time: 5.497 sec.
+@I [HLS-100] Command "autosyn "
+@I [HLS-10] Starting hardware synthesis ...
+@0 [HLS-0] Starting hardware synthesis ...
+@I [HLS-0] Synthesizing C/C++ design ...
+@I [HLS-10] Synthesizing 'matrixmul' ...
+@0 [HLS-0] Synthesizing 'matrixmul' ...
+@I [HLS-100] Command "ap_set_top_model matrixmul "
+@I [HLS-100] Command 'ap_set_top_model' returned 0; elapsed 0Total elapsed time: 5.498 sec.
+@I [HLS-100] Command "get_model_list matrixmul -filter all-wo-channel -topdown "
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 0Total elapsed time: 5.498 sec.
+@I [HLS-100] Command "preproc_iomode -model matrixmul "
+@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 0Total elapsed time: 5.498 sec.
+@I [HLS-100] Command "get_model_list matrixmul -filter all-wo-channel "
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 0Total elapsed time: 5.499 sec.
+@I [HLS-0] Model list for configure: matrixmul
+@I [HLS-0] Configuring Module : matrixmul ...
+@I [HLS-100] Command "set_default_model matrixmul "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 5.499 sec.
+@I [HLS-100] Command "apply_spec_resource_limit matrixmul "
+@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 0Total elapsed time: 5.499 sec.
+@I [HLS-0] Model list for preprocess: matrixmul
+@I [HLS-0] Preprocessing Module: matrixmul ...
+@I [HLS-100] Command "set_default_model matrixmul "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 5.499 sec.
+@I [HLS-100] Command "cdfg_preprocess -model matrixmul "
+@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0Total elapsed time: 5.500 sec.
+@I [HLS-100] Command "rtl_gen_preprocess matrixmul "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 5.501 sec.
+@I [HLS-0] Model list for synthesis: matrixmul
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'matrixmul' 
+@0 [HLS-0] -- Scheduling module 'matrixmul' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model matrixmul "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 5.503 sec.
+@I [HLS-100] Command "schedule -model matrixmul "
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining loop 'Row_Col'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 3.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-100] Command 'schedule' returned 0; elapsed 0.05Total elapsed time: 5.558 sec.
+@I [HLS-111] Elapsed time: 0.05 seconds; current memory usage: 0.179 MB.
+@I [HLS-100] Command "report -o /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.verbose.sched.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.01Total elapsed time: 5.561 sec.
+@I [HLS-100] Command "db_write -o /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.sched.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0Total elapsed time: 5.565 sec.
+@I [HLS-0] Finish scheduling matrixmul.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'matrixmul' 
+@0 [HLS-0] -- Exploring micro-architecture for module 'matrixmul' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model matrixmul "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 5.566 sec.
+@I [HLS-100] Command "bind -model matrixmul "
+@I [BIND-110] clear=
+@I [BIND-110] debug=
+@I [BIND-110] drf=
+@I [BIND-110] effort=
+@I [BIND-110] fast_refine=
+@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] global_opt=
+@I [BIND-110] gsearch=
+@I [BIND-110] help=
+@I [BIND-110] help-hidden=
+@I [BIND-110] min_mem_port=
+@I [BIND-110] min_op=
+@I [BIND-110] minreg=
+@I [BIND-110] ml=
+@I [BIND-110] model=matrixmul
+@I [BIND-110] no_false_path=
+@I [BIND-110] no_min_op=
+@I [BIND-110] normalize=
+@I [BIND-110] quiet=
+@I [BIND-110] refine=
+@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] search=
+@I [BIND-110] tight_delay=
+@I [BIND-110] verbose=
+@I [BIND-110] wFF=
+@I [BIND-110] wFU=
+@I [BIND-110] wMUX=
+@I [BIND-110] wNET=
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-100] Command 'bind' returned 0; elapsed 0.01Total elapsed time: 5.575 sec.
+@I [HLS-111] Elapsed time: 0.02 seconds; current memory usage: 0.179 MB.
+@I [HLS-100] Command "report -o /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.verbose.bind.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.01Total elapsed time: 5.592 sec.
+@I [HLS-100] Command "db_write -o /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.bind.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.01Total elapsed time: 5.597 sec.
+@I [HLS-0] Finish binding matrixmul.
+@I [HLS-100] Command "get_model_list matrixmul -filter all-wo-channel "
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 0Total elapsed time: 5.597 sec.
+@I [HLS-0] Preprocessing for RTLGen ...
+@I [HLS-100] Command "rtl_gen_preprocess matrixmul "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 5.598 sec.
+@I [HLS-0] Model list for RTL generation: matrixmul
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'matrixmul' 
+@0 [HLS-0] -- Generating RTL for module 'matrixmul' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "create_rtl_model matrixmul -vendor xilinx -mg_file /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.compgen.tcl "
+@I [RTGEN-500] Setting interface mode on port 'matrixmul/a' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'matrixmul/b' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'matrixmul/res' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on function 'matrixmul' to 'ap_ctrl_hs'.
+@I [RTGEN-100] Finished creating RTL model for 'matrixmul'.
+@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.02Total elapsed time: 5.618 sec.
+@I [HLS-111] Elapsed time: 0.04 seconds; current memory usage: 0.179 MB.
+@I [HLS-100] Command "source /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.619 sec.
+@I [HLS-100] Command "gen_rtl matrixmul -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/syn/systemc/matrixmul -synmodules matrixmul "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.01Total elapsed time: 5.621 sec.
+@I [HLS-100] Command "gen_rtl matrixmul -istop -style xilinx -f -lang vhdl -o /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/syn/vhdl/matrixmul "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.01Total elapsed time: 5.634 sec.
+@I [HLS-100] Command "gen_rtl matrixmul -istop -style xilinx -f -lang vlog -o /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/syn/verilog/matrixmul "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0Total elapsed time: 5.641 sec.
+@I [HLS-100] Command "export_constraint_db -o /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.constraint.tcl -f -tool general "
+@I [HLS-100] Command 'export_constraint_db' returned 0; elapsed 0Total elapsed time: 5.642 sec.
+@I [HLS-100] Command "report -model matrixmul -o /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.design.xml -verbose -f -dv "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.02Total elapsed time: 5.653 sec.
+@I [HLS-100] Command "report -model matrixmul -o /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.sdaccel.xml -verbose -f -sdaccel "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.01Total elapsed time: 5.673 sec.
+@I [HLS-100] Command "gen_tb_info matrixmul -o /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul -p /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db "
+@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0Total elapsed time: 5.674 sec.
+@I [HLS-100] Command "report -model matrixmul -o /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/syn/report/matrixmul_csynth.rpt -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.01Total elapsed time: 5.682 sec.
+@I [HLS-100] Command "report -model matrixmul -o /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/syn/report/matrixmul_csynth.xml -f -x "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.01Total elapsed time: 5.688 sec.
+@I [HLS-100] Command "report -model matrixmul -o /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.verbose.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.02Total elapsed time: 5.714 sec.
+@I [HLS-100] Command "db_write -model matrixmul -o /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.01Total elapsed time: 5.725 sec.
+@I [HLS-100] Command "sc_get_clocks matrixmul "
+@I [HLS-100] Command 'sc_get_clocks' returned 0; elapsed 0Total elapsed time: 5.740 sec.
+@I [HLS-100] Command "sc_get_portdomain matrixmul "
+@I [HLS-100] Command 'sc_get_portdomain' returned 0; elapsed 0Total elapsed time: 5.740 sec.
+@I [HLS-0] Model list for RTL component generation: matrixmul
+@I [HLS-0] Handling components in module [matrixmul] ... 
+@I [HLS-100] Command "source /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.741 sec.
+@I [HLS-0] Append model matrixmul
+@I [HLS-0] Generating RTL model list ...
+@I [HLS-0] All models in this session: matrixmul
+@I [HLS-0] To file: write model matrixmul
+@I [HLS-0] Finished generating RTL model list.
+
+
+@I [HLS-0] RTL Generation done.
+@I [HLS-0] CAS Generation done.
+@I [HLS-0] CBC Generation done.
+@I [HLS-100] Command "export_ssdm /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/a.export.ll "
+@I [HLS-100] Command 'export_ssdm' returned 0; elapsed 0Total elapsed time: 5.742 sec.
+@I [HLS-100] Command "source /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.746 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.747 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.747 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.748 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.749 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.749 sec.
+@I [HLS-100] Command "source /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.749 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/kintex7/kintex7.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.751 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.752 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.754 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 5.758 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.765 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 5.765 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 5.774 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 5.782 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.1Total elapsed time: 5.889 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.03Total elapsed time: 5.926 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/ip/dds_compiler.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 5.930 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.930 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.17Total elapsed time: 5.930 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.932 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.17Total elapsed time: 5.932 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.17Total elapsed time: 5.932 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/kintex7/kintex7_fpv6.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.3/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.934 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.934 sec.
+@I [HLS-100] Command "source /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.934 sec.
+@I [HLS-100] Command "source /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.935 sec.
+@I [HLS-100] Command "source /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.935 sec.
+@I [HLS-100] Command "source /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.936 sec.
+@I [HLS-100] Command "source /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution2/.autopilot/db/matrixmul.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.936 sec.
+@I [HLS-10] Finished generating all RTL models.
+@0 [HLS-0] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'matrixmul'.
+@I [WVHDL-304] Generating RTL VHDL for 'matrixmul'.
+@I [WVLOG-307] Generating RTL Verilog for 'matrixmul'.
+@I [HLS-100] Command 'autosyn' returned 0; elapsed 0.43Total elapsed time: 5.938 sec.
+@I [HLS-100] Command 'csynth_design' returned 0; elapsed 1.21Total elapsed time: 5.938 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 1.98Total elapsed time: 5.938 sec.
+@I [HLS-100] Command "cleanup_all "
+@I [HLS-100] Command 'cleanup_all' returned 0; elapsed 0Total elapsed time: 5.941 sec.

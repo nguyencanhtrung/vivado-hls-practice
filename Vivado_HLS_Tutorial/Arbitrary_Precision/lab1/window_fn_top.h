@@ -42,6 +42,8 @@ THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS PART OF THIS FILE AT
 ALL TIMES.
 
 *******************************************************************************/
+/**
+ * Lab 1: standard C type
 #ifndef WINDOW_FN_TOP_H_
 #define WINDOW_FN_TOP_H_
 
@@ -56,6 +58,42 @@ ALL TIMES.
 typedef float win_fn_in_t;
 typedef float win_fn_out_t;
 typedef float win_fn_coef_t;
+
+// Top level function prototype - wraps all object, method and functions for HLS
+void window_fn_top(win_fn_out_t outdata[WIN_LEN], win_fn_in_t indata[WIN_LEN]);
+
+#endif // WINDOW_FN_TOP_H_
+*/
+/********************************************************************************/
+
+/********************************************************************************/
+/** Lab 2 Arbitrary type
+ * */
+#ifndef WINDOW_FN_TOP_H_
+#define WINDOW_FN_TOP_H_
+
+#include "window_fn_class.h"
+
+// Test parameters
+#define WIN_TYPE xhls_window_fn::HANN
+#define WIN_LEN 32
+
+// Types and top-level function prototype
+#include <ap_int.h>
+// Define widths of fixed point fields
+#define W_IN    8		// Total word length
+#define IW_IN   8		// integer bits     -> no of fraction bit = total - integer bits
+
+#define W_OUT   24
+#define IW_OUT  8
+
+#define W_COEF  18
+#define IW_COEF 2
+
+// Define fixed  point types for input, output and coefficients
+typedef ap_fixed<W_IN,IW_IN> win_fn_in_t;
+typedef ap_fixed<W_OUT,IW_OUT> win_fn_out_t;
+typedef ap_fixed<W_COEF,IW_COEF> win_fn_coef_t;
 
 // Top level function prototype - wraps all object, method and functions for HLS
 void window_fn_top(win_fn_out_t outdata[WIN_LEN], win_fn_in_t indata[WIN_LEN]);

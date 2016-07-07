@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# xsim v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Wed Jun 29 10:01:30 2016
+# Process ID: 18844
+# Current directory: /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Interface_Synthesis/lab2/adders_io_prj/solution1/sim/vhdl
+# Command line: xsim -mode tcl -source {xsim.dir/adders_io/xsim_script.tcl}
+# Log file: /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Interface_Synthesis/lab2/adders_io_prj/solution1/sim/vhdl/xsim.log
+# Journal file: /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Interface_Synthesis/lab2/adders_io_prj/solution1/sim/vhdl/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/adders_io/xsim_script.tcl
+# xsim {adders_io} -maxdeltaid 10000 -autoloadwcfg -tclbatch {adders_io.tcl}
+Vivado Simulator 2015.3
+Time resolution is 1 ps
+source adders_io.tcl
+## run all
+Note: simulation done!
+Time: 135 ns  Iteration: 1  Process: /apatb_adders_io_top/generate_sim_done_proc  File: /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Interface_Synthesis/lab2/adders_io_prj/solution1/sim/vhdl/adders_io.autotb.vhd
+Failure: NORMAL EXIT (note: failure is to force the simulator to stop)
+Time: 135 ns  Iteration: 1  Process: /apatb_adders_io_top/generate_sim_done_proc  File: /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Interface_Synthesis/lab2/adders_io_prj/solution1/sim/vhdl/adders_io.autotb.vhd
+$finish called at time : 135 ns
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Jun 29 10:01:32 2016...

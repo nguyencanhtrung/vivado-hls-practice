@@ -1,0 +1,387 @@
+
+
+================================================================
+== Vivado HLS Report for 'dct_write_data'
+================================================================
+* Date:           Wed Jul  6 11:01:51 2016
+
+* Version:        2015.3 (Build 1368829 on Mon Sep 28 20:31:51 PM 2015)
+* Project:        dct_prj
+* Solution:       solution7
+* Product family: kintex7
+* Target device:  xc7k160tfbg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   8.00|      4.66|        1.00|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   34|   34|   34|   34|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------+-----+-----+----------+-----------+-----------+------+----------+
+        |               |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name   | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- WR_Loop_Row  |   32|   32|         5|          4|          1|     8|    yes   |
+        +---------------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 4, depth = 5
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 7
+* Pipeline: 1
+  Pipeline-0: II = 4, D = 5, States = { 2 3 4 5 6 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	7  / (exitcond1)
+	3  / (!exitcond1)
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	2  / true
+7 --> 
+* FSM state operations: 
+
+ <State 1>: 1.08ns
+ST_1: stg_8 [1/1] 1.08ns
+:0  br label %1
+
+
+ <State 2>: 2.33ns
+ST_2: r [1/1] 0.00ns
+:0  %r = phi i4 [ 0, %0 ], [ %r_1, %2 ]
+
+ST_2: exitcond1 [1/1] 1.24ns
+:1  %exitcond1 = icmp eq i4 %r, -8
+
+ST_2: r_1 [1/1] 0.48ns
+:2  %r_1 = add i4 %r, 1
+
+ST_2: stg_12 [1/1] 0.00ns
+:3  br i1 %exitcond1, label %3, label %2
+
+ST_2: tmp [1/1] 0.00ns
+:4  %tmp = call i7 @_ssdm_op_BitConcatenate.i7.i4.i3(i4 %r, i3 0)
+
+ST_2: tmp_3 [1/1] 0.00ns
+:5  %tmp_3 = zext i7 %tmp to i64
+
+ST_2: buf_addr [1/1] 0.00ns
+:6  %buf_addr = getelementptr [64 x i16]* %buf_r, i64 0, i64 %tmp_3
+
+ST_2: tmp_4 [1/1] 0.00ns
+:7  %tmp_4 = or i7 %tmp, 1
+
+ST_2: tmp_6 [1/1] 0.00ns
+:8  %tmp_6 = call i64 @_ssdm_op_BitConcatenate.i64.i57.i7(i57 0, i7 %tmp_4)
+
+ST_2: buf_addr_1 [1/1] 0.00ns
+:9  %buf_addr_1 = getelementptr [64 x i16]* %buf_r, i64 0, i64 %tmp_6
+
+ST_2: tmp_18 [1/1] 0.00ns
+:28  %tmp_18 = trunc i4 %r to i3
+
+ST_2: buf_load [2/2] 2.33ns
+:30  %buf_load = load i16* %buf_addr, align 2
+
+ST_2: buf_load_1 [2/2] 2.33ns
+:34  %buf_load_1 = load i16* %buf_addr_1, align 2
+
+
+ <State 3>: 4.66ns
+ST_3: tmp_7 [1/1] 0.00ns
+:10  %tmp_7 = or i7 %tmp, 2
+
+ST_3: tmp_8 [1/1] 0.00ns
+:11  %tmp_8 = call i64 @_ssdm_op_BitConcatenate.i64.i57.i7(i57 0, i7 %tmp_7)
+
+ST_3: buf_addr_2 [1/1] 0.00ns
+:12  %buf_addr_2 = getelementptr [64 x i16]* %buf_r, i64 0, i64 %tmp_8
+
+ST_3: tmp_9 [1/1] 0.00ns
+:13  %tmp_9 = or i7 %tmp, 3
+
+ST_3: tmp_s [1/1] 0.00ns
+:14  %tmp_s = call i64 @_ssdm_op_BitConcatenate.i64.i57.i7(i57 0, i7 %tmp_9)
+
+ST_3: buf_addr_3 [1/1] 0.00ns
+:15  %buf_addr_3 = getelementptr [64 x i16]* %buf_r, i64 0, i64 %tmp_s
+
+ST_3: tmp_1 [1/1] 0.00ns
+:29  %tmp_1 = call i6 @_ssdm_op_BitConcatenate.i6.i3.i3(i3 %tmp_18, i3 0)
+
+ST_3: buf_load [1/2] 2.33ns
+:30  %buf_load = load i16* %buf_addr, align 2
+
+ST_3: tmp_5 [1/1] 0.00ns
+:31  %tmp_5 = zext i6 %tmp_1 to i64
+
+ST_3: output_addr [1/1] 0.00ns
+:32  %output_addr = getelementptr [64 x i16]* %output_r, i64 0, i64 %tmp_5
+
+ST_3: stg_32 [1/1] 2.33ns
+:33  store i16 %buf_load, i16* %output_addr, align 2
+
+ST_3: buf_load_1 [1/2] 2.33ns
+:34  %buf_load_1 = load i16* %buf_addr_1, align 2
+
+ST_3: tmp_4_s [1/1] 0.00ns
+:35  %tmp_4_s = or i6 %tmp_1, 1
+
+ST_3: tmp_5_1 [1/1] 0.00ns
+:36  %tmp_5_1 = zext i6 %tmp_4_s to i64
+
+ST_3: output_addr_1 [1/1] 0.00ns
+:37  %output_addr_1 = getelementptr [64 x i16]* %output_r, i64 0, i64 %tmp_5_1
+
+ST_3: stg_37 [1/1] 2.33ns
+:38  store i16 %buf_load_1, i16* %output_addr_1, align 2
+
+ST_3: buf_load_2 [2/2] 2.33ns
+:39  %buf_load_2 = load i16* %buf_addr_2, align 2
+
+ST_3: buf_load_3 [2/2] 2.33ns
+:44  %buf_load_3 = load i16* %buf_addr_3, align 2
+
+
+ <State 4>: 4.66ns
+ST_4: tmp_10 [1/1] 0.00ns
+:16  %tmp_10 = or i7 %tmp, 4
+
+ST_4: tmp_11 [1/1] 0.00ns
+:17  %tmp_11 = call i64 @_ssdm_op_BitConcatenate.i64.i57.i7(i57 0, i7 %tmp_10)
+
+ST_4: buf_addr_4 [1/1] 0.00ns
+:18  %buf_addr_4 = getelementptr [64 x i16]* %buf_r, i64 0, i64 %tmp_11
+
+ST_4: tmp_12 [1/1] 0.00ns
+:19  %tmp_12 = or i7 %tmp, 5
+
+ST_4: tmp_13 [1/1] 0.00ns
+:20  %tmp_13 = call i64 @_ssdm_op_BitConcatenate.i64.i57.i7(i57 0, i7 %tmp_12)
+
+ST_4: buf_addr_5 [1/1] 0.00ns
+:21  %buf_addr_5 = getelementptr [64 x i16]* %buf_r, i64 0, i64 %tmp_13
+
+ST_4: buf_load_2 [1/2] 2.33ns
+:39  %buf_load_2 = load i16* %buf_addr_2, align 2
+
+ST_4: tmp_4_1 [1/1] 0.00ns
+:40  %tmp_4_1 = or i6 %tmp_1, 2
+
+ST_4: tmp_5_2 [1/1] 0.00ns
+:41  %tmp_5_2 = zext i6 %tmp_4_1 to i64
+
+ST_4: output_addr_2 [1/1] 0.00ns
+:42  %output_addr_2 = getelementptr [64 x i16]* %output_r, i64 0, i64 %tmp_5_2
+
+ST_4: stg_50 [1/1] 2.33ns
+:43  store i16 %buf_load_2, i16* %output_addr_2, align 2
+
+ST_4: buf_load_3 [1/2] 2.33ns
+:44  %buf_load_3 = load i16* %buf_addr_3, align 2
+
+ST_4: tmp_4_2 [1/1] 0.00ns
+:45  %tmp_4_2 = or i6 %tmp_1, 3
+
+ST_4: tmp_5_3 [1/1] 0.00ns
+:46  %tmp_5_3 = zext i6 %tmp_4_2 to i64
+
+ST_4: output_addr_3 [1/1] 0.00ns
+:47  %output_addr_3 = getelementptr [64 x i16]* %output_r, i64 0, i64 %tmp_5_3
+
+ST_4: stg_55 [1/1] 2.33ns
+:48  store i16 %buf_load_3, i16* %output_addr_3, align 2
+
+ST_4: buf_load_4 [2/2] 2.33ns
+:49  %buf_load_4 = load i16* %buf_addr_4, align 2
+
+ST_4: buf_load_5 [2/2] 2.33ns
+:54  %buf_load_5 = load i16* %buf_addr_5, align 2
+
+
+ <State 5>: 4.66ns
+ST_5: tmp_14 [1/1] 0.00ns
+:22  %tmp_14 = or i7 %tmp, 6
+
+ST_5: tmp_15 [1/1] 0.00ns
+:23  %tmp_15 = call i64 @_ssdm_op_BitConcatenate.i64.i57.i7(i57 0, i7 %tmp_14)
+
+ST_5: buf_addr_6 [1/1] 0.00ns
+:24  %buf_addr_6 = getelementptr [64 x i16]* %buf_r, i64 0, i64 %tmp_15
+
+ST_5: tmp_16 [1/1] 0.00ns
+:25  %tmp_16 = or i7 %tmp, 7
+
+ST_5: tmp_17 [1/1] 0.00ns
+:26  %tmp_17 = call i64 @_ssdm_op_BitConcatenate.i64.i57.i7(i57 0, i7 %tmp_16)
+
+ST_5: buf_addr_7 [1/1] 0.00ns
+:27  %buf_addr_7 = getelementptr [64 x i16]* %buf_r, i64 0, i64 %tmp_17
+
+ST_5: buf_load_4 [1/2] 2.33ns
+:49  %buf_load_4 = load i16* %buf_addr_4, align 2
+
+ST_5: tmp_4_3 [1/1] 0.00ns
+:50  %tmp_4_3 = or i6 %tmp_1, 4
+
+ST_5: tmp_5_4 [1/1] 0.00ns
+:51  %tmp_5_4 = zext i6 %tmp_4_3 to i64
+
+ST_5: output_addr_4 [1/1] 0.00ns
+:52  %output_addr_4 = getelementptr [64 x i16]* %output_r, i64 0, i64 %tmp_5_4
+
+ST_5: stg_68 [1/1] 2.33ns
+:53  store i16 %buf_load_4, i16* %output_addr_4, align 2
+
+ST_5: buf_load_5 [1/2] 2.33ns
+:54  %buf_load_5 = load i16* %buf_addr_5, align 2
+
+ST_5: tmp_4_4 [1/1] 0.00ns
+:55  %tmp_4_4 = or i6 %tmp_1, 5
+
+ST_5: tmp_5_5 [1/1] 0.00ns
+:56  %tmp_5_5 = zext i6 %tmp_4_4 to i64
+
+ST_5: output_addr_5 [1/1] 0.00ns
+:57  %output_addr_5 = getelementptr [64 x i16]* %output_r, i64 0, i64 %tmp_5_5
+
+ST_5: stg_73 [1/1] 2.33ns
+:58  store i16 %buf_load_5, i16* %output_addr_5, align 2
+
+ST_5: buf_load_6 [2/2] 2.33ns
+:59  %buf_load_6 = load i16* %buf_addr_6, align 2
+
+ST_5: buf_load_7 [2/2] 2.33ns
+:64  %buf_load_7 = load i16* %buf_addr_7, align 2
+
+
+ <State 6>: 4.66ns
+ST_6: empty [1/1] 0.00ns
+:0  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)
+
+ST_6: stg_77 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecLoopName([12 x i8]* @p_str10) nounwind
+
+ST_6: tmp_2 [1/1] 0.00ns
+:2  %tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str10)
+
+ST_6: stg_79 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
+
+ST_6: buf_load_6 [1/2] 2.33ns
+:59  %buf_load_6 = load i16* %buf_addr_6, align 2
+
+ST_6: tmp_4_5 [1/1] 0.00ns
+:60  %tmp_4_5 = or i6 %tmp_1, 6
+
+ST_6: tmp_5_6 [1/1] 0.00ns
+:61  %tmp_5_6 = zext i6 %tmp_4_5 to i64
+
+ST_6: output_addr_6 [1/1] 0.00ns
+:62  %output_addr_6 = getelementptr [64 x i16]* %output_r, i64 0, i64 %tmp_5_6
+
+ST_6: stg_84 [1/1] 2.33ns
+:63  store i16 %buf_load_6, i16* %output_addr_6, align 2
+
+ST_6: buf_load_7 [1/2] 2.33ns
+:64  %buf_load_7 = load i16* %buf_addr_7, align 2
+
+ST_6: tmp_4_6 [1/1] 0.00ns
+:65  %tmp_4_6 = or i6 %tmp_1, 7
+
+ST_6: tmp_5_7 [1/1] 0.00ns
+:66  %tmp_5_7 = zext i6 %tmp_4_6 to i64
+
+ST_6: output_addr_7 [1/1] 0.00ns
+:67  %output_addr_7 = getelementptr [64 x i16]* %output_r, i64 0, i64 %tmp_5_7
+
+ST_6: stg_89 [1/1] 2.33ns
+:68  store i16 %buf_load_7, i16* %output_addr_7, align 2
+
+ST_6: empty_7 [1/1] 0.00ns
+:69  %empty_7 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str10, i32 %tmp_2)
+
+ST_6: stg_91 [1/1] 0.00ns
+:70  br label %1
+
+
+ <State 7>: 0.00ns
+ST_7: stg_92 [1/1] 0.00ns
+:0  ret void
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

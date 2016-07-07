@@ -1,0 +1,305 @@
+
+
+================================================================
+== Vivado HLS Report for 'matrixmul'
+================================================================
+* Date:           Wed Jul  6 16:23:11 2016
+
+* Version:        2015.3 (Build 1368829 on Mon Sep 28 20:31:51 PM 2015)
+* Project:        matrixmul_prj
+* Solution:       solution1
+* Product family: kintex7
+* Target device:  xc7k160tfbg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  13.33|      9.64|        1.67|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   79|   79|   80|   80|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------+-----+-----+----------+-----------+-----------+------+----------+
+        |              |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name  | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Row         |   78|   78|        26|          -|          -|     3|    no    |
+        | + Col        |   24|   24|         8|          -|          -|     3|    no    |
+        |  ++ Product  |    6|    6|         2|          -|          -|     3|    no    |
+        +--------------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 5
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond2)
+3 --> 
+	4  / (!exitcond1)
+	2  / (exitcond1)
+4 --> 
+	5  / (!exitcond)
+	3  / (exitcond)
+5 --> 
+	4  / true
+* FSM state operations: 
+
+ <State 1>: 1.08ns
+ST_1: stg_6 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecBitsMap([9 x i8]* %a) nounwind, !map !0
+
+ST_1: stg_7 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap([9 x i8]* %b) nounwind, !map !6
+
+ST_1: stg_8 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecBitsMap([9 x i16]* %res) nounwind, !map !10
+
+ST_1: stg_9 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecTopModule([10 x i8]* @matrixmul_str) nounwind
+
+ST_1: stg_10 [1/1] 1.08ns
+:4  br label %1
+
+
+ <State 2>: 1.08ns
+ST_2: i [1/1] 0.00ns
+:0  %i = phi i2 [ 0, %0 ], [ %i_1, %8 ]
+
+ST_2: exitcond2 [1/1] 0.85ns
+:1  %exitcond2 = icmp eq i2 %i, -1
+
+ST_2: empty [1/1] 0.00ns
+:2  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3) nounwind
+
+ST_2: i_1 [1/1] 0.48ns
+:3  %i_1 = add i2 %i, 1
+
+ST_2: stg_15 [1/1] 0.00ns
+:4  br i1 %exitcond2, label %9, label %2
+
+ST_2: stg_16 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecLoopName([4 x i8]* @p_str) nounwind
+
+ST_2: tmp_1 [1/1] 0.00ns
+:1  %tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([4 x i8]* @p_str) nounwind
+
+ST_2: tmp_cast [1/1] 0.00ns
+:2  %tmp_cast = zext i2 %i to i5
+
+ST_2: tmp_9 [1/1] 0.00ns
+:3  %tmp_9 = call i4 @_ssdm_op_BitConcatenate.i4.i2.i2(i2 %i, i2 0)
+
+ST_2: p_shl_cast [1/1] 0.00ns
+:4  %p_shl_cast = zext i4 %tmp_9 to i5
+
+ST_2: tmp_s [1/1] 0.48ns
+:5  %tmp_s = sub i5 %p_shl_cast, %tmp_cast
+
+ST_2: stg_22 [1/1] 1.08ns
+:6  br label %3
+
+ST_2: stg_23 [1/1] 0.00ns
+:0  ret void
+
+
+ <State 3>: 1.34ns
+ST_3: j [1/1] 0.00ns
+:0  %j = phi i2 [ 0, %2 ], [ %j_1, %7 ]
+
+ST_3: exitcond1 [1/1] 0.85ns
+:1  %exitcond1 = icmp eq i2 %j, -1
+
+ST_3: empty_2 [1/1] 0.00ns
+:2  %empty_2 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3) nounwind
+
+ST_3: j_1 [1/1] 0.48ns
+:3  %j_1 = add i2 %j, 1
+
+ST_3: stg_28 [1/1] 0.00ns
+:4  br i1 %exitcond1, label %8, label %4
+
+ST_3: stg_29 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecLoopName([4 x i8]* @p_str1) nounwind
+
+ST_3: tmp_3 [1/1] 0.00ns
+:1  %tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([4 x i8]* @p_str1) nounwind
+
+ST_3: tmp_2_cast [1/1] 0.00ns
+:2  %tmp_2_cast = zext i2 %j to i5
+
+ST_3: tmp_2 [1/1] 1.34ns
+:3  %tmp_2 = add i5 %tmp_s, %tmp_2_cast
+
+ST_3: tmp_11_cast [1/1] 0.00ns
+:4  %tmp_11_cast = sext i5 %tmp_2 to i64
+
+ST_3: res_addr [1/1] 0.00ns
+:5  %res_addr = getelementptr [9 x i16]* %res, i64 0, i64 %tmp_11_cast
+
+ST_3: stg_35 [1/1] 1.08ns
+:6  br label %5
+
+ST_3: empty_5 [1/1] 0.00ns
+:0  %empty_5 = call i32 (...)* @_ssdm_op_SpecRegionEnd([4 x i8]* @p_str, i32 %tmp_1) nounwind
+
+ST_3: stg_37 [1/1] 0.00ns
+:1  br label %1
+
+
+ <State 4>: 4.31ns
+ST_4: res_load [1/1] 0.00ns
+:0  %res_load = phi i16 [ 0, %4 ], [ %tmp_8, %6 ]
+
+ST_4: k [1/1] 0.00ns
+:1  %k = phi i2 [ 0, %4 ], [ %k_1, %6 ]
+
+ST_4: stg_40 [1/1] 2.39ns
+:2  store i16 %res_load, i16* %res_addr, align 2
+
+ST_4: exitcond [1/1] 0.85ns
+:3  %exitcond = icmp eq i2 %k, -1
+
+ST_4: empty_3 [1/1] 0.00ns
+:4  %empty_3 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3) nounwind
+
+ST_4: k_1 [1/1] 0.48ns
+:5  %k_1 = add i2 %k, 1
+
+ST_4: stg_44 [1/1] 0.00ns
+:6  br i1 %exitcond, label %7, label %6
+
+ST_4: tmp_4_cast [1/1] 0.00ns
+:1  %tmp_4_cast = zext i2 %k to i5
+
+ST_4: tmp_4 [1/1] 1.34ns
+:2  %tmp_4 = add i5 %tmp_s, %tmp_4_cast
+
+ST_4: tmp_12_cast [1/1] 0.00ns
+:3  %tmp_12_cast = sext i5 %tmp_4 to i64
+
+ST_4: a_addr [1/1] 0.00ns
+:4  %a_addr = getelementptr [9 x i8]* %a, i64 0, i64 %tmp_12_cast
+
+ST_4: tmp_10 [1/1] 0.00ns
+:5  %tmp_10 = call i4 @_ssdm_op_BitConcatenate.i4.i2.i2(i2 %k, i2 0)
+
+ST_4: p_shl1_cast [1/1] 0.00ns
+:6  %p_shl1_cast = zext i4 %tmp_10 to i5
+
+ST_4: tmp_11 [1/1] 0.96ns
+:7  %tmp_11 = sub i5 %p_shl1_cast, %tmp_4_cast
+
+ST_4: tmp_12 [1/1] 0.96ns
+:8  %tmp_12 = add i5 %tmp_11, %tmp_2_cast
+
+ST_4: tmp_15_cast [1/1] 0.00ns
+:9  %tmp_15_cast = sext i5 %tmp_12 to i64
+
+ST_4: b_addr [1/1] 0.00ns
+:10  %b_addr = getelementptr [9 x i8]* %b, i64 0, i64 %tmp_15_cast
+
+ST_4: a_load [2/2] 2.39ns
+:11  %a_load = load i8* %a_addr, align 1
+
+ST_4: b_load [2/2] 2.39ns
+:13  %b_load = load i8* %b_addr, align 1
+
+ST_4: empty_4 [1/1] 0.00ns
+:0  %empty_4 = call i32 (...)* @_ssdm_op_SpecRegionEnd([4 x i8]* @p_str1, i32 %tmp_3) nounwind
+
+ST_4: stg_58 [1/1] 0.00ns
+:1  br label %3
+
+
+ <State 5>: 9.64ns
+ST_5: stg_59 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecLoopName([8 x i8]* @p_str2) nounwind
+
+ST_5: a_load [1/2] 2.39ns
+:11  %a_load = load i8* %a_addr, align 1
+
+ST_5: tmp_5 [1/1] 0.00ns
+:12  %tmp_5 = sext i8 %a_load to i16
+
+ST_5: b_load [1/2] 2.39ns
+:13  %b_load = load i8* %b_addr, align 1
+
+ST_5: tmp_6 [1/1] 0.00ns
+:14  %tmp_6 = sext i8 %b_load to i16
+
+ST_5: tmp_7 [1/1] 5.79ns
+:15  %tmp_7 = mul i16 %tmp_6, %tmp_5
+
+ST_5: tmp_8 [1/1] 1.46ns
+:16  %tmp_8 = add i16 %tmp_7, %res_load
+
+ST_5: stg_66 [1/1] 0.00ns
+:17  br label %5
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

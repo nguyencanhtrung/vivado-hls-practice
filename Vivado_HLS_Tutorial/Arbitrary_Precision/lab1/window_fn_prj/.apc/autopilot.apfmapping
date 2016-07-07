@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="window_fn_top.cpp" path="/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Arbitrary_Precision/lab1/window_fn_top.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="window_fn_test.cpp" path="/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Arbitrary_Precision/lab1/window_fn_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

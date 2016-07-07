@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog>
+        <logs message="@E [HLS-70] Synthesizability check failed." projectName="matrixmul_prj" solutionName="solution5" date="2016-07-07T08:40:52.915+0200"/>
+        <logs message="@E [SYNCHK-91] Port 'res' (matrixmul.cpp:48) of function 'matrixmul' cannot be set to a FIFO &#xA;               as it has both write (matrixmul.cpp:62:13) and read (matrixmul.cpp:62:13) operations." projectName="matrixmul_prj" solutionName="solution5" date="2016-07-07T08:40:52.748+0200"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="matrixmul_prj" solutionName="solution2" date="2016-07-07T10:08:33.435+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="matrixmul_prj" solutionName="solution2" date="2016-07-07T10:08:33.412+0200" type="Warning"/>
+        <logs message="@W [SCHED-69] Unable to schedule 'load' operation ('b_load_2', matrixmul.cpp:62) on array 'b' due to limited memory ports." projectName="matrixmul_prj" solutionName="solution6" date="2016-07-07T08:50:09.879+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="matrixmul_prj" solutionName="solution6" date="2016-07-07T08:50:04.721+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="matrixmul_prj" solutionName="solution6" date="2016-07-07T08:50:04.700+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="matrixmul_prj" solutionName="solution5" date="2016-07-07T08:40:49.224+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="matrixmul_prj" solutionName="solution5" date="2016-07-07T08:40:49.208+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="matrixmul_prj" solutionName="solution4" date="2016-07-07T08:24:56.177+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="matrixmul_prj" solutionName="solution4" date="2016-07-07T08:24:56.139+0200" type="Warning"/>
+        <logs message="@W [SCHED-69] Unable to schedule 'load' operation ('a_load_2', matrixmul.cpp:62) on array 'a' due to limited memory ports." projectName="matrixmul_prj" solutionName="solution3" date="2016-07-07T08:04:52.345+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="matrixmul_prj" solutionName="solution3" date="2016-07-07T08:04:47.693+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="matrixmul_prj" solutionName="solution3" date="2016-07-07T08:04:47.674+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="matrixmul_prj" solutionName="solution1" date="2016-07-06T16:23:07.684+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="matrixmul_prj" solutionName="solution1" date="2016-07-06T16:23:07.669+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

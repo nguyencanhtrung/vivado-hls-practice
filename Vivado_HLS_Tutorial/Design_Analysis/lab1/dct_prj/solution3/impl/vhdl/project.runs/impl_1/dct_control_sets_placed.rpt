@@ -1,0 +1,77 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
+| Date         : Tue Jul  5 15:58:51 2016
+| Host         : finance.eit.uni-kl.de running 64-bit Scientific Linux release 6.7 (Carbon)
+| Command      : report_control_sets -verbose -file dct_control_sets_placed.rpt
+| Design       : dct
+| Device       : xc7k160t
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    24 |
+| Minimum Number of register sites lost to control set restrictions |    92 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              21 |           12 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              35 |           17 |
+| Yes          | No                    | No                     |              84 |           32 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              56 |           19 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------+--------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+| Clock Signal |                                                                Enable Signal                                                               |                    Set/Reset Signal                    | Slice Load Count | Bel Load Count |
++--------------+--------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+|  ap_clk      | grp_dct_dct_2d_fu_198/grp_dct_dct_1d2_fu_223/ap_reg_ppiten_pp0_it00                                                                        |                                                        |                1 |              3 |
+|  ap_clk      | grp_dct_dct_2d_fu_198/i_1_reg_1670                                                                                                         |                                                        |                3 |              4 |
+|  ap_clk      | grp_dct_dct_2d_fu_198/grp_dct_dct_1d2_fu_223/dct_mac_muladd_16s_15s_29s_29_1_U2/dct_mac_muladd_16s_15s_29s_29_1_DSP48_0_U/k_phi_fu_271_p41 | grp_dct_dct_2d_fu_198/grp_dct_dct_1d2_fu_223/k_reg_267 |                2 |              4 |
+|  ap_clk      | grp_dct_dct_2d_fu_198/grp_dct_dct_1d2_fu_223/ce0                                                                                           |                                                        |                3 |              4 |
+|  ap_clk      | grp_dct_dct_2d_fu_198/grp_dct_dct_1d2_fu_223/i_reg_133_reg[0][0]                                                                           | grp_dct_dct_2d_fu_198/grp_dct_dct_1d2_fu_223/SR[0]     |                1 |              4 |
+|  ap_clk      | grp_dct_dct_2d_fu_198/grp_dct_dct_1d2_fu_223/E[0]                                                                                          | grp_dct_dct_2d_fu_198/i_2_reg_178[3]_i_1_n_8           |                1 |              4 |
+|  ap_clk      | grp_dct_dct_2d_fu_198/i_3_reg_2120                                                                                                         |                                                        |                3 |              4 |
+|  ap_clk      | grp_dct_dct_2d_fu_198/ap_sig_bdd_66                                                                                                        |                                                        |                1 |              4 |
+|  ap_clk      | grp_dct_dct_2d_fu_198/ap_sig_bdd_105                                                                                                       |                                                        |                1 |              4 |
+|  ap_clk      | grp_dct_dct_2d_fu_198/ap_reg_ppiten_pp1_it10                                                                                               |                                                        |                1 |              4 |
+|  ap_clk      | grp_dct_dct_2d_fu_198/ap_reg_ppiten_pp0_it10                                                                                               |                                                        |                1 |              4 |
+|  ap_clk      | ap_reg_ppiten_pp0_it10                                                                                                                     |                                                        |                1 |              4 |
+|  ap_clk      |                                                                                                                                            | grp_dct_dct_2d_fu_198/ap_reg_ppiten_pp1_it00_3         |                3 |              4 |
+|  ap_clk      |                                                                                                                                            | grp_dct_dct_2d_fu_198/ap_reg_ppiten_pp0_it00           |                3 |              4 |
+|  ap_clk      | grp_dct_dct_2d_fu_198/grp_dct_dct_1d2_fu_223/tmp_25_reg_6470                                                                               |                                                        |                4 |              6 |
+|  ap_clk      | ap_reg_ppiten_pp1_it10                                                                                                                     |                                                        |                2 |              6 |
+|  ap_clk      | grp_dct_dct_2d_fu_198/grp_dct_dct_1d2_fu_223/ap_sig_bdd_147                                                                                |                                                        |                3 |              8 |
+|  ap_clk      | c_i_reg_1540                                                                                                                               | c_i_reg_154                                            |                4 |             11 |
+|  ap_clk      | grp_dct_dct_2d_fu_198/i_1_reg_1670                                                                                                         | grp_dct_dct_2d_fu_198/ap_reg_ppiten_pp0_it00           |                3 |             11 |
+|  ap_clk      | c_i6_reg_1870                                                                                                                              | grp_dct_dct_2d_fu_198/SR[0]                            |                4 |             11 |
+|  ap_clk      | grp_dct_dct_2d_fu_198/i_3_reg_2120                                                                                                         | grp_dct_dct_2d_fu_198/ap_reg_ppiten_pp1_it00_3         |                4 |             11 |
+|  ap_clk      |                                                                                                                                            |                                                        |               12 |             21 |
+|  ap_clk      |                                                                                                                                            | ap_rst                                                 |               11 |             27 |
+|  ap_clk      | grp_dct_dct_2d_fu_198/grp_dct_dct_1d2_fu_223/tmp1_reg_7520                                                                                 |                                                        |                8 |             29 |
++--------------+--------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+
+

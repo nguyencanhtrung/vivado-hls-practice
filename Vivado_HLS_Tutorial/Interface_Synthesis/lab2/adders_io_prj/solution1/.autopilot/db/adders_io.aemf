@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1467187228000">
+  <ports id="1" name="in1" type="PortType" originalName="in1" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="in2" type="PortType" originalName="in2" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="in_out1" type="PortType" originalName="in_out1" bitwidth="32" direction="DirInOut">
+    <dataOutputObjs>read</dataOutputObjs>
+    <dataOutputObjs>write</dataOutputObjs>
+  </ports>
+  <ports id="-3" name="in_out1" type="PortType" originalName="in_out1" bitwidth="32" direction="DirInOut">
+    <dataInputObjs>read</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="21" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="24" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="27" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="28" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="29" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="30" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="31" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="34" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="35" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="-27" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@ports.3"/>
+  <edges id="-34" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@ports.3"/>
+  <blocks id="18" name="adders_io" type="BlockType">
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="in2_read" originalName="in2" bitwidth="32" opcode="read">
+      <dataInputObjs>in2</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="in1_read" originalName="in1" bitwidth="32" opcode="read">
+      <dataInputObjs>in1</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="in_out1_read" lineNumber="50" fileName="adders_io.c" fileDirectory=".." contextFuncName="adders_io" bitwidth="32" opcode="read">
+      <inlineStackInfo fileName="adders_io.c" linenumber="50" fileDirectory="/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Interface_Synthesis/lab2" functionName="adders_io"/>
+      <dataInputObjs>in_out1</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>in_out1</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="tmp1" lineNumber="50" fileName="adders_io.c" fileDirectory=".." rtlName="tmp1_fu_57_p2" contextFuncName="adders_io" bitwidth="32" opcode="add">
+      <inlineStackInfo fileName="adders_io.c" linenumber="50" fileDirectory="/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Interface_Synthesis/lab2" functionName="adders_io"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="tmp_1" lineNumber="50" fileName="adders_io.c" fileDirectory=".." rtlName="in_out1_o" contextFuncName="adders_io" bitwidth="32" opcode="add" nodeLabel="1">
+      <inlineStackInfo fileName="adders_io.c" linenumber="50" fileDirectory="/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Interface_Synthesis/lab2" functionName="adders_io"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="node_16" lineNumber="50" fileName="adders_io.c" fileDirectory=".." contextFuncName="adders_io" opcode="write" nodeLabel="1">
+      <inlineStackInfo fileName="adders_io.c" linenumber="50" fileDirectory="/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Interface_Synthesis/lab2" functionName="adders_io"/>
+      <dataInputObjs>in_out1</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>in_out1</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="node_17" lineNumber="53" fileName="adders_io.c" fileDirectory=".." contextFuncName="adders_io" opcode="ret" nodeLabel="1">
+      <inlineStackInfo fileName="adders_io.c" linenumber="53" fileDirectory="/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Interface_Synthesis/lab2" functionName="adders_io"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="adders_io.c">
+      <validLinenumbers>50</validLinenumbers>
+      <validLinenumbers>53</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <regnodes realName="tmp1_reg_73">
+    <nodeIds>14</nodeIds>
+  </regnodes>
+  <regnodes realName="in_out1_read_reg_68">
+    <nodeIds>13</nodeIds>
+  </regnodes>
+  <expressionNodes realName="tmp1_fu_57">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_fu_63">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="in_out1_read_read_fu_44">
+    <nodeIds>13</nodeIds>
+  </ioNodes>
+  <ioNodes realName="in1_read_read_fu_38">
+    <nodeIds>9</nodeIds>
+  </ioNodes>
+  <ioNodes realName="stg_15_write_fu_50">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioNodes realName="in2_read_read_fu_32">
+    <nodeIds>8</nodeIds>
+  </ioNodes>
+  <ioPorts name="in1">
+    <contents name="read">
+      <nodeIds>9</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="in2">
+    <contents name="read">
+      <nodeIds>8</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="in_out1">
+    <contents name="read">
+      <nodeIds>13</nodeIds>
+    </contents>
+    <contents name="write">
+      <nodeIds>16</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="2"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="adders_io" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="-1">
+      <basicBlocks>18</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

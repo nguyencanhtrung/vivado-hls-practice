@@ -1,0 +1,24 @@
+   Compiling(apcc) ../../../../adders_test.c in debug mode
+@I [HLS-10] Running '/opt/Xilinx/Vivado_HLS/2015.3/bin/unwrapped/lnx64.o/apcc'
+            for user 'ctnguyen' on host 'finance.eit.uni-kl.de' (Linux_x86_64 version 2.6.32-573.12.1.el6.x86_64) on Tue Jun 28 22:50:44 CEST 2016
+            in directory '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Interface_Synthesis/lab1/adders_prj/solution1/csim/build'
+@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+@I [APCC-3] Tmp directory is /tmp/apcc_db_ctnguyen/309541467147044460331
+@I [APCC-1] APCC is done.
+   Compiling(apcc) ../../../../adders.c in debug mode
+@I [HLS-10] Running '/opt/Xilinx/Vivado_HLS/2015.3/bin/unwrapped/lnx64.o/apcc'
+            for user 'ctnguyen' on host 'finance.eit.uni-kl.de' (Linux_x86_64 version 2.6.32-573.12.1.el6.x86_64) on Tue Jun 28 22:50:45 CEST 2016
+            in directory '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Interface_Synthesis/lab1/adders_prj/solution1/csim/build'
+@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+@I [APCC-3] Tmp directory is /tmp/apcc_db_ctnguyen/310101467147045803323
+@I [APCC-1] APCC is done.
+   Generating csim.exe
+  10+20+30=60 
+  20+30+40=90 
+  30+40+50=120 
+  40+50+60=150 
+  50+60+70=180 
+----------Pass!------------
+@I [SIM-1] CSim done with 0 errors.

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="adders_prj" solutionName="solution2" date="2016-06-29T02:18:12.235+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="adders_prj" solutionName="solution2" date="2016-06-29T02:18:12.201+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="adders_prj" solutionName="solution1" date="2016-06-28T23:25:01.364+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="adders_prj" solutionName="solution1" date="2016-06-28T23:25:01.329+0200" type="Warning"/>
+      </synLog>
+      <simLog>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.&#xA;clang: warning: argument unused during compilation: '-fno-builtin-isinf'&#xA;clang: warning: argument unused during compilation: '-fno-builtin-isnan'" projectName="adders_prj" solutionName="solution2" date="2016-06-29T02:18:36.192+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="adders_prj" solutionName="solution2" date="2016-06-29T02:18:36.153+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.&#xA;clang: warning: argument unused during compilation: '-fno-builtin-isinf'&#xA;clang: warning: argument unused during compilation: '-fno-builtin-isnan'" projectName="adders_prj" solutionName="solution2" date="2016-06-29T02:18:36.114+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="adders_prj" solutionName="solution2" date="2016-06-29T02:18:36.062+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="adders_prj" solutionName="solution2" date="2016-06-29T02:18:27.136+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="adders_prj" solutionName="solution2" date="2016-06-29T02:18:27.099+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.&#xA;clang: warning: argument unused during compilation: '-fno-builtin-isinf'&#xA;clang: warning: argument unused during compilation: '-fno-builtin-isnan'" projectName="adders_prj" solutionName="solution1" date="2016-06-29T00:03:19.242+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="adders_prj" solutionName="solution1" date="2016-06-29T00:03:19.199+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.&#xA;clang: warning: argument unused during compilation: '-fno-builtin-isinf'&#xA;clang: warning: argument unused during compilation: '-fno-builtin-isnan'" projectName="adders_prj" solutionName="solution1" date="2016-06-29T00:03:19.166+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="adders_prj" solutionName="solution1" date="2016-06-29T00:03:19.136+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="adders_prj" solutionName="solution1" date="2016-06-29T00:03:12.550+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="adders_prj" solutionName="solution1" date="2016-06-29T00:03:12.522+0200" type="Warning"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

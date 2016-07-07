@@ -1,0 +1,1031 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Tue Jul  5 16:24:45 2016
+# Process ID: 16649
+# Current directory: /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/project.runs/synth_1
+# Command line: vivado -log dct.vds -mode batch -messageDb vivado.pb -notrace -source dct.tcl
+# Log file: /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/project.runs/synth_1/dct.vds
+# Journal file: /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/project.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source dct.tcl -notrace
+Command: synth_design -top dct -part xc7k160tfbg484-1 -no_iobuf -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-1223] The version limit for your license is '2016.06' and will expire in -5 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1132.863 ; gain = 178.840 ; free physical = 1646 ; free virtual = 36608
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'dct' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct.vhd:30]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct.vhd:58]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_2d_col_inbuf_0' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_col_inbuf_0.vhd:77' bound to instance 'buf_2d_in_0_U' of component 'dct_dct_2d_col_inbuf_0' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct.vhd:338]
+INFO: [Synth 8-638] synthesizing module 'dct_dct_2d_col_inbuf_0' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_col_inbuf_0.vhd:92]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_2d_col_inbuf_0_ram' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_col_inbuf_0.vhd:13' bound to instance 'dct_dct_2d_col_inbuf_0_ram_U' of component 'dct_dct_2d_col_inbuf_0_ram' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_col_inbuf_0.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'dct_dct_2d_col_inbuf_0_ram' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_col_inbuf_0.vhd:31]
+	Parameter mem_type bound to: distributed - type: string 
+	Parameter dwidth bound to: 16 - type: integer 
+	Parameter awidth bound to: 3 - type: integer 
+	Parameter mem_size bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dct_dct_2d_col_inbuf_0_ram' (1#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_col_inbuf_0.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'dct_dct_2d_col_inbuf_0' (2#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_col_inbuf_0.vhd:92]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_2d_col_inbuf_0' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_col_inbuf_0.vhd:77' bound to instance 'buf_2d_in_1_U' of component 'dct_dct_2d_col_inbuf_0' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct.vhd:352]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_2d_col_inbuf_0' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_col_inbuf_0.vhd:77' bound to instance 'buf_2d_in_2_U' of component 'dct_dct_2d_col_inbuf_0' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct.vhd:366]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_2d_col_inbuf_0' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_col_inbuf_0.vhd:77' bound to instance 'buf_2d_in_3_U' of component 'dct_dct_2d_col_inbuf_0' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct.vhd:380]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_2d_col_inbuf_0' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_col_inbuf_0.vhd:77' bound to instance 'buf_2d_in_4_U' of component 'dct_dct_2d_col_inbuf_0' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct.vhd:394]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_2d_col_inbuf_0' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_col_inbuf_0.vhd:77' bound to instance 'buf_2d_in_5_U' of component 'dct_dct_2d_col_inbuf_0' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct.vhd:408]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_2d_col_inbuf_0' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_col_inbuf_0.vhd:77' bound to instance 'buf_2d_in_6_U' of component 'dct_dct_2d_col_inbuf_0' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct.vhd:422]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_2d_col_inbuf_0' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_col_inbuf_0.vhd:77' bound to instance 'buf_2d_in_7_U' of component 'dct_dct_2d_col_inbuf_0' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct.vhd:436]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 64 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_2d_row_outbuf' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_row_outbuf.vhd:77' bound to instance 'buf_2d_out_U' of component 'dct_dct_2d_row_outbuf' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct.vhd:450]
+INFO: [Synth 8-638] synthesizing module 'dct_dct_2d_row_outbuf' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_row_outbuf.vhd:92]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 64 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_2d_row_outbuf_ram' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_row_outbuf.vhd:13' bound to instance 'dct_dct_2d_row_outbuf_ram_U' of component 'dct_dct_2d_row_outbuf_ram' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_row_outbuf.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'dct_dct_2d_row_outbuf_ram' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_row_outbuf.vhd:31]
+	Parameter mem_type bound to: block - type: string 
+	Parameter dwidth bound to: 16 - type: integer 
+	Parameter awidth bound to: 6 - type: integer 
+	Parameter mem_size bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dct_dct_2d_row_outbuf_ram' (3#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_row_outbuf.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'dct_dct_2d_row_outbuf' (4#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_row_outbuf.vhd:92]
+INFO: [Synth 8-3491] module 'dct_dct_2d' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d.vhd:12' bound to instance 'grp_dct_dct_2d_fu_167' of component 'dct_dct_2d' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct.vhd:464]
+INFO: [Synth 8-638] synthesizing module 'dct_dct_2d' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d.vhd:51]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d.vhd:86]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 64 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_2d_row_outbuf' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_row_outbuf.vhd:77' bound to instance 'row_outbuf_U' of component 'dct_dct_2d_row_outbuf' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d.vhd:324]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 64 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_2d_row_outbuf' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_row_outbuf.vhd:77' bound to instance 'col_outbuf_U' of component 'dct_dct_2d_row_outbuf' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d.vhd:338]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_2d_col_inbuf_0' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_col_inbuf_0.vhd:77' bound to instance 'col_inbuf_0_U' of component 'dct_dct_2d_col_inbuf_0' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d.vhd:352]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_2d_col_inbuf_0' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_col_inbuf_0.vhd:77' bound to instance 'col_inbuf_1_U' of component 'dct_dct_2d_col_inbuf_0' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d.vhd:366]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_2d_col_inbuf_0' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_col_inbuf_0.vhd:77' bound to instance 'col_inbuf_2_U' of component 'dct_dct_2d_col_inbuf_0' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d.vhd:380]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_2d_col_inbuf_0' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_col_inbuf_0.vhd:77' bound to instance 'col_inbuf_3_U' of component 'dct_dct_2d_col_inbuf_0' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d.vhd:394]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_2d_col_inbuf_0' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_col_inbuf_0.vhd:77' bound to instance 'col_inbuf_4_U' of component 'dct_dct_2d_col_inbuf_0' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d.vhd:408]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_2d_col_inbuf_0' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_col_inbuf_0.vhd:77' bound to instance 'col_inbuf_5_U' of component 'dct_dct_2d_col_inbuf_0' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d.vhd:422]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_2d_col_inbuf_0' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_col_inbuf_0.vhd:77' bound to instance 'col_inbuf_6_U' of component 'dct_dct_2d_col_inbuf_0' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d.vhd:436]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_2d_col_inbuf_0' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d_col_inbuf_0.vhd:77' bound to instance 'col_inbuf_7_U' of component 'dct_dct_2d_col_inbuf_0' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d.vhd:450]
+INFO: [Synth 8-3491] module 'dct_dct_1d' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:12' bound to instance 'grp_dct_dct_1d_fu_361' of component 'dct_dct_1d' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d.vhd:464]
+INFO: [Synth 8-638] synthesizing module 'dct_dct_1d' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:53]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:73]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:167]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:170]
+	Parameter DataWidth bound to: 14 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_1d_dct_coeff_table_0' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_0.vhd:72' bound to instance 'dct_coeff_table_0_U' of component 'dct_dct_1d_dct_coeff_table_0' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:357]
+INFO: [Synth 8-638] synthesizing module 'dct_dct_1d_dct_coeff_table_0' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_0.vhd:85]
+	Parameter DataWidth bound to: 14 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_1d_dct_coeff_table_0_rom' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_0.vhd:12' bound to instance 'dct_dct_1d_dct_coeff_table_0_rom_U' of component 'dct_dct_1d_dct_coeff_table_0_rom' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_0.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'dct_dct_1d_dct_coeff_table_0_rom' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_0.vhd:27]
+	Parameter dwidth bound to: 14 - type: integer 
+	Parameter awidth bound to: 3 - type: integer 
+	Parameter mem_size bound to: 8 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "distributed" *) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_0.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'dct_dct_1d_dct_coeff_table_0_rom' (5#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_0.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'dct_dct_1d_dct_coeff_table_0' (6#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_0.vhd:85]
+	Parameter DataWidth bound to: 15 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_1d_dct_coeff_table_1' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_1.vhd:72' bound to instance 'dct_coeff_table_1_U' of component 'dct_dct_1d_dct_coeff_table_1' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:369]
+INFO: [Synth 8-638] synthesizing module 'dct_dct_1d_dct_coeff_table_1' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_1.vhd:85]
+	Parameter DataWidth bound to: 15 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_1d_dct_coeff_table_1_rom' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_1.vhd:12' bound to instance 'dct_dct_1d_dct_coeff_table_1_rom_U' of component 'dct_dct_1d_dct_coeff_table_1_rom' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_1.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'dct_dct_1d_dct_coeff_table_1_rom' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_1.vhd:27]
+	Parameter dwidth bound to: 15 - type: integer 
+	Parameter awidth bound to: 3 - type: integer 
+	Parameter mem_size bound to: 8 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "distributed" *) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_1.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'dct_dct_1d_dct_coeff_table_1_rom' (7#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_1.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'dct_dct_1d_dct_coeff_table_1' (8#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_1.vhd:85]
+	Parameter DataWidth bound to: 15 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_1d_dct_coeff_table_2' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_2.vhd:72' bound to instance 'dct_coeff_table_2_U' of component 'dct_dct_1d_dct_coeff_table_2' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:381]
+INFO: [Synth 8-638] synthesizing module 'dct_dct_1d_dct_coeff_table_2' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_2.vhd:85]
+	Parameter DataWidth bound to: 15 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_1d_dct_coeff_table_2_rom' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_2.vhd:12' bound to instance 'dct_dct_1d_dct_coeff_table_2_rom_U' of component 'dct_dct_1d_dct_coeff_table_2_rom' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_2.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'dct_dct_1d_dct_coeff_table_2_rom' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_2.vhd:27]
+	Parameter dwidth bound to: 15 - type: integer 
+	Parameter awidth bound to: 3 - type: integer 
+	Parameter mem_size bound to: 8 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "distributed" *) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_2.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'dct_dct_1d_dct_coeff_table_2_rom' (9#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_2.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'dct_dct_1d_dct_coeff_table_2' (10#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_2.vhd:85]
+	Parameter DataWidth bound to: 15 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_1d_dct_coeff_table_3' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_3.vhd:72' bound to instance 'dct_coeff_table_3_U' of component 'dct_dct_1d_dct_coeff_table_3' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:393]
+INFO: [Synth 8-638] synthesizing module 'dct_dct_1d_dct_coeff_table_3' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_3.vhd:85]
+	Parameter DataWidth bound to: 15 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_1d_dct_coeff_table_3_rom' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_3.vhd:12' bound to instance 'dct_dct_1d_dct_coeff_table_3_rom_U' of component 'dct_dct_1d_dct_coeff_table_3_rom' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_3.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'dct_dct_1d_dct_coeff_table_3_rom' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_3.vhd:27]
+	Parameter dwidth bound to: 15 - type: integer 
+	Parameter awidth bound to: 3 - type: integer 
+	Parameter mem_size bound to: 8 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "distributed" *) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_3.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'dct_dct_1d_dct_coeff_table_3_rom' (11#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_3.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'dct_dct_1d_dct_coeff_table_3' (12#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_3.vhd:85]
+	Parameter DataWidth bound to: 15 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_1d_dct_coeff_table_4' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_4.vhd:72' bound to instance 'dct_coeff_table_4_U' of component 'dct_dct_1d_dct_coeff_table_4' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:405]
+INFO: [Synth 8-638] synthesizing module 'dct_dct_1d_dct_coeff_table_4' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_4.vhd:85]
+	Parameter DataWidth bound to: 15 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_1d_dct_coeff_table_4_rom' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_4.vhd:12' bound to instance 'dct_dct_1d_dct_coeff_table_4_rom_U' of component 'dct_dct_1d_dct_coeff_table_4_rom' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_4.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'dct_dct_1d_dct_coeff_table_4_rom' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_4.vhd:27]
+	Parameter dwidth bound to: 15 - type: integer 
+	Parameter awidth bound to: 3 - type: integer 
+	Parameter mem_size bound to: 8 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "distributed" *) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_4.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'dct_dct_1d_dct_coeff_table_4_rom' (13#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_4.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'dct_dct_1d_dct_coeff_table_4' (14#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_4.vhd:85]
+	Parameter DataWidth bound to: 15 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_1d_dct_coeff_table_5' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_5.vhd:72' bound to instance 'dct_coeff_table_5_U' of component 'dct_dct_1d_dct_coeff_table_5' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:417]
+INFO: [Synth 8-638] synthesizing module 'dct_dct_1d_dct_coeff_table_5' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_5.vhd:85]
+	Parameter DataWidth bound to: 15 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_1d_dct_coeff_table_5_rom' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_5.vhd:12' bound to instance 'dct_dct_1d_dct_coeff_table_5_rom_U' of component 'dct_dct_1d_dct_coeff_table_5_rom' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_5.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'dct_dct_1d_dct_coeff_table_5_rom' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_5.vhd:27]
+	Parameter dwidth bound to: 15 - type: integer 
+	Parameter awidth bound to: 3 - type: integer 
+	Parameter mem_size bound to: 8 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "distributed" *) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_5.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'dct_dct_1d_dct_coeff_table_5_rom' (15#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_5.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'dct_dct_1d_dct_coeff_table_5' (16#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_5.vhd:85]
+	Parameter DataWidth bound to: 15 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_1d_dct_coeff_table_6' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_6.vhd:72' bound to instance 'dct_coeff_table_6_U' of component 'dct_dct_1d_dct_coeff_table_6' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:429]
+INFO: [Synth 8-638] synthesizing module 'dct_dct_1d_dct_coeff_table_6' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_6.vhd:85]
+	Parameter DataWidth bound to: 15 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_1d_dct_coeff_table_6_rom' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_6.vhd:12' bound to instance 'dct_dct_1d_dct_coeff_table_6_rom_U' of component 'dct_dct_1d_dct_coeff_table_6_rom' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_6.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'dct_dct_1d_dct_coeff_table_6_rom' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_6.vhd:27]
+	Parameter dwidth bound to: 15 - type: integer 
+	Parameter awidth bound to: 3 - type: integer 
+	Parameter mem_size bound to: 8 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "distributed" *) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_6.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'dct_dct_1d_dct_coeff_table_6_rom' (17#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_6.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'dct_dct_1d_dct_coeff_table_6' (18#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_6.vhd:85]
+	Parameter DataWidth bound to: 15 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_1d_dct_coeff_table_7' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_7.vhd:72' bound to instance 'dct_coeff_table_7_U' of component 'dct_dct_1d_dct_coeff_table_7' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:441]
+INFO: [Synth 8-638] synthesizing module 'dct_dct_1d_dct_coeff_table_7' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_7.vhd:85]
+	Parameter DataWidth bound to: 15 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dct_dct_1d_dct_coeff_table_7_rom' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_7.vhd:12' bound to instance 'dct_dct_1d_dct_coeff_table_7_rom_U' of component 'dct_dct_1d_dct_coeff_table_7_rom' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_7.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'dct_dct_1d_dct_coeff_table_7_rom' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_7.vhd:27]
+	Parameter dwidth bound to: 15 - type: integer 
+	Parameter awidth bound to: 3 - type: integer 
+	Parameter mem_size bound to: 8 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "distributed" *) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_7.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'dct_dct_1d_dct_coeff_table_7_rom' (19#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_7.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'dct_dct_1d_dct_coeff_table_7' (20#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d_dct_coeff_table_7.vhd:85]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 15 - type: integer 
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'dct_mac_muladd_16s_15s_29s_29_1' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mac_muladd_16s_15s_29s_29_1.vhd:42' bound to instance 'dct_mac_muladd_16s_15s_29s_29_1_U10' of component 'dct_mac_muladd_16s_15s_29s_29_1' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:453]
+INFO: [Synth 8-638] synthesizing module 'dct_mac_muladd_16s_15s_29s_29_1' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mac_muladd_16s_15s_29s_29_1.vhd:57]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 15 - type: integer 
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'dct_mac_muladd_16s_15s_29s_29_1_DSP48_0' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mac_muladd_16s_15s_29s_29_1.vhd:12' bound to instance 'dct_mac_muladd_16s_15s_29s_29_1_DSP48_0_U' of component 'dct_mac_muladd_16s_15s_29s_29_1_DSP48_0' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mac_muladd_16s_15s_29s_29_1.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'dct_mac_muladd_16s_15s_29s_29_1_DSP48_0' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mac_muladd_16s_15s_29s_29_1.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'dct_mac_muladd_16s_15s_29s_29_1_DSP48_0' (21#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mac_muladd_16s_15s_29s_29_1.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'dct_mac_muladd_16s_15s_29s_29_1' (22#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mac_muladd_16s_15s_29s_29_1.vhd:57]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 15 - type: integer 
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'dct_mac_muladd_16s_15s_29s_29_1' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mac_muladd_16s_15s_29s_29_1.vhd:42' bound to instance 'dct_mac_muladd_16s_15s_29s_29_1_U11' of component 'dct_mac_muladd_16s_15s_29s_29_1' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:467]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 15 - type: integer 
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'dct_mac_muladd_16s_15s_29s_29_1' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mac_muladd_16s_15s_29s_29_1.vhd:42' bound to instance 'dct_mac_muladd_16s_15s_29s_29_1_U12' of component 'dct_mac_muladd_16s_15s_29s_29_1' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:481]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 15 - type: integer 
+	Parameter din2_WIDTH bound to: 14 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'dct_mac_muladd_16s_15s_14ns_29_1' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mac_muladd_16s_15s_14ns_29_1.vhd:42' bound to instance 'dct_mac_muladd_16s_15s_14ns_29_1_U13' of component 'dct_mac_muladd_16s_15s_14ns_29_1' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:495]
+INFO: [Synth 8-638] synthesizing module 'dct_mac_muladd_16s_15s_14ns_29_1' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mac_muladd_16s_15s_14ns_29_1.vhd:57]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 15 - type: integer 
+	Parameter din2_WIDTH bound to: 14 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'dct_mac_muladd_16s_15s_14ns_29_1_DSP48_1' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mac_muladd_16s_15s_14ns_29_1.vhd:12' bound to instance 'dct_mac_muladd_16s_15s_14ns_29_1_DSP48_1_U' of component 'dct_mac_muladd_16s_15s_14ns_29_1_DSP48_1' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mac_muladd_16s_15s_14ns_29_1.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'dct_mac_muladd_16s_15s_14ns_29_1_DSP48_1' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mac_muladd_16s_15s_14ns_29_1.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'dct_mac_muladd_16s_15s_14ns_29_1_DSP48_1' (23#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mac_muladd_16s_15s_14ns_29_1.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'dct_mac_muladd_16s_15s_14ns_29_1' (24#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mac_muladd_16s_15s_14ns_29_1.vhd:57]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 15 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'dct_mul_mul_16s_15s_29_1' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mul_mul_16s_15s_29_1.vhd:31' bound to instance 'dct_mul_mul_16s_15s_29_1_U14' of component 'dct_mul_mul_16s_15s_29_1' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:509]
+INFO: [Synth 8-638] synthesizing module 'dct_mul_mul_16s_15s_29_1' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mul_mul_16s_15s_29_1.vhd:44]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 15 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'dct_mul_mul_16s_15s_29_1_DSP48_2' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mul_mul_16s_15s_29_1.vhd:6' bound to instance 'dct_mul_mul_16s_15s_29_1_DSP48_2_U' of component 'dct_mul_mul_16s_15s_29_1_DSP48_2' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mul_mul_16s_15s_29_1.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'dct_mul_mul_16s_15s_29_1_DSP48_2' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mul_mul_16s_15s_29_1.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'dct_mul_mul_16s_15s_29_1_DSP48_2' (25#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mul_mul_16s_15s_29_1.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'dct_mul_mul_16s_15s_29_1' (26#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mul_mul_16s_15s_29_1.vhd:44]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 15 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'dct_mul_mul_16s_15s_29_1' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mul_mul_16s_15s_29_1.vhd:31' bound to instance 'dct_mul_mul_16s_15s_29_1_U15' of component 'dct_mul_mul_16s_15s_29_1' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:521]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 15 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'dct_mul_mul_16s_15s_29_1' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mul_mul_16s_15s_29_1.vhd:31' bound to instance 'dct_mul_mul_16s_15s_29_1_U16' of component 'dct_mul_mul_16s_15s_29_1' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:533]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 14 - type: integer 
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'dct_mac_muladd_16s_14ns_29s_29_1' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mac_muladd_16s_14ns_29s_29_1.vhd:42' bound to instance 'dct_mac_muladd_16s_14ns_29s_29_1_U17' of component 'dct_mac_muladd_16s_14ns_29s_29_1' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:545]
+INFO: [Synth 8-638] synthesizing module 'dct_mac_muladd_16s_14ns_29s_29_1' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mac_muladd_16s_14ns_29s_29_1.vhd:57]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 14 - type: integer 
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'dct_mac_muladd_16s_14ns_29s_29_1_DSP48_3' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mac_muladd_16s_14ns_29s_29_1.vhd:12' bound to instance 'dct_mac_muladd_16s_14ns_29s_29_1_DSP48_3_U' of component 'dct_mac_muladd_16s_14ns_29s_29_1_DSP48_3' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mac_muladd_16s_14ns_29s_29_1.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'dct_mac_muladd_16s_14ns_29s_29_1_DSP48_3' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mac_muladd_16s_14ns_29s_29_1.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'dct_mac_muladd_16s_14ns_29s_29_1_DSP48_3' (27#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mac_muladd_16s_14ns_29s_29_1.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'dct_mac_muladd_16s_14ns_29s_29_1' (28#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_mac_muladd_16s_14ns_29s_29_1.vhd:57]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_5_reg_544_pp0_it3_reg' and it is trimmed from '8' to '6' bits. [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:672]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_5_reg_544_pp0_it2_reg' and it is trimmed from '8' to '6' bits. [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:671]
+INFO: [Synth 8-256] done synthesizing module 'dct_dct_1d' (29#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'dct_dct_2d' (30#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d.vhd:51]
+INFO: [Synth 8-3491] module 'dct_read_data' declared at '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_read_data.vhd:12' bound to instance 'grp_dct_read_data_fu_196' of component 'dct_read_data' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct.vhd:501]
+INFO: [Synth 8-638] synthesizing module 'dct_read_data' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_read_data.vhd:58]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_read_data.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'dct_read_data' (31#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_read_data.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'dct' (32#1) [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct.vhd:30]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1174.246 ; gain = 220.223 ; free physical = 1603 ; free virtual = 36566
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1174.246 ; gain = 220.223 ; free physical = 1603 ; free virtual = 36566
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k160tfbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct.xdc]
+Finished Parsing XDC File [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1476.605 ; gain = 0.000 ; free physical = 1321 ; free virtual = 36284
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16752 
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1476.609 ; gain = 522.586 ; free physical = 1318 ; free virtual = 36281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tfbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1476.609 ; gain = 522.586 ; free physical = 1318 ; free virtual = 36281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1476.609 ; gain = 522.586 ; free physical = 1318 ; free virtual = 36281
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "mem". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "mem". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "mem". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "mem". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "mem". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "mem". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "mem". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "mem". This will be implemented in logic
+INFO: [Synth 8-4471] merging register 'src2_addr_reg_505_reg[2:0]' into 'src1_addr_reg_500_reg[2:0]' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:717]
+INFO: [Synth 8-4471] merging register 'src3_addr_reg_510_reg[2:0]' into 'src1_addr_reg_500_reg[2:0]' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:718]
+INFO: [Synth 8-4471] merging register 'src4_addr_reg_515_reg[2:0]' into 'src1_addr_reg_500_reg[2:0]' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:719]
+INFO: [Synth 8-4471] merging register 'src5_addr_reg_520_reg[2:0]' into 'src1_addr_reg_500_reg[2:0]' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:720]
+INFO: [Synth 8-4471] merging register 'src6_addr_reg_525_reg[2:0]' into 'src1_addr_reg_500_reg[2:0]' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:721]
+INFO: [Synth 8-4471] merging register 'src7_addr_reg_530_reg[2:0]' into 'src1_addr_reg_500_reg[2:0]' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:722]
+INFO: [Synth 8-4471] merging register 'src_addr_reg_495_reg[2:0]' into 'src1_addr_reg_500_reg[2:0]' [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:723]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_5_reg_544_pp0_it1_reg' and it is trimmed from '8' to '6' bits. [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:671]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_5_reg_544_reg' and it is trimmed from '8' to '6' bits. [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_1d.vhd:683]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "exitcond1_fu_323_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "exitcond_fu_434_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond1_fu_534_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond5_fu_404_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_416_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "exitcond2_fu_504_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exitcond_flatten1_fu_516_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "exitcond_fu_237_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_219_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "exitcond_i3_fu_236_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_218_p2" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1476.609 ; gain = 522.586 ; free physical = 1322 ; free virtual = 36285
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     29 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 15    
++---Registers : 
+	               29 Bit    Registers := 4     
+	               16 Bit    Registers := 28    
+	               15 Bit    Registers := 16    
+	               14 Bit    Registers := 3     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 4     
+	                6 Bit    Registers := 6     
+	                4 Bit    Registers := 18    
+	                3 Bit    Registers := 5     
+	                1 Bit    Registers := 24    
++---RAMs : 
+	             1024 Bit         RAMs := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 24    
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 5     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 12    
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 18    
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 43    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module dct 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 9     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 15    
+Module dct_dct_2d_col_inbuf_0_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module dct_dct_2d_row_outbuf_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module dct_dct_1d_dct_coeff_table_0_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               14 Bit    Registers := 1     
+Module dct_dct_1d_dct_coeff_table_1_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 1     
+Module dct_dct_1d_dct_coeff_table_2_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 1     
+Module dct_dct_1d_dct_coeff_table_3_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 1     
+Module dct_dct_1d_dct_coeff_table_4_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 1     
+Module dct_dct_1d_dct_coeff_table_5_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 1     
+Module dct_dct_1d_dct_coeff_table_6_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 1     
+Module dct_dct_1d_dct_coeff_table_7_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 1     
+Module dct_dct_1d 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     29 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               29 Bit    Registers := 4     
+	               16 Bit    Registers := 9     
+	               15 Bit    Registers := 9     
+	               14 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module dct_dct_2d 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 8     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 11    
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 8     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 8     
+	   2 Input      3 Bit        Muxes := 9     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 21    
+Module dct_read_data 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1476.613 ; gain = 522.590 ; free physical = 1322 ; free virtual = 36286
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d.vhd:1612]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Analysis/lab1/dct_prj/solution4/impl/vhdl/dct_dct_2d.vhd:1611]
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "grp_dct_dct_2d_fu_167/exitcond_flatten_fu_416_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grp_dct_dct_2d_fu_167/exitcond_flatten1_fu_516_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grp_dct_read_data_fu_196/exitcond_flatten_fu_219_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_218_p2" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_15s_14ns_29_1_U13/dct_mac_muladd_16s_15s_14ns_29_1_DSP48_1_U/p, operation Mode is: (C:0x1000)+A2*B''.
+DSP Report: register grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_7_U/dct_dct_1d_dct_coeff_table_7_rom_U/q0_reg is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_15s_14ns_29_1_U13/dct_mac_muladd_16s_15s_14ns_29_1_DSP48_1_U/p.
+DSP Report: register grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_7_load_reg_644_reg is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_15s_14ns_29_1_U13/dct_mac_muladd_16s_15s_14ns_29_1_DSP48_1_U/p.
+DSP Report: register grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/src7_load_reg_649_reg is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_15s_14ns_29_1_U13/dct_mac_muladd_16s_15s_14ns_29_1_DSP48_1_U/p.
+DSP Report: operator grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_15s_14ns_29_1_U13/dct_mac_muladd_16s_15s_14ns_29_1_DSP48_1_U/p is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_15s_14ns_29_1_U13/dct_mac_muladd_16s_15s_14ns_29_1_DSP48_1_U/p.
+DSP Report: operator grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_15s_14ns_29_1_U13/dct_mac_muladd_16s_15s_14ns_29_1_DSP48_1_U/m is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_15s_14ns_29_1_U13/dct_mac_muladd_16s_15s_14ns_29_1_DSP48_1_U/p.
+DSP Report: Generating DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp6_reg_684_reg, operation Mode is: (PCIN+A2*B'')'.
+DSP Report: register grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_6_U/dct_dct_1d_dct_coeff_table_6_rom_U/q0_reg is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp6_reg_684_reg.
+DSP Report: register grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_6_load_reg_634_reg is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp6_reg_684_reg.
+DSP Report: register grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/src6_load_reg_639_reg is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp6_reg_684_reg.
+DSP Report: register grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp6_reg_684_reg is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp6_reg_684_reg.
+DSP Report: operator grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_15s_29s_29_1_U12/dct_mac_muladd_16s_15s_29s_29_1_DSP48_0_U/p is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp6_reg_684_reg.
+DSP Report: operator grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_15s_29s_29_1_U12/dct_mac_muladd_16s_15s_29s_29_1_DSP48_0_U/m is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp6_reg_684_reg.
+DSP Report: Generating DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp_10_5_reg_679_reg, operation Mode is: (A2*B'')'.
+DSP Report: register grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_5_U/dct_dct_1d_dct_coeff_table_5_rom_U/q0_reg is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp_10_5_reg_679_reg.
+DSP Report: register grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_5_load_reg_624_reg is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp_10_5_reg_679_reg.
+DSP Report: register grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/src5_load_reg_629_reg is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp_10_5_reg_679_reg.
+DSP Report: register grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp_10_5_reg_679_reg is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp_10_5_reg_679_reg.
+DSP Report: operator grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mul_mul_16s_15s_29_1_U15/dct_mul_mul_16s_15s_29_1_DSP48_2_U/p_cvt is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp_10_5_reg_679_reg.
+DSP Report: Generating DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_15s_29s_29_1_U11/dct_mac_muladd_16s_15s_29s_29_1_DSP48_0_U/p, operation Mode is: PCIN+A2*B''.
+DSP Report: register grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_4_load_reg_619_reg is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_15s_29s_29_1_U11/dct_mac_muladd_16s_15s_29s_29_1_DSP48_0_U/p.
+DSP Report: register grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/ap_reg_ppstg_dct_coeff_table_4_load_reg_619_pp0_it2_reg is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_15s_29s_29_1_U11/dct_mac_muladd_16s_15s_29s_29_1_DSP48_0_U/p.
+DSP Report: register grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/src4_load_reg_674_reg is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_15s_29s_29_1_U11/dct_mac_muladd_16s_15s_29s_29_1_DSP48_0_U/p.
+DSP Report: operator grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_15s_29s_29_1_U11/dct_mac_muladd_16s_15s_29s_29_1_DSP48_0_U/p is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_15s_29s_29_1_U11/dct_mac_muladd_16s_15s_29s_29_1_DSP48_0_U/p.
+DSP Report: operator grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_15s_29s_29_1_U11/dct_mac_muladd_16s_15s_29s_29_1_DSP48_0_U/m is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_15s_29s_29_1_U11/dct_mac_muladd_16s_15s_29s_29_1_DSP48_0_U/p.
+DSP Report: Generating DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp_10_3_reg_669_reg, operation Mode is: (A2*B'')'.
+DSP Report: register grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_3_U/dct_dct_1d_dct_coeff_table_3_rom_U/q0_reg is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp_10_3_reg_669_reg.
+DSP Report: register grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_3_load_reg_609_reg is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp_10_3_reg_669_reg.
+DSP Report: register grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/src3_load_reg_614_reg is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp_10_3_reg_669_reg.
+DSP Report: register grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp_10_3_reg_669_reg is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp_10_3_reg_669_reg.
+DSP Report: operator grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mul_mul_16s_15s_29_1_U16/dct_mul_mul_16s_15s_29_1_DSP48_2_U/p_cvt is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp_10_3_reg_669_reg.
+DSP Report: Generating DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_15s_29s_29_1_U10/dct_mac_muladd_16s_15s_29s_29_1_DSP48_0_U/p, operation Mode is: PCIN+A2*B''.
+DSP Report: register grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_2_load_reg_604_reg is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_15s_29s_29_1_U10/dct_mac_muladd_16s_15s_29s_29_1_DSP48_0_U/p.
+DSP Report: register grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/ap_reg_ppstg_dct_coeff_table_2_load_reg_604_pp0_it2_reg is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_15s_29s_29_1_U10/dct_mac_muladd_16s_15s_29s_29_1_DSP48_0_U/p.
+DSP Report: register grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/src2_load_reg_664_reg is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_15s_29s_29_1_U10/dct_mac_muladd_16s_15s_29s_29_1_DSP48_0_U/p.
+DSP Report: operator grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_15s_29s_29_1_U10/dct_mac_muladd_16s_15s_29s_29_1_DSP48_0_U/p is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_15s_29s_29_1_U10/dct_mac_muladd_16s_15s_29s_29_1_DSP48_0_U/p.
+DSP Report: operator grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_15s_29s_29_1_U10/dct_mac_muladd_16s_15s_29s_29_1_DSP48_0_U/m is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_15s_29s_29_1_U10/dct_mac_muladd_16s_15s_29s_29_1_DSP48_0_U/p.
+DSP Report: Generating DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp_10_1_reg_659_reg, operation Mode is: (A2*B'')'.
+DSP Report: register grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_1_U/dct_dct_1d_dct_coeff_table_1_rom_U/q0_reg is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp_10_1_reg_659_reg.
+DSP Report: register grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_1_load_reg_594_reg is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp_10_1_reg_659_reg.
+DSP Report: register grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/src1_load_reg_599_reg is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp_10_1_reg_659_reg.
+DSP Report: register grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp_10_1_reg_659_reg is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp_10_1_reg_659_reg.
+DSP Report: operator grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mul_mul_16s_15s_29_1_U14/dct_mul_mul_16s_15s_29_1_DSP48_2_U/p_cvt is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp_10_1_reg_659_reg.
+DSP Report: Generating DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_14ns_29s_29_1_U17/dct_mac_muladd_16s_14ns_29s_29_1_DSP48_3_U/p, operation Mode is: PCIN+A2*B''.
+DSP Report: register B is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_14ns_29s_29_1_U17/dct_mac_muladd_16s_14ns_29s_29_1_DSP48_3_U/p.
+DSP Report: register B is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_14ns_29s_29_1_U17/dct_mac_muladd_16s_14ns_29s_29_1_DSP48_3_U/p.
+DSP Report: register grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/src_load_reg_654_reg is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_14ns_29s_29_1_U17/dct_mac_muladd_16s_14ns_29s_29_1_DSP48_3_U/p.
+DSP Report: operator grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_14ns_29s_29_1_U17/dct_mac_muladd_16s_14ns_29s_29_1_DSP48_3_U/p is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_14ns_29s_29_1_U17/dct_mac_muladd_16s_14ns_29s_29_1_DSP48_3_U/p.
+DSP Report: operator grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_14ns_29s_29_1_U17/dct_mac_muladd_16s_14ns_29s_29_1_DSP48_3_U/m is absorbed into DSP grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_mac_muladd_16s_14ns_29s_29_1_U17/dct_mac_muladd_16s_14ns_29s_29_1_DSP48_3_U/p.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1476.613 ; gain = 522.590 ; free physical = 1324 ; free virtual = 36288
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1476.613 ; gain = 522.590 ; free physical = 1324 ; free virtual = 36288
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------------------------+------------+---------------+----------------+
+|Module Name                      | RTL Object | Depth x Width | Implemented As | 
++---------------------------------+------------+---------------+----------------+
+|dct_dct_1d_dct_coeff_table_0_rom | rom        | 8x14          | LUT            | 
+|dct_dct_1d_dct_coeff_table_1_rom | rom__1     | 8x15          | LUT            | 
+|dct_dct_1d_dct_coeff_table_2_rom | rom__2     | 8x15          | LUT            | 
+|dct_dct_1d_dct_coeff_table_3_rom | rom__3     | 8x15          | LUT            | 
+|dct_dct_1d_dct_coeff_table_4_rom | rom__4     | 8x15          | LUT            | 
+|dct_dct_1d_dct_coeff_table_5_rom | rom__5     | 8x15          | LUT            | 
+|dct_dct_1d_dct_coeff_table_6_rom | rom__6     | 8x15          | LUT            | 
+|dct_dct_1d_dct_coeff_table_7_rom | rom__7     | 8x15          | LUT            | 
++---------------------------------+------------+---------------+----------------+
+
+
+Block RAM:
++------------+------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+---------+--------+--------+-------------------+
+|Module Name | RTL Object                                                             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | OUT_REG | RAMB18 | RAMB36 | Hierarchical Name | 
++------------+------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+---------+--------+--------+-------------------+
+|dct         | buf_2d_out_U/dct_dct_2d_row_outbuf_ram_U/ram_reg                       | 64 x 16(WRITE_FIRST)   | W | R |                        |   |   | Port A  | 1      | 0      | dct/extram__4     | 
+|dct         | grp_dct_dct_2d_fu_167/row_outbuf_U/dct_dct_2d_row_outbuf_ram_U/ram_reg | 64 x 16(WRITE_FIRST)   | W | R |                        |   |   | Port A  | 1      | 0      | dct/extram__6     | 
+|dct         | grp_dct_dct_2d_fu_167/col_outbuf_U/dct_dct_2d_row_outbuf_ram_U/ram_reg | 64 x 16(WRITE_FIRST)   | W | R |                        |   |   | Port A  | 1      | 0      | dct/extram__8     | 
++------------+------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+---------+--------+--------+-------------------+
+
+Note: The table above shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. "Hierarchical Name" reflects the Block RAM name as it appears in the hierarchical module and only part of it is displayed.
+Distributed RAM: 
++------------+--------------------------------------------------------------------------+----------------+----------------------+-----------------+-------------------+
+|Module Name | RTL Object                                                               | Inference      | Size (Depth x Width) | Primitives      | Hierarchical Name | 
++------------+--------------------------------------------------------------------------+----------------+----------------------+-----------------+-------------------+
+|dct         | buf_2d_in_7_U/dct_dct_2d_col_inbuf_0_ram_U/ram_reg                       | User Attribute | 8 x 16               | RAM16X1S x 16   | dct/ram__32       | 
+|dct         | grp_dct_dct_2d_fu_167/col_inbuf_7_U/dct_dct_2d_col_inbuf_0_ram_U/ram_reg | User Attribute | 8 x 16               | RAM16X1S x 16   | dct/ram__34       | 
+|dct         | buf_2d_in_6_U/dct_dct_2d_col_inbuf_0_ram_U/ram_reg                       | User Attribute | 8 x 16               | RAM16X1S x 16   | dct/ram__36       | 
+|dct         | grp_dct_dct_2d_fu_167/col_inbuf_6_U/dct_dct_2d_col_inbuf_0_ram_U/ram_reg | User Attribute | 8 x 16               | RAM16X1S x 16   | dct/ram__38       | 
+|dct         | buf_2d_in_5_U/dct_dct_2d_col_inbuf_0_ram_U/ram_reg                       | User Attribute | 8 x 16               | RAM16X1S x 16   | dct/ram__40       | 
+|dct         | grp_dct_dct_2d_fu_167/col_inbuf_5_U/dct_dct_2d_col_inbuf_0_ram_U/ram_reg | User Attribute | 8 x 16               | RAM16X1S x 16   | dct/ram__42       | 
+|dct         | buf_2d_in_4_U/dct_dct_2d_col_inbuf_0_ram_U/ram_reg                       | User Attribute | 8 x 16               | RAM16X1S x 16   | dct/ram__44       | 
+|dct         | grp_dct_dct_2d_fu_167/col_inbuf_4_U/dct_dct_2d_col_inbuf_0_ram_U/ram_reg | User Attribute | 8 x 16               | RAM16X1S x 16   | dct/ram__46       | 
+|dct         | buf_2d_in_3_U/dct_dct_2d_col_inbuf_0_ram_U/ram_reg                       | User Attribute | 8 x 16               | RAM16X1S x 16   | dct/ram__48       | 
+|dct         | grp_dct_dct_2d_fu_167/col_inbuf_3_U/dct_dct_2d_col_inbuf_0_ram_U/ram_reg | User Attribute | 8 x 16               | RAM16X1S x 16   | dct/ram__50       | 
+|dct         | buf_2d_in_2_U/dct_dct_2d_col_inbuf_0_ram_U/ram_reg                       | User Attribute | 8 x 16               | RAM16X1S x 16   | dct/ram__52       | 
+|dct         | grp_dct_dct_2d_fu_167/col_inbuf_2_U/dct_dct_2d_col_inbuf_0_ram_U/ram_reg | User Attribute | 8 x 16               | RAM16X1S x 16   | dct/ram__54       | 
+|dct         | buf_2d_in_1_U/dct_dct_2d_col_inbuf_0_ram_U/ram_reg                       | User Attribute | 8 x 16               | RAM16X1S x 16   | dct/ram__56       | 
+|dct         | grp_dct_dct_2d_fu_167/col_inbuf_1_U/dct_dct_2d_col_inbuf_0_ram_U/ram_reg | User Attribute | 8 x 16               | RAM16X1S x 16   | dct/ram__58       | 
+|dct         | buf_2d_in_0_U/dct_dct_2d_col_inbuf_0_ram_U/ram_reg                       | User Attribute | 8 x 16               | RAM16X1S x 16   | dct/ram__60       | 
+|dct         | grp_dct_dct_2d_fu_167/col_inbuf_0_U/dct_dct_2d_col_inbuf_0_ram_U/ram_reg | User Attribute | 8 x 16               | RAM16X1S x 16   | dct/ram__62       | 
++------------+--------------------------------------------------------------------------+----------------+----------------------+-----------------+-------------------+
+
+Note: The table above shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the Distributed RAM name as it appears in the hierarchical module and only part of it is displayed.
+DSP:
++------------+-------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping       | Neg Edge Clk | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dct         | (C:0x1000)+A2*B'' | No           | 16     | 15     | 14     | 25     | 29     | 1    | 2    | 0    | 1    | 1     | 0    | 0    | 
+|dct         | (PCIN+A2*B'')'    | No           | 16     | 15     | 29     | 25     | 29     | 1    | 2    | 1    | 1    | 1     | 0    | 1    | 
+|dct         | (A2*B'')'         | No           | 16     | 15     | 48     | 25     | 31     | 1    | 2    | 1    | 1    | 1     | 1    | 0    | 
+|dct         | PCIN+A2*B''       | No           | 16     | 15     | 29     | 25     | 29     | 1    | 2    | 1    | 1    | 1     | 0    | 0    | 
+|dct         | (A2*B'')'         | No           | 16     | 15     | 48     | 25     | 31     | 1    | 2    | 1    | 1    | 1     | 1    | 0    | 
+|dct         | PCIN+A2*B''       | No           | 16     | 15     | 29     | 25     | 29     | 1    | 2    | 1    | 1    | 1     | 0    | 0    | 
+|dct         | (A2*B'')'         | No           | 16     | 15     | 48     | 25     | 31     | 1    | 2    | 1    | 1    | 1     | 1    | 0    | 
+|dct         | PCIN+A2*B''       | No           | 16     | 15     | 29     | 25     | 29     | 1    | 2    | 1    | 1    | 1     | 0    | 0    | 
++------------+-------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance '\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/src1_addr_reg_500_reg[2] ' (FDE) to '\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp_16_cast_reg_490_reg[5] '
+INFO: [Synth 8-3886] merging instance '\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/src1_addr_reg_500_reg[1] ' (FDE) to '\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp_16_cast_reg_490_reg[4] '
+INFO: [Synth 8-3886] merging instance '\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/src1_addr_reg_500_reg[0] ' (FDE) to '\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp_16_cast_reg_490_reg[3] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_0_U/dct_dct_1d_dct_coeff_table_0_rom_U/q0_reg[9] )
+INFO: [Synth 8-3886] merging instance '\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_2_U/dct_dct_1d_dct_coeff_table_2_rom_U/q0_reg[1] ' (FDE) to '\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_2_U/dct_dct_1d_dct_coeff_table_2_rom_U/q0_reg[3] '
+INFO: [Synth 8-3886] merging instance '\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_4_U/dct_dct_1d_dct_coeff_table_4_rom_U/q0_reg[9] ' (FDE) to '\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_4_U/dct_dct_1d_dct_coeff_table_4_rom_U/q0_reg[14] '
+WARNING: [Synth 8-3332] Sequential element (\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp_16_cast_reg_490_reg[6] ) is unused and will be removed from module dct.
+WARNING: [Synth 8-3332] Sequential element (\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_4_U/dct_dct_1d_dct_coeff_table_4_rom_U/q0_reg[9] ) is unused and will be removed from module dct.
+WARNING: [Synth 8-3332] Sequential element (\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_2_U/dct_dct_1d_dct_coeff_table_2_rom_U/q0_reg[1] ) is unused and will be removed from module dct.
+WARNING: [Synth 8-3332] Sequential element (\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_0_U/dct_dct_1d_dct_coeff_table_0_rom_U/q0_reg[9] ) is unused and will be removed from module dct.
+WARNING: [Synth 8-3332] Sequential element (\grp_dct_read_data_fu_196/r_mid2_reg_316_reg[3] ) is unused and will be removed from module dct.
+WARNING: [Synth 8-3332] Sequential element (\grp_dct_read_data_fu_196/r_reg_197_reg[3] ) is unused and will be removed from module dct.
+WARNING: [Synth 8-3332] Sequential element (\r_i_mid2_reg_326_reg[3] ) is unused and will be removed from module dct.
+WARNING: [Synth 8-3332] Sequential element (\r_i_reg_145_reg[3] ) is unused and will be removed from module dct.
+WARNING: [Synth 8-3332] Sequential element (\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/src1_addr_reg_500_reg[2] ) is unused and will be removed from module dct.
+WARNING: [Synth 8-3332] Sequential element (\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/src1_addr_reg_500_reg[1] ) is unused and will be removed from module dct.
+WARNING: [Synth 8-3332] Sequential element (\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/src1_addr_reg_500_reg[0] ) is unused and will be removed from module dct.
+INFO: [Synth 8-3886] merging instance '\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_0_U/dct_dct_1d_dct_coeff_table_0_rom_U/q0_reg[3] ' (FDE) to '\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_4_U/dct_dct_1d_dct_coeff_table_4_rom_U/q0_reg[4] '
+INFO: [Synth 8-3886] merging instance '\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_0_U/dct_dct_1d_dct_coeff_table_0_rom_U/q0_reg[4] ' (FDE) to '\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_4_U/dct_dct_1d_dct_coeff_table_4_rom_U/q0_reg[1] '
+INFO: [Synth 8-3886] merging instance '\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_0_U/dct_dct_1d_dct_coeff_table_0_rom_U/q0_reg[6] ' (FDE) to '\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_4_U/dct_dct_1d_dct_coeff_table_4_rom_U/q0_reg[10] '
+INFO: [Synth 8-3886] merging instance '\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_0_U/dct_dct_1d_dct_coeff_table_0_rom_U/q0_reg[10] ' (FDE) to '\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_2_U/dct_dct_1d_dct_coeff_table_2_rom_U/q0_reg[12] '
+INFO: [Synth 8-3886] merging instance '\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_0_U/dct_dct_1d_dct_coeff_table_0_rom_U/q0_reg[12] ' (FDE) to '\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_2_U/dct_dct_1d_dct_coeff_table_2_rom_U/q0_reg[6] '
+INFO: [Synth 8-3886] merging instance '\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_2_U/dct_dct_1d_dct_coeff_table_2_rom_U/q0_reg[0] ' (FDE) to '\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_4_U/dct_dct_1d_dct_coeff_table_4_rom_U/q0_reg[0] '
+INFO: [Synth 8-3886] merging instance '\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_2_U/dct_dct_1d_dct_coeff_table_2_rom_U/q0_reg[11] ' (FDE) to '\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_4_U/dct_dct_1d_dct_coeff_table_4_rom_U/q0_reg[14] '
+INFO: [Synth 8-3886] merging instance '\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_2_U/dct_dct_1d_dct_coeff_table_2_rom_U/q0_reg[12] ' (FDE) to '\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_4_U/dct_dct_1d_dct_coeff_table_4_rom_U/q0_reg[8] '
+WARNING: [Synth 8-3332] Sequential element (\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_0_U/dct_dct_1d_dct_coeff_table_0_rom_U/q0_reg[3] ) is unused and will be removed from module dct.
+WARNING: [Synth 8-3332] Sequential element (\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_0_U/dct_dct_1d_dct_coeff_table_0_rom_U/q0_reg[4] ) is unused and will be removed from module dct.
+WARNING: [Synth 8-3332] Sequential element (\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_0_U/dct_dct_1d_dct_coeff_table_0_rom_U/q0_reg[6] ) is unused and will be removed from module dct.
+WARNING: [Synth 8-3332] Sequential element (\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_2_U/dct_dct_1d_dct_coeff_table_2_rom_U/q0_reg[12] ) is unused and will be removed from module dct.
+WARNING: [Synth 8-3332] Sequential element (\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_0_U/dct_dct_1d_dct_coeff_table_0_rom_U/q0_reg[10] ) is unused and will be removed from module dct.
+WARNING: [Synth 8-3332] Sequential element (\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_0_U/dct_dct_1d_dct_coeff_table_0_rom_U/q0_reg[12] ) is unused and will be removed from module dct.
+WARNING: [Synth 8-3332] Sequential element (\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_2_U/dct_dct_1d_dct_coeff_table_2_rom_U/q0_reg[0] ) is unused and will be removed from module dct.
+WARNING: [Synth 8-3332] Sequential element (\grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_2_U/dct_dct_1d_dct_coeff_table_2_rom_U/q0_reg[11] ) is unused and will be removed from module dct.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1476.613 ; gain = 522.590 ; free physical = 1324 ; free virtual = 36287
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1476.613 ; gain = 522.590 ; free physical = 1324 ; free virtual = 36287
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1505.605 ; gain = 551.582 ; free physical = 1288 ; free virtual = 36251
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1509.605 ; gain = 555.582 ; free physical = 1284 ; free virtual = 36248
+---------------------------------------------------------------------------------
+Finished Parallel Timing Optimization  : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1509.605 ; gain = 555.582 ; free physical = 1284 ; free virtual = 36248
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1509.605 ; gain = 555.582 ; free physical = 1284 ; free virtual = 36248
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance \buf_2d_out_U/dct_dct_2d_row_outbuf_ram_U/ram_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \grp_dct_dct_2d_fu_167/row_outbuf_U/dct_dct_2d_row_outbuf_ram_U/ram_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \grp_dct_dct_2d_fu_167/col_outbuf_U/dct_dct_2d_row_outbuf_ram_U/ram_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1529.637 ; gain = 575.613 ; free physical = 1265 ; free virtual = 36229
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1529.637 ; gain = 575.613 ; free physical = 1266 ; free virtual = 36230
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1529.637 ; gain = 575.613 ; free physical = 1266 ; free virtual = 36230
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1529.637 ; gain = 575.613 ; free physical = 1266 ; free virtual = 36230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1529.637 ; gain = 575.613 ; free physical = 1266 ; free virtual = 36230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1529.637 ; gain = 575.613 ; free physical = 1266 ; free virtual = 36230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1529.637 ; gain = 575.613 ; free physical = 1266 ; free virtual = 36230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    24|
+|2     |DSP48E1   |     1|
+|3     |DSP48E1_1 |     1|
+|4     |DSP48E1_3 |     3|
+|5     |DSP48E1_4 |     3|
+|6     |LUT1      |    15|
+|7     |LUT2      |   118|
+|8     |LUT3      |   486|
+|9     |LUT4      |    53|
+|10    |LUT5      |    71|
+|11    |LUT6      |    58|
+|12    |RAM16X1S  |   256|
+|13    |RAMB18E1  |     3|
+|14    |FDRE      |   480|
+|15    |FDSE      |     4|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------------------------------------------+-------------------------------------------+------+
+|      |Instance                                           |Module                                     |Cells |
++------+---------------------------------------------------+-------------------------------------------+------+
+|1     |top                                                |                                           |  1576|
+|2     |  buf_2d_in_0_U                                    |dct_dct_2d_col_inbuf_0                     |    32|
+|3     |    dct_dct_2d_col_inbuf_0_ram_U                   |dct_dct_2d_col_inbuf_0_ram_35              |    32|
+|4     |  buf_2d_in_1_U                                    |dct_dct_2d_col_inbuf_0_0                   |    32|
+|5     |    dct_dct_2d_col_inbuf_0_ram_U                   |dct_dct_2d_col_inbuf_0_ram_34              |    32|
+|6     |  buf_2d_in_2_U                                    |dct_dct_2d_col_inbuf_0_1                   |    32|
+|7     |    dct_dct_2d_col_inbuf_0_ram_U                   |dct_dct_2d_col_inbuf_0_ram_33              |    32|
+|8     |  buf_2d_in_3_U                                    |dct_dct_2d_col_inbuf_0_2                   |    32|
+|9     |    dct_dct_2d_col_inbuf_0_ram_U                   |dct_dct_2d_col_inbuf_0_ram_32              |    32|
+|10    |  buf_2d_in_4_U                                    |dct_dct_2d_col_inbuf_0_3                   |    32|
+|11    |    dct_dct_2d_col_inbuf_0_ram_U                   |dct_dct_2d_col_inbuf_0_ram_31              |    32|
+|12    |  buf_2d_in_5_U                                    |dct_dct_2d_col_inbuf_0_4                   |    32|
+|13    |    dct_dct_2d_col_inbuf_0_ram_U                   |dct_dct_2d_col_inbuf_0_ram_30              |    32|
+|14    |  buf_2d_in_6_U                                    |dct_dct_2d_col_inbuf_0_5                   |    32|
+|15    |    dct_dct_2d_col_inbuf_0_ram_U                   |dct_dct_2d_col_inbuf_0_ram_29              |    32|
+|16    |  buf_2d_in_7_U                                    |dct_dct_2d_col_inbuf_0_6                   |    32|
+|17    |    dct_dct_2d_col_inbuf_0_ram_U                   |dct_dct_2d_col_inbuf_0_ram_28              |    32|
+|18    |  buf_2d_out_U                                     |dct_dct_2d_row_outbuf                      |     8|
+|19    |    dct_dct_2d_row_outbuf_ram_U                    |dct_dct_2d_row_outbuf_ram_27               |     8|
+|20    |  grp_dct_dct_2d_fu_167                            |dct_dct_2d                                 |  1035|
+|21    |    col_inbuf_0_U                                  |dct_dct_2d_col_inbuf_0_7                   |    49|
+|22    |      dct_dct_2d_col_inbuf_0_ram_U                 |dct_dct_2d_col_inbuf_0_ram_26              |    49|
+|23    |    col_inbuf_1_U                                  |dct_dct_2d_col_inbuf_0_8                   |    49|
+|24    |      dct_dct_2d_col_inbuf_0_ram_U                 |dct_dct_2d_col_inbuf_0_ram_25              |    49|
+|25    |    col_inbuf_2_U                                  |dct_dct_2d_col_inbuf_0_9                   |    49|
+|26    |      dct_dct_2d_col_inbuf_0_ram_U                 |dct_dct_2d_col_inbuf_0_ram_24              |    49|
+|27    |    col_inbuf_3_U                                  |dct_dct_2d_col_inbuf_0_10                  |    49|
+|28    |      dct_dct_2d_col_inbuf_0_ram_U                 |dct_dct_2d_col_inbuf_0_ram_23              |    49|
+|29    |    col_inbuf_4_U                                  |dct_dct_2d_col_inbuf_0_11                  |    49|
+|30    |      dct_dct_2d_col_inbuf_0_ram_U                 |dct_dct_2d_col_inbuf_0_ram_22              |    49|
+|31    |    col_inbuf_5_U                                  |dct_dct_2d_col_inbuf_0_12                  |    49|
+|32    |      dct_dct_2d_col_inbuf_0_ram_U                 |dct_dct_2d_col_inbuf_0_ram_21              |    49|
+|33    |    col_inbuf_6_U                                  |dct_dct_2d_col_inbuf_0_13                  |    49|
+|34    |      dct_dct_2d_col_inbuf_0_ram_U                 |dct_dct_2d_col_inbuf_0_ram_20              |    49|
+|35    |    col_inbuf_7_U                                  |dct_dct_2d_col_inbuf_0_14                  |    49|
+|36    |      dct_dct_2d_col_inbuf_0_ram_U                 |dct_dct_2d_col_inbuf_0_ram                 |    49|
+|37    |    col_outbuf_U                                   |dct_dct_2d_row_outbuf_15                   |    11|
+|38    |      dct_dct_2d_row_outbuf_ram_U                  |dct_dct_2d_row_outbuf_ram_19               |    11|
+|39    |    grp_dct_dct_1d_fu_361                          |dct_dct_1d                                 |   326|
+|40    |      dct_coeff_table_0_U                          |dct_dct_1d_dct_coeff_table_0               |    13|
+|41    |        dct_dct_1d_dct_coeff_table_0_rom_U         |dct_dct_1d_dct_coeff_table_0_rom           |    13|
+|42    |      dct_coeff_table_2_U                          |dct_dct_1d_dct_coeff_table_2               |    20|
+|43    |        dct_dct_1d_dct_coeff_table_2_rom_U         |dct_dct_1d_dct_coeff_table_2_rom           |    20|
+|44    |      dct_coeff_table_4_U                          |dct_dct_1d_dct_coeff_table_4               |    28|
+|45    |        dct_dct_1d_dct_coeff_table_4_rom_U         |dct_dct_1d_dct_coeff_table_4_rom           |    28|
+|46    |      dct_mac_muladd_16s_14ns_29s_29_1_U17         |dct_mac_muladd_16s_14ns_29s_29_1           |     2|
+|47    |        dct_mac_muladd_16s_14ns_29s_29_1_DSP48_3_U |dct_mac_muladd_16s_14ns_29s_29_1_DSP48_3   |     2|
+|48    |      dct_mac_muladd_16s_15s_14ns_29_1_U13         |dct_mac_muladd_16s_15s_14ns_29_1           |    13|
+|49    |        dct_mac_muladd_16s_15s_14ns_29_1_DSP48_1_U |dct_mac_muladd_16s_15s_14ns_29_1_DSP48_1   |    13|
+|50    |      dct_mac_muladd_16s_15s_29s_29_1_U10          |dct_mac_muladd_16s_15s_29s_29_1            |     1|
+|51    |        dct_mac_muladd_16s_15s_29s_29_1_DSP48_0_U  |dct_mac_muladd_16s_15s_29s_29_1_DSP48_0_18 |     1|
+|52    |      dct_mac_muladd_16s_15s_29s_29_1_U11          |dct_mac_muladd_16s_15s_29s_29_1_17         |     1|
+|53    |        dct_mac_muladd_16s_15s_29s_29_1_DSP48_0_U  |dct_mac_muladd_16s_15s_29s_29_1_DSP48_0    |     1|
+|54    |    row_outbuf_U                                   |dct_dct_2d_row_outbuf_16                   |   139|
+|55    |      dct_dct_2d_row_outbuf_ram_U                  |dct_dct_2d_row_outbuf_ram                  |   139|
+|56    |  grp_dct_read_data_fu_196                         |dct_read_data                              |   214|
++------+---------------------------------------------------+-------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1529.637 ; gain = 575.613 ; free physical = 1266 ; free virtual = 36230
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1529.637 ; gain = 159.410 ; free physical = 1266 ; free virtual = 36230
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1529.637 ; gain = 575.613 ; free physical = 1266 ; free virtual = 36230
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 291 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 256 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 256 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+212 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1529.641 ; gain = 504.395 ; free physical = 1266 ; free virtual = 36230
+report_utilization: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1569.652 ; gain = 0.000 ; free physical = 1266 ; free virtual = 36230
+INFO: [Common 17-206] Exiting Vivado at Tue Jul  5 16:25:39 2016...

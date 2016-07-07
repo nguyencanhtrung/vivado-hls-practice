@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <csimLog>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="hamming_window_prj" solutionName="solution1" date="2016-06-28T21:36:08.796+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="hamming_window_prj" solutionName="solution1" date="2016-06-28T21:36:08.760+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="hamming_window_prj" solutionName="solution1" date="2016-06-28T21:31:21.804+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="hamming_window_prj" solutionName="solution1" date="2016-06-28T21:31:21.763+0200" type="Warning"/>
+      </csimLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
