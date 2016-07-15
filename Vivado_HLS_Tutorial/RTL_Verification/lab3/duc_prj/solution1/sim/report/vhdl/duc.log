@@ -1,0 +1,496 @@
+@I [SIM-47] Using Modelsim for RTL simulation.
+@I [SIM-14] Instrumenting C test bench ...
+   Build using "/opt/Xilinx/Vivado_HLS/2015.3/lnx64/tools/gcc/bin/g++"
+   Compiling apatb_duc.cpp
+   Compiling (apcc) dds.c_pre.c.tb.c
+@I [HLS-10] Running '/opt/Xilinx/Vivado_HLS/2015.3/bin/unwrapped/lnx64.o/apcc'
+            for user 'ctnguyen' on host 'finance.eit.uni-kl.de' (Linux_x86_64 version 2.6.32-573.12.1.el6.x86_64) on Thu Jul 07 13:54:13 CEST 2016
+            in directory '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/RTL_Verification/lab3/duc_prj/solution1/sim/wrapc'
+@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+@I [APCC-3] Tmp directory is /tmp/apcc_db_ctnguyen/262371467892453605237
+@I [APCC-1] APCC is done.
+   Compiling (apcc) duc.c_pre.c.tb.c
+@I [HLS-10] Running '/opt/Xilinx/Vivado_HLS/2015.3/bin/unwrapped/lnx64.o/apcc'
+            for user 'ctnguyen' on host 'finance.eit.uni-kl.de' (Linux_x86_64 version 2.6.32-573.12.1.el6.x86_64) on Thu Jul 07 13:54:14 CEST 2016
+            in directory '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/RTL_Verification/lab3/duc_prj/solution1/sim/wrapc'
+@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+@I [APCC-3] Tmp directory is /tmp/apcc_db_ctnguyen/262941467892454671414
+@I [APCC-1] APCC is done.
+   Compiling (apcc) duc_test.c_pre.c.tb.c
+@I [HLS-10] Running '/opt/Xilinx/Vivado_HLS/2015.3/bin/unwrapped/lnx64.o/apcc'
+            for user 'ctnguyen' on host 'finance.eit.uni-kl.de' (Linux_x86_64 version 2.6.32-573.12.1.el6.x86_64) on Thu Jul 07 13:54:15 CEST 2016
+            in directory '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/RTL_Verification/lab3/duc_prj/solution1/sim/wrapc'
+@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+@I [APCC-3] Tmp directory is /tmp/apcc_db_ctnguyen/263421467892455805907
+@I [APCC-1] APCC is done.
+   Compiling (apcc) imf1.c_pre.c.tb.c
+@I [HLS-10] Running '/opt/Xilinx/Vivado_HLS/2015.3/bin/unwrapped/lnx64.o/apcc'
+            for user 'ctnguyen' on host 'finance.eit.uni-kl.de' (Linux_x86_64 version 2.6.32-573.12.1.el6.x86_64) on Thu Jul 07 13:54:16 CEST 2016
+            in directory '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/RTL_Verification/lab3/duc_prj/solution1/sim/wrapc'
+@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+@I [APCC-3] Tmp directory is /tmp/apcc_db_ctnguyen/263891467892456992386
+@I [APCC-1] APCC is done.
+   Compiling (apcc) imf2.c_pre.c.tb.c
+@I [HLS-10] Running '/opt/Xilinx/Vivado_HLS/2015.3/bin/unwrapped/lnx64.o/apcc'
+            for user 'ctnguyen' on host 'finance.eit.uni-kl.de' (Linux_x86_64 version 2.6.32-573.12.1.el6.x86_64) on Thu Jul 07 13:54:18 CEST 2016
+            in directory '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/RTL_Verification/lab3/duc_prj/solution1/sim/wrapc'
+@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+@I [APCC-3] Tmp directory is /tmp/apcc_db_ctnguyen/264461467892458098518
+@I [APCC-1] APCC is done.
+   Compiling (apcc) imf3.c_pre.c.tb.c
+@I [HLS-10] Running '/opt/Xilinx/Vivado_HLS/2015.3/bin/unwrapped/lnx64.o/apcc'
+            for user 'ctnguyen' on host 'finance.eit.uni-kl.de' (Linux_x86_64 version 2.6.32-573.12.1.el6.x86_64) on Thu Jul 07 13:54:19 CEST 2016
+            in directory '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/RTL_Verification/lab3/duc_prj/solution1/sim/wrapc'
+@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+@I [APCC-3] Tmp directory is /tmp/apcc_db_ctnguyen/264961467892459168980
+@I [APCC-1] APCC is done.
+   Compiling (apcc) mac.c_pre.c.tb.c
+@I [HLS-10] Running '/opt/Xilinx/Vivado_HLS/2015.3/bin/unwrapped/lnx64.o/apcc'
+            for user 'ctnguyen' on host 'finance.eit.uni-kl.de' (Linux_x86_64 version 2.6.32-573.12.1.el6.x86_64) on Thu Jul 07 13:54:20 CEST 2016
+            in directory '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/RTL_Verification/lab3/duc_prj/solution1/sim/wrapc'
+@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+@I [APCC-3] Tmp directory is /tmp/apcc_db_ctnguyen/265531467892460286697
+@I [APCC-1] APCC is done.
+   Compiling (apcc) mixer.c_pre.c.tb.c
+@I [HLS-10] Running '/opt/Xilinx/Vivado_HLS/2015.3/bin/unwrapped/lnx64.o/apcc'
+            for user 'ctnguyen' on host 'finance.eit.uni-kl.de' (Linux_x86_64 version 2.6.32-573.12.1.el6.x86_64) on Thu Jul 07 13:54:21 CEST 2016
+            in directory '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/RTL_Verification/lab3/duc_prj/solution1/sim/wrapc'
+@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+@I [APCC-3] Tmp directory is /tmp/apcc_db_ctnguyen/266001467892461696438
+@I [APCC-1] APCC is done.
+   Compiling (apcc) srrc.c_pre.c.tb.c
+@I [HLS-10] Running '/opt/Xilinx/Vivado_HLS/2015.3/bin/unwrapped/lnx64.o/apcc'
+            for user 'ctnguyen' on host 'finance.eit.uni-kl.de' (Linux_x86_64 version 2.6.32-573.12.1.el6.x86_64) on Thu Jul 07 13:54:22 CEST 2016
+            in directory '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/RTL_Verification/lab3/duc_prj/solution1/sim/wrapc'
+@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+@I [APCC-3] Tmp directory is /tmp/apcc_db_ctnguyen/266531467892462776716
+@I [APCC-1] APCC is done.
+   Generating cosim.tv.exe
+@I [SIM-302] Starting C TB testing ... 
+@I [SIM-333] Generating C post check test bench ...
+@I [SIM-12] Generating RTL test bench ...
+@I [SIM-322] Starting VHDL simulation. 
+@I [SIM-15] Starting Modelsim ...
+@I [SIM-316] Starting C post checking ...
+
+ *** DUC hardware test PASSED ! *** 
+
+Reading pref.tcl
+
+# 10.4a
+
+# do cosim.modelsim.scr
+# 
+#     set fl [open ".exit.err" w]
+#     puts $fl "Elaboration errors in executing modelsim simulator"
+#     close $fl
+#     quit
+# 
+# /clibs
+# lin64
+# 1
+# /clibs/questa/10.4a/lin64/lib
+WARNING: There is no IP libs for this version of ModelSim. If you may use cosim with IP, please make sure the IP libs have been pre-compiled.
+# Model Technology ModelSim SE-64 vmap 10.4a Lib Mapping Utility 2015.03 Mar 24 2015
+# vmap -modelsim_quiet work work 
+# Copying /opt/modelsim-10.4a/modeltech/linux_x86_64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /opt/modelsim-10.4a/modeltech/linux_x86_64/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# Model Technology ModelSim SE-64 vcom 10.4a Compiler 2015.03 Mar 24 2015
+# Start time: 13:54:26 on Jul 07,2016
+# vcom -work work AESL_sim_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package NUMERIC_STD
+# -- Compiling package AESL_sim_components
+# -- Compiling package body AESL_sim_components
+# -- Loading package AESL_sim_components
+# End time: 13:54:27 on Jul 07,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.4a Compiler 2015.03 Mar 24 2015
+# Start time: 13:54:27 on Jul 07,2016
+# vcom -work work duc_am_submul_16s_16s_18s_32_4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity duc_am_submul_16s_16s_18s_32_4_DSP48_3
+# -- Compiling architecture behav of duc_am_submul_16s_16s_18s_32_4_DSP48_3
+# -- Compiling entity duc_am_submul_16s_16s_18s_32_4
+# -- Compiling architecture arch of duc_am_submul_16s_16s_18s_32_4
+# End time: 13:54:27 on Jul 07,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.4a Compiler 2015.03 Mar 24 2015
+# Start time: 13:54:27 on Jul 07,2016
+# vcom -work work duc.autotb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Compiling entity apatb_duc_top
+# -- Compiling architecture behav of apatb_duc_top
+# ** Warning: duc.autotb.vhd(84): (vcom-1236) Shared variables must be of a protected type.
+# ** Warning: duc.autotb.vhd(85): (vcom-1236) Shared variables must be of a protected type.
+# ** Warning: duc.autotb.vhd(86): (vcom-1236) Shared variables must be of a protected type.
+# ** Warning: duc.autotb.vhd(87): (vcom-1236) Shared variables must be of a protected type.
+# ** Warning: duc.autotb.vhd(88): (vcom-1236) Shared variables must be of a protected type.
+# ** Warning: duc.autotb.vhd(90): (vcom-1236) Shared variables must be of a protected type.
+# ** Warning: duc.autotb.vhd(108): (vcom-1236) Shared variables must be of a protected type.
+# ** Warning: duc.autotb.vhd(110): (vcom-1236) Shared variables must be of a protected type.
+# ** Warning: duc.autotb.vhd(111): (vcom-1236) Shared variables must be of a protected type.
+# ** Warning: duc.autotb.vhd(113): (vcom-1236) Shared variables must be of a protected type.
+# ** Warning: duc.autotb.vhd(114): (vcom-1236) Shared variables must be of a protected type.
+# ** Warning: duc.autotb.vhd(116): (vcom-1236) Shared variables must be of a protected type.
+# End time: 13:54:28 on Jul 07,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 12
+# Model Technology ModelSim SE-64 vcom 10.4a Compiler 2015.03 Mar 24 2015
+# Start time: 13:54:28 on Jul 07,2016
+# vcom -work work duc_c_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity duc_c_1_rom
+# -- Compiling architecture rtl of duc_c_1_rom
+# -- Compiling entity duc_c_1
+# -- Compiling architecture arch of duc_c_1
+# End time: 13:54:28 on Jul 07,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.4a Compiler 2015.03 Mar 24 2015
+# Start time: 13:54:28 on Jul 07,2016
+# vcom -work work duc_imf2_c_2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity duc_imf2_c_2_rom
+# -- Compiling architecture rtl of duc_imf2_c_2_rom
+# -- Compiling entity duc_imf2_c_2
+# -- Compiling architecture arch of duc_imf2_c_2
+# End time: 13:54:28 on Jul 07,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.4a Compiler 2015.03 Mar 24 2015
+# Start time: 13:54:28 on Jul 07,2016
+# vcom -work work duc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity duc
+# -- Compiling architecture behav of duc
+# End time: 13:54:28 on Jul 07,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.4a Compiler 2015.03 Mar 24 2015
+# Start time: 13:54:28 on Jul 07,2016
+# vcom -work work duc_mac_muladd_18s_18s_38ns_38_4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity duc_mac_muladd_18s_18s_38ns_38_4_DSP48_0
+# -- Compiling architecture behav of duc_mac_muladd_18s_18s_38ns_38_4_DSP48_0
+# -- Compiling entity duc_mac_muladd_18s_18s_38ns_38_4
+# -- Compiling architecture arch of duc_mac_muladd_18s_18s_38ns_38_4
+# End time: 13:54:28 on Jul 07,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.4a Compiler 2015.03 Mar 24 2015
+# Start time: 13:54:28 on Jul 07,2016
+# vcom -work work duc_mixer_dds_table.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity duc_mixer_dds_table_rom
+# -- Compiling architecture rtl of duc_mixer_dds_table_rom
+# -- Compiling entity duc_mixer_dds_table
+# -- Compiling architecture arch of duc_mixer_dds_table
+# End time: 13:54:28 on Jul 07,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.4a Compiler 2015.03 Mar 24 2015
+# Start time: 13:54:28 on Jul 07,2016
+# vcom -work work duc_ama_addmuladd_18s_18s_16s_32s_32_3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity duc_ama_addmuladd_18s_18s_16s_32s_32_3_DSP48_1
+# -- Compiling architecture behav of duc_ama_addmuladd_18s_18s_16s_32s_32_3_DSP48_1
+# -- Compiling entity duc_ama_addmuladd_18s_18s_16s_32s_32_3
+# -- Compiling architecture arch of duc_ama_addmuladd_18s_18s_16s_32s_32_3
+# End time: 13:54:28 on Jul 07,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.4a Compiler 2015.03 Mar 24 2015
+# Start time: 13:54:28 on Jul 07,2016
+# vcom -work work duc_shift_reg_p_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity duc_shift_reg_p_1_ram
+# -- Compiling architecture rtl of duc_shift_reg_p_1_ram
+# ** Warning: duc_shift_reg_p_1.vhd(35): (vcom-1236) Shared variables must be of a protected type.
+# -- Compiling entity duc_shift_reg_p_1
+# -- Compiling architecture arch of duc_shift_reg_p_1
+# End time: 13:54:29 on Jul 07,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vcom 10.4a Compiler 2015.03 Mar 24 2015
+# Start time: 13:54:29 on Jul 07,2016
+# vcom -work work duc_ama_submuladd_18s_18s_16s_32s_32_3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity duc_ama_submuladd_18s_18s_16s_32s_32_3_DSP48_2
+# -- Compiling architecture behav of duc_ama_submuladd_18s_18s_16s_32s_32_3_DSP48_2
+# -- Compiling entity duc_ama_submuladd_18s_18s_16s_32s_32_3
+# -- Compiling architecture arch of duc_ama_submuladd_18s_18s_16s_32s_32_3
+# End time: 13:54:29 on Jul 07,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.4a Compiler 2015.03 Mar 24 2015
+# Start time: 13:54:29 on Jul 07,2016
+# vcom -work work duc_imf3_shift_reg_p0.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity duc_imf3_shift_reg_p0_ram
+# -- Compiling architecture rtl of duc_imf3_shift_reg_p0_ram
+# ** Warning: duc_imf3_shift_reg_p0.vhd(35): (vcom-1236) Shared variables must be of a protected type.
+# -- Compiling entity duc_imf3_shift_reg_p0
+# -- Compiling architecture arch of duc_imf3_shift_reg_p0
+# End time: 13:54:29 on Jul 07,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vcom 10.4a Compiler 2015.03 Mar 24 2015
+# Start time: 13:54:29 on Jul 07,2016
+# vcom -work work duc_imf2_shift_reg_p_2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity duc_imf2_shift_reg_p_2_ram
+# -- Compiling architecture rtl of duc_imf2_shift_reg_p_2_ram
+# ** Warning: duc_imf2_shift_reg_p_2.vhd(35): (vcom-1236) Shared variables must be of a protected type.
+# -- Compiling entity duc_imf2_shift_reg_p_2
+# -- Compiling architecture arch of duc_imf2_shift_reg_p_2
+# End time: 13:54:29 on Jul 07,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vcom 10.4a Compiler 2015.03 Mar 24 2015
+# Start time: 13:54:29 on Jul 07,2016
+# vcom -work work duc_shift_reg_p.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity duc_shift_reg_p_ram
+# -- Compiling architecture rtl of duc_shift_reg_p_ram
+# ** Warning: duc_shift_reg_p.vhd(35): (vcom-1236) Shared variables must be of a protected type.
+# -- Compiling entity duc_shift_reg_p
+# -- Compiling architecture arch of duc_shift_reg_p
+# End time: 13:54:29 on Jul 07,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vcom 10.4a Compiler 2015.03 Mar 24 2015
+# Start time: 13:54:29 on Jul 07,2016
+# vcom -work work duc_c.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity duc_c_rom
+# -- Compiling architecture rtl of duc_c_rom
+# -- Compiling entity duc_c
+# -- Compiling architecture arch of duc_c
+# End time: 13:54:29 on Jul 07,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.4a Compiler 2015.03 Mar 24 2015
+# Start time: 13:54:29 on Jul 07,2016
+# vcom -work work duc_imf3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity duc_imf3
+# -- Compiling architecture behav of duc_imf3
+# End time: 13:54:29 on Jul 07,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.4a Compiler 2015.03 Mar 24 2015
+# Start time: 13:54:29 on Jul 07,2016
+# vcom -work work duc_mixer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity duc_mixer
+# -- Compiling architecture behav of duc_mixer
+# End time: 13:54:29 on Jul 07,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.4a Compiler 2015.03 Mar 24 2015
+# Start time: 13:54:29 on Jul 07,2016
+# vcom -work work duc_imf2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity duc_imf2
+# -- Compiling architecture behav of duc_imf2
+# End time: 13:54:29 on Jul 07,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.4a Compiler 2015.03 Mar 24 2015
+# Start time: 13:54:29 on Jul 07,2016
+# vcom -work work duc_imf3_c_3_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity duc_imf3_c_3_1_rom
+# -- Compiling architecture rtl of duc_imf3_c_3_1_rom
+# -- Compiling entity duc_imf3_c_3_1
+# -- Compiling architecture arch of duc_imf3_c_3_1
+# End time: 13:54:29 on Jul 07,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.4a Compiler 2015.03 Mar 24 2015
+# Start time: 13:54:29 on Jul 07,2016
+# vcom -work work duc_mixer_DI_cache.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity duc_mixer_DI_cache_ram
+# -- Compiling architecture rtl of duc_mixer_DI_cache_ram
+# ** Warning: duc_mixer_DI_cache.vhd(35): (vcom-1236) Shared variables must be of a protected type.
+# -- Compiling entity duc_mixer_DI_cache
+# -- Compiling architecture arch of duc_mixer_DI_cache
+# End time: 13:54:30 on Jul 07,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vcom 10.4a Compiler 2015.03 Mar 24 2015
+# Start time: 13:54:30 on Jul 07,2016
+# vcom -work work duc_imf3_c_3_0.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity duc_imf3_c_3_0_rom
+# -- Compiling architecture rtl of duc_imf3_c_3_0_rom
+# -- Compiling entity duc_imf3_c_3_0
+# -- Compiling architecture arch of duc_imf3_c_3_0
+# End time: 13:54:30 on Jul 07,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "cosim.modelsim.scr" 
+# Start time: 13:54:30 on Jul 07,2016
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "duc(behav)".
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "duc_mixer(behav)".
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "duc_imf3(behav)".
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "duc_imf2(behav)".
+# //  ModelSim SE-64 10.4a Mar 24 2015 Linux 2.6.32-573.12.1.el6.x86_64
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.apatb_duc_top(behav)#1
+# Loading work.duc(behav)#1
+# Loading work.duc_c(arch)#1
+# Loading work.duc_c_rom(rtl)#1
+# Loading work.duc_shift_reg_p(arch)#1
+# Loading work.duc_shift_reg_p_ram(rtl)#1
+# Loading work.duc_c_1(arch)#1
+# Loading work.duc_c_1_rom(rtl)#1
+# Loading work.duc_shift_reg_p_1(arch)#1
+# Loading work.duc_shift_reg_p_1_ram(rtl)#1
+# Loading work.duc_imf3(behav)#1
+# Loading work.duc_imf3_c_3_0(arch)#1
+# Loading work.duc_imf3_c_3_0_rom(rtl)#1
+# Loading work.duc_imf3_shift_reg_p0(arch)#1
+# Loading work.duc_imf3_shift_reg_p0_ram(rtl)#1
+# Loading work.duc_imf3_c_3_1(arch)#1
+# Loading work.duc_imf3_c_3_1_rom(rtl)#1
+# Loading work.duc_mac_muladd_18s_18s_38ns_38_4(arch)#1
+# Loading work.duc_mac_muladd_18s_18s_38ns_38_4_dsp48_0(behav)#1
+# Loading work.duc_mixer(behav)#1
+# Loading work.duc_mixer_di_cache(arch)#1
+# Loading work.duc_mixer_di_cache_ram(rtl)#1
+# Loading work.duc_mixer_dds_table(arch)#1
+# Loading work.duc_mixer_dds_table_rom(rtl)#1
+# Loading work.duc_ama_addmuladd_18s_18s_16s_32s_32_3(arch)#1
+# Loading work.duc_ama_addmuladd_18s_18s_16s_32s_32_3_dsp48_1(behav)#1
+# Loading work.duc_ama_submuladd_18s_18s_16s_32s_32_3(arch)#1
+# Loading work.duc_ama_submuladd_18s_18s_16s_32s_32_3_dsp48_2(behav)#1
+# Loading work.duc_am_submul_16s_16s_18s_32_4(arch)#1
+# Loading work.duc_am_submul_16s_16s_18s_32_4_dsp48_3(behav)#1
+# Loading work.duc_imf2(behav)#1
+# Loading work.duc_imf2_c_2(arch)#1
+# Loading work.duc_imf2_c_2_rom(rtl)#1
+# Loading work.duc_imf2_shift_reg_p_2(arch)#1
+# Loading work.duc_imf2_shift_reg_p_2_ram(rtl)#1
+# 1
+# 1
+# ** Note: simulation done!
+#    Time: 293448150 ps  Iteration: 1  Instance: /apatb_duc_top
+# ** Failure: NORMAL EXIT (note: failure is to force the simulator to stop)
+#    Time: 293448150 ps  Iteration: 1  Process: /apatb_duc_top/generate_sim_done_proc File: duc.autotb.vhd
+# Break in Process generate_sim_done_proc at duc.autotb.vhd line 733
+# End time: 13:54:39 on Jul 07,2016, Elapsed time: 0:00:09
+# Errors: 0, Warnings: 0
+
+ *** DUC hardware test PASSED ! *** 
+
+@I [SIM-1000] *** C/RTL co-simulation finished: PASS ***

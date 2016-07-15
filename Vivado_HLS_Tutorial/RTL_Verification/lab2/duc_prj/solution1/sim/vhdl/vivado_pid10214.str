@@ -1,0 +1,120 @@
+/*
+
+Vivado v2015.3 (64-bit)
+SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
+Process ID: 10214
+
+Current time: 	7/7/16 12:54:50 PM CEST
+Time zone: 	Central European Time (Europe/Berlin)
+
+OS: Scientific Linux release 6.7 (Carbon)
+Version: 2.6.32-573.12.1.el6.x86_64
+Architecture: amd64
+Available processors (cores): 2
+
+DISPLAY: :3.0
+Screen size: 1680x1005
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_45 64-bit
+Java home: 	/opt/Xilinx/Vivado/2015.3/tps/lnx64/jre
+
+User name: 	ctnguyen
+User home directory: /home/ctnguyen
+User working directory: /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/vhdl
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+Vivado preferences path: /home/ctnguyen/.Xilinx/Vivado/2015.3/vivado.ini
+Vivado layouts directory: /home/ctnguyen/.Xilinx/Vivado/2015.3/layouts
+
+GUI allocated memory:	209 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 4,825 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 26 MB (+24263kb) [00:00:08]
+// [Engine Memory]: 4,823 MB (+4906240kb) [00:00:08]
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // l:JideButton (JPanel:JComponent, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,825 MB. GUI used memory: 27 MB. Current time: 7/7/16 12:54:52 PM CEST
+// [GUI Memory]: 29 MB (+2326kb) [00:00:13]
+// [GUI Memory]: 31 MB (+878kb) [00:00:18]
+// [GUI Memory]: 33 MB (+524kb) [00:00:23]
+// [GUI Memory]: 35 MB (+131kb) [00:00:28]
+// [GUI Memory]: 38 MB (+1109kb) [00:00:33]
+// [GUI Memory]: 40 MB (+35kb) [00:00:38]
+// Elapsed time: 32 seconds
+dismissFileChooser();
+// 'i' command handler elapsed time: 32 seconds
+selectButton(PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, "Create New Project"); // l:JideButton (JPanel:JComponent, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// [GUI Memory]: 50 MB (+7789kb) [00:00:42]
+// h:g (cq:JFrame): New Project: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 4,872 MB. GUI used memory: 27 MB. Current time: 7/7/16 12:55:27 PM CEST
+// Elapsed time: 15 seconds
+selectButton("CANCEL", "Cancel"); // JButton:AbstractButton (ButtonPanel:JPanel, h:g)
+// 'g' command handler elapsed time: 15 seconds
+dismissDialog("New Project"); // h:g (cq:JFrame)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "xsim", true); // ap:ao (R:ak, cq:JFrame)
+// Tcl Command: 'xsim'
+// TclEventType: LOAD_FEATURE
+// Tcl Message: xsim 
+// Tcl Message: ERROR: [Common 17-163] Missing value for option 'snapshot', please type 'xsim -help' for usage info. 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "xsim -help", true); // ap:ao (R:ak, cq:JFrame)
+// Tcl Command: 'xsim -help'
+// Tcl Message: xsim -help 
+// Elapsed time: 13 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 746, 90); // dy:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 746, 90); // dy:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 746, 90); // dy:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 746, 90); // dy:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 746, 90); // dy:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 746, 90); // dy:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 746, 90); // dy:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 746, 90); // dy:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 746, 90); // dy:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 746, 90); // dy:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 746, 90); // dy:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 746, 90); // dy:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 746, 90); // dy:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 746, 90); // dy:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 746, 90); // dy:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 746, 90); // dy:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 746, 90); // dy:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 746, 90); // dy:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 746, 90); // dy:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 10 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "launch_xsim", true); // ap:ao (R:ak, cq:JFrame)
+// Tcl Command: 'launch_xsim'
+// Tcl Message: launch_xsim 
+// Tcl Message: ERROR: [Common 17-53] User Exception: No open project. Please create or open a project before executing this command. 
+selectList(PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, "/home/ctnguyen/work/ZynqProject/baremetal/gpio_Lab3/gpio_Lab3.xpr", 0); // q:v (JViewport:JComponent, cq:JFrame)
+// bF:g (cq:JFrame):  Open Project : addNotify
+// Opening Vivado Project: /home/ctnguyen/work/ZynqProject/baremetal/gpio_Lab3/gpio_Lab3.xpr. Version: Vivado v2015.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 54 MB (+2096kb) [00:01:47]
+// [GUI Memory]: 60 MB (+3785kb) [00:01:50]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project /home/ctnguyen/work/ZynqProject/baremetal/gpio_Lab3/gpio_Lab3.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.3/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,974 MB. GUI used memory: 35 MB. Current time: 7/7/16 12:56:33 PM CEST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 5929.344 ; gain = 82.828 ; free physical = 1443 ; free virtual = 36699 
+// Project name: gpio_Lab3; location: /home/ctnguyen/work/ZynqProject/baremetal/gpio_Lab3; part: xc7z020clg484-1
+// Elapsed time: 10 seconds
+dismissDialog("Open Project"); // bF:g (cq:JFrame)

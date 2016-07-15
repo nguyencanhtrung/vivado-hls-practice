@@ -1,0 +1,362 @@
+#-----------------------------------------------------------
+# xsim v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Thu Jul  7 12:52:39 2016
+# Process ID: 9673
+# Current directory: /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/vhdl
+# Command line: xsim -mode tcl -source {xsim.dir/duc/xsim_script.tcl}
+# Log file: /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/vhdl/xsim.log
+# Journal file: /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/vhdl/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/duc/xsim_script.tcl
+# xsim {duc} -maxdeltaid 10000 -autoloadwcfg -tclbatch {duc.tcl}
+Vivado Simulator 2015.3
+Time resolution is 1 ps
+source duc.tcl
+## add_wave -r /
+WARNING: Simulation object /apatb_duc_top/AESL_mLatCnterIn was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_mLatCnterOut was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_mLatCnterIn_addr was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_mLatCnterOut_addr was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_clk_counter was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/reported_stuck_cnt was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_REG_din_i was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_REG_freq was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_REG_dout_i_ap_vld was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_REG_dout_i was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_REG_dout_q_ap_vld was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_REG_dout_q was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/shift_reg_p_U/duc_shift_reg_p_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/shift_reg_p_1_U/duc_shift_reg_p_1_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/grp_duc_imf3_fu_204/shift_reg_p0_U/duc_imf3_shift_reg_p0_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/grp_duc_imf3_fu_204/shift_reg_p1_U/duc_imf3_shift_reg_p0_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/grp_duc_mixer_fu_225/DI_cache_U/duc_mixer_DI_cache_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/grp_duc_imf2_fu_249/shift_reg_p_2_U/duc_imf2_shift_reg_p_2_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_din_i/fp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_din_i/fstatus was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_din_i/token_line was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_din_i/token was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_din_i/i was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_din_i/transaction_finish was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_din_i/transaction_idx was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_din_i/rand was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_din_i/rint was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_freq/fp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_freq/fstatus was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_freq/token_line was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_freq/token was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_freq/i was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_freq/transaction_finish was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_freq/transaction_idx was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_freq/rand was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_freq/rint was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_i/fp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_i/fp_size was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_i/fstatus was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_i/token_line was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_i/token was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_i/str was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_i/transaction_idx was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_i/dout_i_count was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_i/hls_stream_size was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_i/i was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_i/rand was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_i/rint was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_q/fp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_q/fp_size was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_q/fstatus was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_q/token_line was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_q/token was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_q/str was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_q/transaction_idx was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_q/dout_q_count was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_q/hls_stream_size was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_q/i was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_q/rand was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_q/rint was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_reset_proc/rand was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_reset_proc/rint was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_start_proc/rand was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_start_proc/rint was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/transaction_counter was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/i was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/fp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/fstatus was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/token_line was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/token was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/latthistime was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/lattotal was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/latmax was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/latmin was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/thrthistime was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/thrtotal was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/thrmax was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/thrmin was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/lataver was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/thraver was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/lat_array was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/thr_array was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/shift_reg_p_U/duc_shift_reg_p_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/shift_reg_p_1_U/duc_shift_reg_p_1_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/grp_duc_imf3_fu_204/shift_reg_p0_U/duc_imf3_shift_reg_p0_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/grp_duc_imf3_fu_204/shift_reg_p1_U/duc_imf3_shift_reg_p0_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/grp_duc_mixer_fu_225/DI_cache_U/duc_mixer_DI_cache_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/grp_duc_imf2_fu_249/shift_reg_p_2_U/duc_imf2_shift_reg_p_2_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/shift_reg_p_U/duc_shift_reg_p_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/shift_reg_p_U/duc_shift_reg_p_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/shift_reg_p_1_U/duc_shift_reg_p_1_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/shift_reg_p_1_U/duc_shift_reg_p_1_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/grp_duc_imf3_fu_204/shift_reg_p0_U/duc_imf3_shift_reg_p0_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/grp_duc_imf3_fu_204/shift_reg_p1_U/duc_imf3_shift_reg_p0_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/grp_duc_imf3_fu_204/shift_reg_p0_U/duc_imf3_shift_reg_p0_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/grp_duc_imf3_fu_204/shift_reg_p0_U/duc_imf3_shift_reg_p0_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/grp_duc_imf3_fu_204/shift_reg_p1_U/duc_imf3_shift_reg_p0_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/grp_duc_imf3_fu_204/shift_reg_p1_U/duc_imf3_shift_reg_p0_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/grp_duc_mixer_fu_225/DI_cache_U/duc_mixer_DI_cache_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/grp_duc_mixer_fu_225/DI_cache_U/duc_mixer_DI_cache_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/grp_duc_mixer_fu_225/DI_cache_U/duc_mixer_DI_cache_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/grp_duc_imf2_fu_249/shift_reg_p_2_U/duc_imf2_shift_reg_p_2_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/grp_duc_imf2_fu_249/shift_reg_p_2_U/duc_imf2_shift_reg_p_2_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/AESL_inst_duc/grp_duc_imf2_fu_249/shift_reg_p_2_U/duc_imf2_shift_reg_p_2_ram_U/ram was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_din_i/fp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_din_i/fstatus was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_din_i/token_line was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_din_i/token was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_din_i/i was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_din_i/transaction_finish was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_din_i/transaction_idx was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_din_i/rand was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_din_i/rint was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_freq/fp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_freq/fstatus was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_freq/token_line was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_freq/token was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_freq/i was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_freq/transaction_finish was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_freq/transaction_idx was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_freq/rand was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/read_file_process_freq/rint was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_i/fp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_i/fp_size was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_i/fstatus was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_i/token_line was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_i/token was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_i/str was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_i/transaction_idx was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_i/dout_i_count was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_i/hls_stream_size was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_i/i was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_i/rand was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_i/rint was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_q/fp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_q/fp_size was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_q/fstatus was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_q/token_line was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_q/token was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_q/str was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_q/transaction_idx was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_q/dout_q_count was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_q/hls_stream_size was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_q/i was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_q/rand was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/write_file_process_dout_q/rint was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_reset_proc/rand was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_reset_proc/rint was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_start_proc/rand was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_start_proc/rint was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/transaction_counter was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/i was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/fp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/fstatus was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/token_line was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/token was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/latthistime was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/lattotal was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/latmax was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/latmin was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/thrthistime was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/thrtotal was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/thrmax was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/thrmin was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/lataver was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/thraver was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/lat_array was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /apatb_duc_top/gen_performance_check_proc/thr_array was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+## save_wave_config duc.wcfg
+## run all
+Note: simulation done!
+Time: 293448150 ps  Iteration: 1  Process: /apatb_duc_top/generate_sim_done_proc  File: /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/vhdl/duc.autotb.vhd
+Failure: NORMAL EXIT (note: failure is to force the simulator to stop)
+Time: 293448150 ps  Iteration: 1  Process: /apatb_duc_top/generate_sim_done_proc  File: /home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/vhdl/duc.autotb.vhd
+$finish called at time : 293448150 ps
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu Jul  7 12:52:44 2016...

@@ -1,0 +1,8 @@
+vhdl xil_defaultlib "AESL_sim_pkg.vhd"
+vhdl xil_defaultlib "matrixmul.vhd"
+vhdl xil_defaultlib "matrixmul.autotb.vhd"
+vhdl xil_defaultlib "matrixmul_mux_3to1_sel2_8_1.vhd"
+vhdl xil_defaultlib "AESL_autofifo_res.vhd"
+vhdl xil_defaultlib "AESL_autofifo_b.vhd"
+vhdl xil_defaultlib "AESL_autofifo_a.vhd"
+
