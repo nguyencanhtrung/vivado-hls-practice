@@ -1,0 +1,173 @@
+
+
+================================================================
+== Vivado HLS Report for 'dct_write_data'
+================================================================
+* Date:           Wed Jul  6 11:01:52 2016
+
+* Version:        2015.3 (Build 1368829 on Mon Sep 28 20:31:51 PM 2015)
+* Project:        dct_prj
+* Solution:       solution7
+* Product family: kintex7
+* Target device:  xc7k160tfbg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   8.00|      4.66|        1.00|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   34|   34|   34|   34|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------+-----+-----+----------+-----------+-----------+------+----------+
+        |               |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name   | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- WR_Loop_Row  |   32|   32|         5|          4|          1|     8|    yes   |
+        +---------------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  |
++-----------------+---------+-------+--------+--------+
+|DSP              |        -|      -|       -|       -|
+|Expression       |        -|      -|       0|     133|
+|FIFO             |        -|      -|       -|       -|
+|Instance         |        -|      -|       -|       -|
+|Memory           |        -|      -|       -|       -|
+|Multiplexer      |        -|      -|       -|      33|
+|Register         |        -|      -|      28|       -|
++-----------------+---------+-------+--------+--------+
+|Total            |        0|      0|      28|     166|
++-----------------+---------+-------+--------+--------+
+|Available        |      650|    600|  202800|  101400|
++-----------------+---------+-------+--------+--------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0   |
++-----------------+---------+-------+--------+--------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------+----------+-------+---+----+------------+------------+
+    |    Variable Name    | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------+----------+-------+---+----+------------+------------+
+    |r_1_fu_231_p2        |     +    |      0|  0|   4|           4|           1|
+    |exitcond1_fu_225_p2  |   icmp   |      0|  0|   2|           4|           5|
+    |ap_sig_bdd_123       |    or    |      0|  0|   1|           1|           1|
+    |tmp_10_fu_320_p2     |    or    |      0|  0|  10|           7|           3|
+    |tmp_12_fu_334_p2     |    or    |      0|  0|  10|           7|           3|
+    |tmp_14_fu_368_p2     |    or    |      0|  0|  10|           7|           3|
+    |tmp_16_fu_382_p2     |    or    |      0|  0|  10|           7|           3|
+    |tmp_4_1_fu_348_p2    |    or    |      0|  0|   8|           6|           2|
+    |tmp_4_2_fu_358_p2    |    or    |      0|  0|   8|           6|           2|
+    |tmp_4_3_fu_396_p2    |    or    |      0|  0|   8|           6|           3|
+    |tmp_4_4_fu_406_p2    |    or    |      0|  0|   8|           6|           3|
+    |tmp_4_5_fu_416_p2    |    or    |      0|  0|   8|           6|           3|
+    |tmp_4_6_fu_426_p2    |    or    |      0|  0|   8|           6|           3|
+    |tmp_4_fu_250_p2      |    or    |      0|  0|  10|           7|           1|
+    |tmp_4_s_fu_309_p2    |    or    |      0|  0|   8|           6|           1|
+    |tmp_7_fu_269_p2      |    or    |      0|  0|  10|           7|           2|
+    |tmp_9_fu_283_p2      |    or    |      0|  0|  10|           7|           2|
+    +---------------------+----------+-------+---+----+------------+------------+
+    |Total                |          |      0|  0| 133|         100|          41|
+    +---------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------+----+-----------+-----+-----------+
+    |        Name       | LUT| Input Size| Bits| Total Bits|
+    +-------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm          |   1|          7|    1|          7|
+    |buf_r_address0     |   6|          5|    6|         30|
+    |buf_r_address1     |   6|          5|    6|         30|
+    |output_r_address0  |   6|          5|    6|         30|
+    |output_r_address1  |   6|          5|    6|         30|
+    |r_phi_fu_218_p4    |   4|          2|    4|          8|
+    |r_reg_214          |   4|          2|    4|          8|
+    +-------------------+----+-----------+-----+-----------+
+    |Total              |  33|         31|   33|        143|
+    +-------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------+---+----+-----+-----------+
+    |          Name         | FF| LUT| Bits| Const Bits|
+    +-----------------------+---+----+-----+-----------+
+    |ap_CS_fsm              |  6|   0|    6|          0|
+    |ap_done_reg            |  1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it0  |  1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it1  |  1|   0|    1|          0|
+    |exitcond1_reg_436      |  1|   0|    1|          0|
+    |r_1_reg_440            |  4|   0|    4|          0|
+    |r_reg_214              |  4|   0|    4|          0|
+    |tmp_18_reg_465         |  3|   0|    3|          0|
+    |tmp_1_reg_480          |  3|   0|    6|          3|
+    |tmp_reg_445            |  4|   0|    7|          3|
+    +-----------------------+---+----+-----+-----------+
+    |Total                  | 28|   0|   34|          6|
+    +-----------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+----------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  |  Source Object |    C Type    |
++-------------------+-----+-----+------------+----------------+--------------+
+|ap_clk             |  in |    1| ap_ctrl_hs | dct_write_data | return value |
+|ap_rst             |  in |    1| ap_ctrl_hs | dct_write_data | return value |
+|ap_start           |  in |    1| ap_ctrl_hs | dct_write_data | return value |
+|ap_done            | out |    1| ap_ctrl_hs | dct_write_data | return value |
+|ap_continue        |  in |    1| ap_ctrl_hs | dct_write_data | return value |
+|ap_idle            | out |    1| ap_ctrl_hs | dct_write_data | return value |
+|ap_ready           | out |    1| ap_ctrl_hs | dct_write_data | return value |
+|buf_r_address0     | out |    6|  ap_memory |      buf_r     |     array    |
+|buf_r_ce0          | out |    1|  ap_memory |      buf_r     |     array    |
+|buf_r_q0           |  in |   16|  ap_memory |      buf_r     |     array    |
+|buf_r_address1     | out |    6|  ap_memory |      buf_r     |     array    |
+|buf_r_ce1          | out |    1|  ap_memory |      buf_r     |     array    |
+|buf_r_q1           |  in |   16|  ap_memory |      buf_r     |     array    |
+|output_r_address0  | out |    6|  ap_memory |    output_r    |     array    |
+|output_r_ce0       | out |    1|  ap_memory |    output_r    |     array    |
+|output_r_we0       | out |    1|  ap_memory |    output_r    |     array    |
+|output_r_d0        | out |   16|  ap_memory |    output_r    |     array    |
+|output_r_address1  | out |    6|  ap_memory |    output_r    |     array    |
+|output_r_ce1       | out |    1|  ap_memory |    output_r    |     array    |
+|output_r_we1       | out |    1|  ap_memory |    output_r    |     array    |
+|output_r_d1        | out |   16|  ap_memory |    output_r    |     array    |
++-------------------+-----+-----+------------+----------------+--------------+
+

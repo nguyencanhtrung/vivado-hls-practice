@@ -1,0 +1,16 @@
+#
+# An unexpected error has occurred (6)
+#
+Stack:
+/lib64/libc.so.6(+0x326a0) [0x7f8d0b1926a0]
+/lib64/libc.so.6(gsignal+0x35) [0x7f8d0b192625]
+/lib64/libc.so.6(abort+0x175) [0x7f8d0b193e05]
+/opt/Xilinx/Vivado/2015.3/lib/lnx64.o/libtcl8.5.so(Tcl_PanicVA+0x177) [0x7f8d07360c07]
+/opt/Xilinx/Vivado/2015.3/lib/lnx64.o/libtcl8.5.so(Tcl_Panic+0x8c) [0x7f8d07360cbc]
+/opt/Xilinx/Vivado/2015.3/lib/lnx64.o/libtcl8.5.so(TclStackFree+0x49) [0x7f8d0732b019]
+/opt/Xilinx/Vivado/2015.3/lib/lnx64.o/libtcl8.5.so(TclEvalObjEx+0x366) [0x7f8d072eb616]
+/opt/Xilinx/Vivado/2015.3/lib/lnx64.o/librdi_commonmain.so(+0x5f00) [0x7f8d0ba11f00]
+/opt/Xilinx/Vivado/2015.3/lib/lnx64.o/libtcl8.5.so(Tcl_Main+0x1d5) [0x7f8d07356175]
+/opt/Xilinx/Vivado/2015.3/lib/lnx64.o/librdi_common.so(+0x57ef19) [0x7f8d0c194f19]
+/lib64/libpthread.so.0(+0x7aa1) [0x7f8d0acc6aa1]
+/lib64/libc.so.6(clone+0x6d) [0x7f8d0b24893d]

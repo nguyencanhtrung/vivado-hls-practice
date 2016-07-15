@@ -1,0 +1,94 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
+| Date         : Tue Jul  5 16:26:49 2016
+| Host         : finance.eit.uni-kl.de running 64-bit Scientific Linux release 6.7 (Carbon)
+| Command      : report_control_sets -verbose -file dct_control_sets_placed.rpt
+| Design       : dct
+| Device       : xc7k160t
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    41 |
+| Minimum Number of register sites lost to control set restrictions |    76 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              44 |           19 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              39 |           17 |
+| Yes          | No                    | No                     |             345 |          128 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              56 |           20 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+| Clock Signal |                                              Enable Signal                                              |                    Set/Reset Signal                   | Slice Load Count | Bel Load Count |
++--------------+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+|  ap_clk      |                                                                                                         | grp_dct_dct_2d_fu_167/ap_reg_ppiten_pp0_it00_2        |                2 |              4 |
+|  ap_clk      |                                                                                                         | grp_dct_dct_2d_fu_167/ap_reg_ppiten_pp1_it00          |                2 |              4 |
+|  ap_clk      | grp_dct_dct_2d_fu_167/i_1_reg_3050                                                                      |                                                       |                3 |              4 |
+|  ap_clk      | grp_dct_dct_2d_fu_167/i_3_reg_3500                                                                      |                                                       |                3 |              4 |
+|  ap_clk      | grp_dct_dct_2d_fu_167/ap_reg_ppiten_pp1_it10                                                            |                                                       |                3 |              4 |
+|  ap_clk      | grp_dct_dct_2d_fu_167/ap_sig_bdd_105                                                                    |                                                       |                1 |              4 |
+|  ap_clk      | grp_dct_dct_2d_fu_167/ap_sig_bdd_144                                                                    |                                                       |                2 |              4 |
+|  ap_clk      | grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/k_reg_288[3]_i_2_n_8                                        | grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/k_reg_288 |                2 |              4 |
+|  ap_clk      | grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/i_reg_271_reg[0][0]                                         | grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/SR[0]     |                1 |              4 |
+|  ap_clk      | grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/i_2_reg_316_reg[0][0]                                       | grp_dct_dct_2d_fu_167/i_2_reg_316[3]_i_1_n_8          |                1 |              4 |
+|  ap_clk      | ap_reg_ppiten_pp0_it10                                                                                  |                                                       |                3 |              6 |
+|  ap_clk      | grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/ap_reg_ppiten_pp0_it10                                      |                                                       |                3 |              6 |
+|  ap_clk      | grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/ap_sig_bdd_169                                              |                                                       |                3 |              8 |
+|  ap_clk      | c_i_reg_1560                                                                                            | grp_dct_dct_2d_fu_167/SR[0]                           |                5 |             11 |
+|  ap_clk      | grp_dct_read_data_fu_196/c_reg_2080                                                                     | grp_dct_read_data_fu_196/c_reg_208                    |                4 |             11 |
+|  ap_clk      | grp_dct_dct_2d_fu_167/i_1_reg_3050                                                                      | grp_dct_dct_2d_fu_167/ap_reg_ppiten_pp0_it00_2        |                3 |             11 |
+|  ap_clk      | grp_dct_dct_2d_fu_167/i_3_reg_3500                                                                      | grp_dct_dct_2d_fu_167/ap_reg_ppiten_pp1_it00          |                4 |             11 |
+|  ap_clk      | grp_dct_dct_2d_fu_167/col_inbuf_2_U/dct_dct_2d_col_inbuf_0_ram_U/p_0_in                                 |                                                       |                4 |             16 |
+|  ap_clk      | grp_dct_read_data_fu_196/p_0_in_0                                                                       |                                                       |                4 |             16 |
+|  ap_clk      | grp_dct_read_data_fu_196/p_0_in_1                                                                       |                                                       |                4 |             16 |
+|  ap_clk      | grp_dct_read_data_fu_196/p_0_in_2                                                                       |                                                       |                4 |             16 |
+|  ap_clk      | grp_dct_read_data_fu_196/p_0_in_3                                                                       |                                                       |                4 |             16 |
+|  ap_clk      | grp_dct_read_data_fu_196/p_0_in_4                                                                       |                                                       |                4 |             16 |
+|  ap_clk      | grp_dct_read_data_fu_196/p_0_in_5                                                                       |                                                       |                4 |             16 |
+|  ap_clk      | grp_dct_read_data_fu_196/p_0_in_6                                                                       |                                                       |                4 |             16 |
+|  ap_clk      | grp_dct_dct_2d_fu_167/col_inbuf_5_U/dct_dct_2d_col_inbuf_0_ram_U/p_0_in                                 |                                                       |                4 |             16 |
+|  ap_clk      | grp_dct_dct_2d_fu_167/col_inbuf_1_U/dct_dct_2d_col_inbuf_0_ram_U/p_0_in                                 |                                                       |                4 |             16 |
+|  ap_clk      | grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/tmp_7_reg_689[15]_i_1_n_8                                   |                                                       |                5 |             16 |
+|  ap_clk      | grp_dct_read_data_fu_196/p_0_in                                                                         |                                                       |                4 |             16 |
+|  ap_clk      | grp_dct_dct_2d_fu_167/col_inbuf_0_U/dct_dct_2d_col_inbuf_0_ram_U/p_0_in                                 |                                                       |                4 |             16 |
+|  ap_clk      | grp_dct_dct_2d_fu_167/col_inbuf_7_U/dct_dct_2d_col_inbuf_0_ram_U/p_0_in                                 |                                                       |                4 |             16 |
+|  ap_clk      | grp_dct_dct_2d_fu_167/col_inbuf_3_U/dct_dct_2d_col_inbuf_0_ram_U/p_0_in                                 |                                                       |                4 |             16 |
+|  ap_clk      | grp_dct_dct_2d_fu_167/col_inbuf_4_U/dct_dct_2d_col_inbuf_0_ram_U/p_0_in                                 |                                                       |                4 |             16 |
+|  ap_clk      | grp_dct_dct_2d_fu_167/col_inbuf_6_U/dct_dct_2d_col_inbuf_0_ram_U/p_0_in                                 |                                                       |                4 |             16 |
+|  ap_clk      |                                                                                                         | ap_rst                                                |               13 |             31 |
+|  ap_clk      | grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/dct_coeff_table_4_U/dct_dct_1d_dct_coeff_table_4_rom_U/E[0] |                                                       |               13 |             33 |
+|  ap_clk      |                                                                                                         |                                                       |               19 |             44 |
+|  ap_clk      | grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/q0_reg[15]_2[0]                                             |                                                       |               20 |             48 |
+|  ap_clk      | grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/q0_reg[0][0]                                                |                                                       |               24 |             48 |
+|  ap_clk      | grp_dct_dct_2d_fu_167/grp_dct_dct_1d_fu_361/q0_reg[0]_0[0]                                              |                                                       |               18 |             80 |
+|  ap_clk      | grp_dct_read_data_fu_196/E[0]                                                                           |                                                       |               27 |             80 |
++--------------+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+
+

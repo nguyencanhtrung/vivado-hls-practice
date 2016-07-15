@@ -53,11 +53,13 @@ void matrixmul(
   // Iterate over the rows of the A matrix
    Row: for(int i = 0; i < MAT_A_ROWS; i++) {
       // Iterate over the columns of the B matrix
-      Col: for(int j = 0; j < MAT_B_COLS; j++) {
+      Col:for(int j = 0; j < MAT_B_COLS; j++) {
          res[i][j] = 0;
          // Do the inner product of a row of A and col of B
          Product: for(int k = 0; k < MAT_B_ROWS; k++) {
-            res[i][j] += a[i][k] * b[k][j];
+        	 	 //if (k == 0)
+        	 	//	 res[i][j] = 0;
+        	 	 res[i][j] += a[i][k] * b[k][j];
          }
       }
    }

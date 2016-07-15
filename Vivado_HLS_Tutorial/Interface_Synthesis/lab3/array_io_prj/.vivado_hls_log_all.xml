@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [RTGEN-101] Register 'acc_7' is power-on initialization." projectName="array_io_prj" solutionName="solution4" date="2016-06-29T17:58:41.009+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_6' is power-on initialization." projectName="array_io_prj" solutionName="solution4" date="2016-06-29T17:58:40.803+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_5' is power-on initialization." projectName="array_io_prj" solutionName="solution4" date="2016-06-29T17:58:40.750+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_4' is power-on initialization." projectName="array_io_prj" solutionName="solution4" date="2016-06-29T17:58:40.703+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_3' is power-on initialization." projectName="array_io_prj" solutionName="solution4" date="2016-06-29T17:58:40.649+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_2' is power-on initialization." projectName="array_io_prj" solutionName="solution4" date="2016-06-29T17:58:40.585+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_1' is power-on initialization." projectName="array_io_prj" solutionName="solution4" date="2016-06-29T17:58:40.551+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_0' is power-on initialization." projectName="array_io_prj" solutionName="solution4" date="2016-06-29T17:58:40.481+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="array_io_prj" solutionName="solution4" date="2016-06-29T17:58:32.325+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="array_io_prj" solutionName="solution4" date="2016-06-29T17:58:32.276+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_7' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2016-06-29T17:30:20.910+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_6' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2016-06-29T17:30:20.885+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_5' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2016-06-29T17:30:20.854+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_4' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2016-06-29T17:30:20.830+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_3' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2016-06-29T17:30:20.772+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_2' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2016-06-29T17:30:20.729+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_1' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2016-06-29T17:30:20.677+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_0' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2016-06-29T17:30:20.650+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="array_io_prj" solutionName="solution3" date="2016-06-29T17:30:14.991+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="array_io_prj" solutionName="solution3" date="2016-06-29T17:30:14.945+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_7' is power-on initialization." projectName="array_io_prj" solutionName="solution2" date="2016-06-29T15:15:31.386+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_6' is power-on initialization." projectName="array_io_prj" solutionName="solution2" date="2016-06-29T15:15:31.267+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_5' is power-on initialization." projectName="array_io_prj" solutionName="solution2" date="2016-06-29T15:15:31.251+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_4' is power-on initialization." projectName="array_io_prj" solutionName="solution2" date="2016-06-29T15:15:31.234+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_3' is power-on initialization." projectName="array_io_prj" solutionName="solution2" date="2016-06-29T15:15:31.211+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_2' is power-on initialization." projectName="array_io_prj" solutionName="solution2" date="2016-06-29T15:15:31.189+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_1' is power-on initialization." projectName="array_io_prj" solutionName="solution2" date="2016-06-29T15:15:31.160+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_0' is power-on initialization." projectName="array_io_prj" solutionName="solution2" date="2016-06-29T15:15:31.121+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="array_io_prj" solutionName="solution2" date="2016-06-29T15:15:25.554+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="array_io_prj" solutionName="solution2" date="2016-06-29T15:15:25.540+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="array_io_prj" solutionName="solution1" date="2016-06-29T14:52:10.827+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="array_io_prj" solutionName="solution1" date="2016-06-29T14:52:10.796+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

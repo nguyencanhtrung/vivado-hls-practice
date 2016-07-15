@@ -1,0 +1,5 @@
+vhdl xil_defaultlib "AESL_sim_pkg.vhd"
+vhdl xil_defaultlib "adders_add_32ns_32ns_32_8.vhd"
+vhdl xil_defaultlib "adders.autotb.vhd"
+vhdl xil_defaultlib "adders.vhd"
+

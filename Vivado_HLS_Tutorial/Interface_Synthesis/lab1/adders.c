@@ -47,6 +47,13 @@ ALL TIMES.
 
 int adders(int in1, int in2, int in3) {
 
+	// Co-simulation prompt error since this design is not combinational
+	// Since to compute sum it need more than 1 clk cycle
+#pragma HLS INTERFACE ap_ctrl_none port=return
+
+	// Fixed by set block-level interface to handshake protocol
+//#pragma HLS INTERFACE ap_ctrl_hs port=return
+
 // Prevent IO protocols on all input ports
 #pragma HLS INTERFACE ap_none port=in3
 #pragma HLS INTERFACE ap_none port=in2

@@ -59,14 +59,16 @@ void array_io (dout_t d_o[N], din_t d_i[N]) {
 	
 	// Store accumulated data
 	static dacc_t acc[CHANNELS];
+	// [Trung comment] after synthesize, this array becomes an internal BRAM
+	// keyword "static" just ensures this BRAM is visible within this function
 	dacc_t temp;
 
 	// Accumulate each channel
 	For_Loop: for (i=0;i<N;i++) {
-		rem=i%CHANNELS;
-		temp = acc[rem] + d_i[i];
-		acc[rem] = temp;
-		d_o[i] = acc[rem];
+		rem			=	i%CHANNELS;
+		temp 		= 	acc[rem] + d_i[i];
+		acc[rem] 	= 	temp;
+		d_o[i] 		= 	acc[rem];
 	}
 }
 

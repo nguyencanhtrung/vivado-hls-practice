@@ -1,0 +1,22 @@
+@I [HLS-10] Running '/opt/Xilinx/Vivado_HLS/2015.3/bin/unwrapped/lnx64.o/apcc'
+            for user 'ctnguyen' on host 'finance.eit.uni-kl.de' (Linux_x86_64 version 2.6.32-573.12.1.el6.x86_64) on Tue Jun 28 09:51:16 CEST 2016
+            in directory '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/C_Validation/proj_c_valid/solution1/sim/wrapc'
+@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/C_Validation/lab2/hamming_window_test.c:77:18: warning: format specifies type 'int' but the argument has type 'out_data_t' (aka 'int32') [-Wformat]
+   fprintf(fp, "%d %d \n", hw_result[i],sw_result[i]);
+                ~^         ~~~~~~~~~~~~
+/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/C_Validation/lab2/hamming_window_test.c:77:21: warning: format specifies type 'int' but the argument has type 'out_data_t' (aka 'int32') [-Wformat]
+   fprintf(fp, "%d %d \n", hw_result[i],sw_result[i]);
+                   ~^                   ~~~~~~~~~~~~
+/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/C_Validation/lab2/hamming_window_test.c:82:56: warning: format specifies type 'int' but the argument has type 'out_data_t' (aka 'int32') [-Wformat]
+         printf("\n!!! ERROR at i = %4d - expected: %10d\tgot: %10d",
+                                                    ~~~^
+/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/C_Validation/lab2/hamming_window_test.c:82:67: warning: format specifies type 'int' but the argument has type 'out_data_t' (aka 'int32') [-Wformat]
+         printf("\n!!! ERROR at i = %4d - expected: %10d\tgot: %10d",
+                                                               ~~~^
+4 warnings generated.
+@I [APCC-3] Tmp directory is /tmp/apcc_db_ctnguyen/269351467100276372435
+@I [APCC-1] APCC is done.

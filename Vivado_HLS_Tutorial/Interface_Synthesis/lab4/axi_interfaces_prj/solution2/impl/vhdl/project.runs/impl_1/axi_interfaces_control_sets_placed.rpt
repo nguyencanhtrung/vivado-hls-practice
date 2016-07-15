@@ -1,0 +1,59 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
+| Date         : Wed Jun 29 19:40:02 2016
+| Host         : finance.eit.uni-kl.de running 64-bit Scientific Linux release 6.7 (Carbon)
+| Command      : report_control_sets -verbose -file axi_interfaces_control_sets_placed.rpt
+| Design       : axi_interfaces
+| Device       : xc7k160t
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |     6 |
+| Minimum Number of register sites lost to control set restrictions |    15 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            1 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              22 |           11 |
+| Yes          | No                    | No                     |             137 |           37 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------+----------------------------------------------+-------------------------------------------------------------+------------------+----------------+
+| Clock Signal |                 Enable Signal                |                       Set/Reset Signal                      | Slice Load Count | Bel Load Count |
++--------------+----------------------------------------------+-------------------------------------------------------------+------------------+----------------+
+|  ap_clk      |                                              |                                                             |                1 |              2 |
+|  ap_clk      | axi_interfaces_AXILiteS_s_axi_U/waddr0       |                                                             |                2 |              4 |
+|  ap_clk      | axi_interfaces_AXILiteS_s_axi_U/ar_hs        |                                                             |                3 |              5 |
+|  ap_clk      |                                              | axi_interfaces_AXILiteS_s_axi_U/ap_reg_ioackin_d_o_7_TREADY |                5 |              8 |
+|  ap_clk      |                                              | axi_interfaces_AXILiteS_s_axi_U/SR[0]                       |                6 |             14 |
+|  ap_clk      | axi_interfaces_AXILiteS_s_axi_U/d_i_7_TREADY |                                                             |               32 |            128 |
++--------------+----------------------------------------------+-------------------------------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,22 @@
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running '/opt/Xilinx/Vivado_HLS/2015.3/bin/unwrapped/lnx64.o/vivado_hls'
+            for user 'ctnguyen' on host 'finance.eit.uni-kl.de' (Linux_x86_64 version 2.6.32-573.12.1.el6.x86_64) on Tue Jun 28 21:36:08 CEST 2016
+            in directory '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/C_Validation/lab3'
+@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+@I [HLS-10] Opening project '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/C_Validation/lab3/hamming_window_prj'.
+@I [HLS-10] Opening solution '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/C_Validation/lab3/hamming_window_prj/solution1'.
+@I [SYN-201] Setting up clock 'default' with a period of 5ns.
+@I [HLS-10] Setting target device to 'xc7k160tfbg484-1'
+   Compiling ../../../../hamming_window_test.cpp in debug mode
+   Compiling ../../../../hamming_window.cpp in debug mode
+   Generating csim.exe
+Running DUT...done.
+Testing DUT results
+................................................................
+................................................................
+................................................................
+................................................................
+*** Test Passed ***
+@I [SIM-1] CSim done with 0 errors.
+@I [LIC-101] Checked in feature [HLS]

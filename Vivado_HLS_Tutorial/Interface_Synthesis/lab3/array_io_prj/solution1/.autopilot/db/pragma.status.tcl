@@ -1,0 +1,2 @@
+lappend pragmaStatus0 {pragma "RESOURCE" source "/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Interface_Synthesis/lab3/array_io.c" location "array_io" found 1 funcFound 1 applied 1 ambiguous 0 reason "null" variable "d_o"}
+lappend pragmaStatus1 {pragma "RESOURCE" source "/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Interface_Synthesis/lab3/array_io.c" location "array_io" found 1 funcFound 1 applied 1 ambiguous 0 reason "null" variable "d_i"}

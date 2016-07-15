@@ -52,12 +52,11 @@ using namespace xhls_window_fn;
 // instantiations and method calls to be synthesized as well as mapping
 // the top-level I/O (function arguments) into/out of the methods/functions.
 void window_fn_top(
-      win_fn_out_t outdata[WIN_LEN],
-      win_fn_in_t indata[WIN_LEN])
+      win_fn_out_t 	outdata[WIN_LEN],
+      win_fn_in_t 	indata[WIN_LEN])
 {
    // Instantiate a window_fn object - types and params defined in header file
-   window_fn<win_fn_in_t,win_fn_out_t,win_fn_coef_t,
-      WIN_LEN,WIN_TYPE> my_win_fn;
+   window_fn<win_fn_in_t,win_fn_out_t,win_fn_coef_t, WIN_LEN,WIN_TYPE> my_win_fn;
 
    // Call the apply() method - an input data set is windowed for each "call"
    // to window_fn_top()

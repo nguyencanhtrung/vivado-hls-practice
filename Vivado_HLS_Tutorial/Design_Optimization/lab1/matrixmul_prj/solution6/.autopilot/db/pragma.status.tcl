@@ -1,0 +1,3 @@
+lappend pragmaStatus0 {pragma "ARRAY_RESHAPE" source "/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul.cpp" location "matrixmul" found 1 funcFound 1 applied 1 ambiguous 0 reason "null" variable "a"}
+lappend pragmaStatus1 {pragma "ARRAY_RESHAPE" source "/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul.cpp" location "matrixmul" found 1 funcFound 1 applied 1 ambiguous 0 reason "null" variable "b"}
+lappend pragmaStatus2 {pragma "PIPELINE" source "/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul.cpp" location "matrixmul" found 1 funcFound 1 applied 1 ambiguous 0 reason "null"}

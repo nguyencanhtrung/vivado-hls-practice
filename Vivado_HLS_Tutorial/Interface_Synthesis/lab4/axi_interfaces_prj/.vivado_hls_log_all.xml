@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [RTGEN-101] Register 'acc_7' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution3" date="2016-06-29T19:49:47.461+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_6' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution3" date="2016-06-29T19:49:47.420+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_5' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution3" date="2016-06-29T19:49:47.381+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_4' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution3" date="2016-06-29T19:49:47.348+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_3' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution3" date="2016-06-29T19:49:47.312+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_2' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution3" date="2016-06-29T19:49:47.270+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_1' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution3" date="2016-06-29T19:49:47.224+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_0' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution3" date="2016-06-29T19:49:47.185+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="axi_interfaces_prj" solutionName="solution3" date="2016-06-29T19:49:39.960+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="axi_interfaces_prj" solutionName="solution3" date="2016-06-29T19:49:39.925+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_7' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution2" date="2016-06-29T19:36:27.175+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_6' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution2" date="2016-06-29T19:36:27.153+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_5' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution2" date="2016-06-29T19:36:27.121+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_4' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution2" date="2016-06-29T19:36:27.100+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_3' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution2" date="2016-06-29T19:36:27.072+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_2' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution2" date="2016-06-29T19:36:27.041+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_1' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution2" date="2016-06-29T19:36:27.000+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_0' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution2" date="2016-06-29T19:36:26.969+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="axi_interfaces_prj" solutionName="solution2" date="2016-06-29T19:36:22.963+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="axi_interfaces_prj" solutionName="solution2" date="2016-06-29T19:36:22.929+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_7' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution1" date="2016-06-29T18:41:39.899+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_6' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution1" date="2016-06-29T18:41:39.875+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_5' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution1" date="2016-06-29T18:41:39.855+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_4' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution1" date="2016-06-29T18:41:39.828+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_3' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution1" date="2016-06-29T18:41:39.797+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_2' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution1" date="2016-06-29T18:41:39.784+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_1' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution1" date="2016-06-29T18:41:39.774+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_0' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution1" date="2016-06-29T18:41:39.763+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="axi_interfaces_prj" solutionName="solution1" date="2016-06-29T18:41:35.282+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="axi_interfaces_prj" solutionName="solution1" date="2016-06-29T18:41:35.260+0200" type="Warning"/>
+      </synLog>
+      <simLog>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.&#xA;clang: warning: argument unused during compilation: '-fno-builtin-isinf'&#xA;clang: warning: argument unused during compilation: '-fno-builtin-isnan'" projectName="axi_interfaces_prj" solutionName="solution3" date="2016-06-29T19:54:25.012+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="axi_interfaces_prj" solutionName="solution3" date="2016-06-29T19:54:24.986+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.&#xA;clang: warning: argument unused during compilation: '-fno-builtin-isinf'&#xA;clang: warning: argument unused during compilation: '-fno-builtin-isnan'" projectName="axi_interfaces_prj" solutionName="solution3" date="2016-06-29T19:54:24.963+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="axi_interfaces_prj" solutionName="solution3" date="2016-06-29T19:54:24.936+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="axi_interfaces_prj" solutionName="solution3" date="2016-06-29T19:54:17.891+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="axi_interfaces_prj" solutionName="solution3" date="2016-06-29T19:54:17.858+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.&#xA;clang: warning: argument unused during compilation: '-fno-builtin-isinf'&#xA;clang: warning: argument unused during compilation: '-fno-builtin-isnan'" projectName="axi_interfaces_prj" solutionName="solution2" date="2016-06-29T19:37:08.114+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="axi_interfaces_prj" solutionName="solution2" date="2016-06-29T19:37:08.104+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.&#xA;clang: warning: argument unused during compilation: '-fno-builtin-isinf'&#xA;clang: warning: argument unused during compilation: '-fno-builtin-isnan'" projectName="axi_interfaces_prj" solutionName="solution2" date="2016-06-29T19:37:08.081+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="axi_interfaces_prj" solutionName="solution2" date="2016-06-29T19:37:08.030+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="axi_interfaces_prj" solutionName="solution2" date="2016-06-29T19:37:00.847+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="axi_interfaces_prj" solutionName="solution2" date="2016-06-29T19:37:00.809+0200" type="Warning"/>
+      </simLog>
+      <mgLog/>
+      <packageLog>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="axi_interfaces_prj" solutionName="solution3" date="2016-06-29T19:56:00.322+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="axi_interfaces_prj" solutionName="solution3" date="2016-06-29T19:56:00.289+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="axi_interfaces_prj" solutionName="solution2" date="2016-06-29T19:37:49.224+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="axi_interfaces_prj" solutionName="solution2" date="2016-06-29T19:37:49.191+0200" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
