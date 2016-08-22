@@ -1,0 +1,7 @@
+   Compiling ../../../src/gpio_bram_hls_tb.cpp in debug mode
+   Compiling ../../../src/gpio_bram_hls.cpp in debug mode
+   Generating csim.exe
+indexSW   = 99  vs  indexHW   = 99
+counterSW = 101  vs  counterHW = 101
+test passed
+@I [SIM-1] CSim done with 0 errors.

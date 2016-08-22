@@ -1,0 +1,3 @@
+counter_stream_hls_AXILiteS_s_axi
+counter_stream_hls_cpuControl_s_axi
+counter_stream_hls

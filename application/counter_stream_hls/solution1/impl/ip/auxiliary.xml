@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="counter_stream_hls" xd:componentRef="counter_stream_hls" xd:initiationInterval="x" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="init" xd:originalName="init" xd:direction="in" xd:interfaceRef="s_axi_cpuControl" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="resolution" xd:originalName="resolution" xd:direction="in" xd:interfaceRef="s_axi_cpuControl" xd:busTypeRef="axilite" xd:offset="0x18" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="numWord" xd:originalName="numWord" xd:direction="in" xd:interfaceRef="s_axi_cpuControl" xd:busTypeRef="axilite" xd:offset="0x20" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(counter)" xd:originalName="counter" xd:direction="out" xd:interfaceRef="counter" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(index)" xd:originalName="index" xd:direction="out" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10" xd:statusOffset="0x14" xd:handshakeRef="ap_vld" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="508" xd:FF="442" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

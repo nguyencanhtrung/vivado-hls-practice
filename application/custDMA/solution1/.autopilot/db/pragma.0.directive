@@ -1,0 +1,56 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="memcpyHW" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="m"/>
+<option name="core" value="AXI4M"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="memcpyHW" label="">
+<pragma name="INTERFACE">
+<option name="ap_bus" positionalBoolean="mode" value=""/>
+<option name="depth" value="1024"/>
+<option name="port" positionalBoolean="4" value="m"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="memcpyHW" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="offsetStream"/>
+<option name="core" value="AXI4Stream"/>
+<option name="metadata" value="&quot;-bus_bundle OFFSET_S&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="memcpyHW" label="">
+<pragma name="INTERFACE">
+<option name="ap_fifo" positionalBoolean="mode" value=""/>
+<option name="depth" value="64"/>
+<option name="port" positionalBoolean="4" value="offsetStream"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="memcpyHW" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="dataStream"/>
+<option name="core" value="AXI4Stream"/>
+<option name="metadata" value="&quot;-bus_bundle DATA_S&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="memcpyHW" label="">
+<pragma name="INTERFACE">
+<option name="ap_fifo" positionalBoolean="mode" value=""/>
+<option name="depth" value="64"/>
+<option name="port" positionalBoolean="4" value="dataStream"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="memcpyHW" label="">
+<pragma name="INTERFACE">
+<option name="ap_ctrl_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="return"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="memcpyHW" label="">
+<pragma name="PIPELINE">
+<option name="II" value="32"/>
+</pragma>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

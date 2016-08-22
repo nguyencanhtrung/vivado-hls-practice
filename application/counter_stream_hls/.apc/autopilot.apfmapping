@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="counter_stream_hls.cpp" path="/home/ctnguyen/work/vivadohls/counter_stream_hls/src/counter_stream_hls.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="counter_stream_tb.cpp" path="/home/ctnguyen/work/vivadohls/counter_stream_hls/src/counter_stream_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
