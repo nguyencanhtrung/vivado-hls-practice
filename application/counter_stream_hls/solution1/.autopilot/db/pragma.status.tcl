@@ -1,1 +1,0 @@
-lappend pragmaStatus0 {pragma "PIPELINE" source "/home/ctnguyen/work/vivadohls/counter_stream_hls/src/counter_stream_hls.cpp" location "counter_stream_hls/counter_stream_hls_label0" found 1 funcFound 1 applied 1 ambiguous 0 reason "null"}
