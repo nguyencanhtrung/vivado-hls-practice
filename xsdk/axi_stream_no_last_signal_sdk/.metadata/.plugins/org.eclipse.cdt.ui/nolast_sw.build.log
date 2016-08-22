@@ -1,0 +1,21 @@
+02:54:10 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35332	   1216	  22596	  59144	   e708	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+
+02:54:10 Build Finished (took 497ms)
+

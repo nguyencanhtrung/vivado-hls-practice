@@ -1,0 +1,40 @@
+/*
+ * union_t.c
+ *
+ *  Created on: Aug 21, 2016
+ *      Author: trungnguyen
+ */
+#include <stdint.h>		// if C99 compatiable compiler
+
+uint32_t;
+
+union ip_configuration {
+	uint32_t config_info[7];
+
+	struct {
+		uint32_t control_signals;
+		uint32_t global_interrupt;
+		uint32_t interupt_enable;
+		uint32_t interupt_status;
+		uint32_t resolution;
+		uint32_t reserve;
+		uint32_t num_of_interration;
+	};
+};
+
+// 0x04 : Global Interrupt Enable Register
+//        bit 0  - Global Interrupt Enable (Read/Write)
+//        others - reserved
+// 0x08 : IP Interrupt Enable Register (Read/Write)
+//        bit 0  - Channel 0 (ap_done)
+//        bit 1  - Channel 1 (ap_ready)
+//        others - reserved
+// 0x0c : IP Interrupt Status Register (Read/TOW)
+//        bit 0  - Channel 0 (ap_done)
+//        bit 1  - Channel 1 (ap_ready)
+//        others - reserved
+// 0x10 : Data signal of resolution
+//        bit 31~0 - resolution[31:0] (Read/Write)
+// 0x14 : reserved
+// 0x18 : Data signal of numIteration
+//        bit 31~0 - numIteration[31:0] (Read/Write)
