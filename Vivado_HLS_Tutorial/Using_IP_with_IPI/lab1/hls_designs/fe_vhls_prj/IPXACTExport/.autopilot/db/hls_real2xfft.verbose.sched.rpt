@@ -1,0 +1,299 @@
+
+
+================================================================
+== Vivado HLS Report for 'hls_real2xfft'
+================================================================
+* Date:           Fri Jul  8 12:12:29 2016
+
+* Version:        2015.3 (Build 1368829 on Mon Sep 28 20:31:51 PM 2015)
+* Project:        fe_vhls_prj
+* Solution:       IPXACTExport
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   4.00|      3.95|        0.50|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |  518|  519|  512|  512| dataflow |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 8
+* Pipeline: 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 8, States = { 1 2 3 4 5 6 7 8 }
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+* FSM state operations: 
+
+ <State 1>: 0.00ns
+ST_1: nodelay_i_0_channel [1/1] 0.00ns
+arrayctor.loop1.preheader:4  %nodelay_i_0_channel = alloca i16, align 2
+
+ST_1: nodelay_i_1_channel [1/1] 0.00ns
+arrayctor.loop1.preheader:7  %nodelay_i_1_channel = alloca i16, align 2
+
+ST_1: delayed_i_0_channel [1/1] 0.00ns
+arrayctor.loop1.preheader:10  %delayed_i_0_channel = alloca i16, align 2
+
+ST_1: delayed_i_1_channel [1/1] 0.00ns
+arrayctor.loop1.preheader:13  %delayed_i_1_channel = alloca i16, align 2
+
+ST_1: data2window_0_channel [1/1] 0.00ns
+arrayctor.loop1.preheader:17  %data2window_0_channel = alloca i16, align 2
+
+ST_1: data2window_1_channel [1/1] 0.00ns
+arrayctor.loop1.preheader:20  %data2window_1_channel = alloca i16, align 2
+
+ST_1: windowed_0_channel [1/1] 0.00ns
+arrayctor.loop1.preheader:23  %windowed_0_channel = alloca i16, align 2
+
+ST_1: windowed_1_channel [1/1] 0.00ns
+arrayctor.loop1.preheader:26  %windowed_1_channel = alloca i16, align 2
+
+ST_1: stg_17 [2/2] 0.00ns
+arrayctor.loop1.preheader:32  call fastcc void @hls_real2xfft_Loop_sliding_win_delay_proc(i16* %delayed_i_0_channel, i16* %delayed_i_1_channel, i16* %din_V_V, i16* %nodelay_i_0_channel, i16* %nodelay_i_1_channel)
+
+
+ <State 2>: 0.00ns
+ST_2: stg_18 [1/2] 0.00ns
+arrayctor.loop1.preheader:32  call fastcc void @hls_real2xfft_Loop_sliding_win_delay_proc(i16* %delayed_i_0_channel, i16* %delayed_i_1_channel, i16* %din_V_V, i16* %nodelay_i_0_channel, i16* %nodelay_i_1_channel)
+
+
+ <State 3>: 0.00ns
+ST_3: stg_19 [2/2] 0.00ns
+arrayctor.loop1.preheader:41  call fastcc void @hls_real2xfft_Loop_sliding_win_output_proc(i16* %data2window_1_channel, i16* %delayed_i_1_channel, i16* %data2window_0_channel, i16* %delayed_i_0_channel, i16* %nodelay_i_0_channel, i16* %nodelay_i_1_channel)
+
+
+ <State 4>: 0.00ns
+ST_4: stg_20 [1/2] 0.00ns
+arrayctor.loop1.preheader:41  call fastcc void @hls_real2xfft_Loop_sliding_win_output_proc(i16* %data2window_1_channel, i16* %delayed_i_1_channel, i16* %data2window_0_channel, i16* %delayed_i_0_channel, i16* %nodelay_i_0_channel, i16* %nodelay_i_1_channel)
+
+
+ <State 5>: 0.00ns
+ST_5: stg_21 [2/2] 0.00ns
+arrayctor.loop1.preheader:46  call fastcc void @hls_real2xfft_window_fn(i16* %data2window_0_channel, i16* %data2window_1_channel, i16* %windowed_0_channel, i16* %windowed_1_channel)
+
+
+ <State 6>: 0.00ns
+ST_6: stg_22 [1/2] 0.00ns
+arrayctor.loop1.preheader:46  call fastcc void @hls_real2xfft_window_fn(i16* %data2window_0_channel, i16* %data2window_1_channel, i16* %windowed_0_channel, i16* %windowed_1_channel)
+
+
+ <State 7>: 0.00ns
+ST_7: stg_23 [2/2] 0.00ns
+arrayctor.loop1.preheader:51  call fastcc void @hls_real2xfft_Loop_real2xfft_output_proc(i16* %windowed_0_channel, i16* %windowed_1_channel, i32* %dout_V_data, i1* %dout_V_last_V)
+
+
+ <State 8>: 2.07ns
+ST_8: stg_24 [1/1] 0.00ns
+arrayctor.loop1.preheader:0  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str1) nounwind
+
+ST_8: stg_25 [1/1] 0.00ns
+arrayctor.loop1.preheader:1  call void (...)* @_ssdm_op_SpecBitsMap(i32* %dout_V_data), !map !7
+
+ST_8: stg_26 [1/1] 0.00ns
+arrayctor.loop1.preheader:2  call void (...)* @_ssdm_op_SpecBitsMap(i16* %din_V_V), !map !16
+
+ST_8: stg_27 [1/1] 0.00ns
+arrayctor.loop1.preheader:3  call void (...)* @_ssdm_op_SpecBitsMap(i1* %dout_V_last_V), !map !20
+
+ST_8: empty [1/1] 0.00ns
+arrayctor.loop1.preheader:5  %empty = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @nodelay_OC_i_OC_0_OC_channel_s, i32 1, [1 x i8]* @p_str177, [1 x i8]* @p_str177, i32 512, i32 256, i16* %nodelay_i_0_channel, i16* %nodelay_i_0_channel)
+
+ST_8: stg_29 [1/1] 0.00ns
+arrayctor.loop1.preheader:6  call void (...)* @_ssdm_op_SpecInterface(i16* %nodelay_i_0_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str178, [1 x i8]* @p_str179, [1 x i8]* @p_str180, [1 x i8]* @p_str181)
+
+ST_8: empty_8 [1/1] 0.00ns
+arrayctor.loop1.preheader:8  %empty_8 = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @nodelay_OC_i_OC_1_OC_channel_s, i32 1, [1 x i8]* @p_str172, [1 x i8]* @p_str172, i32 512, i32 256, i16* %nodelay_i_1_channel, i16* %nodelay_i_1_channel)
+
+ST_8: stg_31 [1/1] 0.00ns
+arrayctor.loop1.preheader:9  call void (...)* @_ssdm_op_SpecInterface(i16* %nodelay_i_1_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str173, [1 x i8]* @p_str174, [1 x i8]* @p_str175, [1 x i8]* @p_str176)
+
+ST_8: empty_9 [1/1] 0.00ns
+arrayctor.loop1.preheader:11  %empty_9 = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @delayed_OC_i_OC_0_OC_channel_s, i32 1, [1 x i8]* @p_str167, [1 x i8]* @p_str167, i32 256, i32 256, i16* %delayed_i_0_channel, i16* %delayed_i_0_channel)
+
+ST_8: stg_33 [1/1] 0.00ns
+arrayctor.loop1.preheader:12  call void (...)* @_ssdm_op_SpecInterface(i16* %delayed_i_0_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str168, [1 x i8]* @p_str169, [1 x i8]* @p_str170, [1 x i8]* @p_str171)
+
+ST_8: empty_10 [1/1] 0.00ns
+arrayctor.loop1.preheader:14  %empty_10 = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @delayed_OC_i_OC_1_OC_channel_s, i32 1, [1 x i8]* @p_str162, [1 x i8]* @p_str162, i32 256, i32 256, i16* %delayed_i_1_channel, i16* %delayed_i_1_channel)
+
+ST_8: stg_35 [1/1] 0.00ns
+arrayctor.loop1.preheader:15  call void (...)* @_ssdm_op_SpecInterface(i16* %delayed_i_1_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str163, [1 x i8]* @p_str164, [1 x i8]* @p_str165, [1 x i8]* @p_str166)
+
+ST_8: stg_36 [1/1] 0.00ns
+arrayctor.loop1.preheader:16  call void (...)* @_ssdm_op_SpecTopModule([14 x i8]* @hls_real2xfft_str) nounwind
+
+ST_8: empty_11 [1/1] 0.00ns
+arrayctor.loop1.preheader:18  %empty_11 = call i32 (...)* @_ssdm_op_SpecChannel([22 x i8]* @data2window_OC_0_OC_channel_st, i32 1, [1 x i8]* @p_str157, [1 x i8]* @p_str157, i32 2, i32 512, i16* %data2window_0_channel, i16* %data2window_0_channel)
+
+ST_8: stg_38 [1/1] 0.00ns
+arrayctor.loop1.preheader:19  call void (...)* @_ssdm_op_SpecInterface(i16* %data2window_0_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str158, [1 x i8]* @p_str159, [1 x i8]* @p_str160, [1 x i8]* @p_str161)
+
+ST_8: empty_12 [1/1] 0.00ns
+arrayctor.loop1.preheader:21  %empty_12 = call i32 (...)* @_ssdm_op_SpecChannel([22 x i8]* @data2window_OC_1_OC_channel_st, i32 1, [1 x i8]* @p_str152, [1 x i8]* @p_str152, i32 2, i32 512, i16* %data2window_1_channel, i16* %data2window_1_channel)
+
+ST_8: stg_40 [1/1] 0.00ns
+arrayctor.loop1.preheader:22  call void (...)* @_ssdm_op_SpecInterface(i16* %data2window_1_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str153, [1 x i8]* @p_str154, [1 x i8]* @p_str155, [1 x i8]* @p_str156)
+
+ST_8: empty_13 [1/1] 0.00ns
+arrayctor.loop1.preheader:24  %empty_13 = call i32 (...)* @_ssdm_op_SpecChannel([19 x i8]* @windowed_OC_0_OC_channel_str, i32 1, [1 x i8]* @p_str147, [1 x i8]* @p_str147, i32 2, i32 512, i16* %windowed_0_channel, i16* %windowed_0_channel)
+
+ST_8: stg_42 [1/1] 0.00ns
+arrayctor.loop1.preheader:25  call void (...)* @_ssdm_op_SpecInterface(i16* %windowed_0_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str148, [1 x i8]* @p_str149, [1 x i8]* @p_str150, [1 x i8]* @p_str151)
+
+ST_8: empty_14 [1/1] 0.00ns
+arrayctor.loop1.preheader:27  %empty_14 = call i32 (...)* @_ssdm_op_SpecChannel([19 x i8]* @windowed_OC_1_OC_channel_str, i32 1, [1 x i8]* @p_str142, [1 x i8]* @p_str142, i32 2, i32 512, i16* %windowed_1_channel, i16* %windowed_1_channel)
+
+ST_8: stg_44 [1/1] 0.00ns
+arrayctor.loop1.preheader:28  call void (...)* @_ssdm_op_SpecInterface(i16* %windowed_1_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str143, [1 x i8]* @p_str144, [1 x i8]* @p_str145, [1 x i8]* @p_str146)
+
+ST_8: stg_45 [1/1] 0.00ns
+arrayctor.loop1.preheader:29  call void (...)* @_ssdm_op_SpecInterface(i32* %dout_V_data, i1* %dout_V_last_V, [5 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_8: stg_46 [1/1] 0.00ns
+arrayctor.loop1.preheader:30  call void (...)* @_ssdm_op_SpecInterface(i16* %din_V_V, [5 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_8: stg_47 [1/1] 0.00ns
+arrayctor.loop1.preheader:31  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str1) nounwind
+
+ST_8: empty_15 [1/1] 0.00ns
+arrayctor.loop1.preheader:33  %empty_15 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @delayed_OC_i_OC_0_str, i32 1, [1 x i8]* @p_str34, [1 x i8]* @p_str34, i32 256, i32 256, i16* %delayed_i_0_channel, i16* %delayed_i_0_channel)
+
+ST_8: stg_49 [1/1] 0.00ns
+arrayctor.loop1.preheader:34  call void (...)* @_ssdm_op_SpecInterface(i16* %delayed_i_0_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str35, [1 x i8]* @p_str36, [1 x i8]* @p_str37, [1 x i8]* @p_str38)
+
+ST_8: empty_16 [1/1] 0.00ns
+arrayctor.loop1.preheader:35  %empty_16 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @delayed_OC_i_OC_1_str, i32 1, [1 x i8]* @p_str39, [1 x i8]* @p_str39, i32 256, i32 256, i16* %delayed_i_1_channel, i16* %delayed_i_1_channel)
+
+ST_8: stg_51 [1/1] 0.00ns
+arrayctor.loop1.preheader:36  call void (...)* @_ssdm_op_SpecInterface(i16* %delayed_i_1_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str40, [1 x i8]* @p_str41, [1 x i8]* @p_str42, [1 x i8]* @p_str43)
+
+ST_8: empty_17 [1/1] 0.00ns
+arrayctor.loop1.preheader:37  %empty_17 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @nodelay_OC_i_OC_0_str, i32 1, [1 x i8]* @p_str44, [1 x i8]* @p_str44, i32 512, i32 256, i16* %nodelay_i_0_channel, i16* %nodelay_i_0_channel)
+
+ST_8: stg_53 [1/1] 0.00ns
+arrayctor.loop1.preheader:38  call void (...)* @_ssdm_op_SpecInterface(i16* %nodelay_i_0_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str45, [1 x i8]* @p_str46, [1 x i8]* @p_str47, [1 x i8]* @p_str48)
+
+ST_8: empty_18 [1/1] 0.00ns
+arrayctor.loop1.preheader:39  %empty_18 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @nodelay_OC_i_OC_1_str, i32 1, [1 x i8]* @p_str49, [1 x i8]* @p_str49, i32 512, i32 256, i16* %nodelay_i_1_channel, i16* %nodelay_i_1_channel)
+
+ST_8: stg_55 [1/1] 0.00ns
+arrayctor.loop1.preheader:40  call void (...)* @_ssdm_op_SpecInterface(i16* %nodelay_i_1_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str50, [1 x i8]* @p_str51, [1 x i8]* @p_str52, [1 x i8]* @p_str53)
+
+ST_8: empty_19 [1/1] 0.00ns
+arrayctor.loop1.preheader:42  %empty_19 = call i32 (...)* @_ssdm_op_SpecChannel([14 x i8]* @data2window_OC_1_str, i32 1, [1 x i8]* @p_str54, [1 x i8]* @p_str54, i32 2, i32 512, i16* %data2window_1_channel, i16* %data2window_1_channel)
+
+ST_8: stg_57 [1/1] 0.00ns
+arrayctor.loop1.preheader:43  call void (...)* @_ssdm_op_SpecInterface(i16* %data2window_1_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str55, [1 x i8]* @p_str56, [1 x i8]* @p_str57, [1 x i8]* @p_str58)
+
+ST_8: empty_20 [1/1] 0.00ns
+arrayctor.loop1.preheader:44  %empty_20 = call i32 (...)* @_ssdm_op_SpecChannel([14 x i8]* @data2window_OC_0_str, i32 1, [1 x i8]* @p_str59, [1 x i8]* @p_str59, i32 2, i32 512, i16* %data2window_0_channel, i16* %data2window_0_channel)
+
+ST_8: stg_59 [1/1] 0.00ns
+arrayctor.loop1.preheader:45  call void (...)* @_ssdm_op_SpecInterface(i16* %data2window_0_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str60, [1 x i8]* @p_str61, [1 x i8]* @p_str62, [1 x i8]* @p_str63)
+
+ST_8: empty_21 [1/1] 0.00ns
+arrayctor.loop1.preheader:47  %empty_21 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @windowed_OC_0_str, i32 1, [1 x i8]* @p_str64, [1 x i8]* @p_str64, i32 2, i32 512, i16* %windowed_0_channel, i16* %windowed_0_channel)
+
+ST_8: stg_61 [1/1] 0.00ns
+arrayctor.loop1.preheader:48  call void (...)* @_ssdm_op_SpecInterface(i16* %windowed_0_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str65, [1 x i8]* @p_str66, [1 x i8]* @p_str67, [1 x i8]* @p_str68)
+
+ST_8: empty_22 [1/1] 0.00ns
+arrayctor.loop1.preheader:49  %empty_22 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @windowed_OC_1_str, i32 1, [1 x i8]* @p_str69, [1 x i8]* @p_str69, i32 2, i32 512, i16* %windowed_1_channel, i16* %windowed_1_channel)
+
+ST_8: stg_63 [1/1] 0.00ns
+arrayctor.loop1.preheader:50  call void (...)* @_ssdm_op_SpecInterface(i16* %windowed_1_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str70, [1 x i8]* @p_str71, [1 x i8]* @p_str72, [1 x i8]* @p_str73)
+
+ST_8: stg_64 [1/2] 2.07ns
+arrayctor.loop1.preheader:51  call fastcc void @hls_real2xfft_Loop_real2xfft_output_proc(i16* %windowed_0_channel, i16* %windowed_1_channel, i32* %dout_V_data, i1* %dout_V_last_V)
+
+ST_8: stg_65 [1/1] 0.00ns
+arrayctor.loop1.preheader:52  ret void
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

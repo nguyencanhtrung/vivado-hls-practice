@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="counter_stream_hls.hpp" path="/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_no_last_signal_hls/solution1/src/counter_stream_hls.hpp"/>
+    <originFiles name="counter_stream_hls.cpp" path="/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_no_last_signal_hls/solution1/src/counter_stream_hls.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="counter_stream_tb.cpp" path="/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_no_last_signal_hls/solution1/src/counter_stream_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

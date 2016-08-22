@@ -1,0 +1,175 @@
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running '/opt/Xilinx/Vivado_HLS/2015.3/bin/unwrapped/lnx64.o/vivado_hls'
+            for user 'ctnguyen' on host 'finance.eit.uni-kl.de' (Linux_x86_64 version 2.6.32-573.12.1.el6.x86_64) on Fri Jul 08 12:11:35 CEST 2016
+            in directory '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Using_IP_with_IPI/lab1/hls_designs'
+@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
+@I [HLS-10] Opening project '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Using_IP_with_IPI/lab1/hls_designs/fe_vhls_prj'.
+@I [HLS-10] Adding design file 'real2xfft.cpp' to the project
+@I [HLS-10] Adding test bench file 'hls_realfft_test.cpp' to the project
+@I [HLS-10] Adding test bench file 'xfft2real.cpp' to the project
+@I [HLS-10] Opening solution '/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Using_IP_with_IPI/lab1/hls_designs/fe_vhls_prj/IPXACTExport'.
+@I [SYN-201] Setting up clock 'default' with a period of 4ns.
+@I [HLS-10] Setting target device to 'xc7z020clg484-1'
+@I [HLS-10] Analyzing design file 'real2xfft.cpp' ... 
+@I [HLS-10] Validating synthesis directives ...
+@I [HLS-10] Starting code transformations ...
+@I [XFORM-603] Inlining function 'sliding_win_1in2out<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 1024>' into 'hls_real2xfft' (real2xfft.cpp:73).
+@I [HLS-10] Checking synthesizability ...
+@I [XFORM-1101] Packing variable 'dout.V.data' (real2xfft.cpp:61) into a 32-bit variable.
+@I [XFORM-501] Unrolling loop 'apply_win_fn' (./window_fn.h:69) in function 'hls_window_fn::window_fn<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)0, 0>, 1024, (hls_window_fn::win_fn_t)2, 2>' partially with a factor of 2.
+@I [XFORM-501] Unrolling loop 'sliding_win_output' (./sliding_win.h:83) in function 'hls_real2xfft' partially with a factor of 2.
+@I [XFORM-101] Partitioning array 'coeff_tab1'  in dimension 1 with a cyclic factor 2.
+@I [XFORM-101] Partitioning array 'data2window'  in dimension 1 with a cyclic factor 2.
+@I [XFORM-101] Partitioning array 'windowed'  in dimension 1 with a cyclic factor 2.
+@I [XFORM-101] Partitioning array 'nodelay.i'  in dimension 1 with a cyclic factor 2.
+@I [XFORM-101] Partitioning array 'delayed.i'  in dimension 1 with a cyclic factor 2.
+@I [XFORM-721] Changing loop 'Loop_sliding_win_delay_proc' (./sliding_win.h:75) to a process function for dataflow in function 'hls_real2xfft'.
+@I [XFORM-721] Changing loop 'Loop_sliding_win_output_proc' (./sliding_win.h:83) to a process function for dataflow in function 'hls_real2xfft'.
+@I [XFORM-721] Changing loop 'Loop_real2xfft_output_proc' (real2xfft.cpp:77) to a process function for dataflow in function 'hls_real2xfft'.
+@I [XFORM-712] Applying dataflow to function 'hls_real2xfft' (real2xfft.cpp:60), detected/extracted 4 process function(s):
+	 'Loop_sliding_win_delay_proc'
+	 'Loop_sliding_win_output_proc'
+	 'hls_window_fn::window_fn<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)0, 0>, 1024, (hls_window_fn::win_fn_t)2, 2>'
+	 'Loop_real2xfft_output_proc'.
+@W [XFORM-124] Array 'delayed.i.0': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+@W [XFORM-124] Array 'delayed.i.1': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+@W [XFORM-124] Array 'nodelay.i.0': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+@W [XFORM-124] Array 'nodelay.i.1': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+@W [XFORM-631] Renaming function 'hls_window_fn::window_fn<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)0, 0>, 1024, (hls_window_fn::win_fn_t)2, 2>' (./window_fn.h:69:33) into window_fn.
+@I [XFORM-531] Rewinding loop 'apply_win_fn' (./window_fn.h:69) in function 'window_fn'.
+@I [XFORM-531] Rewinding loop 'sliding_win_output' (./sliding_win.h:83) in function 'Loop_sliding_win_output_proc'.
+@I [XFORM-531] Rewinding loop 'sliding_win_delay' (./sliding_win.h:75) in function 'Loop_sliding_win_delay_proc'.
+@I [XFORM-531] Rewinding loop 'real2xfft_output' (real2xfft.cpp:77) in function 'Loop_real2xfft_output_proc'.
+@I [HLS-111] Elapsed time: 14.48 seconds; current memory usage: 0.179 MB.
+@I [HLS-10] Starting hardware synthesis ...
+@I [HLS-10] Synthesizing 'hls_real2xfft' ...
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'hls_real2xfft_Loop_sliding_win_delay_proc' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining loop 'sliding_win_delay'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 2.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.14 seconds; current memory usage: 0.179 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'hls_real2xfft_Loop_sliding_win_delay_proc' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.02 seconds; current memory usage: 0.179 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'hls_real2xfft_Loop_sliding_win_output_proc' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining loop 'sliding_win_output'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 3.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.19 seconds; current memory usage: 0.179 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'hls_real2xfft_Loop_sliding_win_output_proc' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.01 seconds; current memory usage: 0.179 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'hls_real2xfft_window_fn' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining loop 'apply_win_fn'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 4.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.15 seconds; current memory usage: 0.179 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'hls_real2xfft_window_fn' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.01 seconds; current memory usage: 0.179 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'hls_real2xfft_Loop_real2xfft_output_proc' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining loop 'real2xfft_output'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 1.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.09 seconds; current memory usage: 0.179 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'hls_real2xfft_Loop_real2xfft_output_proc' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.01 seconds; current memory usage: 0.179 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'hls_real2xfft' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.02 seconds; current memory usage: 0.179 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'hls_real2xfft' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.04 seconds; current memory usage: 0.179 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'hls_real2xfft_Loop_sliding_win_delay_proc' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-100] Finished creating RTL model for 'hls_real2xfft_Loop_sliding_win_delay_proc'.
+@I [HLS-111] Elapsed time: 0.05 seconds; current memory usage: 0.179 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'hls_real2xfft_Loop_sliding_win_output_proc' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-100] Finished creating RTL model for 'hls_real2xfft_Loop_sliding_win_output_proc'.
+@I [HLS-111] Elapsed time: 0.07 seconds; current memory usage: 0.179 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'hls_real2xfft_window_fn' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-100] Generating core module 'hls_real2xfft_mul_mul_16s_15ns_31_3': 2 instance(s).
+@I [RTGEN-100] Finished creating RTL model for 'hls_real2xfft_window_fn'.
+@I [HLS-111] Elapsed time: 0.09 seconds; current memory usage: 0.179 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'hls_real2xfft_Loop_real2xfft_output_proc' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-100] Finished creating RTL model for 'hls_real2xfft_Loop_real2xfft_output_proc'.
+@I [HLS-111] Elapsed time: 0.07 seconds; current memory usage: 0.179 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'hls_real2xfft' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-500] Setting interface mode on port 'hls_real2xfft/din_V_V' to 'axis'.
+@I [RTGEN-500] Setting interface mode on port 'hls_real2xfft/dout_V_data' to 'axis'.
+@I [RTGEN-500] Setting interface mode on port 'hls_real2xfft/dout_V_last_V' to 'axis'.
+@I [RTGEN-500] Setting interface mode on function 'hls_real2xfft' to 'ap_ctrl_hs'.
+@I [RTGEN-100] Finished creating RTL model for 'hls_real2xfft'.
+@I [HLS-111] Elapsed time: 0.05 seconds; current memory usage: 0.179 MB.
+@I [RTMG-279] Implementing memory 'hls_real2xfft_window_fn_coeff_tab1_0_rom' using auto ROMs.
+@I [RTMG-279] Implementing memory 'hls_real2xfft_window_fn_coeff_tab1_1_rom' using auto ROMs.
+@I [RTMG-285] Implementing FIFO 'FIFO_hls_real2xfft_delayed_i_0_channel' using Block RAMs.
+@I [RTMG-285] Implementing FIFO 'FIFO_hls_real2xfft_delayed_i_1_channel' using Block RAMs.
+@I [RTMG-285] Implementing FIFO 'FIFO_hls_real2xfft_nodelay_i_0_channel' using Block RAMs.
+@I [RTMG-285] Implementing FIFO 'FIFO_hls_real2xfft_nodelay_i_1_channel' using Block RAMs.
+@I [RTMG-285] Implementing FIFO 'FIFO_hls_real2xfft_data2window_1_channel' using Shift Registers.
+@I [RTMG-285] Implementing FIFO 'FIFO_hls_real2xfft_data2window_0_channel' using Shift Registers.
+@I [RTMG-285] Implementing FIFO 'FIFO_hls_real2xfft_windowed_0_channel' using Shift Registers.
+@I [RTMG-285] Implementing FIFO 'FIFO_hls_real2xfft_windowed_1_channel' using Shift Registers.
+@I [HLS-10] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'hls_real2xfft'.
+@I [WVHDL-304] Generating RTL VHDL for 'hls_real2xfft'.
+@I [WVLOG-307] Generating RTL Verilog for 'hls_real2xfft'.
+@I [HLS-112] Total elapsed time: 56.268 seconds; peak memory usage: 0.179 MB.
+@I [LIC-101] Checked in feature [HLS]

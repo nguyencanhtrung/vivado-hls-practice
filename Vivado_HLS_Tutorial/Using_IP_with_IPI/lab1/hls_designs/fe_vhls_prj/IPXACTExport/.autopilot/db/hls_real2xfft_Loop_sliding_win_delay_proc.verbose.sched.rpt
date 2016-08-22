@@ -1,0 +1,202 @@
+
+
+================================================================
+== Vivado HLS Report for 'hls_real2xfft_Loop_sliding_win_delay_proc'
+================================================================
+* Date:           Fri Jul  8 12:12:28 2016
+
+* Version:        2015.3 (Build 1368829 on Mon Sep 28 20:31:51 PM 2015)
+* Project:        fe_vhls_prj
+* Solution:       IPXACTExport
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   4.00|      2.15|        0.50|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+-------------+
+    |  Latency  |  Interval |   Pipeline  |
+    | min | max | min | max |     Type    |
+    +-----+-----+-----+-----+-------------+
+    |  512|  513|  512|  512| loop rewind |
+    +-----+-----+-----+-----+-------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |                     |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name      | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- sliding_win_delay  |  512|  512|         2|          1|          1|   512|    yes   |
+        +---------------------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 3
+* Pipeline: 1
+  Pipeline-0: II = 1, D = 2, States = { 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	2  / true
+* FSM state operations: 
+
+ <State 1>: 1.57ns
+ST_1: stg_4 [1/1] 0.00ns
+newFuncRoot:0  call void (...)* @_ssdm_op_SpecInterface(i16* %din_V_V, [5 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1)
+
+ST_1: stg_5 [1/1] 0.00ns
+newFuncRoot:1  call void (...)* @_ssdm_op_SpecInterface(i16* %nodelay_i_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str87, [1 x i8]* @p_str88, [1 x i8]* @p_str89, [1 x i8]* @p_str90)
+
+ST_1: stg_6 [1/1] 0.00ns
+newFuncRoot:2  call void (...)* @_ssdm_op_SpecInterface(i16* %nodelay_i_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str83, [1 x i8]* @p_str84, [1 x i8]* @p_str85, [1 x i8]* @p_str86)
+
+ST_1: stg_7 [1/1] 0.00ns
+newFuncRoot:3  call void (...)* @_ssdm_op_SpecInterface(i16* %delayed_i_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str79, [1 x i8]* @p_str80, [1 x i8]* @p_str81, [1 x i8]* @p_str82)
+
+ST_1: stg_8 [1/1] 0.00ns
+newFuncRoot:4  call void (...)* @_ssdm_op_SpecInterface(i16* %delayed_i_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str75, [1 x i8]* @p_str76, [1 x i8]* @p_str77, [1 x i8]* @p_str78)
+
+ST_1: stg_9 [1/1] 1.57ns
+newFuncRoot:5  br label %2
+
+
+ <State 2>: 2.03ns
+ST_2: i_0_i_i3 [1/1] 0.00ns
+:0  %i_0_i_i3 = phi i9 [ 0, %newFuncRoot ], [ %i, %0 ], [ 0, %.preheader.i.0.exitStub ]
+
+ST_2: din_val_V [1/1] 0.00ns
+:5  %din_val_V = call i16 @_ssdm_op_Read.axis.volatile.i16P(i16* %din_V_V)
+
+ST_2: tmp_5 [1/1] 0.00ns
+:6  %tmp_5 = trunc i9 %i_0_i_i3 to i1
+
+ST_2: i [1/1] 1.84ns
+:7  %i = add i9 1, %i_0_i_i3
+
+ST_2: stg_14 [1/1] 0.00ns
+:8  br i1 %tmp_5, label %branch1, label %branch0
+
+ST_2: stg_15 [1/1] 0.00ns
+:1  br i1 %tmp_5, label %branch3, label %branch2
+
+ST_2: exitcond51_i_i [1/1] 2.03ns
+:1  %exitcond51_i_i = icmp eq i9 %i_0_i_i3, -1
+
+ST_2: stg_17 [1/1] 0.00ns
+:2  br i1 %exitcond51_i_i, label %.preheader.i.0.exitStub, label %2
+
+ST_2: stg_18 [1/1] 0.00ns
+.preheader.i.0.exitStub:1  br label %2
+
+
+ <State 3>: 2.15ns
+ST_3: empty_35 [1/1] 0.00ns
+:1  %empty_35 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 512, i64 512, i64 512)
+
+ST_3: stg_20 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecLoopName([18 x i8]* @p_str5) nounwind
+
+ST_3: tmp [1/1] 0.00ns
+:3  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([18 x i8]* @p_str5)
+
+ST_3: stg_22 [1/1] 0.00ns
+:4  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
+
+ST_3: stg_23 [1/1] 1.00ns
+branch0:0  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %nodelay_i_0, i16 %din_val_V)
+
+ST_3: stg_24 [1/1] 0.00ns
+branch0:1  br label %1
+
+ST_3: stg_25 [1/1] 1.00ns
+branch1:0  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %nodelay_i_1, i16 %din_val_V)
+
+ST_3: stg_26 [1/1] 0.00ns
+branch1:1  br label %1
+
+ST_3: DataOut_V [1/1] 1.15ns
+:0  %DataOut_V = call i16 @"_ssdm_op_MemShiftRead.[512 x i16]P"(i16* getelementptr inbounds ([512 x i16]* @delay_line_Array_V, i64 0, i64 511), i16 %din_val_V, i1 true)
+
+ST_3: stg_28 [1/1] 1.00ns
+branch2:0  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %delayed_i_0, i16 %DataOut_V)
+
+ST_3: stg_29 [1/1] 0.00ns
+branch2:1  br label %0
+
+ST_3: stg_30 [1/1] 1.00ns
+branch3:0  call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %delayed_i_1, i16 %DataOut_V)
+
+ST_3: stg_31 [1/1] 0.00ns
+branch3:1  br label %0
+
+ST_3: empty [1/1] 0.00ns
+:0  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([18 x i8]* @p_str5, i32 %tmp)
+
+ST_3: stg_33 [1/1] 0.00ns
+.preheader.i.0.exitStub:0  call void (...)* @_ssdm_op_Return()
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

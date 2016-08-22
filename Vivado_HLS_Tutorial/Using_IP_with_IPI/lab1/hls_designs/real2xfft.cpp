@@ -65,9 +65,13 @@ void hls_real2xfft(
    din_t data2window[REAL_FFT_LEN], windowed[REAL_FFT_LEN];
 #pragma HLS ARRAY_PARTITION variable=data2window cyclic factor=2
 #pragma HLS ARRAY_PARTITION variable=windowed cyclic factor=2
+
 #pragma HLS ARRAY_STREAM variable=data2window,windowed depth=2
+
 #pragma HLS DATAFLOW
 
+   // Get data from AXI Stream and put it into data2windown BRAM
+   // And send data from this BRAM to following block
    sliding_win_1in2out<din_t, REAL_FFT_LEN>(din, data2window);
    window_fn<din_t, din_t, coeff_t, REAL_FFT_LEN, WIN_FN_TYPE, 2>(data2window, windowed);
 

@@ -1,0 +1,154 @@
+
+
+================================================================
+== Vivado HLS Report for 'hls_xfft2real_Loop_realfft_be_buffer_proc'
+================================================================
+* Date:           Thu Jul  7 15:03:33 2016
+
+* Version:        2015.3 (Build 1368829 on Mon Sep 28 20:31:51 PM 2015)
+* Project:        be_vhls_prj
+* Solution:       IPXACTExport
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   4.00|      2.71|        0.50|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |  511|  512|  511|  512|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |                     |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name      | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- realfft_be_buffer  |  511|  511|         1|          1|          1|   512|    yes   |
+        +---------------------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|     14|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|     10|
+|Register         |        -|      -|      12|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|      12|     24|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------+----------+-------+---+----+------------+------------+
+    |       Variable Name      | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------+----------+-------+---+----+------------+------------+
+    |i_fu_164_p2               |     +    |      0|  0|   9|           1|           9|
+    |exitcond2240_i_fu_182_p2  |   icmp   |      0|  0|   3|           9|           2|
+    |ap_sig_bdd_74             |    or    |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_81             |    or    |      0|  0|   1|           1|           1|
+    +--------------------------+----------+-------+---+----+------------+------------+
+    |Total                     |          |      0|  0|  14|          12|          13|
+    +--------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------+----+-----------+-----+-----------+
+    |        Name        | LUT| Input Size| Bits| Total Bits|
+    +--------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm           |   1|          3|    1|          3|
+    |val_assign_reg_114  |   9|          2|    9|         18|
+    +--------------------+----+-----------+-----+-----------+
+    |Total               |  10|          5|   10|         21|
+    +--------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------+---+----+-----+-----------+
+    |        Name        | FF| LUT| Bits| Const Bits|
+    +--------------------+---+----+-----+-----------+
+    |ap_CS_fsm           |  2|   0|    2|          0|
+    |ap_done_reg         |  1|   0|    1|          0|
+    |val_assign_reg_114  |  9|   0|    9|          0|
+    +--------------------+---+----+-----+-----------+
+    |Total               | 12|   0|   12|          0|
+    +--------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------------+-----+-----+------------+-------------------------------------------+--------------+
+|              RTL Ports             | Dir | Bits|  Protocol  |               Source Object               |    C Type    |
++------------------------------------+-----+-----+------------+-------------------------------------------+--------------+
+|ap_clk                              |  in |    1| ap_ctrl_hs | hls_xfft2real_Loop_realfft_be_buffer_proc | return value |
+|ap_rst                              |  in |    1| ap_ctrl_hs | hls_xfft2real_Loop_realfft_be_buffer_proc | return value |
+|ap_start                            |  in |    1| ap_ctrl_hs | hls_xfft2real_Loop_realfft_be_buffer_proc | return value |
+|ap_done                             | out |    1| ap_ctrl_hs | hls_xfft2real_Loop_realfft_be_buffer_proc | return value |
+|ap_continue                         |  in |    1| ap_ctrl_hs | hls_xfft2real_Loop_realfft_be_buffer_proc | return value |
+|ap_idle                             | out |    1| ap_ctrl_hs | hls_xfft2real_Loop_realfft_be_buffer_proc | return value |
+|ap_ready                            | out |    1| ap_ctrl_hs | hls_xfft2real_Loop_realfft_be_buffer_proc | return value |
+|descramble_buf_0_M_imag_V_address0  | out |    8|  ap_memory |         descramble_buf_0_M_imag_V         |     array    |
+|descramble_buf_0_M_imag_V_ce0       | out |    1|  ap_memory |         descramble_buf_0_M_imag_V         |     array    |
+|descramble_buf_0_M_imag_V_we0       | out |    1|  ap_memory |         descramble_buf_0_M_imag_V         |     array    |
+|descramble_buf_0_M_imag_V_d0        | out |   16|  ap_memory |         descramble_buf_0_M_imag_V         |     array    |
+|descramble_buf_1_M_imag_V_address0  | out |    8|  ap_memory |         descramble_buf_1_M_imag_V         |     array    |
+|descramble_buf_1_M_imag_V_ce0       | out |    1|  ap_memory |         descramble_buf_1_M_imag_V         |     array    |
+|descramble_buf_1_M_imag_V_we0       | out |    1|  ap_memory |         descramble_buf_1_M_imag_V         |     array    |
+|descramble_buf_1_M_imag_V_d0        | out |   16|  ap_memory |         descramble_buf_1_M_imag_V         |     array    |
+|din_TDATA                           |  in |   32|    axis    |                 din_V_data                |    pointer   |
+|din_TVALID                          |  in |    1|    axis    |                 din_V_data                |    pointer   |
+|din_TREADY                          | out |    1|    axis    |                din_V_last_V               |    pointer   |
+|din_TLAST                           |  in |    1|    axis    |                din_V_last_V               |    pointer   |
+|descramble_buf_0_M_real_V_address0  | out |    8|  ap_memory |         descramble_buf_0_M_real_V         |     array    |
+|descramble_buf_0_M_real_V_ce0       | out |    1|  ap_memory |         descramble_buf_0_M_real_V         |     array    |
+|descramble_buf_0_M_real_V_we0       | out |    1|  ap_memory |         descramble_buf_0_M_real_V         |     array    |
+|descramble_buf_0_M_real_V_d0        | out |   16|  ap_memory |         descramble_buf_0_M_real_V         |     array    |
+|descramble_buf_1_M_real_V_address0  | out |    8|  ap_memory |         descramble_buf_1_M_real_V         |     array    |
+|descramble_buf_1_M_real_V_ce0       | out |    1|  ap_memory |         descramble_buf_1_M_real_V         |     array    |
+|descramble_buf_1_M_real_V_we0       | out |    1|  ap_memory |         descramble_buf_1_M_real_V         |     array    |
+|descramble_buf_1_M_real_V_d0        | out |   16|  ap_memory |         descramble_buf_1_M_real_V         |     array    |
++------------------------------------+-----+-----+------------+-------------------------------------------+--------------+
+

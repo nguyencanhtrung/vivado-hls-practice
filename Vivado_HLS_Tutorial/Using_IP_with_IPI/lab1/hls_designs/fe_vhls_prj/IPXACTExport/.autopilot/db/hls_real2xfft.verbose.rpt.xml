@@ -1,0 +1,137 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'hls_real2xfft'" level="0">
+<item name = "Date">Fri Jul  8 12:12:30 2016
+</item>
+<item name = "Version">2015.3 (Build 1368829 on Mon Sep 28 20:31:51 PM 2015)</item>
+<item name = "Project">fe_vhls_prj</item>
+<item name = "Solution">IPXACTExport</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">4.00, 3.95, 0.50</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">518, 519, 512, 512, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_hls_real2xfft_Loop_sliding_win_delay_proc_fu_298">hls_real2xfft_Loop_sliding_win_delay_proc, 512, 513, 512, 512, loop rewind</column>
+<column name="grp_hls_real2xfft_Loop_sliding_win_output_proc_fu_288">hls_real2xfft_Loop_sliding_win_output_proc, 513, 514, 512, 512, loop rewind</column>
+<column name="grp_hls_real2xfft_window_fn_fu_276">hls_real2xfft_window_fn, 514, 515, 512, 512, loop rewind</column>
+<column name="grp_hls_real2xfft_Loop_real2xfft_output_proc_fu_310">hls_real2xfft_Loop_real2xfft_output_proc, 511, 512, 511, 512, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, -, -</column>
+<column name="FIFO">4, -, 200, 368</column>
+<column name="Instance">2, 2, 142, 440</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, -</column>
+<column name="Register">-, -, 8, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">2, ~0, ~0, 1</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="hls_real2xfft_Loop_real2xfft_output_proc_U0">hls_real2xfft_Loop_real2xfft_output_proc, 0, 0, 14, 29</column>
+<column name="hls_real2xfft_Loop_sliding_win_delay_proc_U0">hls_real2xfft_Loop_sliding_win_delay_proc, 0, 0, 40, 291</column>
+<column name="hls_real2xfft_Loop_sliding_win_output_proc_U0">hls_real2xfft_Loop_sliding_win_output_proc, 0, 0, 61, 76</column>
+<column name="hls_real2xfft_window_fn_U0">hls_real2xfft_window_fn, 2, 2, 27, 44</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+<column name="data2window_0_channel_U">0, 5, 28, 2, 16, 32</column>
+<column name="data2window_1_channel_U">0, 5, 28, 2, 16, 32</column>
+<column name="delayed_i_0_channel_U">1, 44, 59, 256, 16, 4096</column>
+<column name="delayed_i_1_channel_U">1, 44, 59, 256, 16, 4096</column>
+<column name="nodelay_i_0_channel_U">1, 46, 69, 512, 16, 8192</column>
+<column name="nodelay_i_1_channel_U">1, 46, 69, 512, 16, 8192</column>
+<column name="windowed_0_channel_U">0, 5, 28, 2, 16, 32</column>
+<column name="windowed_1_channel_U">0, 5, 28, 2, 16, 32</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS">1, 0, 1, 0</column>
+<column name="ap_reg_procdone_hls_real2xfft_Loop_real2xfft_output_proc_U0">1, 0, 1, 0</column>
+<column name="ap_reg_procdone_hls_real2xfft_Loop_sliding_win_delay_proc_U0">1, 0, 1, 0</column>
+<column name="ap_reg_procdone_hls_real2xfft_Loop_sliding_win_output_proc_U0">1, 0, 1, 0</column>
+<column name="ap_reg_procdone_hls_real2xfft_window_fn_U0">1, 0, 1, 0</column>
+<column name="hls_real2xfft_Loop_real2xfft_output_proc_U0_ap_start">1, 0, 1, 0</column>
+<column name="hls_real2xfft_Loop_sliding_win_output_proc_U0_ap_start">1, 0, 1, 0</column>
+<column name="hls_real2xfft_window_fn_U0_ap_start">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="din_V_V_TDATA">in, 16, axis, din_V_V, pointer</column>
+<column name="din_V_V_TVALID">in, 1, axis, din_V_V, pointer</column>
+<column name="din_V_V_TREADY">out, 1, axis, din_V_V, pointer</column>
+<column name="dout_TDATA">out, 32, axis, dout_V_data, pointer</column>
+<column name="dout_TLAST">out, 1, axis, dout_V_last_V, pointer</column>
+<column name="dout_TVALID">out, 1, axis, dout_V_last_V, pointer</column>
+<column name="dout_TREADY">in, 1, axis, dout_V_last_V, pointer</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, hls_real2xfft, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, hls_real2xfft, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, hls_real2xfft, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, hls_real2xfft, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, hls_real2xfft, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, hls_real2xfft, return value</column>
+</table>
+</item>
+</section>
+</profile>
