@@ -1,0 +1,6 @@
+   Build using "/opt/Xilinx/Vivado_HLS/2015.3/lnx64/tools/gcc/bin/g++"
+   Compiling apatb_hls_real2xfft.cpp
+   Compiling hls_realfft_test.cpp_pre.cpp.tb.cpp
+   Compiling real2xfft.cpp_pre.cpp.tb.cpp
+   Compiling xfft2real.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

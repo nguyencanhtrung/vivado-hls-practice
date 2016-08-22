@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1467972749000">
+  <ports id="1" name="windowed_0" type="PortType" coreName="FSL" bitwidth="16" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="windowed_1" type="PortType" coreName="FSL" bitwidth="16" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="dout_V_data" type="PortType" originalName="dout.V.data" bitwidth="32" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="4" name="dout_V_last_V" type="PortType" originalName="stream&amp;lt;xfft_axis_t&amp;gt;.V.last.V" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="30" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="33" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="36" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="38" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="40" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="44" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="46" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="47" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="56" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@ports.2"/>
+  <edges id="57" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@ports.3"/>
+  <edges id="59" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="70" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="71" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="144" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="145" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="146" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="147" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <blocks id="9" name="newFuncRoot" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_26</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="node_8" lineNumber="77" fileName="real2xfft.cpp" fileDirectory=".." contextFuncName="hls_real2xfft" opcode="br">
+      <inlineStackInfo fileName="real2xfft.cpp" linenumber="77" fileDirectory="/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Using_IP_with_IPI/lab1/hls_designs" functionName="hls_real2xfft"/>
+      <controlInputObjs>block_26</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="real2xfft.cpp">
+      <validLinenumbers>77</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="88" pipe_depth="1" RegionName="real2xfft_output">
+    <basic_blocks id="26" name="block_26" type="BlockType">
+      <controlInputObjs>newFuncRoot</controlInputObjs>
+      <controlInputObjs>block_26</controlInputObjs>
+      <controlInputObjs>.exitStub</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.exitStub</controlOutputObjs>
+      <controlOutputObjs>block_26</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="10" name="i1" lineNumber="77" fileName="real2xfft.cpp" fileDirectory=".." contextFuncName="hls_real2xfft" bitwidth="10" opcode="phi" nodeLabel="1">
+        <inlineStackInfo fileName="real2xfft.cpp" linenumber="77" fileDirectory="/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Using_IP_with_IPI/lab1/hls_designs" functionName="hls_real2xfft"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <controlInputObjs>newFuncRoot</controlInputObjs>
+        <controlInputObjs>block_26</controlInputObjs>
+        <controlInputObjs>.exitStub</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="tmp_data_M_real_V" lineNumber="79" originalName="tmp.data._M_real.V" fileName="real2xfft.cpp" fileDirectory=".." contextFuncName="hls_real2xfft" bitwidth="16" opcode="read" nodeLabel="1">
+        <inlineStackInfo fileName="real2xfft.cpp" linenumber="79" fileDirectory="/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Using_IP_with_IPI/lab1/hls_designs" functionName="hls_real2xfft"/>
+        <dataInputObjs>windowed_0</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="tmp_data_M_imag_V" lineNumber="79" originalName="tmp.data._M_imag.V" fileName="real2xfft.cpp" fileDirectory=".." contextFuncName="hls_real2xfft" bitwidth="16" opcode="read" nodeLabel="1">
+        <inlineStackInfo fileName="real2xfft.cpp" linenumber="79" fileDirectory="/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Using_IP_with_IPI/lab1/hls_designs" functionName="hls_real2xfft"/>
+        <dataInputObjs>windowed_1</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="tmp_last_V" lineNumber="82" originalName="tmp.last.V" fileName="real2xfft.cpp" fileDirectory=".." rtlName="dout_TLAST" contextFuncName="hls_real2xfft" bitwidth="1" opcode="icmp" nodeLabel="1">
+        <inlineStackInfo fileName="real2xfft.cpp" linenumber="82" fileDirectory="/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Using_IP_with_IPI/lab1/hls_designs" functionName="hls_real2xfft"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="node_20" lineNumber="83" fileName="real2xfft.cpp" fileDirectory=".." contextFuncName="hls_real2xfft" opcode="write" nodeLabel="1">
+        <inlineStackInfo fileName="real2xfft.cpp" linenumber="83" fileDirectory="/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Using_IP_with_IPI/lab1/hls_designs" functionName="hls_real2xfft"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>dout_V_data</dataOutputObjs>
+        <dataOutputObjs>dout_V_last_V</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="i" lineNumber="77" originalName="i" fileName="real2xfft.cpp" fileDirectory=".." rtlName="i_fu_122_p2" contextFuncName="hls_real2xfft" bitwidth="11" opcode="add" nodeLabel="1">
+        <inlineStackInfo fileName="real2xfft.cpp" linenumber="77" fileDirectory="/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Using_IP_with_IPI/lab1/hls_designs" functionName="hls_real2xfft"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="node_25" lineNumber="77" fileName="real2xfft.cpp" fileDirectory=".." contextFuncName="hls_real2xfft" opcode="br" nodeLabel="1">
+        <inlineStackInfo fileName="real2xfft.cpp" linenumber="77" fileDirectory="/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Using_IP_with_IPI/lab1/hls_designs" functionName="hls_real2xfft"/>
+        <dataInputObjs>add</dataInputObjs>
+        <controlInputObjs>block_26</controlInputObjs>
+        <controlInputObjs>.exitStub</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="real2xfft.cpp">
+        <validLinenumbers>77</validLinenumbers>
+        <validLinenumbers>79</validLinenumbers>
+        <validLinenumbers>82</validLinenumbers>
+        <validLinenumbers>83</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="29" name=".exitStub" type="BlockType">
+      <controlInputObjs>block_26</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_26</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="node_27" opcode="return" nodeLabel="1"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="node_28" opcode="br" nodeLabel="1">
+        <controlInputObjs>block_26</controlInputObjs>
+      </node_objs>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <regnodes realName="i1_reg_88">
+    <nodeIds>10</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_reg_142">
+    <nodeIds>23</nodeIds>
+  </regnodes>
+  <expressionNodes realName="i_fu_122">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_6_fu_132">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_fu_113">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="stg_23_fu_140">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_128">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i1_phi_fu_92">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i21_cast_fu_102">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_last_V_fu_106">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="stg_17_write_fu_78">
+    <nodeIds>20</nodeIds>
+  </ioNodes>
+  <ioNodes realName="tmp_data_M_imag_V_read_fu_72">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioNodes realName="tmp_data_M_real_V_read_fu_66">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioPorts name="dout_V_data">
+    <contents name="write">
+      <nodeIds>20</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="dout_V_last_V">
+    <contents name="write">
+      <nodeIds>20</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="windowed_0">
+    <contents name="read">
+      <nodeIds>16</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="windowed_1">
+    <contents name="read">
+      <nodeIds>17</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="17"/>
+    </transitions>
+    <transitions inState="2" outState="2">
+      <condition id="22"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="hls_real2xfft_Loop_real2xfft_output_proc" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="512" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>9</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="real2xfft_output" mII="1" mDepth="1" mMinTripCount="512" mMaxTripCount="512" mMinLatency="511" mMaxLatency="-1" mType="1">
+      <basicBlocks>26</basicBlocks>
+      <basicBlocks>29</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [XFORM-631] Renaming function 'hls_window_fn::window_fn&lt;ap_fixed&lt;16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed&lt;16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed&lt;16, 1, (ap_q_mode)5, (ap_o_mode)0, 0>, 1024, (hls_window_fn::win_fn_t)2, 2>' (./window_fn.h:69:33) into window_fn." projectName="fe_vhls_prj" solutionName="IPXACTExport" date="2016-07-08T12:12:28.247+0200" type="Warning"/>
+        <logs message="@W [XFORM-124] Array 'nodelay.i.1': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="fe_vhls_prj" solutionName="IPXACTExport" date="2016-07-08T12:12:27.157+0200" type="Warning"/>
+        <logs message="@W [XFORM-124] Array 'nodelay.i.0': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="fe_vhls_prj" solutionName="IPXACTExport" date="2016-07-08T12:12:25.324+0200" type="Warning"/>
+        <logs message="@W [XFORM-124] Array 'delayed.i.1': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="fe_vhls_prj" solutionName="IPXACTExport" date="2016-07-08T12:12:25.306+0200" type="Warning"/>
+        <logs message="@W [XFORM-124] Array 'delayed.i.0': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="fe_vhls_prj" solutionName="IPXACTExport" date="2016-07-08T12:12:25.279+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="fe_vhls_prj" solutionName="IPXACTExport" date="2016-07-08T12:11:35.717+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="fe_vhls_prj" solutionName="IPXACTExport" date="2016-07-08T12:11:35.702+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

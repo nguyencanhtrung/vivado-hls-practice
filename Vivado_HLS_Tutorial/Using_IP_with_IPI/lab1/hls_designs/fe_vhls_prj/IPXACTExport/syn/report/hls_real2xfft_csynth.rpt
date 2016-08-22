@@ -1,0 +1,154 @@
+
+
+================================================================
+== Vivado HLS Report for 'hls_real2xfft'
+================================================================
+* Date:           Fri Jul  8 12:12:30 2016
+
+* Version:        2015.3 (Build 1368829 on Mon Sep 28 20:31:51 PM 2015)
+* Project:        fe_vhls_prj
+* Solution:       IPXACTExport
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   4.00|      3.95|        0.50|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |  518|  519|  512|  512| dataflow |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------------------------------------+--------------------------------------------+-----+-----+-----+-----+-------------+
+        |                                                       |                                            |  Latency  |  Interval |   Pipeline  |
+        |                        Instance                       |                   Module                   | min | max | min | max |     Type    |
+        +-------------------------------------------------------+--------------------------------------------+-----+-----+-----+-----+-------------+
+        |grp_hls_real2xfft_Loop_sliding_win_delay_proc_fu_298   |hls_real2xfft_Loop_sliding_win_delay_proc   |  512|  513|  512|  512| loop rewind |
+        |grp_hls_real2xfft_Loop_sliding_win_output_proc_fu_288  |hls_real2xfft_Loop_sliding_win_output_proc  |  513|  514|  512|  512| loop rewind |
+        |grp_hls_real2xfft_window_fn_fu_276                     |hls_real2xfft_window_fn                     |  514|  515|  512|  512| loop rewind |
+        |grp_hls_real2xfft_Loop_real2xfft_output_proc_fu_310    |hls_real2xfft_Loop_real2xfft_output_proc    |  511|  512|  511|  512|     none    |
+        +-------------------------------------------------------+--------------------------------------------+-----+-----+-----+-----+-------------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       -|      -|
+|FIFO             |        4|      -|     200|    368|
+|Instance         |        2|      2|     142|    440|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|      -|
+|Register         |        -|      -|       8|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        6|      2|     350|    808|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        2|   ~0  |   ~0   |      1|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------------------------+--------------------------------------------+---------+-------+----+-----+
+    |                    Instance                   |                   Module                   | BRAM_18K| DSP48E| FF | LUT |
+    +-----------------------------------------------+--------------------------------------------+---------+-------+----+-----+
+    |hls_real2xfft_Loop_real2xfft_output_proc_U0    |hls_real2xfft_Loop_real2xfft_output_proc    |        0|      0|  14|   29|
+    |hls_real2xfft_Loop_sliding_win_delay_proc_U0   |hls_real2xfft_Loop_sliding_win_delay_proc   |        0|      0|  40|  291|
+    |hls_real2xfft_Loop_sliding_win_output_proc_U0  |hls_real2xfft_Loop_sliding_win_output_proc  |        0|      0|  61|   76|
+    |hls_real2xfft_window_fn_U0                     |hls_real2xfft_window_fn                     |        2|      2|  27|   44|
+    +-----------------------------------------------+--------------------------------------------+---------+-------+----+-----+
+    |Total                                          |                                            |        2|      2| 142|  440|
+    +-----------------------------------------------+--------------------------------------------+---------+-------+----+-----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +-------------------------+---------+----+----+------+-----+---------+
+    |           Name          | BRAM_18K| FF | LUT| Depth| Bits| Size:D*B|
+    +-------------------------+---------+----+----+------+-----+---------+
+    |data2window_0_channel_U  |        0|   5|  28|     2|   16|       32|
+    |data2window_1_channel_U  |        0|   5|  28|     2|   16|       32|
+    |delayed_i_0_channel_U    |        1|  44|  59|   256|   16|     4096|
+    |delayed_i_1_channel_U    |        1|  44|  59|   256|   16|     4096|
+    |nodelay_i_0_channel_U    |        1|  46|  69|   512|   16|     8192|
+    |nodelay_i_1_channel_U    |        1|  46|  69|   512|   16|     8192|
+    |windowed_0_channel_U     |        0|   5|  28|     2|   16|       32|
+    |windowed_1_channel_U     |        0|   5|  28|     2|   16|       32|
+    +-------------------------+---------+----+----+------+-----+---------+
+    |Total                    |        4| 200| 368|  1544|  128|    24704|
+    +-------------------------+---------+----+----+------+-----+---------+
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    +---------------------------------------------------------------+---+----+-----+-----------+
+    |                              Name                             | FF| LUT| Bits| Const Bits|
+    +---------------------------------------------------------------+---+----+-----+-----------+
+    |ap_CS                                                          |  1|   0|    1|          0|
+    |ap_reg_procdone_hls_real2xfft_Loop_real2xfft_output_proc_U0    |  1|   0|    1|          0|
+    |ap_reg_procdone_hls_real2xfft_Loop_sliding_win_delay_proc_U0   |  1|   0|    1|          0|
+    |ap_reg_procdone_hls_real2xfft_Loop_sliding_win_output_proc_U0  |  1|   0|    1|          0|
+    |ap_reg_procdone_hls_real2xfft_window_fn_U0                     |  1|   0|    1|          0|
+    |hls_real2xfft_Loop_real2xfft_output_proc_U0_ap_start           |  1|   0|    1|          0|
+    |hls_real2xfft_Loop_sliding_win_output_proc_U0_ap_start         |  1|   0|    1|          0|
+    |hls_real2xfft_window_fn_U0_ap_start                            |  1|   0|    1|          0|
+    +---------------------------------------------------------------+---+----+-----+-----------+
+    |Total                                                          |  8|   0|    8|          0|
+    +---------------------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------+-----+-----+------------+---------------+--------------+
+|    RTL Ports   | Dir | Bits|  Protocol  | Source Object |    C Type    |
++----------------+-----+-----+------------+---------------+--------------+
+|din_V_V_TDATA   |  in |   16|    axis    |    din_V_V    |    pointer   |
+|din_V_V_TVALID  |  in |    1|    axis    |    din_V_V    |    pointer   |
+|din_V_V_TREADY  | out |    1|    axis    |    din_V_V    |    pointer   |
+|dout_TDATA      | out |   32|    axis    |  dout_V_data  |    pointer   |
+|dout_TLAST      | out |    1|    axis    | dout_V_last_V |    pointer   |
+|dout_TVALID     | out |    1|    axis    | dout_V_last_V |    pointer   |
+|dout_TREADY     |  in |    1|    axis    | dout_V_last_V |    pointer   |
+|ap_clk          |  in |    1| ap_ctrl_hs | hls_real2xfft | return value |
+|ap_rst_n        |  in |    1| ap_ctrl_hs | hls_real2xfft | return value |
+|ap_done         | out |    1| ap_ctrl_hs | hls_real2xfft | return value |
+|ap_start        |  in |    1| ap_ctrl_hs | hls_real2xfft | return value |
+|ap_idle         | out |    1| ap_ctrl_hs | hls_real2xfft | return value |
+|ap_ready        | out |    1| ap_ctrl_hs | hls_real2xfft | return value |
++----------------+-----+-----+------------+---------------+--------------+
+

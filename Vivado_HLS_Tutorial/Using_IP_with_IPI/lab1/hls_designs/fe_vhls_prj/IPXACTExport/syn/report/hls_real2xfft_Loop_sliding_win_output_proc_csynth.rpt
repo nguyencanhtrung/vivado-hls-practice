@@ -1,0 +1,169 @@
+
+
+================================================================
+== Vivado HLS Report for 'hls_real2xfft_Loop_sliding_win_output_proc'
+================================================================
+* Date:           Fri Jul  8 12:12:29 2016
+
+* Version:        2015.3 (Build 1368829 on Mon Sep 28 20:31:51 PM 2015)
+* Project:        fe_vhls_prj
+* Solution:       IPXACTExport
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   4.00|      3.95|        0.50|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+-------------+
+    |  Latency  |  Interval |   Pipeline  |
+    | min | max | min | max |     Type    |
+    +-----+-----+-----+-----+-------------+
+    |  513|  514|  512|  512| loop rewind |
+    +-----+-----+-----+-----+-------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |                      |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |       Loop Name      | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- sliding_win_output  |  513|  513|         3|          1|          1|   512|    yes   |
+        +----------------------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|     21|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|     55|
+|Register         |        -|      -|      61|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|      61|     76|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+-------+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+-------+---+----+------------+------------+
+    |i_3_1_fu_190_p2       |     +    |      0|  0|  11|           2|          11|
+    |ap_sig_bdd_138        |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_139        |    and   |      0|  0|   1|           1|           1|
+    |exitcond_i_fu_200_p2  |   icmp   |      0|  0|   5|          11|          12|
+    |ap_sig_bdd_132        |    or    |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_75         |    or    |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_90         |    or    |      0|  0|   1|           1|           1|
+    +----------------------+----------+-------+---+----+------------+------------+
+    |Total                 |          |      0|  0|  21|          18|          28|
+    +----------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------------------------+----+-----------+-----+-----------+
+    |                     Name                    | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                                    |   1|          3|    1|          3|
+    |ap_reg_phiprechg_p_014_0_i_1_reg_160pp0_it2  |  16|          3|   16|         48|
+    |ap_reg_phiprechg_p_014_0_i_reg_150pp0_it2    |  16|          3|   16|         48|
+    |ap_reg_ppiten_pp0_it1                        |   1|          2|    1|          2|
+    |ap_reg_ppiten_pp0_it2                        |   1|          2|    1|          2|
+    |i2_0_i1_phi_fu_140_p6                        |  10|          3|   10|         30|
+    |i2_0_i1_reg_136                              |  10|          2|   10|         20|
+    +---------------------------------------------+----+-----------+-----+-----------+
+    |Total                                        |  55|         18|   55|        153|
+    +---------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------------------+----+----+-----+-----------+
+    |                     Name                    | FF | LUT| Bits| Const Bits|
+    +---------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                    |   2|   0|    2|          0|
+    |ap_done_reg                                  |   1|   0|    1|          0|
+    |ap_reg_phiprechg_p_014_0_i_1_reg_160pp0_it2  |  16|   0|   16|          0|
+    |ap_reg_phiprechg_p_014_0_i_reg_150pp0_it2    |  16|   0|   16|          0|
+    |ap_reg_ppiten_pp0_it1                        |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it2                        |   1|   0|    1|          0|
+    |ap_reg_ppstg_exitcond_i_reg_221_pp0_it1      |   1|   0|    1|          0|
+    |exitcond_i_reg_221                           |   1|   0|    1|          0|
+    |i2_0_i1_reg_136                              |  10|   0|   10|          0|
+    |tmp_3_reg_212                                |   1|   0|    1|          0|
+    |tmp_4_reg_216                                |  10|   0|   10|          0|
+    |tmp_reg_208                                  |   1|   0|    1|          0|
+    +---------------------------------------------+----+----+-----+-----------+
+    |Total                                        |  61|   0|   61|          0|
+    +---------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------+-----+-----+------------+--------------------------------------------+--------------+
+|       RTL Ports      | Dir | Bits|  Protocol  |                Source Object               |    C Type    |
++----------------------+-----+-----+------------+--------------------------------------------+--------------+
+|ap_clk                |  in |    1| ap_ctrl_hs | hls_real2xfft_Loop_sliding_win_output_proc | return value |
+|ap_rst                |  in |    1| ap_ctrl_hs | hls_real2xfft_Loop_sliding_win_output_proc | return value |
+|ap_start              |  in |    1| ap_ctrl_hs | hls_real2xfft_Loop_sliding_win_output_proc | return value |
+|ap_done               | out |    1| ap_ctrl_hs | hls_real2xfft_Loop_sliding_win_output_proc | return value |
+|ap_continue           |  in |    1| ap_ctrl_hs | hls_real2xfft_Loop_sliding_win_output_proc | return value |
+|ap_idle               | out |    1| ap_ctrl_hs | hls_real2xfft_Loop_sliding_win_output_proc | return value |
+|ap_ready              | out |    1| ap_ctrl_hs | hls_real2xfft_Loop_sliding_win_output_proc | return value |
+|delayed_i_0_dout      |  in |   16|   ap_fifo  |                 delayed_i_0                |    pointer   |
+|delayed_i_0_empty_n   |  in |    1|   ap_fifo  |                 delayed_i_0                |    pointer   |
+|delayed_i_0_read      | out |    1|   ap_fifo  |                 delayed_i_0                |    pointer   |
+|nodelay_i_0_dout      |  in |   16|   ap_fifo  |                 nodelay_i_0                |    pointer   |
+|nodelay_i_0_empty_n   |  in |    1|   ap_fifo  |                 nodelay_i_0                |    pointer   |
+|nodelay_i_0_read      | out |    1|   ap_fifo  |                 nodelay_i_0                |    pointer   |
+|delayed_i_1_dout      |  in |   16|   ap_fifo  |                 delayed_i_1                |    pointer   |
+|delayed_i_1_empty_n   |  in |    1|   ap_fifo  |                 delayed_i_1                |    pointer   |
+|delayed_i_1_read      | out |    1|   ap_fifo  |                 delayed_i_1                |    pointer   |
+|nodelay_i_1_dout      |  in |   16|   ap_fifo  |                 nodelay_i_1                |    pointer   |
+|nodelay_i_1_empty_n   |  in |    1|   ap_fifo  |                 nodelay_i_1                |    pointer   |
+|nodelay_i_1_read      | out |    1|   ap_fifo  |                 nodelay_i_1                |    pointer   |
+|data2window_0_din     | out |   16|   ap_fifo  |                data2window_0               |    pointer   |
+|data2window_0_full_n  |  in |    1|   ap_fifo  |                data2window_0               |    pointer   |
+|data2window_0_write   | out |    1|   ap_fifo  |                data2window_0               |    pointer   |
+|data2window_1_din     | out |   16|   ap_fifo  |                data2window_1               |    pointer   |
+|data2window_1_full_n  |  in |    1|   ap_fifo  |                data2window_1               |    pointer   |
+|data2window_1_write   | out |    1|   ap_fifo  |                data2window_1               |    pointer   |
++----------------------+-----+-----+------------+--------------------------------------------+--------------+
+

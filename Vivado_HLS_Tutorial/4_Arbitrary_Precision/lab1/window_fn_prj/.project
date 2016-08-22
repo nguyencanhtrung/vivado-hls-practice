@@ -37,16 +37,6 @@
 			<location>/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Arbitrary_Precision/lab1/window_fn_prj/.apc/.tb</location>
 		</link>
 		<link>
-			<name>.reference/window_fn_class.h</name>
-			<type>1</type>
-			<location>/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Arbitrary_Precision/lab1/window_fn_class.h</location>
-		</link>
-		<link>
-			<name>.reference/window_fn_top.h</name>
-			<type>1</type>
-			<location>/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Arbitrary_Precision/lab1/window_fn_top.h</location>
-		</link>
-		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
 			<location>/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/Arbitrary_Precision/lab1/window_fn_prj/solution1/.tcls</location>

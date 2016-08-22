@@ -64,6 +64,7 @@ void sliding_win_1in2out(
    T din_val;
    static ap_shift_reg<T, DELAY_LEN> delay_line;
    T nodelay[LEN/2], delayed[LEN/2];
+
 #pragma HLS ARRAY_PARTITION variable=nodelay,delayed cyclic factor=2
 #pragma HLS STREAM depth=DELAY_LEN variable=nodelay
 #pragma HLS STREAM depth=DELAY_FIFO_DEPTH variable=delayed
@@ -74,6 +75,7 @@ void sliding_win_1in2out(
 sliding_win_delay:
    for (int i = 0; i < LEN / 2; i++) {
 #pragma HLS pipeline rewind
+	   // Put stream data to din_val array
       din_val = din.read();
       nodelay[i] = din_val;
       delayed[i] = delay_line.shift(din_val);
