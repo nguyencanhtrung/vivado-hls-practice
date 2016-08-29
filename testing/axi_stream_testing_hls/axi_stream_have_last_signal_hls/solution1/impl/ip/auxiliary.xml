@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="counter_stream_have_last_hls" xd:componentRef="counter_stream_have_last_hls" xd:initiationInterval="x" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_cpuControl" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="resolution" xd:originalName="resolution" xd:direction="in" xd:interfaceRef="s_axi_cpuControl" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="numIteration" xd:originalName="numIteration" xd:direction="in" xd:interfaceRef="s_axi_cpuControl" xd:busTypeRef="axilite" xd:offset="0x18" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="counter.data" xd:originalName="counter" xd:direction="out" xd:interfaceRef="counter" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="counter.last" xd:originalName="counter" xd:direction="out" xd:interfaceRef="counter" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="309" xd:FF="247" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

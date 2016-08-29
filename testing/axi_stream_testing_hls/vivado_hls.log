@@ -1,11 +1,11 @@
 @I [LIC-101] Checked out feature [HLS]
 @I [HLS-10] Running '/opt/Xilinx/Vivado_HLS/2015.3/bin/unwrapped/lnx64.o/vivado_hls'
-            for user 'ctnguyen' on host 'finance.eit.uni-kl.de' (Linux_x86_64 version 2.6.32-573.12.1.el6.x86_64) on Sat Aug 20 20:15:39 CEST 2016
+            for user 'ctnguyen' on host 'finance.eit.uni-kl.de' (Linux_x86_64 version 2.6.32-573.12.1.el6.x86_64) on Mon Aug 29 02:37:50 CEST 2016
             in directory '/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls'
 @W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
 @W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:.
-@I [HLS-10] Opening project '/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_no_last_signal_hls'.
-@I [HLS-10] Opening solution '/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_no_last_signal_hls/solution1'.
+@I [HLS-10] Opening project '/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_hls'.
+@I [HLS-10] Opening solution '/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_hls/solution1'.
 @I [SYN-201] Setting up clock 'default' with a period of 10ns.
 @I [HLS-10] Setting target device to 'xc7z020clg484-1'
 @I [IMPL-8] Exporting RTL as an IP in IP-XACT.
@@ -19,5 +19,5 @@ source run_ippack.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.3/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Sat Aug 20 20:15:50 2016...
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 29 02:38:07 2016...
 @I [LIC-101] Checked in feature [HLS]
