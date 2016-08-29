@@ -5,8 +5,8 @@
 ############################################################
 open_project axi_stream_no_last_signal_hls
 set_top counter_stream_hls
-add_files axi_stream_no_last_signal_hls/solution1/src/counter_stream_hls.cpp
 add_files axi_stream_no_last_signal_hls/solution1/src/counter_stream_hls.hpp
+add_files axi_stream_no_last_signal_hls/solution1/src/counter_stream_hls.cpp
 add_files -tb axi_stream_no_last_signal_hls/solution1/src/counter_stream_tb.cpp
 open_solution "solution1"
 set_part {xc7z020clg484-1}
