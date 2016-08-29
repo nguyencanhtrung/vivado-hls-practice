@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Mon Aug 29 03:09:07 2016
+# Process ID: 10441
+# Current directory: /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.runs/impl_1
+# Command line: vivado -log testing_stream_have_last_signal_system_wrapper.vdi -applog -messageDb vivado.pb -mode batch -source testing_stream_have_last_signal_system_wrapper.tcl -notrace
+# Log file: /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.runs/impl_1/testing_stream_have_last_signal_system_wrapper.vdi
+# Journal file: /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source testing_stream_have_last_signal_system_wrapper.tcl -notrace
