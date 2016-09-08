@@ -1,0 +1,511 @@
+03:54:31 **** Build of project standalone_bsp_0 ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_0/src
+make -C ps7_cortexa9_0/libsrc/axidma_v9_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_1/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/counter_stream_have_last_hls_v1_0/src
+make -C ps7_cortexa9_0/libsrc/counter_stream_have_last_hls_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_3/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_1/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_5/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_2/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in ps7_cortexa9_0/libsrc/axidma_v9_0/src
+make -C ps7_cortexa9_0/libsrc/axidma_v9_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling axidma
+In file included from xaxidma.h:470:0,
+                 from xaxidma.c:83:
+xaxidma.c: In function 'XAxiDma_Reset':
+xaxidma_bdring.h:238:26: warning: assignment makes pointer from integer without a cast
+    (RingPtr)->BdaRestart =      \
+                          ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:243:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:248:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:238:26: warning: assignment makes pointer from integer without a cast
+    (RingPtr)->BdaRestart =      \
+                          ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+xaxidma_bdring.h:243:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+xaxidma_bdring.h:248:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_1/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/counter_stream_have_last_hls_v1_0/src
+make -C ps7_cortexa9_0/libsrc/counter_stream_have_last_hls_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling counter_stream_have_last_hls
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling ddrps
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_3/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_1/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_5/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_2/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling xadcps
+Finished building libraries
+03:55:40 **** Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22888	   1152	  22564	  46604	   b60c	software.elf
+Finished building: software.elf.size
+ 
+03:55:42 **** Auto Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+03:57:39 **** Auto Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+03:59:59 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:98:17: error: 'XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR' undeclared (first use in this function)
+      writeReg32(XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR,
+                 ^
+../src/helloworld.c:98:17: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] Error 1
+04:01:33 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:98:17: error: 'XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR' undeclared (first use in this function)
+      writeReg32(XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR,
+                 ^
+../src/helloworld.c:98:17: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] Error 1
+04:03:01 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:27:53: fatal error: xcounter_stream_have_last_signal_hls_hw.h: No such file or directory
+ #include "xcounter_stream_have_last_signal_hls_hw.h"
+                                                     ^
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+04:03:15 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:98:17: error: 'XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR' undeclared (first use in this function)
+      writeReg32(XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR,
+                 ^
+../src/helloworld.c:98:17: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] Error 1
+04:04:24 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:60:17: error: 'XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR' undeclared (first use in this function)
+      writeReg32(XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR,
+                 ^
+../src/helloworld.c:60:17: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:61:8: error: 'XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_NUMITERATION_DATA' undeclared (first use in this function)
+        XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_NUMITERATION_DATA,
+        ^
+../src/helloworld.c:65:8: error: 'XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_RESOLUTION_DATA' undeclared (first use in this function)
+        XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_RESOLUTION_DATA,
+        ^
+../src/helloworld.c:123:8: error: 'XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_AP_CTRL' undeclared (first use in this function)
+        XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_AP_CTRL,
+        ^
+make: *** [src/helloworld.o] Error 1
+04:05:16 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:61:17: error: 'XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR' undeclared (first use in this function)
+      writeReg32(XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR,
+                 ^
+../src/helloworld.c:61:17: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:62:8: error: 'XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_NUMITERATION_DATA' undeclared (first use in this function)
+        XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_NUMITERATION_DATA,
+        ^
+../src/helloworld.c:66:8: error: 'XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_RESOLUTION_DATA' undeclared (first use in this function)
+        XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_RESOLUTION_DATA,
+        ^
+../src/helloworld.c:124:8: error: 'XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_AP_CTRL' undeclared (first use in this function)
+        XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_AP_CTRL,
+        ^
+make: *** [src/helloworld.o] Error 1
+04:05:47 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:61:17: error: 'XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR' undeclared (first use in this function)
+      writeReg32(XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR,
+                 ^
+../src/helloworld.c:61:17: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:62:8: error: 'XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_NUMITERATION_DATA' undeclared (first use in this function)
+        XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_NUMITERATION_DATA,
+        ^
+../src/helloworld.c:66:8: error: 'XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_RESOLUTION_DATA' undeclared (first use in this function)
+        XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_RESOLUTION_DATA,
+        ^
+../src/helloworld.c:124:8: error: 'XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_AP_CTRL' undeclared (first use in this function)
+        XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_AP_CTRL,
+        ^
+make: *** [src/helloworld.o] Error 1
+04:08:58 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:123:16: error: 'XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR' undeclared (first use in this function)
+    writeReg32( XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR,
+                ^
+../src/helloworld.c:123:16: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:124:8: error: 'XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_AP_CTRL' undeclared (first use in this function)
+        XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_AP_CTRL,
+        ^
+make: *** [src/helloworld.o] Error 1
+04:09:16 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:123:16: error: 'XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR' undeclared (first use in this function)
+    writeReg32( XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR,
+                ^
+../src/helloworld.c:123:16: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:124:8: error: 'XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_AP_CTRL' undeclared (first use in this function)
+        XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_AP_CTRL,
+        ^
+make: *** [src/helloworld.o] Error 1
+04:10:45 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:113:16: error: 'XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR' undeclared (first use in this function)
+    writeReg32( XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR,
+                ^
+../src/helloworld.c:113:16: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:114:8: error: 'XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_AP_CTRL' undeclared (first use in this function)
+        XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_AP_CTRL,
+        ^
+make: *** [src/helloworld.o] Error 1
+04:11:58 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:116:10: error: 'XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_AP_CTRL' undeclared (first use in this function)
+          XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_AP_CTRL)
+          ^
+../src/helloworld.c:116:10: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] Error 1
+04:12:04 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/dma_simple_mode.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_simple_mode.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/dma_simple_mode.d" -MT"src/dma_simple_mode.d" -o "src/dma_simple_mode.o" "../src/dma_simple_mode.c"
+Finished building: ../src/dma_simple_mode.c
+ 
+Building file: ../src/io_reg.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/io_reg.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/io_reg.d" -MT"src/io_reg.d" -o "src/io_reg.o" "../src/io_reg.c"
+Finished building: ../src/io_reg.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71452	   2384	  22636	  96472	  178d8	software.elf
+Finished building: software.elf.size
+ 
+04:12:46 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:130:38: error: 'len_transfered' undeclared (first use in this function)
+    xil_printf("Length: %d\r\n", (int)len_transfered);
+                                      ^
+../src/helloworld.c:130:38: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] Error 1
+04:13:14 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71388	   2384	  22636	  96408	  17898	software.elf
+Finished building: software.elf.size
+ 
+04:14:14 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71452	   2384	  22636	  96472	  178d8	software.elf
+Finished building: software.elf.size
+ 
+04:14:50 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71452	   2384	  22636	  96472	  178d8	software.elf
+Finished building: software.elf.size
+ 
+04:15:16 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35268	   1216	  22564	  59048	   e6a8	software.elf
+Finished building: software.elf.size
+ 
+04:18:20 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+08:51:32 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35368	   1216	  22564	  59148	   e70c	software.elf
+Finished building: software.elf.size
+ 
+08:52:11 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+08:53:10 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35368	   1216	  22564	  59148	   e70c	software.elf
+Finished building: software.elf.size
+ 
+08:53:44 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+08:55:27 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:52:2: error: 'Status' undeclared (first use in this function)
+  Status = XAxiDma_CfgInitialize(&AxiDma, CfgPtr);
+  ^
+../src/helloworld.c:52:2: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] Error 1
+08:55:50 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35368	   1216	  22564	  59148	   e70c	software.elf
+Finished building: software.elf.size
+ 
+08:56:02 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
