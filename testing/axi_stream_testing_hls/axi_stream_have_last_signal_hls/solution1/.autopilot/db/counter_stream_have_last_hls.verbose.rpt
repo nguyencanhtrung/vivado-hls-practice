@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'counter_stream_have_last_hls'
 ================================================================
-* Date:           Mon Aug 29 02:21:32 2016
+* Date:           Thu Sep  8 12:39:13 2016
 
 * Version:        2015.3 (Build 1368829 on Mon Sep 28 20:31:51 PM 2015)
 * Project:        axi_stream_have_last_signal_hls
@@ -54,14 +54,14 @@
 |       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
 +-----------------+---------+-------+--------+-------+
 |DSP              |        -|      -|       -|      -|
-|Expression       |        -|      -|       0|     76|
+|Expression       |        -|      -|       0|     85|
 |FIFO             |        -|      -|       -|      -|
 |Instance         |        0|      -|     112|    168|
 |Memory           |        -|      -|       -|      -|
 |Multiplexer      |        -|      -|       -|     65|
 |Register         |        -|      -|     135|      -|
 +-----------------+---------+-------+--------+-------+
-|Total            |        0|      0|     247|    309|
+|Total            |        0|      0|     247|    318|
 +-----------------+---------+-------+--------+-------+
 |Available        |      280|    220|  106400|  53200|
 +-----------------+---------+-------+--------+-------+
@@ -92,11 +92,11 @@
     |     Variable Name    | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
     +----------------------+----------+-------+---+----+------------+------------+
     |i_1_fu_103_p2         |     +    |      0|  0|  31|          31|           1|
-    |next_mul_fu_119_p2    |     +    |      0|  0|  32|          32|          32|
+    |next_mul_fu_115_p2    |     +    |      0|  0|  32|          32|          32|
     |tmp_fu_98_p2          |   icmp   |      0|  0|  11|          32|          32|
-    |tmp_last_V_fu_113_p2  |   icmp   |      0|  0|   2|           4|           1|
+    |tmp_last_V_fu_109_p2  |   icmp   |      0|  0|  11|          31|           5|
     +----------------------+----------+-------+---+----+------------+------------+
-    |Total                 |          |      0|  0|  76|          99|          66|
+    |Total                 |          |      0|  0|  85|         126|          70|
     +----------------------+----------+-------+---+----+------------+------------+
 
     * Multiplexer: 
@@ -120,11 +120,11 @@
     |ap_reg_ppiten_pp0_it0          |   1|   0|    1|          0|
     |ap_reg_ppiten_pp0_it1          |   1|   0|    1|          0|
     |i_reg_70                       |  31|   0|   31|          0|
-    |numIteration_read_reg_124      |  32|   0|   32|          0|
-    |resolution_read_reg_129        |  32|   0|   32|          0|
+    |numIteration_read_reg_120      |  32|   0|   32|          0|
+    |resolution_read_reg_125        |  32|   0|   32|          0|
     |tmp_data_reg_81                |  32|   0|   32|          0|
-    |tmp_last_V_reg_143             |   1|   0|    1|          0|
-    |tmp_reg_134                    |   1|   0|    1|          0|
+    |tmp_last_V_reg_139             |   1|   0|    1|          0|
+    |tmp_reg_130                    |   1|   0|    1|          0|
     +-------------------------------+----+----+-----+-----------+
     |Total                          | 135|   0|  135|          0|
     +-------------------------------+----+----+-----+-----------+
@@ -266,38 +266,35 @@ ST_2: i_1 [1/1] 2.44ns
 ST_2: stg_22 [1/1] 0.00ns
 :5  br i1 %tmp, label %2, label %3
 
-ST_2: tmp_1 [1/1] 0.00ns
-:0  %tmp_1 = trunc i31 %i to i4
-
-ST_2: tmp_last_V [1/1] 1.88ns
-:5  %tmp_last_V = icmp eq i4 %tmp_1, 0
+ST_2: tmp_last_V [1/1] 2.50ns
+:4  %tmp_last_V = icmp eq i31 %i, 16
 
 
  <State 3>: 2.44ns
-ST_3: stg_25 [1/1] 0.00ns
-:1  call void (...)* @_ssdm_op_SpecLoopName([5 x i8]* @p_str4) nounwind
+ST_3: stg_24 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecLoopName([5 x i8]* @p_str4) nounwind
 
-ST_3: tmp_4 [1/1] 0.00ns
-:2  %tmp_4 = call i32 (...)* @_ssdm_op_SpecRegionBegin([5 x i8]* @p_str4)
+ST_3: tmp_3 [1/1] 0.00ns
+:1  %tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([5 x i8]* @p_str4)
 
-ST_3: stg_27 [1/1] 0.00ns
-:3  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
+ST_3: stg_26 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
 
 ST_3: next_mul [1/1] 2.44ns
-:4  %next_mul = add i32 %resolution_read, %tmp_data
+:3  %next_mul = add i32 %tmp_data, %resolution_read
 
-ST_3: stg_29 [1/1] 0.00ns
-:6  call void @_ssdm_op_Write.axis.volatile.i32P.i1P(i32* %counter_V_data, i1* %counter_V_last_V, i32 %tmp_data, i1 %tmp_last_V)
+ST_3: stg_28 [1/1] 0.00ns
+:5  call void @_ssdm_op_Write.axis.volatile.i32P.i1P(i32* %counter_V_data, i1* %counter_V_last_V, i32 %tmp_data, i1 %tmp_last_V)
 
 ST_3: empty [1/1] 0.00ns
-:7  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([5 x i8]* @p_str4, i32 %tmp_4)
+:6  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([5 x i8]* @p_str4, i32 %tmp_3)
 
-ST_3: stg_31 [1/1] 0.00ns
-:8  br label %1
+ST_3: stg_30 [1/1] 0.00ns
+:7  br label %1
 
 
  <State 4>: 0.00ns
-ST_4: stg_32 [1/1] 0.00ns
+ST_4: stg_31 [1/1] 0.00ns
 :0  ret void
 
 
@@ -314,10 +311,10 @@ STG Binding:
 - Is pipelined: 0
 - Is top level: 1
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ resolution]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x7fb42807fa10; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ numIteration]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x7fb43f49aef0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ counter_V_data]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x7fb43f5fee00; pingpong=0; private_global=0; IO mode=axis:ce=0
-Port [ counter_V_last_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x7fb43d7dee70; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ resolution]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x7fa59f60e7e0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ numIteration]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x7fa59efc4b70; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ counter_V_data]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x7fa59d50d9c0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ counter_V_last_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x7fa59eb0ed00; pingpong=0; private_global=0; IO mode=axis:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------
@@ -342,16 +339,15 @@ i_cast            (zext           ) [ 00000]
 tmp               (icmp           ) [ 00110]
 i_1               (add            ) [ 01110]
 stg_22            (br             ) [ 00000]
-tmp_1             (trunc          ) [ 00000]
 tmp_last_V        (icmp           ) [ 00110]
-stg_25            (specloopname   ) [ 00000]
-tmp_4             (specregionbegin) [ 00000]
-stg_27            (specpipeline   ) [ 00000]
+stg_24            (specloopname   ) [ 00000]
+tmp_3             (specregionbegin) [ 00000]
+stg_26            (specpipeline   ) [ 00000]
 next_mul          (add            ) [ 01110]
-stg_29            (write          ) [ 00000]
+stg_28            (write          ) [ 00000]
 empty             (specregionend  ) [ 00000]
-stg_31            (br             ) [ 01110]
-stg_32            (ret            ) [ 00000]
+stg_30            (br             ) [ 01110]
+stg_31            (ret            ) [ 00000]
 </LifeTime>
 
 <model>
@@ -597,7 +593,7 @@ stg_32            (ret            ) [ 00000]
 </bind>
 </comp>
 
-<comp id="60" class="1004" name="stg_29_write_fu_60">
+<comp id="60" class="1004" name="stg_28_write_fu_60">
 <pin_list>
 <pin id="61" dir="0" index="0" bw="0" slack="0"/>
 <pin id="62" dir="0" index="1" bw="32" slack="0"/>
@@ -608,7 +604,7 @@ stg_32            (ret            ) [ 00000]
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
-<opset="stg_29/3 "/>
+<opset="stg_28/3 "/>
 </bind>
 </comp>
 
@@ -695,22 +691,11 @@ stg_32            (ret            ) [ 00000]
 </bind>
 </comp>
 
-<comp id="109" class="1004" name="tmp_1_fu_109">
+<comp id="109" class="1004" name="tmp_last_V_fu_109">
 <pin_list>
 <pin id="110" dir="0" index="0" bw="31" slack="0"/>
-<pin id="111" dir="1" index="1" bw="4" slack="0"/>
-</pin_list>
-<bind>
-<opcode="trunc(33) " fcode="trunc"/>
-<opset="tmp_1/2 "/>
-</bind>
-</comp>
-
-<comp id="113" class="1004" name="tmp_last_V_fu_113">
-<pin_list>
-<pin id="114" dir="0" index="0" bw="4" slack="0"/>
-<pin id="115" dir="0" index="1" bw="4" slack="0"/>
-<pin id="116" dir="1" index="2" bw="1" slack="1"/>
+<pin id="111" dir="0" index="1" bw="31" slack="0"/>
+<pin id="112" dir="1" index="2" bw="1" slack="1"/>
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
@@ -718,11 +703,11 @@ stg_32            (ret            ) [ 00000]
 </bind>
 </comp>
 
-<comp id="119" class="1004" name="next_mul_fu_119">
+<comp id="115" class="1004" name="next_mul_fu_115">
 <pin_list>
-<pin id="120" dir="0" index="0" bw="32" slack="2"/>
-<pin id="121" dir="0" index="1" bw="32" slack="1"/>
-<pin id="122" dir="1" index="2" bw="32" slack="1"/>
+<pin id="116" dir="0" index="0" bw="32" slack="1"/>
+<pin id="117" dir="0" index="1" bw="32" slack="2"/>
+<pin id="118" dir="1" index="2" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
@@ -730,60 +715,60 @@ stg_32            (ret            ) [ 00000]
 </bind>
 </comp>
 
-<comp id="124" class="1005" name="numIteration_read_reg_124">
+<comp id="120" class="1005" name="numIteration_read_reg_120">
 <pin_list>
-<pin id="125" dir="0" index="0" bw="32" slack="1"/>
-<pin id="126" dir="1" index="1" bw="32" slack="1"/>
+<pin id="121" dir="0" index="0" bw="32" slack="1"/>
+<pin id="122" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="numIteration_read "/>
 </bind>
 </comp>
 
-<comp id="129" class="1005" name="resolution_read_reg_129">
+<comp id="125" class="1005" name="resolution_read_reg_125">
 <pin_list>
-<pin id="130" dir="0" index="0" bw="32" slack="2"/>
-<pin id="131" dir="1" index="1" bw="32" slack="2"/>
+<pin id="126" dir="0" index="0" bw="32" slack="2"/>
+<pin id="127" dir="1" index="1" bw="32" slack="2"/>
 </pin_list>
 <bind>
 <opset="resolution_read "/>
 </bind>
 </comp>
 
-<comp id="134" class="1005" name="tmp_reg_134">
+<comp id="130" class="1005" name="tmp_reg_130">
 <pin_list>
-<pin id="135" dir="0" index="0" bw="1" slack="1"/>
-<pin id="136" dir="1" index="1" bw="1" slack="2147483647"/>
+<pin id="131" dir="0" index="0" bw="1" slack="1"/>
+<pin id="132" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
 <opset="tmp "/>
 </bind>
 </comp>
 
-<comp id="138" class="1005" name="i_1_reg_138">
+<comp id="134" class="1005" name="i_1_reg_134">
 <pin_list>
-<pin id="139" dir="0" index="0" bw="31" slack="0"/>
-<pin id="140" dir="1" index="1" bw="31" slack="0"/>
+<pin id="135" dir="0" index="0" bw="31" slack="0"/>
+<pin id="136" dir="1" index="1" bw="31" slack="0"/>
 </pin_list>
 <bind>
 <opset="i_1 "/>
 </bind>
 </comp>
 
-<comp id="143" class="1005" name="tmp_last_V_reg_143">
+<comp id="139" class="1005" name="tmp_last_V_reg_139">
 <pin_list>
-<pin id="144" dir="0" index="0" bw="1" slack="1"/>
-<pin id="145" dir="1" index="1" bw="1" slack="1"/>
+<pin id="140" dir="0" index="0" bw="1" slack="1"/>
+<pin id="141" dir="1" index="1" bw="1" slack="1"/>
 </pin_list>
 <bind>
 <opset="tmp_last_V "/>
 </bind>
 </comp>
 
-<comp id="148" class="1005" name="next_mul_reg_148">
+<comp id="144" class="1005" name="next_mul_reg_144">
 <pin_list>
-<pin id="149" dir="0" index="0" bw="32" slack="1"/>
-<pin id="150" dir="1" index="1" bw="32" slack="1"/>
+<pin id="145" dir="0" index="0" bw="32" slack="1"/>
+<pin id="146" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="next_mul "/>
@@ -827,35 +812,33 @@ stg_32            (ret            ) [ 00000]
 
 <net id="108"><net_src comp="30" pin="0"/><net_sink comp="103" pin=1"/></net>
 
-<net id="112"><net_src comp="74" pin="4"/><net_sink comp="109" pin=0"/></net>
+<net id="113"><net_src comp="74" pin="4"/><net_sink comp="109" pin=0"/></net>
 
-<net id="117"><net_src comp="109" pin="1"/><net_sink comp="113" pin=0"/></net>
+<net id="114"><net_src comp="32" pin="0"/><net_sink comp="109" pin=1"/></net>
 
-<net id="118"><net_src comp="32" pin="0"/><net_sink comp="113" pin=1"/></net>
+<net id="119"><net_src comp="81" pin="1"/><net_sink comp="115" pin=0"/></net>
 
-<net id="123"><net_src comp="81" pin="1"/><net_sink comp="119" pin=1"/></net>
+<net id="123"><net_src comp="48" pin="2"/><net_sink comp="120" pin=0"/></net>
 
-<net id="127"><net_src comp="48" pin="2"/><net_sink comp="124" pin=0"/></net>
+<net id="124"><net_src comp="120" pin="1"/><net_sink comp="98" pin=1"/></net>
 
-<net id="128"><net_src comp="124" pin="1"/><net_sink comp="98" pin=1"/></net>
+<net id="128"><net_src comp="54" pin="2"/><net_sink comp="125" pin=0"/></net>
 
-<net id="132"><net_src comp="54" pin="2"/><net_sink comp="129" pin=0"/></net>
+<net id="129"><net_src comp="125" pin="1"/><net_sink comp="115" pin=1"/></net>
 
-<net id="133"><net_src comp="129" pin="1"/><net_sink comp="119" pin=0"/></net>
+<net id="133"><net_src comp="98" pin="2"/><net_sink comp="130" pin=0"/></net>
 
-<net id="137"><net_src comp="98" pin="2"/><net_sink comp="134" pin=0"/></net>
+<net id="137"><net_src comp="103" pin="2"/><net_sink comp="134" pin=0"/></net>
 
-<net id="141"><net_src comp="103" pin="2"/><net_sink comp="138" pin=0"/></net>
+<net id="138"><net_src comp="134" pin="1"/><net_sink comp="74" pin=2"/></net>
 
-<net id="142"><net_src comp="138" pin="1"/><net_sink comp="74" pin=2"/></net>
+<net id="142"><net_src comp="109" pin="2"/><net_sink comp="139" pin=0"/></net>
 
-<net id="146"><net_src comp="113" pin="2"/><net_sink comp="143" pin=0"/></net>
+<net id="143"><net_src comp="139" pin="1"/><net_sink comp="60" pin=4"/></net>
 
-<net id="147"><net_src comp="143" pin="1"/><net_sink comp="60" pin=4"/></net>
+<net id="147"><net_src comp="115" pin="2"/><net_sink comp="144" pin=0"/></net>
 
-<net id="151"><net_src comp="119" pin="2"/><net_sink comp="148" pin=0"/></net>
-
-<net id="152"><net_src comp="148" pin="1"/><net_sink comp="86" pin=2"/></net>
+<net id="148"><net_src comp="144" pin="1"/><net_sink comp="86" pin=2"/></net>
 
 </net_list>
 
@@ -873,8 +856,7 @@ stg_32            (ret            ) [ 00000]
 		tmp : 2
 		i_1 : 1
 		stg_22 : 3
-		tmp_1 : 1
-		tmp_last_V : 2
+		tmp_last_V : 1
 	State 3
 		empty : 1
 	State 4
@@ -889,21 +871,19 @@ stg_32            (ret            ) [ 00000]
 | Operation|        Functional Unit       |    FF   |   LUT   |
 |----------|------------------------------|---------|---------|
 |    add   |          i_1_fu_103          |    0    |    31   |
-|          |        next_mul_fu_119       |    0    |    32   |
+|          |        next_mul_fu_115       |    0    |    32   |
 |----------|------------------------------|---------|---------|
 |   icmp   |           tmp_fu_98          |    0    |    11   |
-|          |       tmp_last_V_fu_113      |    0    |    2    |
+|          |       tmp_last_V_fu_109      |    0    |    11   |
 |----------|------------------------------|---------|---------|
 |   read   | numIteration_read_read_fu_48 |    0    |    0    |
 |          |  resolution_read_read_fu_54  |    0    |    0    |
 |----------|------------------------------|---------|---------|
-|   write  |      stg_29_write_fu_60      |    0    |    0    |
+|   write  |      stg_28_write_fu_60      |    0    |    0    |
 |----------|------------------------------|---------|---------|
 |   zext   |         i_cast_fu_94         |    0    |    0    |
 |----------|------------------------------|---------|---------|
-|   trunc  |         tmp_1_fu_109         |    0    |    0    |
-|----------|------------------------------|---------|---------|
-|   Total  |                              |    0    |    76   |
+|   Total  |                              |    0    |    85   |
 |----------|------------------------------|---------|---------|
 
 Memories:
@@ -913,14 +893,14 @@ N/A
 +-------------------------+--------+
 |                         |   FF   |
 +-------------------------+--------+
-|       i_1_reg_138       |   31   |
+|       i_1_reg_134       |   31   |
 |         i_reg_70        |   31   |
-|     next_mul_reg_148    |   32   |
-|numIteration_read_reg_124|   32   |
-| resolution_read_reg_129 |   32   |
+|     next_mul_reg_144    |   32   |
+|numIteration_read_reg_120|   32   |
+| resolution_read_reg_125 |   32   |
 |     tmp_data_reg_81     |   32   |
-|    tmp_last_V_reg_143   |    1   |
-|       tmp_reg_134       |    1   |
+|    tmp_last_V_reg_139   |    1   |
+|       tmp_reg_130       |    1   |
 +-------------------------+--------+
 |          Total          |   192  |
 +-------------------------+--------+
@@ -940,10 +920,10 @@ N/A
 +-----------+--------+--------+--------+
 |           |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+
-|  Function |    -   |    0   |   76   |
+|  Function |    -   |    0   |   85   |
 |   Memory  |    -   |    -   |    -   |
 |Multiplexer|    1   |    -   |   32   |
 |  Register |    -   |   192  |    -   |
 +-----------+--------+--------+--------+
-|   Total   |    1   |   192  |   108  |
+|   Total   |    1   |   192  |   117  |
 +-----------+--------+--------+--------+

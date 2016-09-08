@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="counter_stream_have_last_hls,hls_ip_2015_3,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020clg484-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=3.888000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=247,HLS_SYN_LUT=309}" *)
+(* CORE_GENERATION_INFO="counter_stream_have_last_hls,hls_ip_2015_3,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020clg484-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=3.888000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=247,HLS_SYN_LUT=318}" *)
 
 module counter_stream_have_last_hls (
         ap_clk,
@@ -51,7 +51,7 @@ parameter    ap_const_lv32_1 = 32'b1;
 parameter    ap_const_lv1_0 = 1'b0;
 parameter    ap_const_lv31_0 = 31'b0000000000000000000000000000000;
 parameter    ap_const_lv31_1 = 31'b1;
-parameter    ap_const_lv4_0 = 4'b0000;
+parameter    ap_const_lv31_10 = 31'b10000;
 parameter    ap_const_lv32_2 = 32'b10;
 parameter    ap_true = 1'b1;
 parameter    C_S_AXI_CPUCONTROL_WSTRB_WIDTH = (C_S_AXI_CPUCONTROL_DATA_WIDTH / ap_const_int64_8);
@@ -96,24 +96,23 @@ wire   [31:0] numIteration;
 wire    counter_stream_have_last_hls_cpuControl_s_axi_U_ap_dummy_ce;
 reg   [30:0] i_reg_70;
 reg   [31:0] tmp_data_reg_81;
-reg   [31:0] numIteration_read_reg_124;
-reg   [31:0] resolution_read_reg_129;
+reg   [31:0] numIteration_read_reg_120;
+reg   [31:0] resolution_read_reg_125;
 wire   [0:0] tmp_fu_98_p2;
-reg   [0:0] tmp_reg_134;
+reg   [0:0] tmp_reg_130;
 reg    ap_sig_cseq_ST_pp0_stg0_fsm_1;
 reg    ap_sig_bdd_88;
 reg    ap_reg_ppiten_pp0_it0 = 1'b0;
 reg    ap_sig_ioackin_counter_TREADY;
 reg    ap_reg_ppiten_pp0_it1 = 1'b0;
 wire   [30:0] i_1_fu_103_p2;
-wire   [0:0] tmp_last_V_fu_113_p2;
-reg   [0:0] tmp_last_V_reg_143;
-wire   [31:0] next_mul_fu_119_p2;
+wire   [0:0] tmp_last_V_fu_109_p2;
+reg   [0:0] tmp_last_V_reg_139;
+wire   [31:0] next_mul_fu_115_p2;
 reg    ap_reg_ioackin_counter_TREADY = 1'b0;
 wire   [31:0] i_cast_fu_94_p1;
-wire   [3:0] tmp_1_fu_109_p1;
 reg    ap_sig_cseq_ST_st4_fsm_2;
-reg    ap_sig_bdd_158;
+reg    ap_sig_bdd_155;
 reg   [2:0] ap_NS_fsm;
 
 
@@ -166,9 +165,9 @@ always @ (posedge ap_clk) begin : ap_ret_ap_reg_ioackin_counter_TREADY
     if (ap_rst_n_inv == 1'b1) begin
         ap_reg_ioackin_counter_TREADY <= ap_const_logic_0;
     end else begin
-        if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & ~(tmp_reg_134 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(~(tmp_reg_134 == ap_const_lv1_0) & (ap_const_logic_0 == ap_sig_ioackin_counter_TREADY) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+        if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & ~(tmp_reg_130 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(~(tmp_reg_130 == ap_const_lv1_0) & (ap_const_logic_0 == ap_sig_ioackin_counter_TREADY) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
             ap_reg_ioackin_counter_TREADY <= ap_const_logic_0;
-        end else if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & ~(tmp_reg_134 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & (ap_const_logic_1 == counter_TREADY))) begin
+        end else if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & ~(tmp_reg_130 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & (ap_const_logic_1 == counter_TREADY))) begin
             ap_reg_ioackin_counter_TREADY <= ap_const_logic_1;
         end
     end
@@ -179,7 +178,7 @@ always @ (posedge ap_clk) begin : ap_ret_ap_reg_ppiten_pp0_it0
     if (ap_rst_n_inv == 1'b1) begin
         ap_reg_ppiten_pp0_it0 <= ap_const_logic_0;
     end else begin
-        if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & ~(~(tmp_reg_134 == ap_const_lv1_0) & (ap_const_logic_0 == ap_sig_ioackin_counter_TREADY) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)) & (tmp_fu_98_p2 == ap_const_lv1_0))) begin
+        if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & ~(~(tmp_reg_130 == ap_const_lv1_0) & (ap_const_logic_0 == ap_sig_ioackin_counter_TREADY) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)) & (tmp_fu_98_p2 == ap_const_lv1_0))) begin
             ap_reg_ppiten_pp0_it0 <= ap_const_logic_0;
         end else if (((ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0) & ~(ap_start == ap_const_logic_0))) begin
             ap_reg_ppiten_pp0_it0 <= ap_const_logic_1;
@@ -192,9 +191,9 @@ always @ (posedge ap_clk) begin : ap_ret_ap_reg_ppiten_pp0_it1
     if (ap_rst_n_inv == 1'b1) begin
         ap_reg_ppiten_pp0_it1 <= ap_const_logic_0;
     end else begin
-        if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & ~(~(tmp_reg_134 == ap_const_lv1_0) & (ap_const_logic_0 == ap_sig_ioackin_counter_TREADY) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)) & ~(tmp_fu_98_p2 == ap_const_lv1_0))) begin
+        if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & ~(~(tmp_reg_130 == ap_const_lv1_0) & (ap_const_logic_0 == ap_sig_ioackin_counter_TREADY) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)) & ~(tmp_fu_98_p2 == ap_const_lv1_0))) begin
             ap_reg_ppiten_pp0_it1 <= ap_const_logic_1;
-        end else if ((((ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0) & ~(ap_start == ap_const_logic_0)) | ((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & ~(~(tmp_reg_134 == ap_const_lv1_0) & (ap_const_logic_0 == ap_sig_ioackin_counter_TREADY) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)) & (tmp_fu_98_p2 == ap_const_lv1_0)))) begin
+        end else if ((((ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0) & ~(ap_start == ap_const_logic_0)) | ((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & ~(~(tmp_reg_130 == ap_const_lv1_0) & (ap_const_logic_0 == ap_sig_ioackin_counter_TREADY) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)) & (tmp_fu_98_p2 == ap_const_lv1_0)))) begin
             ap_reg_ppiten_pp0_it1 <= ap_const_logic_0;
         end
     end
@@ -202,7 +201,7 @@ end
 
 /// assign process. ///
 always @ (posedge ap_clk) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it0) & ~(~(tmp_reg_134 == ap_const_lv1_0) & (ap_const_logic_0 == ap_sig_ioackin_counter_TREADY) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)) & ~(tmp_fu_98_p2 == ap_const_lv1_0))) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it0) & ~(~(tmp_reg_130 == ap_const_lv1_0) & (ap_const_logic_0 == ap_sig_ioackin_counter_TREADY) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)) & ~(tmp_fu_98_p2 == ap_const_lv1_0))) begin
         i_reg_70 <= i_1_fu_103_p2;
     end else if (((ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0) & ~(ap_start == ap_const_logic_0))) begin
         i_reg_70 <= ap_const_lv31_0;
@@ -211,8 +210,8 @@ end
 
 /// assign process. ///
 always @ (posedge ap_clk) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & ~(tmp_reg_134 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(~(tmp_reg_134 == ap_const_lv1_0) & (ap_const_logic_0 == ap_sig_ioackin_counter_TREADY) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
-        tmp_data_reg_81 <= next_mul_fu_119_p2;
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & ~(tmp_reg_130 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & ~(~(tmp_reg_130 == ap_const_lv1_0) & (ap_const_logic_0 == ap_sig_ioackin_counter_TREADY) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+        tmp_data_reg_81 <= next_mul_fu_115_p2;
     end else if (((ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0) & ~(ap_start == ap_const_logic_0))) begin
         tmp_data_reg_81 <= ap_const_lv32_0;
     end
@@ -221,22 +220,22 @@ end
 /// assign process. ///
 always @ (posedge ap_clk) begin
     if (((ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0) & ~(ap_start == ap_const_logic_0))) begin
-        numIteration_read_reg_124 <= numIteration;
-        resolution_read_reg_129 <= resolution;
+        numIteration_read_reg_120 <= numIteration;
+        resolution_read_reg_125 <= resolution;
     end
 end
 
 /// assign process. ///
 always @ (posedge ap_clk) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & ~(~(tmp_reg_134 == ap_const_lv1_0) & (ap_const_logic_0 == ap_sig_ioackin_counter_TREADY) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)) & ~(tmp_fu_98_p2 == ap_const_lv1_0))) begin
-        tmp_last_V_reg_143 <= tmp_last_V_fu_113_p2;
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & ~(~(tmp_reg_130 == ap_const_lv1_0) & (ap_const_logic_0 == ap_sig_ioackin_counter_TREADY) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)) & ~(tmp_fu_98_p2 == ap_const_lv1_0))) begin
+        tmp_last_V_reg_139 <= tmp_last_V_fu_109_p2;
     end
 end
 
 /// assign process. ///
 always @ (posedge ap_clk) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & ~(~(tmp_reg_134 == ap_const_lv1_0) & (ap_const_logic_0 == ap_sig_ioackin_counter_TREADY) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
-        tmp_reg_134 <= tmp_fu_98_p2;
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & ~(~(tmp_reg_130 == ap_const_lv1_0) & (ap_const_logic_0 == ap_sig_ioackin_counter_TREADY) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)))) begin
+        tmp_reg_130 <= tmp_fu_98_p2;
     end
 end
 
@@ -286,8 +285,8 @@ always @ (ap_sig_bdd_21) begin
 end
 
 /// ap_sig_cseq_ST_st4_fsm_2 assign process. ///
-always @ (ap_sig_bdd_158) begin
-    if (ap_sig_bdd_158) begin
+always @ (ap_sig_bdd_155) begin
+    if (ap_sig_bdd_155) begin
         ap_sig_cseq_ST_st4_fsm_2 = ap_const_logic_1;
     end else begin
         ap_sig_cseq_ST_st4_fsm_2 = ap_const_logic_0;
@@ -304,15 +303,15 @@ always @ (counter_TREADY or ap_reg_ioackin_counter_TREADY) begin
 end
 
 /// counter_TVALID assign process. ///
-always @ (tmp_reg_134 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_reg_ppiten_pp0_it1 or ap_reg_ioackin_counter_TREADY) begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & ~(tmp_reg_134 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & (ap_const_logic_0 == ap_reg_ioackin_counter_TREADY))) begin
+always @ (tmp_reg_130 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_reg_ppiten_pp0_it1 or ap_reg_ioackin_counter_TREADY) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & ~(tmp_reg_130 == ap_const_lv1_0) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & (ap_const_logic_0 == ap_reg_ioackin_counter_TREADY))) begin
         counter_TVALID = ap_const_logic_1;
     end else begin
         counter_TVALID = ap_const_logic_0;
     end
 end
 /// the next state (ap_NS_fsm) of the state machine. ///
-always @ (ap_start or ap_CS_fsm or tmp_fu_98_p2 or tmp_reg_134 or ap_reg_ppiten_pp0_it0 or ap_sig_ioackin_counter_TREADY or ap_reg_ppiten_pp0_it1) begin
+always @ (ap_start or ap_CS_fsm or tmp_fu_98_p2 or tmp_reg_130 or ap_reg_ppiten_pp0_it0 or ap_sig_ioackin_counter_TREADY or ap_reg_ppiten_pp0_it1) begin
     case (ap_CS_fsm)
         ap_ST_st1_fsm_0 : 
         begin
@@ -324,9 +323,9 @@ always @ (ap_start or ap_CS_fsm or tmp_fu_98_p2 or tmp_reg_134 or ap_reg_ppiten_
         end
         ap_ST_pp0_stg0_fsm_1 : 
         begin
-            if (~((ap_const_logic_1 == ap_reg_ppiten_pp0_it0) & ~(~(tmp_reg_134 == ap_const_lv1_0) & (ap_const_logic_0 == ap_sig_ioackin_counter_TREADY) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)) & (tmp_fu_98_p2 == ap_const_lv1_0))) begin
+            if (~((ap_const_logic_1 == ap_reg_ppiten_pp0_it0) & ~(~(tmp_reg_130 == ap_const_lv1_0) & (ap_const_logic_0 == ap_sig_ioackin_counter_TREADY) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)) & (tmp_fu_98_p2 == ap_const_lv1_0))) begin
                 ap_NS_fsm = ap_ST_pp0_stg0_fsm_1;
-            end else if (((ap_const_logic_1 == ap_reg_ppiten_pp0_it0) & ~(~(tmp_reg_134 == ap_const_lv1_0) & (ap_const_logic_0 == ap_sig_ioackin_counter_TREADY) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)) & (tmp_fu_98_p2 == ap_const_lv1_0))) begin
+            end else if (((ap_const_logic_1 == ap_reg_ppiten_pp0_it0) & ~(~(tmp_reg_130 == ap_const_lv1_0) & (ap_const_logic_0 == ap_sig_ioackin_counter_TREADY) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1)) & (tmp_fu_98_p2 == ap_const_lv1_0))) begin
                 ap_NS_fsm = ap_ST_st4_fsm_2;
             end else begin
                 ap_NS_fsm = ap_ST_pp0_stg0_fsm_1;
@@ -349,9 +348,9 @@ always @ (ap_rst_n) begin
     ap_rst_n_inv = ~ap_rst_n;
 end
 
-/// ap_sig_bdd_158 assign process. ///
+/// ap_sig_bdd_155 assign process. ///
 always @ (ap_CS_fsm) begin
-    ap_sig_bdd_158 = (ap_const_lv1_1 == ap_CS_fsm[ap_const_lv32_2]);
+    ap_sig_bdd_155 = (ap_const_lv1_1 == ap_CS_fsm[ap_const_lv32_2]);
 end
 
 /// ap_sig_bdd_21 assign process. ///
@@ -364,14 +363,13 @@ always @ (ap_CS_fsm) begin
     ap_sig_bdd_88 = (ap_const_lv1_1 == ap_CS_fsm[ap_const_lv32_1]);
 end
 assign counter_TDATA = tmp_data_reg_81;
-assign counter_TLAST = tmp_last_V_reg_143;
+assign counter_TLAST = tmp_last_V_reg_139;
 assign counter_stream_have_last_hls_cpuControl_s_axi_U_ap_dummy_ce = ap_const_logic_1;
 assign i_1_fu_103_p2 = (i_reg_70 + ap_const_lv31_1);
 assign i_cast_fu_94_p1 = i_reg_70;
-assign next_mul_fu_119_p2 = (resolution_read_reg_129 + tmp_data_reg_81);
-assign tmp_1_fu_109_p1 = i_reg_70[3:0];
-assign tmp_fu_98_p2 = ($signed(i_cast_fu_94_p1) < $signed(numIteration_read_reg_124)? 1'b1: 1'b0);
-assign tmp_last_V_fu_113_p2 = (tmp_1_fu_109_p1 == ap_const_lv4_0? 1'b1: 1'b0);
+assign next_mul_fu_115_p2 = (tmp_data_reg_81 + resolution_read_reg_125);
+assign tmp_fu_98_p2 = ($signed(i_cast_fu_94_p1) < $signed(numIteration_read_reg_120)? 1'b1: 1'b0);
+assign tmp_last_V_fu_109_p2 = (i_reg_70 == ap_const_lv31_10? 1'b1: 1'b0);
 
 
 endmodule //counter_stream_have_last_hls

@@ -7,9 +7,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testing_stream_
 # IP: bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_processing_system7_0_0/testing_stream_have_last_signal_system_processing_system7_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testing_stream_have_last_signal_system_processing_system7_0_0 || ORIG_REF_NAME==testing_stream_have_last_signal_system_processing_system7_0_0}]
 
-# IP: bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_0/testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_0 || ORIG_REF_NAME==testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_0}]
-
 # IP: bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_axi_dma_0_0/testing_stream_have_last_signal_system_axi_dma_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testing_stream_have_last_signal_system_axi_dma_0_0 || ORIG_REF_NAME==testing_stream_have_last_signal_system_axi_dma_0_0}]
 
@@ -25,6 +22,9 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testing_stream_
 # IP: bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_xbar_0/testing_stream_have_last_signal_system_xbar_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testing_stream_have_last_signal_system_xbar_0 || ORIG_REF_NAME==testing_stream_have_last_signal_system_xbar_0}]
 
+# IP: bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_1/testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_1 || ORIG_REF_NAME==testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_1}]
+
 # IP: bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_auto_pc_0/testing_stream_have_last_signal_system_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testing_stream_have_last_signal_system_auto_pc_0 || ORIG_REF_NAME==testing_stream_have_last_signal_system_auto_pc_0}]
 
@@ -36,8 +36,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testing_stream_
 
 # XDC: bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_processing_system7_0_0/testing_stream_have_last_signal_system_processing_system7_0_0.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==testing_stream_have_last_signal_system_processing_system7_0_0 || ORIG_REF_NAME==testing_stream_have_last_signal_system_processing_system7_0_0}] {/inst }]/inst ]]
-
-# XDC: bd/testing_stream_have_last_signal_system/ipshared/xilinx.com/counter_stream_have_last_hls_v1_0/constraints/counter_stream_have_last_hls_ooc.xdc
 
 # XDC: bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_axi_dma_0_0/testing_stream_have_last_signal_system_axi_dma_0_0_ooc.xdc
 
@@ -56,6 +54,8 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 # XDC: bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_rst_processing_system7_0_100M_0/testing_stream_have_last_signal_system_rst_processing_system7_0_100M_0_ooc.xdc
 
 # XDC: bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_xbar_0/testing_stream_have_last_signal_system_xbar_0_ooc.xdc
+
+# XDC: bd/testing_stream_have_last_signal_system/ipshared/xilinx.com/counter_stream_have_last_hls_v1_0/constraints/counter_stream_have_last_hls_ooc.xdc
 
 # XDC: bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_auto_pc_0/testing_stream_have_last_signal_system_auto_pc_0_ooc.xdc
 

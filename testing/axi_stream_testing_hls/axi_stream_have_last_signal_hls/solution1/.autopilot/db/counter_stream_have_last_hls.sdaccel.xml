@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'counter_stream_have_last_hls'" level="0">
-<item name = "Date">Mon Aug 29 02:21:32 2016
+<item name = "Date">Thu Sep  8 12:39:13 2016
 </item>
 <item name = "Version">2015.3 (Build 1368829 on Mon Sep 28 20:31:51 PM 2015)</item>
 <item name = "Project">axi_stream_have_last_signal_hls</item>
@@ -46,7 +46,7 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
 <column name="DSP">-, -, -, -</column>
-<column name="Expression">-, -, 0, 76</column>
+<column name="Expression">-, -, 0, 85</column>
 <column name="FIFO">-, -, -, -</column>
 <column name="Instance">0, -, 112, 168</column>
 <column name="Memory">-, -, -, -</column>
@@ -78,9 +78,9 @@
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="i_1_fu_103_p2">+, 0, 0, 31, 31, 1</column>
-<column name="next_mul_fu_119_p2">+, 0, 0, 32, 32, 32</column>
+<column name="next_mul_fu_115_p2">+, 0, 0, 32, 32, 32</column>
 <column name="tmp_fu_98_p2">icmp, 0, 0, 11, 32, 32</column>
-<column name="tmp_last_V_fu_113_p2">icmp, 0, 0, 2, 4, 1</column>
+<column name="tmp_last_V_fu_109_p2">icmp, 0, 0, 11, 31, 5</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -98,11 +98,11 @@
 <column name="ap_reg_ppiten_pp0_it0">1, 0, 1, 0</column>
 <column name="ap_reg_ppiten_pp0_it1">1, 0, 1, 0</column>
 <column name="i_reg_70">31, 0, 31, 0</column>
-<column name="numIteration_read_reg_124">32, 0, 32, 0</column>
-<column name="resolution_read_reg_129">32, 0, 32, 0</column>
+<column name="numIteration_read_reg_120">32, 0, 32, 0</column>
+<column name="resolution_read_reg_125">32, 0, 32, 0</column>
 <column name="tmp_data_reg_81">32, 0, 32, 0</column>
-<column name="tmp_last_V_reg_143">1, 0, 1, 0</column>
-<column name="tmp_reg_134">1, 0, 1, 0</column>
+<column name="tmp_last_V_reg_139">1, 0, 1, 0</column>
+<column name="tmp_reg_130">1, 0, 1, 0</column>
 </table>
 </item>
 </section>

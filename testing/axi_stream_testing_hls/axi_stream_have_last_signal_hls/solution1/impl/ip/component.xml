@@ -1120,7 +1120,7 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/counter_stream_have_last_hls.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_68f9d01f</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_47c14936</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1246,8 +1246,8 @@
         <xilinx:taxonomy>/VIVADO_HLS_IP</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>Counter_stream_have_last_hls</xilinx:displayName>
-      <xilinx:coreRevision>1608290237</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2016-08-29T00:38:07Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1609081241</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2016-09-08T10:41:21Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2015.3</xilinx:xilinxVersion>

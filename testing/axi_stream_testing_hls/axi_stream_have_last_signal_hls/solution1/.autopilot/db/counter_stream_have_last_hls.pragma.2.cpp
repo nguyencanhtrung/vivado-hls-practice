@@ -38534,7 +38534,7 @@ _ssdm_op_SpecInterface(resolution, "s_axilite", 0, 0, 0, 0, "cpuControl", "", ""
 _ssdm_op_SpecPipeline(1, 1, 1, 0, "");
  axis_t temp;
   temp.data = (i * resolution);
-  temp.last = ((i%16) == 0) ? 1 : 0;
+  temp.last = (i == 16) ? 1 : 0;
   counter << temp;
  }
 }

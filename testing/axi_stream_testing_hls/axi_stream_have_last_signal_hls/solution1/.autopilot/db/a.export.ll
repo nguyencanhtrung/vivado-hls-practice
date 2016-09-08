@@ -36,14 +36,13 @@ define void @counter_stream_have_last_hls(i32 %resolution, i32 %numIteration, i3
   br i1 %tmp, label %2, label %3
 
 ; <label>:2                                       ; preds = %1
-  %tmp_1 = trunc i31 %i to i4
   call void (...)* @_ssdm_op_SpecLoopName([5 x i8]* @p_str4) nounwind
-  %tmp_4 = call i32 (...)* @_ssdm_op_SpecRegionBegin([5 x i8]* @p_str4)
+  %tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([5 x i8]* @p_str4)
   call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
-  %next_mul = add i32 %resolution_read, %tmp_data
-  %tmp_last_V = icmp eq i4 %tmp_1, 0
+  %next_mul = add i32 %tmp_data, %resolution_read
+  %tmp_last_V = icmp eq i31 %i, 16
   call void @_ssdm_op_Write.axis.volatile.i32P.i1P(i32* %counter_V_data, i1* %counter_V_last_V, i32 %tmp_data, i1 %tmp_last_V)
-  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([5 x i8]* @p_str4, i32 %tmp_4)
+  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([5 x i8]* @p_str4, i32 %tmp_3)
   br label %1
 
 ; <label>:3                                       ; preds = %1
@@ -96,8 +95,6 @@ define weak i32 @_ssdm_op_Read.s_axilite.i32(i32) {
 entry:
   ret i32 %0
 }
-
-declare i4 @_ssdm_op_PartSelect.i4.i31.i32.i32(i31, i32, i32) nounwind readnone
 
 declare i16 @_ssdm_op_HSub(...)
 
