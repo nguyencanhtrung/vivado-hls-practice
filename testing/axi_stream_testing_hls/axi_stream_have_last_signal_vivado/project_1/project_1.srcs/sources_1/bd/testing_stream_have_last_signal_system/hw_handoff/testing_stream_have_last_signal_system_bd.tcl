@@ -204,6 +204,33 @@ CONFIG.NUM_MI {2} \
   create_bd_addr_seg -range 0x10000 -offset 0x40400000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_dma_0/S_AXI_LITE/Reg] SEG_axi_dma_0_Reg
   create_bd_addr_seg -range 0x10000 -offset 0x43C00000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs counter_stream_have_last_hls_0/s_axi_cpuControl/Reg] SEG_counter_stream_have_last_hls_0_Reg
 
+  # Perform GUI Layout
+  regenerate_bd_layout -layout_string {
+   guistr: "# # String gsaved with Nlview 6.5.5  2015-06-26 bk=1.3371 VDI=38 GEI=35 GUI=JA:1.8
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 100 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 120 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 4 -y 150 -defaultsOSRD
+preplace inst counter_stream_have_last_hls_0 -pg 1 -lvl 3 -y 190 -defaultsOSRD
+preplace inst rst_processing_system7_0_100M -pg 1 -lvl 1 -y 120 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 5 -y 170 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 180 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 6 -y 180 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 6 1 NJ
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 1 N
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 6 390 20 NJ 20 NJ 20 NJ 20 NJ 20 2170
+preplace netloc counter_stream_have_last_hls_0_counter 1 3 1 1040
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 7 20 10 NJ 10 NJ 10 NJ 10 NJ 10 NJ 10 2180
+preplace netloc axi_mem_intercon_M00_AXI 1 5 1 N
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 1 4 370 320 700 260 1050 240 1420
+preplace netloc processing_system7_0_FIXED_IO 1 6 1 NJ
+preplace netloc axi_dma_0_M_AXI_S2MM 1 4 1 1400
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 1 4 370 40 NJ 40 NJ 40 1420
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 7 30 30 380 30 710 60 1050 60 1410 290 1730 310 2170
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 2 2 700 110 NJ
+levelinfo -pg 1 0 200 550 880 1230 1580 1950 2200 -top 0 -bot 330
+",
+}
 
   # Restore current instance
   current_bd_instance $oldCurInst

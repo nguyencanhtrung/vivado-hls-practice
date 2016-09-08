@@ -6,5 +6,5 @@
   <xd:arg xd:name="counter.data" xd:originalName="counter" xd:direction="out" xd:interfaceRef="counter" xd:busTypeRef="axis" xd:dataWidth="32"/>
   <xd:arg xd:name="counter.last" xd:originalName="counter" xd:direction="out" xd:interfaceRef="counter" xd:busTypeRef="axis" xd:dataWidth="1"/>
   <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
-  <xd:resourceEstimates xd:LUT="309" xd:FF="247" xd:BRAM="0" xd:DSP="0"/>
+  <xd:resourceEstimates xd:LUT="318" xd:FF="247" xd:BRAM="0" xd:DSP="0"/>
 </xd:acceleratorMap>

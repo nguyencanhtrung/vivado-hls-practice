@@ -12,14 +12,14 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="axi_stream_have_last_signal_hls" solutionName="solution1" date="2016-08-29T02:21:11.741+0200" type="Warning"/>
-        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="axi_stream_have_last_signal_hls" solutionName="solution1" date="2016-08-29T02:21:11.736+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="axi_stream_have_last_signal_hls" solutionName="solution1" date="2016-09-08T12:38:54.977+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="axi_stream_have_last_signal_hls" solutionName="solution1" date="2016-09-08T12:38:54.969+0200" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>
       <packageLog>
-        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="axi_stream_have_last_signal_hls" solutionName="solution1" date="2016-08-29T02:37:50.310+0200" type="Warning"/>
-        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="axi_stream_have_last_signal_hls" solutionName="solution1" date="2016-08-29T02:37:50.300+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="axi_stream_have_last_signal_hls" solutionName="solution1" date="2016-09-08T12:41:07.757+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="axi_stream_have_last_signal_hls" solutionName="solution1" date="2016-09-08T12:41:07.750+0200" type="Warning"/>
       </packageLog>
       <csimLog/>
     </logs>

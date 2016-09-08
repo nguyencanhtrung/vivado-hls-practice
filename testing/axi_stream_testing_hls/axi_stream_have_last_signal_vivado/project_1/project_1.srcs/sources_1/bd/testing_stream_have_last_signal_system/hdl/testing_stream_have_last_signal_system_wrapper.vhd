@@ -1,7 +1,7 @@
 --Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
---Date        : Mon Aug 29 02:57:22 2016
+--Date        : Thu Sep  8 12:48:43 2016
 --Host        : finance.eit.uni-kl.de running 64-bit Scientific Linux release 6.7 (Carbon)
 --Command     : generate_target testing_stream_have_last_signal_system_wrapper.bd
 --Design      : testing_stream_have_last_signal_system_wrapper

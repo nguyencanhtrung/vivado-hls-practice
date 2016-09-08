@@ -2,8 +2,8 @@
 # Vivado v2015.3 (64-bit)
 # SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
 # IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
-# Start of session at: Mon Aug 29 03:02:50 2016
-# Process ID: 8846
+# Start of session at: Thu Sep  8 12:49:14 2016
+# Process ID: 31100
 # Current directory: /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.runs/synth_1
 # Command line: vivado -log testing_stream_have_last_signal_system_wrapper.vds -mode batch -messageDb vivado.pb -notrace -source testing_stream_have_last_signal_system_wrapper.tcl
 # Log file: /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.runs/synth_1/testing_stream_have_last_signal_system_wrapper.vds
@@ -17,16 +17,16 @@ Command: synth_design -top testing_stream_have_last_signal_system_wrapper -part 
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
-INFO: [Common 17-1223] The version limit for your license is '2016.06' and will expire in -60 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Common 17-1223] The version limit for your license is '2016.06' and will expire in -70 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 WARNING: [Synth 8-992] S_AXI_GP0_ACLK_temp is already implicitly declared earlier [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2701]
 WARNING: [Synth 8-992] S_AXI_GP1_ACLK_temp is already implicitly declared earlier [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2702]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1228.141 ; gain = 272.219 ; free physical = 1352 ; free virtual = 31016
+Starting RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1228.133 ; gain = 272.219 ; free physical = 9053 ; free virtual = 29617
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'testing_stream_have_last_signal_system_wrapper' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/hdl/testing_stream_have_last_signal_system_wrapper.vhd:40]
 INFO: [Synth 8-3491] module 'testing_stream_have_last_signal_system' declared at '/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/hdl/testing_stream_have_last_signal_system.vhd:1556' bound to instance 'testing_stream_have_last_signal_system_i' of component 'testing_stream_have_last_signal_system' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/hdl/testing_stream_have_last_signal_system_wrapper.vhd:67]
 INFO: [Synth 8-638] synthesizing module 'testing_stream_have_last_signal_system' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/hdl/testing_stream_have_last_signal_system.vhd:1586]
-WARNING: [Synth 8-5640] Port 'axi_dma_tstvec' is missing in component declaration [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/hdl/testing_stream_have_last_signal_system.vhd:1732]
+WARNING: [Synth 8-5640] Port 'axi_dma_tstvec' is missing in component declaration [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/hdl/testing_stream_have_last_signal_system.vhd:1704]
 INFO: [Synth 8-3491] module 'testing_stream_have_last_signal_system_axi_dma_0_0' declared at '/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_axi_dma_0_0/synth/testing_stream_have_last_signal_system_axi_dma_0_0.vhd:59' bound to instance 'axi_dma_0' of component 'testing_stream_have_last_signal_system_axi_dma_0_0' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/hdl/testing_stream_have_last_signal_system.vhd:1949]
 INFO: [Synth 8-638] synthesizing module 'testing_stream_have_last_signal_system_axi_dma_0_0' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_axi_dma_0_0/synth/testing_stream_have_last_signal_system_axi_dma_0_0.vhd:107]
 	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 10 - type: integer 
@@ -4239,18 +4239,18 @@ INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_6_top' (
 INFO: [Synth 8-256] done synthesizing module 'testing_stream_have_last_signal_system_auto_us_0' (87#1) [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_auto_us_0/synth/testing_stream_have_last_signal_system_auto_us_0.v:57]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_LDIUJZ' (88#1) [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/hdl/testing_stream_have_last_signal_system.vhd:570]
 INFO: [Synth 8-256] done synthesizing module 'testing_stream_have_last_signal_system_axi_mem_intercon_0' (89#1) [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/hdl/testing_stream_have_last_signal_system.vhd:880]
-INFO: [Synth 8-3491] module 'testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_0' declared at '/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_0/synth/testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_0.vhd:56' bound to instance 'counter_stream_have_last_hls_0' of component 'testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_0' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/hdl/testing_stream_have_last_signal_system.vhd:2037]
-INFO: [Synth 8-638] synthesizing module 'testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_0' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_0/synth/testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_0.vhd:85]
+INFO: [Synth 8-3491] module 'testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_1' declared at '/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_1/synth/testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_1.vhd:56' bound to instance 'counter_stream_have_last_hls_0' of component 'testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_1' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/hdl/testing_stream_have_last_signal_system.vhd:2037]
+INFO: [Synth 8-638] synthesizing module 'testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_1' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_1/synth/testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_1.vhd:85]
 	Parameter C_S_AXI_CPUCONTROL_ADDR_WIDTH bound to: 6 - type: integer 
 	Parameter C_S_AXI_CPUCONTROL_DATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'counter_stream_have_last_hls' declared at '/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ipshared/xilinx.com/counter_stream_have_last_hls_v1_0/hdl/vhdl/counter_stream_have_last_hls.vhd:12' bound to instance 'U0' of component 'counter_stream_have_last_hls' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_0/synth/testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_0.vhd:153]
+INFO: [Synth 8-3491] module 'counter_stream_have_last_hls' declared at '/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ipshared/xilinx.com/counter_stream_have_last_hls_v1_0/hdl/vhdl/counter_stream_have_last_hls.vhd:12' bound to instance 'U0' of component 'counter_stream_have_last_hls' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_1/synth/testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_1.vhd:153]
 INFO: [Synth 8-638] synthesizing module 'counter_stream_have_last_hls' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ipshared/xilinx.com/counter_stream_have_last_hls_v1_0/hdl/vhdl/counter_stream_have_last_hls.vhd:44]
 	Parameter C_S_AXI_CPUCONTROL_ADDR_WIDTH bound to: 6 - type: integer 
 	Parameter C_S_AXI_CPUCONTROL_DATA_WIDTH bound to: 32 - type: integer 
 INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ipshared/xilinx.com/counter_stream_have_last_hls_v1_0/hdl/vhdl/counter_stream_have_last_hls.vhd:67]
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'counter_stream_have_last_hls_cpuControl_s_axi' declared at '/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ipshared/xilinx.com/counter_stream_have_last_hls_v1_0/hdl/vhdl/counter_stream_have_last_hls_cpuControl_s_axi.vhd:12' bound to instance 'counter_stream_have_last_hls_cpuControl_s_axi_U' of component 'counter_stream_have_last_hls_cpuControl_s_axi' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ipshared/xilinx.com/counter_stream_have_last_hls_v1_0/hdl/vhdl/counter_stream_have_last_hls.vhd:135]
+INFO: [Synth 8-3491] module 'counter_stream_have_last_hls_cpuControl_s_axi' declared at '/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ipshared/xilinx.com/counter_stream_have_last_hls_v1_0/hdl/vhdl/counter_stream_have_last_hls_cpuControl_s_axi.vhd:12' bound to instance 'counter_stream_have_last_hls_cpuControl_s_axi_U' of component 'counter_stream_have_last_hls_cpuControl_s_axi' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ipshared/xilinx.com/counter_stream_have_last_hls_v1_0/hdl/vhdl/counter_stream_have_last_hls.vhd:134]
 INFO: [Synth 8-638] synthesizing module 'counter_stream_have_last_hls_cpuControl_s_axi' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ipshared/xilinx.com/counter_stream_have_last_hls_v1_0/hdl/vhdl/counter_stream_have_last_hls_cpuControl_s_axi.vhd:76]
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
@@ -4258,7 +4258,7 @@ WARNING: [Synth 8-614] signal 'ACLK_EN' is read in the process but is not in the
 WARNING: [Synth 8-614] signal 'ACLK_EN' is read in the process but is not in the sensitivity list [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ipshared/xilinx.com/counter_stream_have_last_hls_v1_0/hdl/vhdl/counter_stream_have_last_hls_cpuControl_s_axi.vhd:216]
 INFO: [Synth 8-256] done synthesizing module 'counter_stream_have_last_hls_cpuControl_s_axi' (90#1) [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ipshared/xilinx.com/counter_stream_have_last_hls_v1_0/hdl/vhdl/counter_stream_have_last_hls_cpuControl_s_axi.vhd:76]
 INFO: [Synth 8-256] done synthesizing module 'counter_stream_have_last_hls' (91#1) [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ipshared/xilinx.com/counter_stream_have_last_hls_v1_0/hdl/vhdl/counter_stream_have_last_hls.vhd:44]
-INFO: [Synth 8-256] done synthesizing module 'testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_0' (92#1) [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_0/synth/testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_0.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_1' (92#1) [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_1/synth/testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_1.vhd:85]
 INFO: [Synth 8-3491] module 'testing_stream_have_last_signal_system_processing_system7_0_0' declared at '/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_processing_system7_0_0/synth/testing_stream_have_last_signal_system_processing_system7_0_0.v:57' bound to instance 'processing_system7_0' of component 'testing_stream_have_last_signal_system_processing_system7_0_0' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/hdl/testing_stream_have_last_signal_system.vhd:2064]
 INFO: [Synth 8-638] synthesizing module 'testing_stream_have_last_signal_system_processing_system7_0_0' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_processing_system7_0_0/synth/testing_stream_have_last_signal_system_processing_system7_0_0.v:57]
 INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_5_processing_system7' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ip/testing_stream_have_last_signal_system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:156]
@@ -5373,7 +5373,7 @@ INFO: [Synth 8-256] done synthesizing module 'testing_stream_have_last_signal_sy
 INFO: [Synth 8-256] done synthesizing module 'testing_stream_have_last_signal_system' (131#1) [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/hdl/testing_stream_have_last_signal_system.vhd:1586]
 INFO: [Synth 8-256] done synthesizing module 'testing_stream_have_last_signal_system_wrapper' (132#1) [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/hdl/testing_stream_have_last_signal_system_wrapper.vhd:40]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:04:54 ; elapsed = 00:04:59 . Memory (MB): peak = 1450.465 ; gain = 494.543 ; free physical = 1124 ; free virtual = 30791
+Finished RTL Elaboration : Time (s): cpu = 00:05:16 ; elapsed = 00:05:20 . Memory (MB): peak = 1450.457 ; gain = 494.543 ; free physical = 8808 ; free virtual = 29376
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -5467,7 +5467,7 @@ INFO: [Synth 8-3295] tying undriven pin \INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_D
 INFO: [Synth 8-3295] tying undriven pin \INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_DMA_MNGR :s2mm_desc_info_in[0] to constant 0 [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ipshared/xilinx.com/axi_dma_v7_1/hdl/src/vhdl/axi_dma.vhd:1745]
 INFO: [Synth 8-3295] tying undriven pin \INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_DMA_MNGR :m_axis_ftch2_desc_available to constant 0 [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ipshared/xilinx.com/axi_dma_v7_1/hdl/src/vhdl/axi_dma.vhd:1745]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:04:55 ; elapsed = 00:05:00 . Memory (MB): peak = 1450.465 ; gain = 494.543 ; free physical = 1124 ; free virtual = 30792
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:05:17 ; elapsed = 00:05:21 . Memory (MB): peak = 1450.457 ; gain = 494.543 ; free physical = 8809 ; free virtual = 29376
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -5501,24 +5501,24 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDR => FDRE: 24 instances
   SRL16 => SRL16E: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1614.637 ; gain = 0.000 ; free physical = 1031 ; free virtual = 30698
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1614.629 ; gain = 0.000 ; free physical = 8704 ; free virtual = 29272
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10108 
+INFO: Helper process launched with PID 947 
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:05:14 ; elapsed = 00:05:19 . Memory (MB): peak = 1614.641 ; gain = 658.719 ; free physical = 1028 ; free virtual = 30695
+Finished Constraint Validation : Time (s): cpu = 00:05:36 ; elapsed = 00:05:40 . Memory (MB): peak = 1614.633 ; gain = 658.719 ; free physical = 8701 ; free virtual = 29269
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:05:14 ; elapsed = 00:05:19 . Memory (MB): peak = 1614.641 ; gain = 658.719 ; free physical = 1028 ; free virtual = 30695
+Finished Loading Part and Timing Information : Time (s): cpu = 00:05:36 ; elapsed = 00:05:40 . Memory (MB): peak = 1614.633 ; gain = 658.719 ; free physical = 8701 ; free virtual = 29269
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for testing_stream_have_last_signal_system_i/processing_system7_0/inst. (constraint file  /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.runs/synth_1/dont_touch.xdc, line 38).
-Applied set_property DONT_TOUCH = true for testing_stream_have_last_signal_system_i/axi_dma_0/U0. (constraint file  /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.runs/synth_1/dont_touch.xdc, line 45).
+Applied set_property DONT_TOUCH = true for testing_stream_have_last_signal_system_i/axi_dma_0/U0. (constraint file  /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.runs/synth_1/dont_touch.xdc, line 43).
 Applied set_property DONT_TOUCH = true for testing_stream_have_last_signal_system_i/axi_mem_intercon/s00_couplers/auto_us/inst. (constraint file  /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.runs/synth_1/dont_touch.xdc, line 65).
 Applied set_property DONT_TOUCH = true for testing_stream_have_last_signal_system_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for testing_stream_have_last_signal_system_i/axi_dma_0. (constraint file  auto generated constraint, line ).
@@ -5532,7 +5532,7 @@ Applied set_property DONT_TOUCH = true for testing_stream_have_last_signal_syste
 Applied set_property DONT_TOUCH = true for testing_stream_have_last_signal_system_i/processing_system7_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for testing_stream_have_last_signal_system_i/rst_processing_system7_0_100M. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:05:14 ; elapsed = 00:05:19 . Memory (MB): peak = 1614.641 ; gain = 658.719 ; free physical = 1028 ; free virtual = 30695
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:05:37 ; elapsed = 00:05:41 . Memory (MB): peak = 1614.633 ; gain = 658.719 ; free physical = 8701 ; free virtual = 29269
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4471] merging register 'GEN_SYNC_WRITE.rst_wvalid_re_reg' into 'GEN_SYNC_WRITE.bvalid_i_reg' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ipshared/xilinx.com/axi_dma_v7_1/hdl/src/vhdl/axi_dma_lite_if.vhd:271]
 INFO: [Synth 8-4471] merging register 'GEN_SYNC_READ.rst_rvalid_re_reg' into 'GEN_SYNC_READ.s_axi_lite_rvalid_i_reg' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ipshared/xilinx.com/axi_dma_v7_1/hdl/src/vhdl/axi_dma_lite_if.vhd:1042]
@@ -5625,7 +5625,6 @@ INFO: [Synth 8-5544] ROM "BVALID" won't be mapped to Block RAM because address s
 INFO: [Synth 8-5544] ROM "ARREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "RVALID_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-INFO: [Synth 8-5544] ROM "tmp_last_V_fu_113_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "address_offset" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-4471] merging register 'gen_axilite.s_axi_wready_i_reg' into 'gen_axilite.s_axi_awready_i_reg' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ipshared/xilinx.com/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_decerr_slave.v:136]
 INFO: [Synth 8-5544] ROM "p_2_out0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -5639,7 +5638,7 @@ INFO: [Synth 8-5544] ROM "p_0_in2" won't be mapped to Block RAM because address 
 INFO: [Synth 8-5544] ROM "p_0_in1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/sequence_psr.vhd:222]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:05:20 ; elapsed = 00:05:25 . Memory (MB): peak = 1614.641 ; gain = 658.719 ; free physical = 1024 ; free virtual = 30692
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:05:43 ; elapsed = 00:05:48 . Memory (MB): peak = 1614.633 ; gain = 658.719 ; free physical = 8690 ; free virtual = 29258
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -5739,7 +5738,7 @@ Detailed RTL Component Info :
 	   6 Input      2 Bit        Muxes := 1     
 	   8 Input      2 Bit        Muxes := 2     
 	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 243   
+	   2 Input      1 Bit        Muxes := 242   
 	   7 Input      1 Bit        Muxes := 7     
 	   8 Input      1 Bit        Muxes := 3     
 	   3 Input      1 Bit        Muxes := 3     
@@ -6426,7 +6425,7 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   6 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 4     
 Module xlnx_axi_wrshim_unwrap 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -6669,7 +6668,7 @@ BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:05:20 ; elapsed = 00:05:25 . Memory (MB): peak = 1614.645 ; gain = 658.723 ; free physical = 1024 ; free virtual = 30692
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:05:44 ; elapsed = 00:05:48 . Memory (MB): peak = 1614.637 ; gain = 658.723 ; free physical = 8690 ; free virtual = 29258
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -6717,9 +6716,9 @@ INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:121]
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:121]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:05:22 ; elapsed = 00:05:27 . Memory (MB): peak = 1614.645 ; gain = 658.723 ; free physical = 1026 ; free virtual = 30694
+Finished Cross Boundary Optimization : Time (s): cpu = 00:05:46 ; elapsed = 00:05:50 . Memory (MB): peak = 1614.637 ; gain = 658.723 ; free physical = 8693 ; free virtual = 29261
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:05:22 ; elapsed = 00:05:27 . Memory (MB): peak = 1614.645 ; gain = 658.723 ; free physical = 1026 ; free virtual = 30694
+Finished Parallel Reinference  : Time (s): cpu = 00:05:46 ; elapsed = 00:05:50 . Memory (MB): peak = 1614.637 ; gain = 658.723 ; free physical = 8693 ; free virtual = 29261
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -6747,9 +6746,9 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:05:34 ; elapsed = 00:05:39 . Memory (MB): peak = 1614.645 ; gain = 658.723 ; free physical = 1002 ; free virtual = 30670
+Finished Area Optimization : Time (s): cpu = 00:05:59 ; elapsed = 00:06:04 . Memory (MB): peak = 1614.637 ; gain = 658.723 ; free physical = 8687 ; free virtual = 29255
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:05:34 ; elapsed = 00:05:39 . Memory (MB): peak = 1614.645 ; gain = 658.723 ; free physical = 1002 ; free virtual = 30670
+Finished Parallel Area Optimization  : Time (s): cpu = 00:05:59 ; elapsed = 00:06:04 . Memory (MB): peak = 1614.637 ; gain = 658.723 ; free physical = 8687 ; free virtual = 29255
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -6763,19 +6762,19 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:46 ; elapsed = 00:05:52 . Memory (MB): peak = 1744.637 ; gain = 788.715 ; free physical = 853 ; free virtual = 30521
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:06:12 ; elapsed = 00:06:17 . Memory (MB): peak = 1743.629 ; gain = 787.715 ; free physical = 8540 ; free virtual = 29108
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:05:50 ; elapsed = 00:05:56 . Memory (MB): peak = 1804.285 ; gain = 848.363 ; free physical = 794 ; free virtual = 30462
+Finished Timing Optimization : Time (s): cpu = 00:06:16 ; elapsed = 00:06:21 . Memory (MB): peak = 1804.277 ; gain = 848.363 ; free physical = 8479 ; free virtual = 29047
 ---------------------------------------------------------------------------------
-Finished Parallel Timing Optimization  : Time (s): cpu = 00:05:50 ; elapsed = 00:05:56 . Memory (MB): peak = 1804.285 ; gain = 848.363 ; free physical = 794 ; free virtual = 30462
+Finished Parallel Timing Optimization  : Time (s): cpu = 00:06:16 ; elapsed = 00:06:21 . Memory (MB): peak = 1804.277 ; gain = 848.363 ; free physical = 8479 ; free virtual = 29047
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:05:50 ; elapsed = 00:05:56 . Memory (MB): peak = 1804.285 ; gain = 848.363 ; free physical = 794 ; free virtual = 30462
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:06:16 ; elapsed = 00:06:21 . Memory (MB): peak = 1804.277 ; gain = 848.363 ; free physical = 8479 ; free virtual = 29047
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
@@ -6881,7 +6880,7 @@ INFO: [Synth 8-3332] Sequential element (\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM
 INFO: [Synth 8-3332] Sequential element (\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM/inst_fifo_gen/reset_gen_cc.rstblk_cc/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg ) is unused and will be removed from module axi_dma.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:05:54 ; elapsed = 00:05:59 . Memory (MB): peak = 1813.301 ; gain = 857.379 ; free physical = 784 ; free virtual = 30452
+Finished Technology Mapping : Time (s): cpu = 00:06:20 ; elapsed = 00:06:25 . Memory (MB): peak = 1813.293 ; gain = 857.379 ; free physical = 8470 ; free virtual = 29038
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -7030,7 +7029,7 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_vivado/project_1/project_1.srcs/sources_1/bd/testing_stream_have_last_signal_system/ipshared/xilinx.com/axi_dwidth_converter_v2_1/hdl/verilog/axi_dwidth_converter_v2_1_w_upsizer.v:1116]
 INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:05:56 ; elapsed = 00:06:01 . Memory (MB): peak = 1813.301 ; gain = 857.379 ; free physical = 784 ; free virtual = 30452
+Finished IO Insertion : Time (s): cpu = 00:06:23 ; elapsed = 00:06:28 . Memory (MB): peak = 1813.293 ; gain = 857.379 ; free physical = 8470 ; free virtual = 29038
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -7043,7 +7042,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:05:56 ; elapsed = 00:06:01 . Memory (MB): peak = 1813.301 ; gain = 857.379 ; free physical = 784 ; free virtual = 30452
+Finished Renaming Generated Instances : Time (s): cpu = 00:06:23 ; elapsed = 00:06:28 . Memory (MB): peak = 1813.293 ; gain = 857.379 ; free physical = 8470 ; free virtual = 29038
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -7057,25 +7056,25 @@ Start Rebuilding User Hierarchy
 WARNING: [Synth 8-115] binding instance 'i_2_0' in module 'fifo_generator_v13_0_0_synth' to reference 'reset_blk_ramfifo_22' which has no pins
 WARNING: [Synth 8-115] binding instance 'i_2_0' in module 'fifo_generator_v13_0_0_synth__parameterized0' to reference 'reset_blk_ramfifo__parameterized1' which has no pins
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:57 ; elapsed = 00:06:02 . Memory (MB): peak = 1813.301 ; gain = 857.379 ; free physical = 784 ; free virtual = 30452
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:24 ; elapsed = 00:06:29 . Memory (MB): peak = 1813.293 ; gain = 857.379 ; free physical = 8470 ; free virtual = 29038
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:05:57 ; elapsed = 00:06:02 . Memory (MB): peak = 1813.301 ; gain = 857.379 ; free physical = 784 ; free virtual = 30452
+Finished Renaming Generated Ports : Time (s): cpu = 00:06:24 ; elapsed = 00:06:29 . Memory (MB): peak = 1813.293 ; gain = 857.379 ; free physical = 8470 ; free virtual = 29038
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:05:57 ; elapsed = 00:06:03 . Memory (MB): peak = 1813.301 ; gain = 857.379 ; free physical = 784 ; free virtual = 30452
+Finished Handling Custom Attributes : Time (s): cpu = 00:06:24 ; elapsed = 00:06:29 . Memory (MB): peak = 1813.293 ; gain = 857.379 ; free physical = 8470 ; free virtual = 29038
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:05:57 ; elapsed = 00:06:03 . Memory (MB): peak = 1813.301 ; gain = 857.379 ; free physical = 784 ; free virtual = 30452
+Finished Renaming Generated Nets : Time (s): cpu = 00:06:24 ; elapsed = 00:06:29 . Memory (MB): peak = 1813.293 ; gain = 857.379 ; free physical = 8470 ; free virtual = 29038
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -7119,11 +7118,11 @@ Report Cell Usage:
 |2     |BUFG     |     1|
 |3     |CARRY4   |    78|
 |4     |LUT1     |   263|
-|5     |LUT2     |   246|
+|5     |LUT2     |   245|
 |6     |LUT3     |   674|
-|7     |LUT4     |   369|
-|8     |LUT5     |   362|
-|9     |LUT6     |   626|
+|7     |LUT4     |   367|
+|8     |LUT5     |   363|
+|9     |LUT6     |   630|
 |10    |MUXF7    |     1|
 |11    |PS7      |     1|
 |12    |RAM32M   |     4|
@@ -7142,8 +7141,8 @@ Report Instance Areas:
 +------+--------------------------------------------------------------------+-------------------------------------------------------------------------+------+
 |      |Instance                                                            |Module                                                                   |Cells |
 +------+--------------------------------------------------------------------+-------------------------------------------------------------------------+------+
-|1     |top                                                                 |                                                                         |  5792|
-|2     |  testing_stream_have_last_signal_system_i                          |testing_stream_have_last_signal_system                                   |  5792|
+|1     |top                                                                 |                                                                         |  5794|
+|2     |  testing_stream_have_last_signal_system_i                          |testing_stream_have_last_signal_system                                   |  5794|
 |3     |    axi_dma_0                                                       |testing_stream_have_last_signal_system_axi_dma_0_0                       |  2281|
 |4     |      U0                                                            |axi_dma                                                                  |  2281|
 |5     |        \INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_DMA_MNGR             |axi_dma_s2mm_mngr                                                        |   109|
@@ -7295,9 +7294,9 @@ Report Instance Areas:
 |151   |                \GEN_CMD_QUEUE.cmd_queue                            |generic_baseblocks_v2_1_0_command_fifo                                   |   194|
 |152   |              si_register_slice_inst                                |axi_register_slice_v2_1_6_axi_register_slice                             |   127|
 |153   |                aw_pipe                                             |axi_register_slice_v2_1_6_axic_register_slice                            |   127|
-|154   |    counter_stream_have_last_hls_0                                  |testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_0  |   519|
-|155   |      U0                                                            |counter_stream_have_last_hls                                             |   519|
-|156   |        counter_stream_have_last_hls_cpuControl_s_axi_U             |counter_stream_have_last_hls_cpuControl_s_axi                            |   258|
+|154   |    counter_stream_have_last_hls_0                                  |testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_1  |   521|
+|155   |      U0                                                            |counter_stream_have_last_hls                                             |   521|
+|156   |        counter_stream_have_last_hls_cpuControl_s_axi_U             |counter_stream_have_last_hls_cpuControl_s_axi                            |   255|
 |157   |    processing_system7_0                                            |testing_stream_have_last_signal_system_processing_system7_0_0            |   290|
 |158   |      inst                                                          |processing_system7_v5_5_processing_system7                               |   290|
 |159   |        xlnx_axi_wrshim_unwrap_inst_gp0                             |xlnx_axi_wrshim_unwrap                                                   |    18|
@@ -7345,11 +7344,11 @@ Report Instance Areas:
 |201   |          SEQ_COUNTER                                               |upcnt_n                                                                  |    14|
 +------+--------------------------------------------------------------------+-------------------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:05:57 ; elapsed = 00:06:03 . Memory (MB): peak = 1813.301 ; gain = 857.379 ; free physical = 784 ; free virtual = 30452
+Finished Writing Synthesis Report : Time (s): cpu = 00:06:25 ; elapsed = 00:06:29 . Memory (MB): peak = 1813.293 ; gain = 857.379 ; free physical = 8470 ; free virtual = 29038
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 302 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:05:39 ; elapsed = 00:05:43 . Memory (MB): peak = 1813.301 ; gain = 498.379 ; free physical = 784 ; free virtual = 30452
-Synthesis Optimization Complete : Time (s): cpu = 00:05:57 ; elapsed = 00:06:03 . Memory (MB): peak = 1813.301 ; gain = 857.379 ; free physical = 784 ; free virtual = 30452
+Synthesis Optimization Runtime : Time (s): cpu = 00:06:06 ; elapsed = 00:06:10 . Memory (MB): peak = 1813.293 ; gain = 499.379 ; free physical = 8469 ; free virtual = 29038
+Synthesis Optimization Complete : Time (s): cpu = 00:06:25 ; elapsed = 00:06:30 . Memory (MB): peak = 1813.293 ; gain = 857.379 ; free physical = 8469 ; free virtual = 29037
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 100 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -7362,8 +7361,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   SRL16 => SRL16E: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-943 Infos, 149 Warnings, 0 Critical Warnings and 0 Errors encountered.
+942 Infos, 149 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:05:55 ; elapsed = 00:06:01 . Memory (MB): peak = 1813.305 ; gain = 705.176 ; free physical = 784 ; free virtual = 30452
-report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.21 . Memory (MB): peak = 1853.316 ; gain = 0.000 ; free physical = 782 ; free virtual = 30451
-INFO: [Common 17-206] Exiting Vivado at Mon Aug 29 03:09:06 2016...
+synth_design: Time (s): cpu = 00:06:23 ; elapsed = 00:06:27 . Memory (MB): peak = 1813.297 ; gain = 706.176 ; free physical = 8469 ; free virtual = 29038
+report_utilization: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1853.309 ; gain = 0.000 ; free physical = 8467 ; free virtual = 29037
+INFO: [Common 17-206] Exiting Vivado at Thu Sep  8 12:55:58 2016...

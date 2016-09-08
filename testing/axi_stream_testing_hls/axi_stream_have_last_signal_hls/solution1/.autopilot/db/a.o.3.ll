@@ -44,12 +44,11 @@ define void @counter_stream_have_last_hls(i32 %resolution, i32 %numIteration, i3
   br i1 %tmp, label %2, label %3, !dbg !477       ; [debug line = 22:20]
 
 ; <label>:2                                       ; preds = %1
-  %tmp_1 = trunc i31 %i to i4, !dbg !477          ; [#uses=1 type=i4] [debug line = 22:20]
   call void (...)* @_ssdm_op_SpecLoopName([5 x i8]* @p_str4) nounwind, !dbg !480 ; [debug line = 22:46]
-  %tmp_4 = call i32 (...)* @_ssdm_op_SpecRegionBegin([5 x i8]* @p_str4), !dbg !480 ; [#uses=1 type=i32] [debug line = 22:46]
+  %tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([5 x i8]* @p_str4), !dbg !480 ; [#uses=1 type=i32] [debug line = 22:46]
   call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind, !dbg !482 ; [debug line = 23:1]
-  %next_mul = add i32 %resolution_read, %tmp_data ; [#uses=1 type=i32]
-  %tmp_last_V = icmp eq i4 %tmp_1, 0, !dbg !483   ; [#uses=1 type=i1] [debug line = 26:3]
+  %next_mul = add i32 %tmp_data, %resolution_read ; [#uses=1 type=i32]
+  %tmp_last_V = icmp eq i31 %i, 16, !dbg !483     ; [#uses=1 type=i1] [debug line = 26:3]
   call void @llvm.dbg.value(metadata !{i32* %counter_V_data}, i64 0, metadata !484), !dbg !489 ; [debug line = 105:48@27:3] [debug variable = stream<axis_t>.V.data]
   call void @llvm.dbg.value(metadata !{i1* %counter_V_last_V}, i64 0, metadata !491), !dbg !489 ; [debug line = 105:48@27:3] [debug variable = stream<axis_t>.V.last.V]
   call void @llvm.dbg.value(metadata !{i32* %counter_V_data}, i64 0, metadata !493), !dbg !496 ; [debug line = 144:48@106:9@27:3] [debug variable = stream<axis_t>.V.data]
@@ -57,7 +56,7 @@ define void @counter_stream_have_last_hls(i32 %resolution, i32 %numIteration, i3
   call void @llvm.dbg.value(metadata !{i32 %tmp_data}, i64 0, metadata !500), !dbg !503 ; [debug line = 145:31@106:9@27:3] [debug variable = tmp.data]
   call void @llvm.dbg.value(metadata !{i1 %tmp_last_V}, i64 0, metadata !504), !dbg !503 ; [debug line = 145:31@106:9@27:3] [debug variable = tmp.last.V]
   call void @_ssdm_op_Write.axis.volatile.i32P.i1P(i32* %counter_V_data, i1* %counter_V_last_V, i32 %tmp_data, i1 %tmp_last_V), !dbg !505 ; [debug line = 146:9@106:9@27:3]
-  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([5 x i8]* @p_str4, i32 %tmp_4), !dbg !506 ; [#uses=0 type=i32] [debug line = 28:2]
+  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([5 x i8]* @p_str4, i32 %tmp_3), !dbg !506 ; [#uses=0 type=i32] [debug line = 28:2]
   call void @llvm.dbg.value(metadata !{i31 %i_1}, i64 0, metadata !507), !dbg !479 ; [debug line = 22:40] [debug variable = i]
   br label %1, !dbg !479                          ; [debug line = 22:40]
 
@@ -120,9 +119,6 @@ define weak i32 @_ssdm_op_Read.s_axilite.i32(i32) {
 entry:
   ret i32 %0
 }
-
-; [#uses=0]
-declare i4 @_ssdm_op_PartSelect.i4.i31.i32.i32(i31, i32, i32) nounwind readnone
 
 ; [#uses=0]
 declare i16 @_ssdm_op_HSub(...)

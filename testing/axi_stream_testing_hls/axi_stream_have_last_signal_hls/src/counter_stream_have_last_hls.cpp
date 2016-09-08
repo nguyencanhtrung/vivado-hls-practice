@@ -23,7 +23,7 @@ void counter_stream_have_last_hls(
 	#pragma HLS PIPELINE
 		axis_t temp;
 		temp.data = (i * resolution);
-		temp.last = ((i%16) == 0) ? 1 : 0;
+		temp.last = (i == 16) ? 1 : 0;
 		counter << temp;
 	}
 }

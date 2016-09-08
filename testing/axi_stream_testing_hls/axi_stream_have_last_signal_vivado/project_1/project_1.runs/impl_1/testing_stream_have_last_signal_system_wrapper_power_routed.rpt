@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
-| Date             : Mon Aug 29 03:10:49 2016
+| Date             : Thu Sep  8 12:57:47 2016
 | Host             : finance.eit.uni-kl.de running 64-bit Scientific Linux release 6.7 (Carbon)
 | Command          : 
 | Design           : testing_stream_have_last_signal_system_wrapper
@@ -50,15 +50,15 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.009 |        3 |       --- |             --- |
-| Slice Logic              |     0.003 |     5571 |       --- |             --- |
-|   LUT as Logic           |     0.003 |     1833 |     53200 |            3.45 |
+| Slice Logic              |     0.003 |     5573 |       --- |             --- |
+|   LUT as Logic           |     0.003 |     1836 |     53200 |            3.45 |
 |   Register               |    <0.001 |     2708 |    106400 |            2.55 |
 |   CARRY4                 |    <0.001 |       78 |     13300 |            0.59 |
 |   LUT as Distributed RAM |    <0.001 |       16 |     17400 |            0.09 |
 |   LUT as Shift Register  |    <0.001 |      150 |     17400 |            0.86 |
 |   F7/F8 Muxes            |    <0.001 |        1 |     53200 |           <0.01 |
 |   Others                 |     0.000 |      319 |       --- |             --- |
-| Signals                  |     0.004 |     3839 |       --- |             --- |
+| Signals                  |     0.004 |     3842 |       --- |             --- |
 | Block RAM                |    <0.001 |        1 |       140 |            0.71 |
 | PS7                      |     1.533 |        1 |       --- |             --- |
 | Static Power             |     0.158 |          |           |                 |
@@ -150,8 +150,8 @@ Table of Contents
 +-------------------------------------------------------------------+-----------+
 | testing_stream_have_last_signal_system_wrapper                    |     1.551 |
 |   testing_stream_have_last_signal_system_i                        |     1.551 |
-|     axi_dma_0                                                     |     0.008 |
-|       U0                                                          |     0.008 |
+|     axi_dma_0                                                     |     0.007 |
+|       U0                                                          |     0.007 |
 |         INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_DMA_MNGR            |    <0.001 |
 |           GEN_S2MM_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_S2MM_SMPL_SM |    <0.001 |
 |           GEN_S2MM_DMA_CONTROL.I_S2MM_CMDSTS                      |    <0.001 |

@@ -2,20 +2,12 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="testing_stream_have_last_signal_system" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1472432278"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1472432278"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1472432278"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1473331753"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1473331753"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1473331753"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/testing_stream_have_last_signal_system_processing_system7_0_0/testing_stream_have_last_signal_system_processing_system7_0_0.xci" Type="IP">
         <Instance HierarchyPath="processing_system7_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_0/testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_0.xci" Type="IP">
-        <Instance HierarchyPath="counter_stream_have_last_hls_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -56,6 +48,14 @@
       </File>
       <File Name="ip/testing_stream_have_last_signal_system_xbar_0/testing_stream_have_last_signal_system_xbar_0.xci" Type="IP">
         <Instance HierarchyPath="processing_system7_0_axi_periph/xbar"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_1/testing_stream_have_last_signal_system_counter_stream_have_last_hls_0_1.xci" Type="IP">
+        <Instance HierarchyPath="counter_stream_have_last_hls_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
