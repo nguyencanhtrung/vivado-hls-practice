@@ -5320,3 +5320,1875 @@ arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
   35332	   1216	  22596	  59144	   e708	nolast_sw.elf
 Finished building: nolast_sw.elf.size
  
+06:44:21 **** Auto Build of project no_last_standalone_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_0/src
+make -C ps7_cortexa9_0/libsrc/axidma_v9_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_1/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/counter_stream_hls_v1_0/src
+make -C ps7_cortexa9_0/libsrc/counter_stream_hls_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_3/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_1/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_5/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_2/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in ps7_cortexa9_0/libsrc/axidma_v9_0/src
+make -C ps7_cortexa9_0/libsrc/axidma_v9_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling axidma
+In file included from xaxidma.h:470:0,
+                 from xaxidma.c:83:
+xaxidma.c: In function 'XAxiDma_Reset':
+xaxidma_bdring.h:238:26: warning: assignment makes pointer from integer without a cast
+    (RingPtr)->BdaRestart =      \
+                          ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:243:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:248:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:238:26: warning: assignment makes pointer from integer without a cast
+    (RingPtr)->BdaRestart =      \
+                          ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+xaxidma_bdring.h:243:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+xaxidma_bdring.h:248:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_1/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/counter_stream_hls_v1_0/src
+make -C ps7_cortexa9_0/libsrc/counter_stream_hls_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling counter_stream_hls
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling ddrps
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_3/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_1/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_5/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_2/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling xadcps
+Finished building libraries
+06:44:40 **** Auto Build of project no_last_standalone_bsp_20bit ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_0/src
+make -C ps7_cortexa9_0/libsrc/axidma_v9_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_1/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/counter_stream_hls_v1_0/src
+make -C ps7_cortexa9_0/libsrc/counter_stream_hls_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_3/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_1/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_5/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_2/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in ps7_cortexa9_0/libsrc/axidma_v9_0/src
+make -C ps7_cortexa9_0/libsrc/axidma_v9_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling axidma
+In file included from xaxidma.h:470:0,
+                 from xaxidma.c:83:
+xaxidma.c: In function 'XAxiDma_Reset':
+xaxidma_bdring.h:238:26: warning: assignment makes pointer from integer without a cast
+    (RingPtr)->BdaRestart =      \
+                          ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:243:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:248:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:238:26: warning: assignment makes pointer from integer without a cast
+    (RingPtr)->BdaRestart =      \
+                          ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+xaxidma_bdring.h:243:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+xaxidma_bdring.h:248:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_1/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/counter_stream_hls_v1_0/src
+make -C ps7_cortexa9_0/libsrc/counter_stream_hls_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling counter_stream_hls
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling ddrps
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_3/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_1/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_5/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_2/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling xadcps
+Finished building libraries
+06:44:55 **** Auto Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+Building file: ../src/dma_simple_mode.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_simple_mode.o" -I../../no_last_standalone_bsp_20bit/ps7_cortexa9_0/include -MMD -MP -MF"src/dma_simple_mode.d" -MT"src/dma_simple_mode.d" -o "src/dma_simple_mode.o" "../src/dma_simple_mode.c"
+Finished building: ../src/dma_simple_mode.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp_20bit/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:7:0: warning: "MEM_BASE_ADDR" redefined
+ #define  MEM_BASE_ADDR 0x01000000   // See TRM -7000
+ ^
+In file included from ../src/helloworld.c:3:0:
+../src/dma_simple_mode.h:136:0: note: this is the location of the previous definition
+ #define  MEM_BASE_ADDR (DDR_BASE_ADDR + 0x1000000)
+ ^
+../src/helloworld.c:9:0: warning: "RX_BUFFER_BASE" redefined
+ #define  RX_BUFFER_BASE 0x01300000   // Receive data
+ ^
+In file included from ../src/helloworld.c:3:0:
+../src/dma_simple_mode.h:139:0: note: this is the location of the previous definition
+ #define  RX_BUFFER_BASE (MEM_BASE_ADDR + 0x00300000)  // Buffer to store data after receiving in S2MM channel
+ ^
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/io_reg.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/io_reg.o" -I../../no_last_standalone_bsp_20bit/ps7_cortexa9_0/include -MMD -MP -MF"src/io_reg.d" -MT"src/io_reg.d" -o "src/io_reg.o" "../src/io_reg.c"
+Finished building: ../src/io_reg.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../no_last_standalone_bsp_20bit/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: no_last_sw_20bit.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp_20bit/ps7_cortexa9_0/lib -o "no_last_sw_20bit.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: no_last_sw_20bit.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size no_last_sw_20bit.elf  |tee "no_last_sw_20bit.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34804	   1216	  22564	  58584	   e4d8	no_last_sw_20bit.elf
+Finished building: no_last_sw_20bit.elf.size
+ 
+06:44:56 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/dma_simple_mode.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_simple_mode.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/dma_simple_mode.d" -MT"src/dma_simple_mode.d" -o "src/dma_simple_mode.o" "../src/dma_simple_mode.c"
+Finished building: ../src/dma_simple_mode.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/io_reg.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/io_reg.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/io_reg.d" -MT"src/io_reg.d" -o "src/io_reg.o" "../src/io_reg.c"
+Finished building: ../src/io_reg.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35332	   1216	  22596	  59144	   e708	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+06:46:23 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35332	   1216	  22596	  59144	   e708	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+06:49:58 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:193:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+../src/helloworld.c:194:42: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   xil_printf("pointer value: %0x%x\r\n", (uint64_t)data)
+                                          ^
+../src/helloworld.c:196:3: error: expected ';' before 'XAxiDma_Reset'
+   XAxiDma_Reset(&AxiDma);
+   ^
+make: *** [src/helloworld.o] Error 1
+06:50:04 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:193:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+../src/helloworld.c:194:42: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   xil_printf("pointer value: %0x%x\r\n", (uint64_t)data);
+                                          ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35356	   1216	  22596	  59168	   e720	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+06:51:18 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:193:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+../src/helloworld.c:194:42: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   xil_printf("pointer value: %0x%x\r\n", (uint64_t)data);
+                                          ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35356	   1216	  22596	  59168	   e720	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+06:52:23 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+06:52:24 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+06:53:11 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:193:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+../src/helloworld.c:194:42: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   xil_printf("pointer value: %0x%x\r\n", (uint64_t)data);
+                                          ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35356	   1216	  22596	  59168	   e720	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+06:53:15 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+06:53:16 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+06:53:38 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:193:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+../src/helloworld.c:194:42: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   xil_printf("pointer value: %0x%x\r\n", (uint64_t)data);
+                                          ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35356	   1216	  22596	  59168	   e720	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+06:53:45 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+06:53:45 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+06:54:09 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:193:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35356	   1216	  22596	  59168	   e720	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+06:54:43 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:193:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35356	   1216	  22596	  59168	   e720	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+06:54:46 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+06:54:47 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+07:02:45 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:193:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35356	   1216	  22596	  59168	   e720	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:02:48 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+07:02:48 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+07:03:38 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:193:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35356	   1216	  22596	  59168	   e720	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:03:49 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:193:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35352	   1216	  22596	  59164	   e71c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:03:59 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+07:04:00 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+07:05:25 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:194:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35352	   1216	  22596	  59164	   e71c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:05:43 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:194:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35352	   1216	  22596	  59164	   e71c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:05:58 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:194:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35352	   1216	  22596	  59164	   e71c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:06:06 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+07:06:06 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+07:06:25 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:194:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35352	   1216	  22596	  59164	   e71c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:06:31 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+07:06:32 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+07:07:04 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:194:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35352	   1216	  22596	  59164	   e71c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:07:13 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+07:07:13 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+07:08:05 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:194:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35352	   1216	  22596	  59164	   e71c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:08:08 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+07:08:09 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+07:09:10 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:194:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35352	   1216	  22596	  59164	   e71c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:09:26 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:194:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35416	   1216	  22596	  59228	   e75c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:09:29 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+07:09:29 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+07:10:48 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:194:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35416	   1216	  22596	  59228	   e75c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:10:57 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:194:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35416	   1216	  22596	  59228	   e75c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:10:59 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+07:11:00 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+07:11:17 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:194:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35352	   1216	  22596	  59164	   e71c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:11:23 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:194:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35352	   1216	  22596	  59164	   e71c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:11:26 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+07:11:26 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+07:12:07 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:193:3: error: unknown type name 'uin164_t'
+   uin164_t *data;
+   ^
+../src/helloworld.c:194:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+make: *** [src/helloworld.o] Error 1
+07:12:11 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:193:3: error: unknown type name 'uin16_t'
+   uin16_t *data;
+   ^
+../src/helloworld.c:194:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+make: *** [src/helloworld.o] Error 1
+07:12:18 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:194:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35416	   1216	  22596	  59228	   e75c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:12:24 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+07:12:24 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+07:12:39 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:194:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35416	   1216	  22596	  59228	   e75c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:12:44 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+07:12:45 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+07:13:12 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35332	   1216	  22596	  59144	   e708	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:13:40 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35332	   1216	  22596	  59144	   e708	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:34:23 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:194:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35416	   1216	  22596	  59228	   e75c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:35:09 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+07:35:10 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+07:35:37 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:194:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35352	   1216	  22596	  59164	   e71c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:35:45 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+07:35:45 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+07:39:44 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:195:3: error: invalid type argument of unary '*' (have 'int')
+   *RX_BUFFER_BASE = data;
+   ^
+../src/helloworld.c:196:43: error: subscripted value is neither array nor pointer nor vector
+   xil_printf("pointer value: %d\r\n", data[0]);
+                                           ^
+make: *** [src/helloworld.o] Error 1
+07:39:53 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:195:3: error: invalid type argument of unary '*' (have 'int')
+   *RX_BUFFER_BASE = data;
+   ^
+make: *** [src/helloworld.o] Error 1
+07:40:21 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35332	   1216	  22596	  59144	   e708	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:41:44 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:197:10: warning: assignment makes pointer from integer without a cast
+   data_v = RX_BUFFER_BASE;
+          ^
+../src/helloworld.c:198:43: error: subscripted value is neither array nor pointer nor vector
+   xil_printf("pointer value: %d\r\n", data[0]);
+                                           ^
+../src/helloworld.c:196:8: warning: variable 'data_v' set but not used [-Wunused-but-set-variable]
+   int *data_v;
+        ^
+make: *** [src/helloworld.o] Error 1
+07:41:58 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:197:10: warning: assignment makes pointer from integer without a cast
+   data_v = RX_BUFFER_BASE;
+          ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35416	   1216	  22596	  59228	   e75c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:42:04 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+07:42:05 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+07:42:21 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:197:10: warning: assignment makes pointer from integer without a cast
+   data_v = RX_BUFFER_BASE;
+          ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35416	   1216	  22596	  59228	   e75c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:42:24 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+07:42:24 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+07:43:24 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:197:10: warning: assignment makes pointer from integer without a cast
+   data_v = RX_BUFFER_BASE;
+          ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35416	   1216	  22596	  59228	   e75c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:43:56 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35416	   1216	  22596	  59228	   e75c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:44:00 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+07:44:00 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+07:44:55 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:198:45: error: expected expression before ')' token
+   xil_printf("pointer value: %x\r\n", *(u64));
+                                             ^
+../src/helloworld.c:196:8: warning: variable 'data_v' set but not used [-Wunused-but-set-variable]
+   u64 *data_v;
+        ^
+make: *** [src/helloworld.o] Error 1
+07:45:01 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:198:40: error: expected expression before 'u64'
+   xil_printf("pointer value: %x\r\n", *u64);
+                                        ^
+../src/helloworld.c:196:8: warning: variable 'data_v' set but not used [-Wunused-but-set-variable]
+   u64 *data_v;
+        ^
+make: *** [src/helloworld.o] Error 1
+07:45:13 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35416	   1216	  22596	  59228	   e75c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:45:17 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+07:45:17 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+07:45:32 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35416	   1216	  22596	  59228	   e75c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:45:36 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+07:45:36 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+07:46:02 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+07:46:02 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+07:47:19 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:194:8: warning: assignment makes pointer from integer without a cast
+   data = RX_BUFFER_BASE;
+        ^
+../src/helloworld.c:195:5: warning: statement with no effect [-Wunused-value]
+     72623859874597901;
+     ^
+../src/helloworld.c:196:27: warning: assignment makes integer from pointer without a cast
+   *((u64*)RX_BUFFER_BASE) = data;
+                           ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35416	   1216	  22596	  59228	   e75c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:47:47 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:195:5: warning: statement with no effect [-Wunused-value]
+     72623859874597901;
+     ^
+../src/helloworld.c:196:27: warning: assignment makes integer from pointer without a cast
+   *((u64*)RX_BUFFER_BASE) = data;
+                           ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35416	   1216	  22596	  59228	   e75c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:48:09 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35416	   1216	  22596	  59228	   e75c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:48:11 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35416	   1216	  22596	  59228	   e75c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:48:32 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:198:10: warning: assignment makes integer from pointer without a cast
+   data_v = (u64 *)RX_BUFFER_BASE;
+          ^
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35352	   1216	  22596	  59164	   e71c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:48:48 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:198:11: error: lvalue required as left operand of assignment
+   &data_v = (u64 *)RX_BUFFER_BASE;
+           ^
+make: *** [src/helloworld.o] Error 1
+07:48:54 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:198:11: error: lvalue required as left operand of assignment
+   &data_v = RX_BUFFER_BASE;
+           ^
+make: *** [src/helloworld.o] Error 1
+07:49:06 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:198:12: error: lvalue required as left operand of assignment
+   & data_v = RX_BUFFER_BASE;
+            ^
+make: *** [src/helloworld.o] Error 1
+07:49:16 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:199:39: error: 'data_v' undeclared (first use in this function)
+   xil_printf("pointer value: %x\r\n", data_v);
+                                       ^
+../src/helloworld.c:199:39: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] Error 1
+07:50:05 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35416	   1216	  22596	  59228	   e75c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:50:13 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+07:50:13 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+07:50:57 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35416	   1216	  22596	  59228	   e75c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:51:03 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+07:51:03 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+07:51:37 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35420	   1216	  22596	  59232	   e760	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:51:42 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+07:51:42 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+07:52:01 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35416	   1216	  22596	  59228	   e75c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:53:34 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35416	   1216	  22596	  59228	   e75c	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:53:38 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+07:53:38 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+07:56:18 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:199:3: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32' [-Wformat=]
+   printf("pointer value: %x\r\n", *((u32 *)(RX_BUFFER_BASE) + 1)));
+   ^
+../src/helloworld.c:199:3: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32' [-Wformat=]
+../src/helloworld.c:199:66: error: expected ';' before ')' token
+   printf("pointer value: %x\r\n", *((u32 *)(RX_BUFFER_BASE) + 1)));
+                                                                  ^
+../src/helloworld.c:199:66: error: expected statement before ')' token
+make: *** [src/helloworld.o] Error 1
+07:56:20 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+07:56:20 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:199:3: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32' [-Wformat=]
+   printf("pointer value: %x\r\n", *((u32 *)(RX_BUFFER_BASE) + 1)));
+   ^
+../src/helloworld.c:199:3: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32' [-Wformat=]
+../src/helloworld.c:199:66: error: expected ';' before ')' token
+   printf("pointer value: %x\r\n", *((u32 *)(RX_BUFFER_BASE) + 1)));
+                                                                  ^
+../src/helloworld.c:199:66: error: expected statement before ')' token
+make: *** [src/helloworld.o] Error 1
+07:56:55 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:199:3: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32' [-Wformat=]
+   printf("pointer value: %x\r\n", *((u32 *)(RX_BUFFER_BASE) + 1));
+   ^
+../src/helloworld.c:199:3: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32' [-Wformat=]
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71444	   2384	  22668	  96496	  178f0	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:56:58 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+07:56:58 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+07:57:24 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:199:3: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u64' [-Wformat=]
+   printf("pointer value: %x\r\n", *((u64 *)(RX_BUFFER_BASE)));
+   ^
+../src/helloworld.c:199:3: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u64' [-Wformat=]
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71444	   2384	  22668	  96496	  178f0	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:58:28 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:199:3: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u64' [-Wformat=]
+   printf("pointer value: %d\r\n", *((u64 *)(RX_BUFFER_BASE)));
+   ^
+../src/helloworld.c:199:3: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u64' [-Wformat=]
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71444	   2384	  22668	  96496	  178f0	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+07:58:31 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+07:58:32 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+08:01:35 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71452	   2384	  22668	  96504	  178f8	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+08:01:42 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+08:01:42 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+08:02:59 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71452	   2384	  22668	  96504	  178f8	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+08:03:02 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+08:03:02 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+08:04:00 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71452	   2384	  22668	  96504	  178f8	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+08:04:43 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:200:3: warning: unknown conversion type character 0xd in format [-Wformat=]
+   printf("pointer value: %ll\r\n", *((u64 *)(RX_BUFFER_BASE)));
+   ^
+../src/helloworld.c:200:3: warning: too many arguments for format [-Wformat-extra-args]
+../src/helloworld.c:200:3: warning: unknown conversion type character 0xd in format [-Wformat=]
+../src/helloworld.c:200:3: warning: too many arguments for format [-Wformat-extra-args]
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71452	   2384	  22668	  96504	  178f8	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+08:04:46 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+08:04:47 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+08:06:05 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71452	   2384	  22668	  96504	  178f8	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 
+08:06:08 **** Incremental Build of configuration Debug for project no_last_sw_20bit ****
+make all 
+make: Nothing to be done for `all'.
+08:06:08 **** Incremental Build of configuration Debug for project nolast_sw ****
+make all 
+make: Nothing to be done for `all'.
+08:06:45 **** Auto Build of configuration Debug for project nolast_sw ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../no_last_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: nolast_sw.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../no_last_standalone_bsp/ps7_cortexa9_0/lib -o "nolast_sw.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o ./src/union_t.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: nolast_sw.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71452	   2384	  22668	  96504	  178f8	nolast_sw.elf
+Finished building: nolast_sw.elf.size
+ 

@@ -1,0 +1,1985 @@
+13:44:03 **** Build of project standalone_bsp_0 ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_0/src
+make -C ps7_cortexa9_0/libsrc/axidma_v9_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_1/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/counter_stream_have_last_hls_v1_0/src
+make -C ps7_cortexa9_0/libsrc/counter_stream_have_last_hls_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_3/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_1/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_5/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_2/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in ps7_cortexa9_0/libsrc/axidma_v9_0/src
+make -C ps7_cortexa9_0/libsrc/axidma_v9_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling axidma
+In file included from xaxidma.h:470:0,
+                 from xaxidma.c:83:
+xaxidma.c: In function 'XAxiDma_Reset':
+xaxidma_bdring.h:238:26: warning: assignment makes pointer from integer without a cast
+    (RingPtr)->BdaRestart =      \
+                          ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:243:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:248:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:238:26: warning: assignment makes pointer from integer without a cast
+    (RingPtr)->BdaRestart =      \
+                          ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+xaxidma_bdring.h:243:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+xaxidma_bdring.h:248:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_1/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/counter_stream_have_last_hls_v1_0/src
+make -C ps7_cortexa9_0/libsrc/counter_stream_have_last_hls_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling counter_stream_have_last_hls
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling ddrps
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_3/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_1/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_5/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_2/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling xadcps
+Finished building libraries
+13:45:36 **** Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22888	   1152	  22564	  46604	   b60c	software.elf
+Finished building: software.elf.size
+ 
+13:45:42 **** Auto Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+13:46:36 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:25:29: fatal error: dma_simple_mode.h: No such file or directory
+ #include "dma_simple_mode.h"
+                             ^
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+13:49:15 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:44:35: error: 'DMA_DEV_ID' undeclared (first use in this function)
+     CfgPtr = XAxiDma_LookupConfig(DMA_DEV_ID);
+                                   ^
+../src/helloworld.c:44:35: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:101:42: error: 'RX_BUFFER_BASE' undeclared (first use in this function)
+   Status = rxPackage_simpleMode(&AxiDma, RX_BUFFER_BASE,
+                                          ^
+make: *** [src/helloworld.o] Error 1
+13:51:42 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:42: error: 'RX_BUFFER_BASE' undeclared (first use in this function)
+   Status = rxPackage_simpleMode(&AxiDma, RX_BUFFER_BASE,
+                                          ^
+../src/helloworld.c:101:42: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] Error 1
+13:52:56 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/dma_simple_mode.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_simple_mode.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/dma_simple_mode.d" -MT"src/dma_simple_mode.d" -o "src/dma_simple_mode.o" "../src/dma_simple_mode.c"
+Finished building: ../src/dma_simple_mode.c
+ 
+Building file: ../src/io_reg.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/io_reg.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/io_reg.d" -MT"src/io_reg.d" -o "src/io_reg.o" "../src/io_reg.c"
+Finished building: ../src/io_reg.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35368	   1216	  22564	  59148	   e70c	software.elf
+Finished building: software.elf.size
+ 
+13:53:22 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35368	   1216	  22564	  59148	   e70c	software.elf
+Finished building: software.elf.size
+ 
+13:58:48 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35368	   1216	  22564	  59148	   e70c	software.elf
+Finished building: software.elf.size
+ 
+14:00:06 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+14:00:50 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35368	   1216	  22564	  59148	   e70c	software.elf
+Finished building: software.elf.size
+ 
+14:00:55 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+14:01:23 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35364	   1216	  22564	  59144	   e708	software.elf
+Finished building: software.elf.size
+ 
+14:01:28 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+14:02:47 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35364	   1216	  22564	  59144	   e708	software.elf
+Finished building: software.elf.size
+ 
+14:03:22 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+14:04:00 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35364	   1216	  22564	  59144	   e708	software.elf
+Finished building: software.elf.size
+ 
+14:04:22 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35264	   1216	  22564	  59044	   e6a4	software.elf
+Finished building: software.elf.size
+ 
+14:05:36 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+14:07:13 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35264	   1216	  22564	  59044	   e6a4	software.elf
+Finished building: software.elf.size
+ 
+14:07:24 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35264	   1216	  22564	  59044	   e6a4	software.elf
+Finished building: software.elf.size
+ 
+14:11:50 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35264	   1216	  22564	  59044	   e6a4	software.elf
+Finished building: software.elf.size
+ 
+14:12:41 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35264	   1216	  22564	  59044	   e6a4	software.elf
+Finished building: software.elf.size
+ 
+14:14:15 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35264	   1216	  22564	  59044	   e6a4	software.elf
+Finished building: software.elf.size
+ 
+14:14:26 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35264	   1216	  22564	  59044	   e6a4	software.elf
+Finished building: software.elf.size
+ 
+14:15:18 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35264	   1216	  22564	  59044	   e6a4	software.elf
+Finished building: software.elf.size
+ 
+14:15:23 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+14:20:59 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71308	   2384	  22636	  96328	  17848	software.elf
+Finished building: software.elf.size
+ 
+14:22:57 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71308	   2384	  22636	  96328	  17848	software.elf
+Finished building: software.elf.size
+ 
+14:25:06 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71308	   2384	  22636	  96328	  17848	software.elf
+Finished building: software.elf.size
+ 
+14:25:20 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71300	   2384	  22636	  96320	  17840	software.elf
+Finished building: software.elf.size
+ 
+14:25:38 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+14:25:46 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+14:27:01 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:19: warning: 'TRANSFER_SIZE' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     TRANSFER_SIZE + EXTRA_TRANSFER_SIZE);     // Length in bytes
+                   ^
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71300	   2384	  22636	  96320	  17840	software.elf
+Finished building: software.elf.size
+ 
+14:27:07 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71300	   2384	  22636	  96320	  17840	software.elf
+Finished building: software.elf.size
+ 
+14:27:27 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+14:28:17 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71300	   2384	  22636	  96320	  17840	software.elf
+Finished building: software.elf.size
+ 
+14:29:44 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71300	   2384	  22636	  96320	  17840	software.elf
+Finished building: software.elf.size
+ 
+14:30:09 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71364	   2384	  22636	  96384	  17880	software.elf
+Finished building: software.elf.size
+ 
+14:30:34 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71300	   2384	  22636	  96320	  17840	software.elf
+Finished building: software.elf.size
+ 
+14:30:46 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71300	   2384	  22636	  96320	  17840	software.elf
+Finished building: software.elf.size
+ 
+14:30:51 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+14:31:21 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+14:42:41 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+14:43:23 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71228	   2384	  22636	  96248	  177f8	software.elf
+Finished building: software.elf.size
+ 
+14:43:38 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71228	   2384	  22636	  96248	  177f8	software.elf
+Finished building: software.elf.size
+ 
+14:43:43 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+14:44:37 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+14:45:05 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71228	   2384	  22636	  96248	  177f8	software.elf
+Finished building: software.elf.size
+ 
+14:46:40 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71292	   2384	  22636	  96312	  17838	software.elf
+Finished building: software.elf.size
+ 
+14:47:59 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71292	   2384	  22636	  96312	  17838	software.elf
+Finished building: software.elf.size
+ 
+14:48:18 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:118:22: error: 'XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR' undeclared (first use in this function)
+   Status = readReg32(XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR, XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_AP_CTRL);
+                      ^
+../src/helloworld.c:118:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:118:75: error: 'XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_AP_CTRL' undeclared (first use in this function)
+   Status = readReg32(XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR, XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_AP_CTRL);
+                                                                           ^
+make: *** [src/helloworld.o] Error 1
+14:48:27 **** Incremental Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:118:22: error: 'XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR' undeclared (first use in this function)
+   Status = readReg32(XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR, XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_AP_CTRL);
+                      ^
+../src/helloworld.c:118:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:118:75: error: 'XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_AP_CTRL' undeclared (first use in this function)
+   Status = readReg32(XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR, XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_AP_CTRL);
+                                                                           ^
+make: *** [src/helloworld.o] Error 1
+14:50:35 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:118:22: error: 'XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR' undeclared (first use in this function)
+   Status = readReg32(XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR, XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_AP_CTRL);
+                      ^
+../src/helloworld.c:118:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:118:75: error: 'XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_AP_CTRL' undeclared (first use in this function)
+   Status = readReg32(XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR, XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_AP_CTRL);
+                                                                           ^
+make: *** [src/helloworld.o] Error 1
+14:50:46 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:118:36: error: 'XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_AP_CTRL' undeclared (first use in this function)
+   Status = readReg32(IP_BASE_ADDR, XCOUNTER_STREAM_HLS_CPUCONTROL_ADDR_AP_CTRL);
+                                    ^
+../src/helloworld.c:118:36: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] Error 1
+14:51:25 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71316	   2384	  22636	  96336	  17850	software.elf
+Finished building: software.elf.size
+ 
+14:51:51 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+14:55:26 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71316	   2384	  22636	  96336	  17850	software.elf
+Finished building: software.elf.size
+ 
+14:57:25 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71412	   2384	  22636	  96432	  178b0	software.elf
+Finished building: software.elf.size
+ 
+15:29:26 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71380	   2384	  22636	  96400	  17890	software.elf
+Finished building: software.elf.size
+ 
+15:29:31 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+15:29:42 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+15:31:34 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71380	   2384	  22636	  96400	  17890	software.elf
+Finished building: software.elf.size
+ 
+15:31:55 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+15:32:27 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+15:32:56 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+15:34:25 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71444	   2384	  22636	  96464	  178d0	software.elf
+Finished building: software.elf.size
+ 
+15:34:43 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+15:35:49 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71364	   2384	  22636	  96384	  17880	software.elf
+Finished building: software.elf.size
+ 
+15:36:21 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71364	   2384	  22636	  96384	  17880	software.elf
+Finished building: software.elf.size
+ 
+15:37:18 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71364	   2384	  22636	  96384	  17880	software.elf
+Finished building: software.elf.size
+ 
+15:37:27 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+15:38:29 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71364	   2384	  22636	  96384	  17880	software.elf
+Finished building: software.elf.size
+ 
+15:38:55 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71364	   2384	  22636	  96384	  17880	software.elf
+Finished building: software.elf.size
+ 
+15:39:35 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:04:27 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:30:44 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71364	   2384	  22636	  96384	  17880	software.elf
+Finished building: software.elf.size
+ 
+17:31:15 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71364	   2384	  22636	  96384	  17880	software.elf
+Finished building: software.elf.size
+ 
+17:32:23 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71444	   2384	  22636	  96464	  178d0	software.elf
+Finished building: software.elf.size
+ 
+17:32:38 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:34:34 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71364	   2384	  22636	  96384	  17880	software.elf
+Finished building: software.elf.size
+ 
+17:34:58 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71308	   2384	  22636	  96328	  17848	software.elf
+Finished building: software.elf.size
+ 
+17:35:16 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:36:01 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71308	   2384	  22636	  96328	  17848	software.elf
+Finished building: software.elf.size
+ 
+17:36:09 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:37:19 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71308	   2384	  22636	  96328	  17848	software.elf
+Finished building: software.elf.size
+ 
+17:38:09 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71308	   2384	  22636	  96328	  17848	software.elf
+Finished building: software.elf.size
+ 
+17:38:23 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:39:25 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71308	   2384	  22636	  96328	  17848	software.elf
+Finished building: software.elf.size
+ 
+17:39:30 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:40:03 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:40:48 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71308	   2384	  22636	  96328	  17848	software.elf
+Finished building: software.elf.size
+ 
+17:40:54 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:41:23 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71308	   2384	  22636	  96328	  17848	software.elf
+Finished building: software.elf.size
+ 
+17:41:29 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:41:50 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71308	   2384	  22636	  96328	  17848	software.elf
+Finished building: software.elf.size
+ 
+17:42:10 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71300	   2384	  22636	  96320	  17840	software.elf
+Finished building: software.elf.size
+ 
+17:42:26 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71300	   2384	  22636	  96320	  17840	software.elf
+Finished building: software.elf.size
+ 
+17:42:31 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:43:20 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:44:28 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71300	   2384	  22636	  96320	  17840	software.elf
+Finished building: software.elf.size
+ 
+17:44:35 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:45:08 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:45:38 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:46:19 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35256	   1216	  22564	  59036	   e69c	software.elf
+Finished building: software.elf.size
+ 
+17:46:46 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:47:21 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35256	   1216	  22564	  59036	   e69c	software.elf
+Finished building: software.elf.size
+ 
+17:47:26 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:49:05 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35256	   1216	  22564	  59036	   e69c	software.elf
+Finished building: software.elf.size
+ 
+17:49:10 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:49:38 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35248	   1216	  22564	  59028	   e694	software.elf
+Finished building: software.elf.size
+ 
+17:49:42 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:50:18 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71276	   2384	  22636	  96296	  17828	software.elf
+Finished building: software.elf.size
+ 
+17:50:23 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:52:28 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:53:26 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35184	   1216	  22564	  58964	   e654	software.elf
+Finished building: software.elf.size
+ 
+17:53:35 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:55:32 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:56:52 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71404	   2384	  22636	  96424	  178a8	software.elf
+Finished building: software.elf.size
+ 
+17:56:57 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:58:33 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:58:53 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:59:23 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35184	   1216	  22564	  58964	   e654	software.elf
+Finished building: software.elf.size
+ 
+17:59:29 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+17:59:39 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+18:00:02 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35184	   1216	  22564	  58964	   e654	software.elf
+Finished building: software.elf.size
+ 
+18:00:08 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+18:04:43 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35184	   1216	  22564	  58964	   e654	software.elf
+Finished building: software.elf.size
+ 
+18:04:53 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35184	   1216	  22564	  58964	   e654	software.elf
+Finished building: software.elf.size
+ 
+18:05:05 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+18:13:05 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35184	   1216	  22564	  58964	   e654	software.elf
+Finished building: software.elf.size
+ 
+18:13:11 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+18:14:04 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+18:14:31 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35184	   1216	  22564	  58964	   e654	software.elf
+Finished building: software.elf.size
+ 
+18:14:37 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+18:15:14 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35184	   1216	  22564	  58964	   e654	software.elf
+Finished building: software.elf.size
+ 
+18:15:21 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+18:15:53 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+18:16:16 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35184	   1216	  22564	  58964	   e654	software.elf
+Finished building: software.elf.size
+ 
+18:16:23 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+18:16:57 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+18:17:21 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35184	   1216	  22564	  58964	   e654	software.elf
+Finished building: software.elf.size
+ 
+18:17:35 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35184	   1216	  22564	  58964	   e654	software.elf
+Finished building: software.elf.size
+ 
+18:17:45 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+18:18:14 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+18:19:22 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34932	   1216	  22564	  58712	   e558	software.elf
+Finished building: software.elf.size
+ 
+18:19:29 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+18:21:03 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35184	   1216	  22564	  58964	   e654	software.elf
+Finished building: software.elf.size
+ 
+18:21:19 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+18:21:52 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34932	   1216	  22564	  58712	   e558	software.elf
+Finished building: software.elf.size
+ 
+18:21:57 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+18:24:09 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35184	   1216	  22564	  58964	   e654	software.elf
+Finished building: software.elf.size
+ 
+18:24:15 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+18:25:09 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34996	   1216	  22564	  58776	   e598	software.elf
+Finished building: software.elf.size
+ 
+18:25:15 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+18:26:15 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+18:26:52 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35184	   1216	  22564	  58964	   e654	software.elf
+Finished building: software.elf.size
+ 
+18:27:11 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35260	   1216	  22564	  59040	   e6a0	software.elf
+Finished building: software.elf.size
+ 
+18:27:16 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+18:28:55 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34996	   1216	  22564	  58776	   e598	software.elf
+Finished building: software.elf.size
+ 
+18:29:01 **** Incremental Build of configuration Debug for project software ****
+make all 
+make: Nothing to be done for `all'.
+18:29:44 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35260	   1216	  22564	  59040	   e6a0	software.elf
+Finished building: software.elf.size
+ 
+01:44:37 **** Auto Build of configuration Debug for project software ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: software.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software.elf"  ./src/dma_simple_mode.o ./src/helloworld.o ./src/io_reg.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software.elf  |tee "software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35260	   1216	  22564	  59040	   e6a0	software.elf
+Finished building: software.elf.size
+ 

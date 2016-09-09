@@ -1,4 +1,4 @@
-02:54:10 **** Auto Build of configuration Debug for project nolast_sw ****
+08:06:45 **** Auto Build of configuration Debug for project nolast_sw ****
 make all 
 Building file: ../src/helloworld.c
 Invoking: ARM gcc compiler
@@ -13,9 +13,9 @@ Finished building target: nolast_sw.elf
 Invoking: ARM Print Size
 arm-xilinx-eabi-size nolast_sw.elf  |tee "nolast_sw.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  35332	   1216	  22596	  59144	   e708	nolast_sw.elf
+  71452	   2384	  22668	  96504	  178f8	nolast_sw.elf
 Finished building: nolast_sw.elf.size
  
 
-02:54:10 Build Finished (took 497ms)
+08:06:46 Build Finished (took 355ms)
 

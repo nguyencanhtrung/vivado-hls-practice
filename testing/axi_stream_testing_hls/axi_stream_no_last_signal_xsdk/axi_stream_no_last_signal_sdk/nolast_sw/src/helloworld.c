@@ -13,10 +13,16 @@
  * 		- BUFFER LENGTH > ACTUAL LENGTH of packet effect
  * 		- BUFFER LENGTH > ACTUAL LENGTH of packet effect
  * 		- How to re-transfer other packet
+ * 		- Testing uint64_t data pointer (support 64-bit pointer)
+ * 			Using printf to print and %llx to display in HEX
+ * 			and %lld to display in DEC
+ * Update:
+ *		- Testing delay execution
  ****************************************************************************/
 #include <stdio.h>
 #include "platform.h"
 #include "dma_simple_mode.h"
+#include "stdint.h"
 
 /****************************************************************************/
 /* IP register configuration*/
@@ -60,7 +66,7 @@
 #define IP_BASE_ADDR	XPAR_COUNTER_STREAM_HLS_0_S_AXI_CPUCONTROL_BASEADDR
 
 /****************************************************************************/
-#define NUM_TRIAL				3
+#define NUM_TRIAL				1
 
 int main()
 {
@@ -74,9 +80,9 @@ int main()
 
     /**** For Transfer Setup *********************************/
     int NUM_OF_ITERATION 	=		58;		// NUM OF VALUEABLE DATA
-    int RESOLUTION			=		0;
+    int RESOLUTION			=		3;
     int TRANSFER_SIZE;	// In byte
-    int NUM_EXTRA_TRANSFER	=		10;		// GARBAGE DATA 10
+    int NUM_EXTRA_TRANSFER	=		0;		// GARBAGE DATA 10
     int EXTRA_TRANSFER_SIZE	=		NUM_EXTRA_TRANSFER * 4;
     /********************************************************/
     int Status;
@@ -181,11 +187,18 @@ int main()
 		//Xil_DCacheInvalidateRange(RX_BUFFER_BASE, TRANSFER_SIZE + EXTRA_TRANSFER_SIZE); // Range here must in byte
 		Xil_DCacheInvalidateRange(RX_BUFFER_BASE, 272);
 		int i;
-		for(i = 0; i < 58; i++){
+		for(i = 0; i < 2; i++){
 			int data = readReg32(RX_BUFFER_BASE, i * 4);
 			xil_printf("Value %d:  %d\r\n", (i + 1), data);
 		}
 
+		u64 *data;
+		data = (u64*) RX_BUFFER_BASE;
+		*data = 72623859874597901;
+
+		//u64 data_v;
+		//data_v = RX_BUFFER_BASE;
+		printf("pointer value: %lld\r\n", *((u64 *)(RX_BUFFER_BASE)));
 		// Step 5: Reset DMA
 		XAxiDma_Reset(&AxiDma);
 
