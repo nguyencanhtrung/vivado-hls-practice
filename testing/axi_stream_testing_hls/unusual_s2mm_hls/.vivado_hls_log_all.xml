@@ -12,15 +12,14 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="@W [XFORM-505] Ignored pipeline directive for loop 'DELAY_LOOP' (unusual_s2mm_hls/src/counter_stream_unusual_s2mm_hls.cpp:33) because its parent loop or function is pipelined." projectName="unusual_s2mm_hls" solutionName="solution1" date="2016-09-09T02:39:59.280+0200" type="Warning"/>
-        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="unusual_s2mm_hls" solutionName="solution1" date="2016-09-09T02:39:27.359+0200" type="Warning"/>
-        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="unusual_s2mm_hls" solutionName="solution1" date="2016-09-09T02:39:27.322+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="unusual_s2mm_hls" solutionName="solution1" date="2016-09-09T14:52:38.024+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="unusual_s2mm_hls" solutionName="solution1" date="2016-09-09T14:52:38.014+0200" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>
       <packageLog>
-        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="unusual_s2mm_hls" solutionName="solution1" date="2016-09-09T02:49:23.929+0200" type="Warning"/>
-        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="unusual_s2mm_hls" solutionName="solution1" date="2016-09-09T02:49:23.908+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="unusual_s2mm_hls" solutionName="solution1" date="2016-09-09T14:53:07.231+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="unusual_s2mm_hls" solutionName="solution1" date="2016-09-09T14:53:07.218+0200" type="Warning"/>
       </packageLog>
       <csimLog/>
     </logs>

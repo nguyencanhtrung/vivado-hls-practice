@@ -8,7 +8,7 @@
 `timescale 1ns/1ps
 module counter_stream_unusual_s2mm_hls_cpuControl_s_axi
 #(parameter
-    C_S_AXI_ADDR_WIDTH = 5,
+    C_S_AXI_ADDR_WIDTH = 6,
     C_S_AXI_DATA_WIDTH = 32
 )(
     // axi4 lite slave signals
@@ -39,7 +39,8 @@ module counter_stream_unusual_s2mm_hls_cpuControl_s_axi
     input  wire                          ap_ready,
     input  wire                          ap_idle,
     output wire [31:0]                   resolution,
-    output wire [31:0]                   numIteration
+    output wire [31:0]                   numIteration,
+    output wire [31:0]                   delay
 );
 //------------------------Address Info-------------------
 // 0x00 : Control signals
@@ -66,24 +67,29 @@ module counter_stream_unusual_s2mm_hls_cpuControl_s_axi
 // 0x18 : Data signal of numIteration
 //        bit 31~0 - numIteration[31:0] (Read/Write)
 // 0x1c : reserved
+// 0x20 : Data signal of delay
+//        bit 31~0 - delay[31:0] (Read/Write)
+// 0x24 : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 //------------------------Parameter----------------------
 localparam
-    ADDR_AP_CTRL             = 5'h00,
-    ADDR_GIE                 = 5'h04,
-    ADDR_IER                 = 5'h08,
-    ADDR_ISR                 = 5'h0c,
-    ADDR_RESOLUTION_DATA_0   = 5'h10,
-    ADDR_RESOLUTION_CTRL     = 5'h14,
-    ADDR_NUMITERATION_DATA_0 = 5'h18,
-    ADDR_NUMITERATION_CTRL   = 5'h1c,
+    ADDR_AP_CTRL             = 6'h00,
+    ADDR_GIE                 = 6'h04,
+    ADDR_IER                 = 6'h08,
+    ADDR_ISR                 = 6'h0c,
+    ADDR_RESOLUTION_DATA_0   = 6'h10,
+    ADDR_RESOLUTION_CTRL     = 6'h14,
+    ADDR_NUMITERATION_DATA_0 = 6'h18,
+    ADDR_NUMITERATION_CTRL   = 6'h1c,
+    ADDR_DELAY_DATA_0        = 6'h20,
+    ADDR_DELAY_CTRL          = 6'h24,
     WRIDLE                   = 2'd0,
     WRDATA                   = 2'd1,
     WRRESP                   = 2'd2,
     RDIDLE                   = 2'd0,
     RDDATA                   = 2'd1,
-    ADDR_BITS         = 5;
+    ADDR_BITS         = 6;
 
 //------------------------Local signal-------------------
     reg  [1:0]                    wstate;
@@ -108,6 +114,7 @@ localparam
     reg  [1:0]                    int_isr;
     reg  [31:0]                   int_resolution;
     reg  [31:0]                   int_numIteration;
+    reg  [31:0]                   int_delay;
 
 //------------------------Instantiation------------------
 
@@ -221,6 +228,9 @@ always @(posedge ACLK) begin
                 ADDR_NUMITERATION_DATA_0: begin
                     rdata <= int_numIteration[31:0];
                 end
+                ADDR_DELAY_DATA_0: begin
+                    rdata <= int_delay[31:0];
+                end
             endcase
         end
     end
@@ -234,6 +244,7 @@ assign int_ap_idle  = ap_idle;
 assign int_ap_ready = ap_ready;
 assign resolution   = int_resolution;
 assign numIteration = int_numIteration;
+assign delay        = int_delay;
 // int_ap_start
 always @(posedge ACLK) begin
     if (ARESET)
@@ -329,6 +340,16 @@ always @(posedge ACLK) begin
     else if (ACLK_EN) begin
         if (w_hs && waddr == ADDR_NUMITERATION_DATA_0)
             int_numIteration[31:0] <= (WDATA[31:0] & wmask) | (int_numIteration[31:0] & ~wmask);
+    end
+end
+
+// int_delay[31:0]
+always @(posedge ACLK) begin
+    if (ARESET)
+        int_delay[31:0] <= 0;
+    else if (ACLK_EN) begin
+        if (w_hs && waddr == ADDR_DELAY_DATA_0)
+            int_delay[31:0] <= (WDATA[31:0] & wmask) | (int_delay[31:0] & ~wmask);
     end
 end
 

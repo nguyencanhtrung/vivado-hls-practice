@@ -30,6 +30,9 @@
 // 0x18 : Data signal of numIteration
 //        bit 31~0 - numIteration[31:0] (Read/Write)
 // 0x1c : reserved
+// 0x20 : Data signal of delay
+//        bit 31~0 - delay[31:0] (Read/Write)
+// 0x24 : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 #define XCOUNTER_STREAM_UNUSUAL_S2MM_HLS_CPUCONTROL_ADDR_AP_CTRL           0x00
@@ -40,4 +43,6 @@
 #define XCOUNTER_STREAM_UNUSUAL_S2MM_HLS_CPUCONTROL_BITS_RESOLUTION_DATA   32
 #define XCOUNTER_STREAM_UNUSUAL_S2MM_HLS_CPUCONTROL_ADDR_NUMITERATION_DATA 0x18
 #define XCOUNTER_STREAM_UNUSUAL_S2MM_HLS_CPUCONTROL_BITS_NUMITERATION_DATA 32
+#define XCOUNTER_STREAM_UNUSUAL_S2MM_HLS_CPUCONTROL_ADDR_DELAY_DATA        0x20
+#define XCOUNTER_STREAM_UNUSUAL_S2MM_HLS_CPUCONTROL_BITS_DELAY_DATA        32
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1473386479">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1473425728">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="RDI-RDI" Name="unusual_s2mm_sys_wrapper.vdi"/>
   <File Type="BG-DRC" Name="unusual_s2mm_sys_wrapper.drc"/>
@@ -69,6 +69,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/bd/unusual_s2mm_sys/ip/unusual_s2mm_sys_counter_stream_unusual_s2mm_hls_0_0/unusual_s2mm_sys_counter_stream_unusual_s2mm_hls_0_0.upgrade_log"/>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="unusual_s2mm_sys_wrapper"/>

@@ -28,47 +28,59 @@ set Interface1 "wire"
 set DataType1 "int"
 set Port1 [list $PortName1 $Interface1 $DataType1 $Pointer1 $Dims1 $Const1 $Volatile1 $ArrayOpt1]
 lappend PortList $Port1
-set PortName2 "counter"
-set BitWidth2 "64"
+set PortName2 "delay"
+set BitWidth2 "32"
 set ArrayOpt2 ""
-set Const2 "0"
+set Const2 "1"
 set Volatile2 "0"
-set Pointer2 "2"
-set Reference2 "1"
+set Pointer2 "0"
+set Reference2 "0"
 set Dims2 [list 0]
-set Interface2 [list AP_STREAM 0] 
-set structMem2 ""
-set PortName20 "data"
-set BitWidth20 "32"
-set ArrayOpt20 ""
-set Const20 "0"
-set Volatile20 "0"
-set Pointer20 "0"
-set Reference20 "0"
-set Dims20 [list 0]
-set Interface20 "wire"
-set DataType20 "int"
-set Port20 [list $PortName20 $Interface20 $DataType20 $Pointer20 $Dims20 $Const20 $Volatile20 $ArrayOpt20]
-lappend structMem2 $Port20
-set PortName21 "last"
-set BitWidth21 "8"
-set ArrayOpt21 ""
-set Const21 "0"
-set Volatile21 "0"
-set Pointer21 "0"
-set Reference21 "0"
-set Dims21 [list 0]
-set Interface21 "wire"
-set DataType21 "[list ap_uint 1 ]"
-set Port21 [list $PortName21 $Interface21 $DataType21 $Pointer21 $Dims21 $Const21 $Volatile21 $ArrayOpt21]
-lappend structMem2 $Port21
-set structParameter2 [list ]
-set structArgument2 [list ]
-set NameSpace2 [list ]
-set structIsPacked2 "0"
-set DataType2 [list "axis_t" "struct axis_t" $structMem2 0 0 $structParameter2 $structArgument2 $NameSpace2 $structIsPacked2]
+set Interface2 "wire"
+set DataType2 "int"
 set Port2 [list $PortName2 $Interface2 $DataType2 $Pointer2 $Dims2 $Const2 $Volatile2 $ArrayOpt2]
 lappend PortList $Port2
+set PortName3 "counter"
+set BitWidth3 "64"
+set ArrayOpt3 ""
+set Const3 "0"
+set Volatile3 "0"
+set Pointer3 "2"
+set Reference3 "1"
+set Dims3 [list 0]
+set Interface3 [list AP_STREAM 0] 
+set structMem3 ""
+set PortName30 "data"
+set BitWidth30 "32"
+set ArrayOpt30 ""
+set Const30 "0"
+set Volatile30 "0"
+set Pointer30 "0"
+set Reference30 "0"
+set Dims30 [list 0]
+set Interface30 "wire"
+set DataType30 "int"
+set Port30 [list $PortName30 $Interface30 $DataType30 $Pointer30 $Dims30 $Const30 $Volatile30 $ArrayOpt30]
+lappend structMem3 $Port30
+set PortName31 "last"
+set BitWidth31 "8"
+set ArrayOpt31 ""
+set Const31 "0"
+set Volatile31 "0"
+set Pointer31 "0"
+set Reference31 "0"
+set Dims31 [list 0]
+set Interface31 "wire"
+set DataType31 "[list ap_uint 1 ]"
+set Port31 [list $PortName31 $Interface31 $DataType31 $Pointer31 $Dims31 $Const31 $Volatile31 $ArrayOpt31]
+lappend structMem3 $Port31
+set structParameter3 [list ]
+set structArgument3 [list ]
+set NameSpace3 [list ]
+set structIsPacked3 "0"
+set DataType3 [list "axis_t" "struct axis_t" $structMem3 0 0 $structParameter3 $structArgument3 $NameSpace3 $structIsPacked3]
+set Port3 [list $PortName3 $Interface3 $DataType3 $Pointer3 $Dims3 $Const3 $Volatile3 $ArrayOpt3]
+lappend PortList $Port3
 set globalAPint "" 
 set returnAPInt "" 
 set hasCPPAPInt 1 

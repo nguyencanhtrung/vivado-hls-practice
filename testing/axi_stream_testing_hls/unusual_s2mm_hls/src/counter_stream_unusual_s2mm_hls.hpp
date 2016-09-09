@@ -14,6 +14,7 @@ typedef struct {
 void counter_stream_unusual_s2mm_hls(
 	const int resolution,		//input
 	const int numIteration,		//input
+	const int delay,			//input
 
 	hls::stream<axis_t> &counter	//output - volatile to ignore optimization LOOP
 );
