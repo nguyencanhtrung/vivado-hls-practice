@@ -1,5 +1,5 @@
 set C_TypeInfoList {{ 
-"counter_stream_unusual_s2mm_hls" : [[], { "return": [[], "void"]} , [{"ExternC" : 0}], [ {"resolution": [["const"], {"scalar": "int"}] }, {"numIteration": [["const"], {"scalar": "int"}] }, {"counter": [[], {"reference": "0"}] }],[],""], 
+"counter_stream_unusual_s2mm_hls" : [[], { "return": [[], "void"]} , [{"ExternC" : 0}], [ {"resolution": [["const"], {"scalar": "int"}] }, {"numIteration": [["const"], {"scalar": "int"}] }, {"delay": [["const"], {"scalar": "int"}] }, {"counter": [[], {"reference": "0"}] }],[],""], 
 "0": [ "stream<axis_t>", {"hls_type": {"stream": [[[[],"1"]],"2"]}}], 
 "1": [ "axis_t", {"struct": [[],[],[{ "data": [[],  {"scalar": "int"}]},{ "last": [[], "3"]}],""]}], 
 "3": [ "ap_uint<1>", {"hls_type": {"ap_uint": [[[[], {"scalar": { "int": 1}}]],""]}}],
@@ -17,12 +17,14 @@ set C_modelType { void 0 }
 set C_modelArgList { 
 	{ resolution int 32 regular {axi_slave 0}  }
 	{ numIteration int 32 regular {axi_slave 0}  }
+	{ delay int 32 regular {axi_slave 0}  }
 	{ counter_V_data int 32 regular {axi_s 1 volatile  { counter data } }  }
 	{ counter_V_last_V int 1 regular {axi_s 1 volatile  { counter last } }  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "resolution", "interface" : "axi_slave", "bundle":"cpuControl","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "resolution","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":16}, "offset_end" : {"in":23}} , 
  	{ "Name" : "numIteration", "interface" : "axi_slave", "bundle":"cpuControl","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "numIteration","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":24}, "offset_end" : {"in":31}} , 
+ 	{ "Name" : "delay", "interface" : "axi_slave", "bundle":"cpuControl","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "delay","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":32}, "offset_end" : {"in":39}} , 
  	{ "Name" : "counter_V_data", "interface" : "axis", "bitwidth" : 32, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "counter.V.data","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
  	{ "Name" : "counter_V_last_V", "interface" : "axis", "bitwidth" : 1, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "counter.V.last.V","cData": "uint1","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} ]}
 # RTL Port declarations: 
@@ -30,10 +32,10 @@ set portNum 24
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst_n sc_in sc_logic 1 reset -1 active_low_sync } 
-	{ counter_TDATA sc_out sc_lv 32 signal 2 } 
-	{ counter_TVALID sc_out sc_logic 1 outvld 3 } 
-	{ counter_TREADY sc_in sc_logic 1 outacc 3 } 
-	{ counter_TLAST sc_out sc_lv 1 signal 3 } 
+	{ counter_TDATA sc_out sc_lv 32 signal 3 } 
+	{ counter_TVALID sc_out sc_logic 1 outvld 4 } 
+	{ counter_TREADY sc_in sc_logic 1 outacc 4 } 
+	{ counter_TLAST sc_out sc_lv 1 signal 4 } 
 	{ s_axi_cpuControl_AWVALID sc_in sc_logic 1 signal -1 } 
 	{ s_axi_cpuControl_AWREADY sc_out sc_logic 1 signal -1 } 
 	{ s_axi_cpuControl_AWADDR sc_in sc_lv 6 signal -1 } 
@@ -54,7 +56,7 @@ set portList {
 	{ interrupt sc_out sc_logic 1 signal -1 } 
 }
 set NewPortList {[ 
-	{ "name": "s_axi_cpuControl_AWADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "cpuControl", "role": "AWADDR" },"address":[{"name":"counter_stream_unusual_s2mm_hls","role":"start","value":"0","valid_bit":"0"},{"name":"counter_stream_unusual_s2mm_hls","role":"continue","value":"0","valid_bit":"4"},{"name":"counter_stream_unusual_s2mm_hls","role":"auto_start","value":"0","valid_bit":"7"},{"name":"resolution","role":"data","value":"16"},{"name":"numIteration","role":"data","value":"24"}] },
+	{ "name": "s_axi_cpuControl_AWADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "cpuControl", "role": "AWADDR" },"address":[{"name":"counter_stream_unusual_s2mm_hls","role":"start","value":"0","valid_bit":"0"},{"name":"counter_stream_unusual_s2mm_hls","role":"continue","value":"0","valid_bit":"4"},{"name":"counter_stream_unusual_s2mm_hls","role":"auto_start","value":"0","valid_bit":"7"},{"name":"resolution","role":"data","value":"16"},{"name":"numIteration","role":"data","value":"24"},{"name":"delay","role":"data","value":"32"}] },
 	{ "name": "s_axi_cpuControl_AWVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "cpuControl", "role": "AWVALID" } },
 	{ "name": "s_axi_cpuControl_AWREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "cpuControl", "role": "AWREADY" } },
 	{ "name": "s_axi_cpuControl_WVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "cpuControl", "role": "WVALID" } },

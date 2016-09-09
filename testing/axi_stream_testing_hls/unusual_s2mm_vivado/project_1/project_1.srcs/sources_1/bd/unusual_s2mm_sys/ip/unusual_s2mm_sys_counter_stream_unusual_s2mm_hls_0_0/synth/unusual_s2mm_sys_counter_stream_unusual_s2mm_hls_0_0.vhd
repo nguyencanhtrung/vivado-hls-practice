@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:hls:counter_stream_unusual_s2mm_hls:1.0
--- IP Revision: 1609090249
+-- IP Revision: 1609091453
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -123,7 +123,7 @@ ARCHITECTURE unusual_s2mm_sys_counter_stream_unusual_s2mm_hls_0_0_arch OF unusua
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF unusual_s2mm_sys_counter_stream_unusual_s2mm_hls_0_0_arch : ARCHITECTURE IS "unusual_s2mm_sys_counter_stream_unusual_s2mm_hls_0_0,counter_stream_unusual_s2mm_hls,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF unusual_s2mm_sys_counter_stream_unusual_s2mm_hls_0_0_arch: ARCHITECTURE IS "unusual_s2mm_sys_counter_stream_unusual_s2mm_hls_0_0,counter_stream_unusual_s2mm_hls,{x_ipProduct=Vivado 2015.3,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=counter_stream_unusual_s2mm_hls,x_ipVersion=1.0,x_ipCoreRevision=1609090249,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S_AXI_CPUCONTROL_ADDR_WIDTH=6,C_S_AXI_CPUCONTROL_DATA_WIDTH=32}";
+  ATTRIBUTE CORE_GENERATION_INFO OF unusual_s2mm_sys_counter_stream_unusual_s2mm_hls_0_0_arch: ARCHITECTURE IS "unusual_s2mm_sys_counter_stream_unusual_s2mm_hls_0_0,counter_stream_unusual_s2mm_hls,{x_ipProduct=Vivado 2015.3,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=counter_stream_unusual_s2mm_hls,x_ipVersion=1.0,x_ipCoreRevision=1609091453,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S_AXI_CPUCONTROL_ADDR_WIDTH=6,C_S_AXI_CPUCONTROL_DATA_WIDTH=32}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_cpuControl_AWADDR: SIGNAL IS "xilinx.com:interface:aximm:1.0 s_axi_cpuControl AWADDR";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_cpuControl_AWVALID: SIGNAL IS "xilinx.com:interface:aximm:1.0 s_axi_cpuControl AWVALID";

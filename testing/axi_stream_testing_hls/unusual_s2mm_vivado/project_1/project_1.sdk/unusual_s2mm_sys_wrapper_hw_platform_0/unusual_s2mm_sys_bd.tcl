@@ -216,18 +216,18 @@ preplace inst axi_mem_intercon -pg 1 -lvl 5 -y 110 -defaultsOSRD
 preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 380 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 6 -y 360 -defaultsOSRD
 preplace netloc processing_system7_0_DDR 1 6 1 NJ
-preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 2 680 80 NJ
-preplace netloc counter_stream_unusual_s2mm_hls_0_counter 1 3 1 1010
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 6 400 230 NJ 230 NJ 230 NJ 230 NJ 230 2130
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 7 30 480 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 2120
-preplace netloc axi_mem_intercon_M00_AXI 1 5 1 1680
-preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 1 4 390 530 690 490 1030 220 1400
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 2 700 80 NJ
+preplace netloc counter_stream_unusual_s2mm_hls_0_counter 1 3 1 1050
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 6 390 230 NJ 230 NJ 230 NJ 230 NJ 230 2190
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 7 30 480 NJ 520 NJ 520 NJ 520 NJ 520 NJ 520 2180
+preplace netloc axi_mem_intercon_M00_AXI 1 5 1 1740
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 1 4 390 530 720 160 1060 30 1400
 preplace netloc processing_system7_0_FIXED_IO 1 6 1 NJ
-preplace netloc axi_dma_0_M_AXI_S2MM 1 4 1 1370
-preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 1 4 370 240 NJ 240 NJ 240 1390
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 7 20 470 400 520 680 480 1020 210 1380 360 1680 490 2130
+preplace netloc axi_dma_0_M_AXI_S2MM 1 4 1 1420
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 1 4 370 10 NJ 10 NJ 10 1430
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 7 20 440 380 240 710 140 1040 20 1410 240 1730 490 2190
 preplace netloc processing_system7_0_axi_periph_M01_AXI 1 2 1 N
-levelinfo -pg 1 0 200 540 850 1200 1540 1900 2150 -top 0 -bot 660
+levelinfo -pg 1 0 200 550 880 1230 1580 1960 2210 -top 0 -bot 660
 ",
 }
 

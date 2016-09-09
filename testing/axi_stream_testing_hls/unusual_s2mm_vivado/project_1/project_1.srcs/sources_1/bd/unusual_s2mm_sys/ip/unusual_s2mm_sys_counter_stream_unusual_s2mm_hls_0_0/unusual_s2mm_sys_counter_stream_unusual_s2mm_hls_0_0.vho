@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:hls:counter_stream_unusual_s2mm_hls:1.0
--- IP Revision: 1609090249
+-- IP Revision: 1609091453
 
 -- The following code must appear in the VHDL architecture header.
 

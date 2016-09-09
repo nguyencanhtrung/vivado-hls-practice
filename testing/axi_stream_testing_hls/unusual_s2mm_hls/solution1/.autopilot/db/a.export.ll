@@ -5,6 +5,7 @@ target triple = "x86_64-unknown-linux-gnu"
 @llvm_global_ctors_1 = appending global [1 x void ()*] [void ()* @_GLOBAL__I_a]
 @llvm_global_ctors_0 = appending global [1 x i32] [i32 65535]
 @counter_stream_unusual_s2mm_hl = internal unnamed_addr constant [32 x i8] c"counter_stream_unusual_s2mm_hls\00"
+@p_str5 = private unnamed_addr constant [11 x i8] c"DELAY_LOOP\00", align 1
 @p_str4 = private unnamed_addr constant [5 x i8] c"LOOP\00", align 1
 @p_str3 = private unnamed_addr constant [11 x i8] c"cpuControl\00", align 1
 @p_str2 = private unnamed_addr constant [10 x i8] c"s_axilite\00", align 1
@@ -13,12 +14,14 @@ target triple = "x86_64-unknown-linux-gnu"
 
 declare void @llvm.dbg.value(metadata, i64, metadata) nounwind readnone
 
-define void @counter_stream_unusual_s2mm_hls(i32 %resolution, i32 %numIteration, i32* %counter_V_data, i1* %counter_V_last_V) {
+define void @counter_stream_unusual_s2mm_hls(i32 %resolution, i32 %numIteration, i32 %delay, i32* %counter_V_data, i1* %counter_V_last_V) {
   call void (...)* @_ssdm_op_SpecBitsMap(i32 %resolution), !map !7
   call void (...)* @_ssdm_op_SpecBitsMap(i32 %numIteration), !map !13
-  call void (...)* @_ssdm_op_SpecBitsMap(i32* %counter_V_data), !map !17
-  call void (...)* @_ssdm_op_SpecBitsMap(i1* %counter_V_last_V), !map !21
+  call void (...)* @_ssdm_op_SpecBitsMap(i32 %delay), !map !17
+  call void (...)* @_ssdm_op_SpecBitsMap(i32* %counter_V_data), !map !21
+  call void (...)* @_ssdm_op_SpecBitsMap(i1* %counter_V_last_V), !map !25
   call void (...)* @_ssdm_op_SpecTopModule([32 x i8]* @counter_stream_unusual_s2mm_hl) nounwind
+  %delay_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %delay)
   %numIteration_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %numIteration)
   %resolution_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %resolution)
   %acc = alloca i32, align 4
@@ -26,56 +29,42 @@ define void @counter_stream_unusual_s2mm_hls(i32 %resolution, i32 %numIteration,
   call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [11 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
   call void (...)* @_ssdm_op_SpecInterface(i32 %numIteration, [10 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [11 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
   call void (...)* @_ssdm_op_SpecInterface(i32 %resolution, [10 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [11 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+  call void (...)* @_ssdm_op_SpecInterface(i32 %delay, [10 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [11 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
   br label %1
 
-; <label>:1                                       ; preds = %2, %0
-  %i = phi i31 [ 0, %0 ], [ %i_1, %2 ]
-  %tmp_data = phi i32 [ 0, %0 ], [ %next_mul, %2 ]
-  %i_cast = zext i31 %i to i32
-  %tmp = icmp slt i32 %i_cast, %numIteration_read
-  %i_1 = add i31 %i, 1
-  br i1 %tmp, label %2, label %3
+; <label>:1                                       ; preds = %5, %0
+  %i = phi i32 [ 1, %0 ], [ %i_1, %5 ]
+  %tmp = icmp sgt i32 %i, %numIteration_read
+  br i1 %tmp, label %6, label %2
 
 ; <label>:2                                       ; preds = %1
   call void (...)* @_ssdm_op_SpecLoopName([5 x i8]* @p_str4) nounwind
   %tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([5 x i8]* @p_str4)
-  call void (...)* @_ssdm_op_SpecPipeline(i32 10, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
-  %next_mul = add i32 %tmp_data, %resolution_read
-  %tmp_last_V = icmp eq i32 %i_cast, %numIteration_read
+  %tmp_data = mul nsw i32 %i, %resolution_read
+  %tmp_last_V = icmp eq i32 %i, %numIteration_read
   call void @_ssdm_op_Write.axis.volatile.i32P.i1P(i32* %counter_V_data, i1* %counter_V_last_V, i32 %tmp_data, i1 %tmp_last_V)
+  br label %3
+
+; <label>:3                                       ; preds = %4, %2
+  %j = phi i31 [ 0, %2 ], [ %j_1, %4 ]
+  %j_cast = zext i31 %j to i32
+  %tmp_4 = icmp slt i32 %j_cast, %delay_read
+  %j_1 = add i31 %j, 1
+  br i1 %tmp_4, label %4, label %5
+
+; <label>:4                                       ; preds = %3
+  call void (...)* @_ssdm_op_SpecLoopName([11 x i8]* @p_str5) nounwind
   %acc_load = load volatile i32* %acc, align 4
-  store volatile i32 %acc_load, i32* %acc, align 4
-  %acc_load_1 = load volatile i32* %acc, align 4
-  %acc_1_1 = add nsw i32 %acc_load_1, 1
-  store volatile i32 %acc_1_1, i32* %acc, align 4
-  %acc_load_2 = load volatile i32* %acc, align 4
-  %acc_1_2 = add nsw i32 %acc_load_2, 2
-  store volatile i32 %acc_1_2, i32* %acc, align 4
-  %acc_load_3 = load volatile i32* %acc, align 4
-  %acc_1_3 = add nsw i32 %acc_load_3, 3
-  store volatile i32 %acc_1_3, i32* %acc, align 4
-  %acc_load_4 = load volatile i32* %acc, align 4
-  %acc_1_4 = add nsw i32 %acc_load_4, 4
-  store volatile i32 %acc_1_4, i32* %acc, align 4
-  %acc_load_5 = load volatile i32* %acc, align 4
-  %acc_1_5 = add nsw i32 %acc_load_5, 5
-  store volatile i32 %acc_1_5, i32* %acc, align 4
-  %acc_load_6 = load volatile i32* %acc, align 4
-  %acc_1_6 = add nsw i32 %acc_load_6, 6
-  store volatile i32 %acc_1_6, i32* %acc, align 4
-  %acc_load_7 = load volatile i32* %acc, align 4
-  %acc_1_7 = add nsw i32 %acc_load_7, 7
-  store volatile i32 %acc_1_7, i32* %acc, align 4
-  %acc_load_8 = load volatile i32* %acc, align 4
-  %acc_1_8 = add nsw i32 %acc_load_8, 8
-  store volatile i32 %acc_1_8, i32* %acc, align 4
-  %acc_load_9 = load volatile i32* %acc, align 4
-  %acc_1_9 = add nsw i32 %acc_load_9, 9
-  store volatile i32 %acc_1_9, i32* %acc, align 4
+  %acc_1 = add nsw i32 %acc_load, %j_cast
+  store volatile i32 %acc_1, i32* %acc, align 4
+  br label %3
+
+; <label>:5                                       ; preds = %3
   %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([5 x i8]* @p_str4, i32 %tmp_3)
+  %i_1 = add nsw i32 %i, 1
   br label %1
 
-; <label>:3                                       ; preds = %1
+; <label>:6                                       ; preds = %1
   ret void
 }
 
@@ -99,11 +88,6 @@ entry:
 define weak i32 @_ssdm_op_SpecRegionBegin(...) {
 entry:
   ret i32 0
-}
-
-define weak void @_ssdm_op_SpecPipeline(...) nounwind {
-entry:
-  ret void
 }
 
 define weak void @_ssdm_op_SpecLoopName(...) nounwind {
@@ -159,8 +143,12 @@ declare void @_GLOBAL__I_a() nounwind section ".text.startup"
 !17 = metadata !{metadata !18}
 !18 = metadata !{i32 0, i32 31, metadata !19}
 !19 = metadata !{metadata !20}
-!20 = metadata !{metadata !"counter.V.data", metadata !5, metadata !"int", i32 0, i32 31}
+!20 = metadata !{metadata !"delay", metadata !11, metadata !"int", i32 0, i32 31}
 !21 = metadata !{metadata !22}
-!22 = metadata !{i32 0, i32 0, metadata !23}
+!22 = metadata !{i32 0, i32 31, metadata !23}
 !23 = metadata !{metadata !24}
-!24 = metadata !{metadata !"counter.V.last.V", metadata !5, metadata !"uint1", i32 0, i32 0}
+!24 = metadata !{metadata !"counter.V.data", metadata !5, metadata !"int", i32 0, i32 31}
+!25 = metadata !{metadata !26}
+!26 = metadata !{i32 0, i32 0, metadata !27}
+!27 = metadata !{metadata !28}
+!28 = metadata !{metadata !"counter.V.last.V", metadata !5, metadata !"uint1", i32 0, i32 0}

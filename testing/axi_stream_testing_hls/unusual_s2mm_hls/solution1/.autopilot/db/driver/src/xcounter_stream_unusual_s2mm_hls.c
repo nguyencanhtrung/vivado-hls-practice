@@ -110,6 +110,23 @@ u32 XCounter_stream_unusual_s2mm_hls_Get_numIteration(XCounter_stream_unusual_s2
     return Data;
 }
 
+void XCounter_stream_unusual_s2mm_hls_Set_delay(XCounter_stream_unusual_s2mm_hls *InstancePtr, u32 Data) {
+    Xil_AssertVoid(InstancePtr != NULL);
+    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    XCounter_stream_unusual_s2mm_hls_WriteReg(InstancePtr->Cpucontrol_BaseAddress, XCOUNTER_STREAM_UNUSUAL_S2MM_HLS_CPUCONTROL_ADDR_DELAY_DATA, Data);
+}
+
+u32 XCounter_stream_unusual_s2mm_hls_Get_delay(XCounter_stream_unusual_s2mm_hls *InstancePtr) {
+    u32 Data;
+
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    Data = XCounter_stream_unusual_s2mm_hls_ReadReg(InstancePtr->Cpucontrol_BaseAddress, XCOUNTER_STREAM_UNUSUAL_S2MM_HLS_CPUCONTROL_ADDR_DELAY_DATA);
+    return Data;
+}
+
 void XCounter_stream_unusual_s2mm_hls_InterruptGlobalEnable(XCounter_stream_unusual_s2mm_hls *InstancePtr) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);

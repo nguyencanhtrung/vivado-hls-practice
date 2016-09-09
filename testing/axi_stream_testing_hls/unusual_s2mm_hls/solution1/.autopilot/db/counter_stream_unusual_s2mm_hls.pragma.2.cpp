@@ -38514,6 +38514,7 @@ typedef struct {
 void counter_stream_unusual_s2mm_hls(
  const int resolution, //input
  const int numIteration, //input
+ const int delay, //input
 
  hls::stream<axis_t> &counter //output - volatile to ignore optimization LOOP
 );
@@ -38522,28 +38523,29 @@ void counter_stream_unusual_s2mm_hls(
 void counter_stream_unusual_s2mm_hls(
  const int resolution, //input
  const int numIteration, //input
+ const int delay, //input
 
  hls::stream<axis_t> &counter //output - volatile to ignore optimization LOOP
 )
 {
+
 _ssdm_op_SpecInterface(&counter, "axis", 0, 0, 0, 0, "", "", "", "");
 
 _ssdm_op_SpecInterface(0, "s_axilite", 0, 0, 0, 0, "cpuControl", "", "", "");
 _ssdm_op_SpecInterface(numIteration, "s_axilite", 0, 0, 0, 0, "cpuControl", "", "", "");
 _ssdm_op_SpecInterface(resolution, "s_axilite", 0, 0, 0, 0, "cpuControl", "", "", "");
+_ssdm_op_SpecInterface(delay, "s_axilite", 0, 0, 0, 0, "cpuControl", "", "", "");
 
 
 
- LOOP:for(int i = 0; i < numIteration; i++ ){
-_ssdm_op_SpecPipeline(10, 1, 1, 0, "");
- axis_t temp;
+ LOOP:for(int i = 1; i <= numIteration; i++ ){
+  axis_t temp;
   temp.data = (i * resolution);
   temp.last = (i == numIteration) ? 1 : 0;
   counter << temp;
   volatile int acc;
-  DELAY_LOOP: for(int j = 0; j < 10; j++){
-_ssdm_op_SpecPipeline(1, 1, 1, 0, "");
- acc += j;
+  DELAY_LOOP: for(int j = 0; j < delay; j++){
+   acc += j;
   }
  }
 }

@@ -1,7 +1,7 @@
 --Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
---Date        : Fri Sep  9 02:57:20 2016
+--Date        : Fri Sep  9 14:54:55 2016
 --Host        : finance.eit.uni-kl.de running 64-bit Scientific Linux release 6.7 (Carbon)
 --Command     : generate_target unusual_s2mm_sys.bd
 --Design      : unusual_s2mm_sys

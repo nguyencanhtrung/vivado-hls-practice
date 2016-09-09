@@ -11,7 +11,7 @@ use IEEE.NUMERIC_STD.all;
 
 entity counter_stream_unusual_s2mm_hls_cpuControl_s_axi is
 generic (
-    C_S_AXI_ADDR_WIDTH    : INTEGER := 5;
+    C_S_AXI_ADDR_WIDTH    : INTEGER := 6;
     C_S_AXI_DATA_WIDTH    : INTEGER := 32);
 port (
     -- axi4 lite slave signals
@@ -42,7 +42,8 @@ port (
     ap_ready              :in   STD_LOGIC;
     ap_idle               :in   STD_LOGIC;
     resolution            :out  STD_LOGIC_VECTOR(31 downto 0);
-    numIteration          :out  STD_LOGIC_VECTOR(31 downto 0)
+    numIteration          :out  STD_LOGIC_VECTOR(31 downto 0);
+    delay                 :out  STD_LOGIC_VECTOR(31 downto 0)
 );
 end entity counter_stream_unusual_s2mm_hls_cpuControl_s_axi;
 
@@ -71,6 +72,9 @@ end entity counter_stream_unusual_s2mm_hls_cpuControl_s_axi;
 -- 0x18 : Data signal of numIteration
 --        bit 31~0 - numIteration[31:0] (Read/Write)
 -- 0x1c : reserved
+-- 0x20 : Data signal of delay
+--        bit 31~0 - delay[31:0] (Read/Write)
+-- 0x24 : reserved
 -- (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 architecture behave of counter_stream_unusual_s2mm_hls_cpuControl_s_axi is
@@ -84,7 +88,9 @@ architecture behave of counter_stream_unusual_s2mm_hls_cpuControl_s_axi is
     constant ADDR_RESOLUTION_CTRL     : INTEGER := 16#14#;
     constant ADDR_NUMITERATION_DATA_0 : INTEGER := 16#18#;
     constant ADDR_NUMITERATION_CTRL   : INTEGER := 16#1c#;
-    constant ADDR_BITS         : INTEGER := 5;
+    constant ADDR_DELAY_DATA_0        : INTEGER := 16#20#;
+    constant ADDR_DELAY_CTRL          : INTEGER := 16#24#;
+    constant ADDR_BITS         : INTEGER := 6;
 
     signal waddr               : UNSIGNED(ADDR_BITS-1 downto 0);
     signal wmask               : UNSIGNED(31 downto 0);
@@ -108,6 +114,7 @@ architecture behave of counter_stream_unusual_s2mm_hls_cpuControl_s_axi is
     signal int_isr             : UNSIGNED(1 downto 0);
     signal int_resolution      : UNSIGNED(31 downto 0);
     signal int_numIteration    : UNSIGNED(31 downto 0);
+    signal int_delay           : UNSIGNED(31 downto 0);
 
 
 begin
@@ -230,6 +237,8 @@ begin
                     rdata_data <= RESIZE(int_resolution(31 downto 0), 32);
                 when ADDR_NUMITERATION_DATA_0 =>
                     rdata_data <= RESIZE(int_numIteration(31 downto 0), 32);
+                when ADDR_DELAY_DATA_0 =>
+                    rdata_data <= RESIZE(int_delay(31 downto 0), 32);
                 when others =>
                     rdata_data <= (others => '0');
                 end case;
@@ -244,6 +253,7 @@ begin
     int_ap_ready         <= ap_ready;
     resolution           <= STD_LOGIC_VECTOR(int_resolution);
     numIteration         <= STD_LOGIC_VECTOR(int_numIteration);
+    delay                <= STD_LOGIC_VECTOR(int_delay);
 
     process (ACLK)
     begin
@@ -361,6 +371,17 @@ begin
             if (ACLK_EN = '1') then
                 if (w_hs = '1' and waddr = ADDR_NUMITERATION_DATA_0) then
                     int_numIteration(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_numIteration(31 downto 0));
+                end if;
+            end if;
+        end if;
+    end process;
+
+    process (ACLK)
+    begin
+        if (ACLK'event and ACLK = '1') then
+            if (ACLK_EN = '1') then
+                if (w_hs = '1' and waddr = ADDR_DELAY_DATA_0) then
+                    int_delay(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_delay(31 downto 0));
                 end if;
             end if;
         end if;

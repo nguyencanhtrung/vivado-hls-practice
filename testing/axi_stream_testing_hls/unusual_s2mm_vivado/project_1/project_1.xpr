@@ -35,21 +35,21 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="unusual_s2mm_sys.bd" FileRelPathName="hw_handoff/unusual_s2mm_sys.hwh"/>
+        <CompFileExtendedInfo CompFileName="unusual_s2mm_sys.bd" FileRelPathName="hw_handoff/unusual_s2mm_sys_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="unusual_s2mm_sys.bd" FileRelPathName="hdl/unusual_s2mm_sys.hwdef"/>
         <CompFileExtendedInfo CompFileName="unusual_s2mm_sys.bd" FileRelPathName="ip/unusual_s2mm_sys_axi_dma_0_0/unusual_s2mm_sys_axi_dma_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="unusual_s2mm_sys.bd" FileRelPathName="ip/unusual_s2mm_sys_xbar_0/unusual_s2mm_sys_xbar_0.xci"/>
-        <CompFileExtendedInfo CompFileName="unusual_s2mm_sys.bd" FileRelPathName="hw_handoff/unusual_s2mm_sys_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="unusual_s2mm_sys.bd" FileRelPathName="ip/unusual_s2mm_sys_processing_system7_0_0/unusual_s2mm_sys_processing_system7_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="unusual_s2mm_sys.bd" FileRelPathName="ip/unusual_s2mm_sys_auto_pc_0/unusual_s2mm_sys_auto_pc_0.xci"/>
         <CompFileExtendedInfo CompFileName="unusual_s2mm_sys.bd" FileRelPathName="ip/unusual_s2mm_sys_auto_pc_1/unusual_s2mm_sys_auto_pc_1.xci"/>
+        <CompFileExtendedInfo CompFileName="unusual_s2mm_sys.bd" FileRelPathName="ip/unusual_s2mm_sys_processing_system7_0_0/unusual_s2mm_sys_processing_system7_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="unusual_s2mm_sys.bd" FileRelPathName="ip/unusual_s2mm_sys_counter_stream_unusual_s2mm_hls_0_0/unusual_s2mm_sys_counter_stream_unusual_s2mm_hls_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="unusual_s2mm_sys.bd" FileRelPathName="ip/unusual_s2mm_sys_axi_mem_intercon_0/unusual_s2mm_sys_axi_mem_intercon_0.xci"/>
-        <CompFileExtendedInfo CompFileName="unusual_s2mm_sys.bd" FileRelPathName="hdl/unusual_s2mm_sys.hwdef"/>
+        <CompFileExtendedInfo CompFileName="unusual_s2mm_sys.bd" FileRelPathName="ip/unusual_s2mm_sys_auto_us_0/unusual_s2mm_sys_auto_us_0.xci"/>
         <CompFileExtendedInfo CompFileName="unusual_s2mm_sys.bd" FileRelPathName="ip/unusual_s2mm_sys_processing_system7_0_axi_periph_0/unusual_s2mm_sys_processing_system7_0_axi_periph_0.xci"/>
+        <CompFileExtendedInfo CompFileName="unusual_s2mm_sys.bd" FileRelPathName="ip/unusual_s2mm_sys_rst_processing_system7_0_100M_0/unusual_s2mm_sys_rst_processing_system7_0_100M_0.xci"/>
+        <CompFileExtendedInfo CompFileName="unusual_s2mm_sys.bd" FileRelPathName="hw_handoff/unusual_s2mm_sys.hwh"/>
         <CompFileExtendedInfo CompFileName="unusual_s2mm_sys.bd" FileRelPathName="hdl/unusual_s2mm_sys.vhd"/>
         <CompFileExtendedInfo CompFileName="unusual_s2mm_sys.bd" FileRelPathName="unusual_s2mm_sys_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="unusual_s2mm_sys.bd" FileRelPathName="ip/unusual_s2mm_sys_rst_processing_system7_0_100M_0/unusual_s2mm_sys_rst_processing_system7_0_100M_0.xci"/>
-        <CompFileExtendedInfo CompFileName="unusual_s2mm_sys.bd" FileRelPathName="ip/unusual_s2mm_sys_auto_pc_0/unusual_s2mm_sys_auto_pc_0.xci"/>
-        <CompFileExtendedInfo CompFileName="unusual_s2mm_sys.bd" FileRelPathName="ip/unusual_s2mm_sys_auto_us_0/unusual_s2mm_sys_auto_us_0.xci"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/unusual_s2mm_sys/hdl/unusual_s2mm_sys_wrapper.vhd">
         <FileInfo>
@@ -57,6 +57,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/bd/unusual_s2mm_sys/ip/unusual_s2mm_sys_counter_stream_unusual_s2mm_hls_0_0/unusual_s2mm_sys_counter_stream_unusual_s2mm_hls_0_0.upgrade_log"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="unusual_s2mm_sys_wrapper"/>
