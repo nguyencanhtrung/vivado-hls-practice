@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
+# 
+# Start of session at: Fri Sep  9 14:10:24 2016
+# Process ID: 25038
+# Current directory: /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.sdk/webtalk/webtalk.log
+# Journal file: /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
