@@ -1,0 +1,350 @@
+13:42:14 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+13:42:16 INFO  : XSDB server has started successfully.
+13:42:54 INFO  : Project 'testing_stream_have_last_signal_system_wrapper_hw_platform_0' created. You can now create BSPs and application projects targeting this hardware platform.
+14:00:17 INFO  : System reset is completed.
+14:00:21 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+14:00:23 INFO  : ps7_init is completed.
+14:00:23 INFO  : ps7_post_config is completed.
+14:00:58 INFO  : System reset is completed.
+14:01:02 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+14:01:04 INFO  : ps7_init is completed.
+14:01:04 INFO  : ps7_post_config is completed.
+14:01:31 INFO  : System reset is completed.
+14:01:35 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+14:01:36 INFO  : ps7_init is completed.
+14:01:36 INFO  : ps7_post_config is completed.
+14:03:25 INFO  : System reset is completed.
+14:03:29 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+14:03:30 INFO  : ps7_init is completed.
+14:03:30 INFO  : ps7_post_config is completed.
+14:05:39 INFO  : System reset is completed.
+14:05:43 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+14:05:44 INFO  : ps7_init is completed.
+14:05:44 INFO  : ps7_post_config is completed.
+14:15:26 INFO  : System reset is completed.
+14:15:29 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+14:15:31 INFO  : ps7_init is completed.
+14:15:31 INFO  : ps7_post_config is completed.
+14:25:40 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: 
+    Unknown Error Occured
+    Cable is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:436)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+14:25:48 INFO  : System reset is completed.
+14:25:52 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+14:25:54 INFO  : ps7_init is completed.
+14:25:54 INFO  : ps7_post_config is completed.
+14:27:30 INFO  : System reset is completed.
+14:27:34 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+14:27:35 INFO  : ps7_init is completed.
+14:27:35 INFO  : ps7_post_config is completed.
+14:30:54 INFO  : System reset is completed.
+14:30:57 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+14:30:59 INFO  : ps7_init is completed.
+14:30:59 INFO  : ps7_post_config is completed.
+14:31:24 INFO  : System reset is completed.
+14:31:31 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+14:31:32 INFO  : ps7_init is completed.
+14:31:32 INFO  : ps7_post_config is completed.
+14:42:44 INFO  : System reset is completed.
+14:42:49 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+14:42:51 INFO  : ps7_init is completed.
+14:42:51 INFO  : ps7_post_config is completed.
+14:43:46 INFO  : System reset is completed.
+14:43:51 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+14:43:53 INFO  : ps7_init is completed.
+14:43:53 INFO  : ps7_post_config is completed.
+14:44:39 INFO  : System reset is completed.
+14:44:45 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+14:44:47 INFO  : ps7_init is completed.
+14:44:47 INFO  : ps7_post_config is completed.
+14:48:30 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: 
+    Unknown Error Occured
+    Cable is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:436)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+14:51:54 INFO  : System reset is completed.
+14:52:00 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+14:52:01 INFO  : ps7_init is completed.
+14:52:01 INFO  : ps7_post_config is completed.
+15:29:33 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: 
+    Unknown Error Occured
+    Cable is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:436)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+15:29:45 INFO  : System reset is completed.
+15:29:50 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+15:29:52 INFO  : ps7_init is completed.
+15:29:52 INFO  : ps7_post_config is completed.
+15:31:58 INFO  : System reset is completed.
+15:32:04 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+15:32:06 INFO  : ps7_init is completed.
+15:32:06 INFO  : ps7_post_config is completed.
+15:32:30 INFO  : System reset is completed.
+15:32:36 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+15:32:37 INFO  : ps7_init is completed.
+15:32:37 INFO  : ps7_post_config is completed.
+15:32:58 INFO  : System reset is completed.
+15:33:04 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+15:33:05 INFO  : ps7_init is completed.
+15:33:05 INFO  : ps7_post_config is completed.
+15:34:46 INFO  : System reset is completed.
+15:34:52 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+15:34:53 INFO  : ps7_init is completed.
+15:34:53 INFO  : ps7_post_config is completed.
+15:37:29 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:37:32 INFO  : System reset is completed.
+15:37:37 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+15:37:38 INFO  : ps7_init is completed.
+15:37:38 INFO  : ps7_post_config is completed.
+15:39:37 INFO  : System reset is completed.
+15:39:43 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+15:39:45 INFO  : ps7_init is completed.
+15:39:45 INFO  : ps7_post_config is completed.
+17:04:30 INFO  : System reset is completed.
+17:04:35 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+17:04:37 INFO  : ps7_init is completed.
+17:04:37 INFO  : ps7_post_config is completed.
+17:32:41 INFO  : System reset is completed.
+17:32:46 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+17:32:48 INFO  : ps7_init is completed.
+17:32:48 INFO  : ps7_post_config is completed.
+17:35:19 INFO  : System reset is completed.
+17:35:24 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+17:35:25 INFO  : ps7_init is completed.
+17:35:25 INFO  : ps7_post_config is completed.
+17:36:12 INFO  : System reset is completed.
+17:36:17 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+17:36:18 INFO  : ps7_init is completed.
+17:36:18 INFO  : ps7_post_config is completed.
+17:38:25 INFO  : System reset is completed.
+17:38:31 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+17:38:32 INFO  : ps7_init is completed.
+17:38:32 INFO  : ps7_post_config is completed.
+17:39:32 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:39:35 INFO  : System reset is completed.
+17:39:41 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+17:39:42 INFO  : ps7_init is completed.
+17:39:42 INFO  : ps7_post_config is completed.
+17:40:05 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:40:11 INFO  : System reset is completed.
+17:40:17 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+17:40:18 INFO  : ps7_init is completed.
+17:40:18 INFO  : ps7_post_config is completed.
+17:40:55 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:41:00 INFO  : System reset is completed.
+17:41:06 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+17:41:07 INFO  : ps7_init is completed.
+17:41:08 INFO  : ps7_post_config is completed.
+17:41:30 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:41:34 INFO  : System reset is completed.
+17:41:39 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+17:41:40 INFO  : ps7_init is completed.
+17:41:40 INFO  : ps7_post_config is completed.
+17:42:33 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:42:35 INFO  : System reset is completed.
+17:42:41 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+17:42:43 INFO  : ps7_init is completed.
+17:42:43 INFO  : ps7_post_config is completed.
+17:43:23 INFO  : System reset is completed.
+17:43:28 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+17:43:30 INFO  : ps7_init is completed.
+17:43:30 INFO  : ps7_post_config is completed.
+17:44:37 INFO  : System reset is completed.
+17:44:44 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+17:44:45 INFO  : ps7_init is completed.
+17:44:45 INFO  : ps7_post_config is completed.
+17:45:11 INFO  : System reset is completed.
+17:45:16 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+17:45:17 INFO  : ps7_init is completed.
+17:45:18 INFO  : ps7_post_config is completed.
+17:45:40 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:45:42 INFO  : System reset is completed.
+17:45:48 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+17:45:49 INFO  : ps7_init is completed.
+17:45:49 INFO  : ps7_post_config is completed.
+17:46:49 INFO  : System reset is completed.
+17:46:55 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+17:46:57 INFO  : ps7_init is completed.
+17:46:57 INFO  : ps7_post_config is completed.
+17:47:28 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:47:32 INFO  : System reset is completed.
+17:47:37 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+17:47:38 INFO  : ps7_init is completed.
+17:47:38 INFO  : ps7_post_config is completed.
+17:49:11 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:49:15 INFO  : System reset is completed.
+17:49:21 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+17:49:22 INFO  : ps7_init is completed.
+17:49:22 INFO  : ps7_post_config is completed.
+17:49:44 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:49:46 INFO  : System reset is completed.
+17:49:52 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+17:49:53 INFO  : ps7_init is completed.
+17:49:53 INFO  : ps7_post_config is completed.
+17:50:25 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:50:28 INFO  : System reset is completed.
+17:50:33 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+17:50:34 INFO  : ps7_init is completed.
+17:50:34 INFO  : ps7_post_config is completed.
+17:52:31 INFO  : System reset is completed.
+17:52:37 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+17:52:38 INFO  : ps7_init is completed.
+17:52:38 INFO  : ps7_post_config is completed.
+17:53:36 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:53:40 INFO  : System reset is completed.
+17:53:46 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+17:53:47 INFO  : ps7_init is completed.
+17:53:47 INFO  : ps7_post_config is completed.
+17:55:35 INFO  : System reset is completed.
+17:55:40 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+17:55:42 INFO  : ps7_init is completed.
+17:55:42 INFO  : ps7_post_config is completed.
+17:56:59 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:57:03 INFO  : System reset is completed.
+17:57:09 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+17:57:10 INFO  : ps7_init is completed.
+17:57:10 INFO  : ps7_post_config is completed.
+17:58:35 INFO  : System reset is completed.
+17:58:40 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+17:58:41 INFO  : ps7_init is completed.
+17:58:42 INFO  : ps7_post_config is completed.
+17:58:55 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:58:58 INFO  : System reset is completed.
+17:59:04 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+17:59:05 INFO  : ps7_init is completed.
+17:59:05 INFO  : ps7_post_config is completed.
+17:59:31 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: 
+    Unknown Error Occured
+    Cable is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:436)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+17:59:41 INFO  : System reset is completed.
+17:59:47 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+17:59:48 INFO  : ps7_init is completed.
+17:59:48 INFO  : ps7_post_config is completed.
+18:00:10 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:00:12 INFO  : System reset is completed.
+18:00:18 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+18:00:19 INFO  : ps7_init is completed.
+18:00:20 INFO  : ps7_post_config is completed.
+18:05:08 INFO  : System reset is completed.
+18:05:13 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+18:05:15 INFO  : ps7_init is completed.
+18:05:15 INFO  : ps7_post_config is completed.
+18:13:13 INFO  : System reset is completed.
+18:13:19 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+18:13:20 INFO  : ps7_init is completed.
+18:13:20 INFO  : ps7_post_config is completed.
+18:14:06 INFO  : System reset is completed.
+18:14:12 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+18:14:13 INFO  : ps7_init is completed.
+18:14:13 INFO  : ps7_post_config is completed.
+18:14:38 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:14:41 INFO  : System reset is completed.
+18:14:46 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+18:14:48 INFO  : ps7_init is completed.
+18:14:48 INFO  : ps7_post_config is completed.
+18:15:23 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:15:25 INFO  : System reset is completed.
+18:15:30 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+18:15:31 INFO  : ps7_init is completed.
+18:15:32 INFO  : ps7_post_config is completed.
+18:15:56 INFO  : System reset is completed.
+18:16:02 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+18:16:03 INFO  : ps7_init is completed.
+18:16:03 INFO  : ps7_post_config is completed.
+18:16:25 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:16:28 INFO  : System reset is completed.
+18:16:33 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+18:16:34 INFO  : ps7_init is completed.
+18:16:34 INFO  : ps7_post_config is completed.
+18:16:58 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:17:02 INFO  : System reset is completed.
+18:17:07 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+18:17:08 INFO  : ps7_init is completed.
+18:17:08 INFO  : ps7_post_config is completed.
+18:17:47 INFO  : System reset is completed.
+18:17:54 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+18:17:55 INFO  : ps7_init is completed.
+18:17:55 INFO  : ps7_post_config is completed.
+18:18:17 INFO  : System reset is completed.
+18:18:23 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+18:18:24 INFO  : ps7_init is completed.
+18:18:24 INFO  : ps7_post_config is completed.
+18:19:31 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:19:34 INFO  : System reset is completed.
+18:19:39 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+18:19:41 INFO  : ps7_init is completed.
+18:19:41 INFO  : ps7_post_config is completed.
+18:21:21 INFO  : System reset is completed.
+18:21:27 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+18:21:29 INFO  : ps7_init is completed.
+18:21:29 INFO  : ps7_post_config is completed.
+18:21:59 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:22:01 INFO  : System reset is completed.
+18:22:07 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+18:22:08 INFO  : ps7_init is completed.
+18:22:08 INFO  : ps7_post_config is completed.
+18:24:18 INFO  : System reset is completed.
+18:24:23 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+18:24:24 INFO  : ps7_init is completed.
+18:24:24 INFO  : ps7_post_config is completed.
+18:25:17 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:25:19 INFO  : System reset is completed.
+18:25:24 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+18:25:25 INFO  : ps7_init is completed.
+18:25:26 INFO  : ps7_post_config is completed.
+18:26:17 INFO  : System reset is completed.
+18:26:23 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+18:26:24 INFO  : ps7_init is completed.
+18:26:24 INFO  : ps7_post_config is completed.
+18:27:18 INFO  : System reset is completed.
+18:27:23 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+18:27:25 INFO  : ps7_init is completed.
+18:27:25 INFO  : ps7_post_config is completed.
+18:29:02 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:29:05 INFO  : System reset is completed.
+18:29:11 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
+18:29:12 INFO  : ps7_init is completed.
+18:29:12 INFO  : ps7_post_config is completed.
