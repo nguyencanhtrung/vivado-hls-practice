@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Move 1 resources to &apos;src&apos;" description="Move 1 resources to &apos;src&apos;" destination="src" element1="/testing_stream_have_last_signal_system_wrapper_hw_platform_0/drivers/counter_stream_have_last_hls_v1_0/src/xcounter_stream_have_last_hls_hw.h" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1472436092651" updateReferences="true"/>
-</session>
