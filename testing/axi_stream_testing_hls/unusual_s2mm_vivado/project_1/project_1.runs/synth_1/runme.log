@@ -20,7 +20,7 @@ INFO: [Common 17-1223] The version limit for your license is '2016.06' and will 
 WARNING: [Synth 8-992] S_AXI_GP0_ACLK_temp is already implicitly declared earlier [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/sources_1/bd/unusual_s2mm_sys/ip/unusual_s2mm_sys_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2701]
 WARNING: [Synth 8-992] S_AXI_GP1_ACLK_temp is already implicitly declared earlier [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/sources_1/bd/unusual_s2mm_sys/ip/unusual_s2mm_sys_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:2702]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1228.141 ; gain = 272.219 ; free physical = 8592 ; free virtual = 29303
+Starting RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1228.137 ; gain = 272.219 ; free physical = 8251 ; free virtual = 29006
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'unusual_s2mm_sys_wrapper' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/sources_1/bd/unusual_s2mm_sys/hdl/unusual_s2mm_sys_wrapper.vhd:40]
 INFO: [Synth 8-3491] module 'unusual_s2mm_sys' declared at '/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/sources_1/bd/unusual_s2mm_sys/hdl/unusual_s2mm_sys.vhd:1556' bound to instance 'unusual_s2mm_sys_i' of component 'unusual_s2mm_sys' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/sources_1/bd/unusual_s2mm_sys/hdl/unusual_s2mm_sys_wrapper.vhd:67]
@@ -5372,7 +5372,7 @@ INFO: [Synth 8-256] done synthesizing module 'unusual_s2mm_sys_rst_processing_sy
 INFO: [Synth 8-256] done synthesizing module 'unusual_s2mm_sys' (131#1) [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/sources_1/bd/unusual_s2mm_sys/hdl/unusual_s2mm_sys.vhd:1586]
 INFO: [Synth 8-256] done synthesizing module 'unusual_s2mm_sys_wrapper' (132#1) [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/sources_1/bd/unusual_s2mm_sys/hdl/unusual_s2mm_sys_wrapper.vhd:40]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:05:09 ; elapsed = 00:05:13 . Memory (MB): peak = 1450.465 ; gain = 494.543 ; free physical = 8358 ; free virtual = 29073
+Finished RTL Elaboration : Time (s): cpu = 00:05:12 ; elapsed = 00:05:14 . Memory (MB): peak = 1450.461 ; gain = 494.543 ; free physical = 8003 ; free virtual = 28761
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -5466,7 +5466,7 @@ INFO: [Synth 8-3295] tying undriven pin \INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_D
 INFO: [Synth 8-3295] tying undriven pin \INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_DMA_MNGR :s2mm_desc_info_in[0] to constant 0 [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/sources_1/bd/unusual_s2mm_sys/ipshared/xilinx.com/axi_dma_v7_1/hdl/src/vhdl/axi_dma.vhd:1745]
 INFO: [Synth 8-3295] tying undriven pin \INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_DMA_MNGR :m_axis_ftch2_desc_available to constant 0 [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/sources_1/bd/unusual_s2mm_sys/ipshared/xilinx.com/axi_dma_v7_1/hdl/src/vhdl/axi_dma.vhd:1745]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:05:10 ; elapsed = 00:05:14 . Memory (MB): peak = 1450.465 ; gain = 494.543 ; free physical = 8358 ; free virtual = 29073
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:05:13 ; elapsed = 00:05:16 . Memory (MB): peak = 1450.461 ; gain = 494.543 ; free physical = 8003 ; free virtual = 28761
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -5485,6 +5485,109 @@ Parsing XDC File [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_h
 Finished Parsing XDC File [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/sources_1/bd/unusual_s2mm_sys/ip/unusual_s2mm_sys_rst_processing_system7_0_100M_0/unusual_s2mm_sys_rst_processing_system7_0_100M_0_board.xdc] for cell 'unusual_s2mm_sys_i/rst_processing_system7_0_100M'
 Parsing XDC File [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/sources_1/bd/unusual_s2mm_sys/ip/unusual_s2mm_sys_rst_processing_system7_0_100M_0/unusual_s2mm_sys_rst_processing_system7_0_100M_0.xdc] for cell 'unusual_s2mm_sys_i/rst_processing_system7_0_100M'
 Finished Parsing XDC File [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/sources_1/bd/unusual_s2mm_sys/ip/unusual_s2mm_sys_rst_processing_system7_0_100M_0/unusual_s2mm_sys_rst_processing_system7_0_100M_0.xdc] for cell 'unusual_s2mm_sys_i/rst_processing_system7_0_100M'
+Parsing XDC File [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc]
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[0]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[10]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[11]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[12]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[13]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[14]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[15]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[16]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[17]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[18]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[19]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[1]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[20]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[21]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[22]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[23]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[24]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[25]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[26]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[27]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[28]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[29]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[2]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[30]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[31]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[3]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[4]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[5]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[6]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[7]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[8]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TDATA[9]'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0_counter_TLAST'. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/unusual_s2mm_sys_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/unusual_s2mm_sys_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.runs/synth_1/dont_touch.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/unusual_s2mm_sys_wrapper_propImpl.xdc].
@@ -5500,25 +5603,27 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDR => FDRE: 24 instances
   SRL16 => SRL16E: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1614.637 ; gain = 0.000 ; free physical = 8239 ; free virtual = 28954
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1614.633 ; gain = 0.000 ; free physical = 7900 ; free virtual = 28659
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 16552 
+INFO: Helper process launched with PID 9538 
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:05:28 ; elapsed = 00:05:33 . Memory (MB): peak = 1614.641 ; gain = 658.719 ; free physical = 8235 ; free virtual = 28950
+Finished Constraint Validation : Time (s): cpu = 00:05:32 ; elapsed = 00:05:36 . Memory (MB): peak = 1614.637 ; gain = 658.719 ; free physical = 7897 ; free virtual = 28656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:05:28 ; elapsed = 00:05:33 . Memory (MB): peak = 1614.641 ; gain = 658.719 ; free physical = 8235 ; free virtual = 28950
+Finished Loading Part and Timing Information : Time (s): cpu = 00:05:32 ; elapsed = 00:05:36 . Memory (MB): peak = 1614.637 ; gain = 658.719 ; free physical = 7897 ; free virtual = 28656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for unusual_s2mm_sys_i/processing_system7_0/inst. (constraint file  /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.runs/synth_1/dont_touch.xdc, line 38).
-Applied set_property DONT_TOUCH = true for unusual_s2mm_sys_i/axi_dma_0/U0. (constraint file  /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.runs/synth_1/dont_touch.xdc, line 43).
-Applied set_property DONT_TOUCH = true for unusual_s2mm_sys_i/axi_mem_intercon/s00_couplers/auto_us/inst. (constraint file  /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.runs/synth_1/dont_touch.xdc, line 65).
+Applied set_property MARK_DEBUG = true for unusual_s2mm_sys_i/counter_TVALID. (constraint file  /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc, line 34).
+Applied set_property MARK_DEBUG = true for unusual_s2mm_sys_i/counter_TREADY. (constraint file  /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc, line 35).
+Applied set_property DONT_TOUCH = true for unusual_s2mm_sys_i/processing_system7_0/inst. (constraint file  /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.runs/synth_1/dont_touch.xdc, line 40).
+Applied set_property DONT_TOUCH = true for unusual_s2mm_sys_i/axi_dma_0/U0. (constraint file  /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.runs/synth_1/dont_touch.xdc, line 45).
+Applied set_property DONT_TOUCH = true for unusual_s2mm_sys_i/axi_mem_intercon/s00_couplers/auto_us/inst. (constraint file  /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.runs/synth_1/dont_touch.xdc, line 67).
 Applied set_property DONT_TOUCH = true for unusual_s2mm_sys_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for unusual_s2mm_sys_i/axi_dma_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for unusual_s2mm_sys_i/axi_mem_intercon. (constraint file  auto generated constraint, line ).
@@ -5531,7 +5636,7 @@ Applied set_property DONT_TOUCH = true for unusual_s2mm_sys_i/processing_system7
 Applied set_property DONT_TOUCH = true for unusual_s2mm_sys_i/processing_system7_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for unusual_s2mm_sys_i/rst_processing_system7_0_100M. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:05:29 ; elapsed = 00:05:33 . Memory (MB): peak = 1614.641 ; gain = 658.719 ; free physical = 8235 ; free virtual = 28950
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:05:33 ; elapsed = 00:05:36 . Memory (MB): peak = 1614.637 ; gain = 658.719 ; free physical = 7897 ; free virtual = 28656
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4471] merging register 'GEN_SYNC_WRITE.rst_wvalid_re_reg' into 'GEN_SYNC_WRITE.bvalid_i_reg' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/sources_1/bd/unusual_s2mm_sys/ipshared/xilinx.com/axi_dma_v7_1/hdl/src/vhdl/axi_dma_lite_if.vhd:271]
 INFO: [Synth 8-4471] merging register 'GEN_SYNC_READ.rst_rvalid_re_reg' into 'GEN_SYNC_READ.s_axi_lite_rvalid_i_reg' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/sources_1/bd/unusual_s2mm_sys/ipshared/xilinx.com/axi_dma_v7_1/hdl/src/vhdl/axi_dma_lite_if.vhd:1042]
@@ -5637,7 +5742,7 @@ INFO: [Synth 8-5544] ROM "p_0_in2" won't be mapped to Block RAM because address 
 INFO: [Synth 8-5544] ROM "p_0_in1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/sources_1/bd/unusual_s2mm_sys/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/sequence_psr.vhd:222]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:05:35 ; elapsed = 00:05:40 . Memory (MB): peak = 1614.641 ; gain = 658.719 ; free physical = 8232 ; free virtual = 28947
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:05:40 ; elapsed = 00:05:43 . Memory (MB): peak = 1614.637 ; gain = 658.719 ; free physical = 7897 ; free virtual = 28656
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -6675,7 +6780,7 @@ BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:05:36 ; elapsed = 00:05:40 . Memory (MB): peak = 1614.645 ; gain = 658.723 ; free physical = 8232 ; free virtual = 28947
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:05:40 ; elapsed = 00:05:44 . Memory (MB): peak = 1614.641 ; gain = 658.723 ; free physical = 7897 ; free virtual = 28656
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -6723,9 +6828,9 @@ INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/sources_1/bd/unusual_s2mm_sys/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:121]
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/sources_1/bd/unusual_s2mm_sys/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:121]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:05:38 ; elapsed = 00:05:43 . Memory (MB): peak = 1614.645 ; gain = 658.723 ; free physical = 8233 ; free virtual = 28949
+Finished Cross Boundary Optimization : Time (s): cpu = 00:05:43 ; elapsed = 00:05:46 . Memory (MB): peak = 1614.641 ; gain = 658.723 ; free physical = 7899 ; free virtual = 28658
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:05:38 ; elapsed = 00:05:43 . Memory (MB): peak = 1614.645 ; gain = 658.723 ; free physical = 8233 ; free virtual = 28949
+Finished Parallel Reinference  : Time (s): cpu = 00:05:43 ; elapsed = 00:05:46 . Memory (MB): peak = 1614.641 ; gain = 658.723 ; free physical = 7899 ; free virtual = 28658
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -6752,10 +6857,14 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0/\U0/counter_stream_unusual_s2mm_hls_cpuControl_s_axi_U/rstate_reg[1] ' (FDS) to 'unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0/\U0/counter_stream_unusual_s2mm_hls_cpuControl_s_axi_U/rstate_reg[0] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (unusual_s2mm_sys_i/counter_stream_unusual_s2mm_hls_0/\U0/counter_stream_unusual_s2mm_hls_cpuControl_s_axi_U/wstate_reg[2] )
+INFO: [Synth 8-3332] Sequential element (\U0/counter_stream_unusual_s2mm_hls_cpuControl_s_axi_U/wstate_reg[2] ) is unused and will be removed from module unusual_s2mm_sys_counter_stream_unusual_s2mm_hls_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/counter_stream_unusual_s2mm_hls_cpuControl_s_axi_U/rstate_reg[1] ) is unused and will be removed from module unusual_s2mm_sys_counter_stream_unusual_s2mm_hls_0_0.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:05:51 ; elapsed = 00:05:56 . Memory (MB): peak = 1614.645 ; gain = 658.723 ; free physical = 8220 ; free virtual = 28935
+Finished Area Optimization : Time (s): cpu = 00:05:57 ; elapsed = 00:06:00 . Memory (MB): peak = 1614.641 ; gain = 658.723 ; free physical = 7874 ; free virtual = 28634
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:05:51 ; elapsed = 00:05:56 . Memory (MB): peak = 1614.645 ; gain = 658.723 ; free physical = 8220 ; free virtual = 28935
+Finished Parallel Area Optimization  : Time (s): cpu = 00:05:57 ; elapsed = 00:06:00 . Memory (MB): peak = 1614.641 ; gain = 658.723 ; free physical = 7874 ; free virtual = 28634
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -6769,19 +6878,19 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:06:04 ; elapsed = 00:06:09 . Memory (MB): peak = 1745.637 ; gain = 789.715 ; free physical = 8084 ; free virtual = 28799
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:06:10 ; elapsed = 00:06:14 . Memory (MB): peak = 1745.633 ; gain = 789.715 ; free physical = 7732 ; free virtual = 28491
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:06:08 ; elapsed = 00:06:13 . Memory (MB): peak = 1803.285 ; gain = 847.363 ; free physical = 8026 ; free virtual = 28742
+Finished Timing Optimization : Time (s): cpu = 00:06:15 ; elapsed = 00:06:19 . Memory (MB): peak = 1803.281 ; gain = 847.363 ; free physical = 7674 ; free virtual = 28433
 ---------------------------------------------------------------------------------
-Finished Parallel Timing Optimization  : Time (s): cpu = 00:06:08 ; elapsed = 00:06:13 . Memory (MB): peak = 1803.285 ; gain = 847.363 ; free physical = 8026 ; free virtual = 28742
+Finished Parallel Timing Optimization  : Time (s): cpu = 00:06:15 ; elapsed = 00:06:19 . Memory (MB): peak = 1803.281 ; gain = 847.363 ; free physical = 7674 ; free virtual = 28433
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:06:08 ; elapsed = 00:06:13 . Memory (MB): peak = 1803.285 ; gain = 847.363 ; free physical = 8026 ; free virtual = 28742
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:06:15 ; elapsed = 00:06:19 . Memory (MB): peak = 1803.281 ; gain = 847.363 ; free physical = 7674 ; free virtual = 28433
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
@@ -6883,11 +6992,9 @@ INFO: [Synth 8-3332] Sequential element (\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM
 INFO: [Synth 8-3332] Sequential element (\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM/inst_fifo_gen/reset_gen_cc.rstblk_cc/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg ) is unused and will be removed from module axi_dma.
 INFO: [Synth 8-3332] Sequential element (\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM/inst_fifo_gen/reset_gen_cc.rstblk_cc/ngwrdrst.grst.g7serrst.rd_rst_asreg_d2_reg ) is unused and will be removed from module axi_dma.
 INFO: [Synth 8-3332] Sequential element (\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM/inst_fifo_gen/reset_gen_cc.rstblk_cc/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg ) is unused and will be removed from module axi_dma.
-INFO: [Synth 8-3332] Sequential element (\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM/inst_fifo_gen/reset_gen_cc.rstblk_cc/ngwrdrst.grst.g7serrst.wr_rst_asreg_d2_reg ) is unused and will be removed from module axi_dma.
-INFO: [Synth 8-3332] Sequential element (\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM/inst_fifo_gen/reset_gen_cc.rstblk_cc/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg ) is unused and will be removed from module axi_dma.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:06:12 ; elapsed = 00:06:17 . Memory (MB): peak = 1813.426 ; gain = 857.504 ; free physical = 8017 ; free virtual = 28732
+Finished Technology Mapping : Time (s): cpu = 00:06:19 ; elapsed = 00:06:23 . Memory (MB): peak = 1813.422 ; gain = 857.504 ; free physical = 7663 ; free virtual = 28423
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -7036,7 +7143,7 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/sources_1/bd/unusual_s2mm_sys/ipshared/xilinx.com/axi_dwidth_converter_v2_1/hdl/verilog/axi_dwidth_converter_v2_1_w_upsizer.v:1116]
 INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:06:15 ; elapsed = 00:06:20 . Memory (MB): peak = 1813.426 ; gain = 857.504 ; free physical = 8019 ; free virtual = 28734
+Finished IO Insertion : Time (s): cpu = 00:06:22 ; elapsed = 00:06:26 . Memory (MB): peak = 1813.422 ; gain = 857.504 ; free physical = 7663 ; free virtual = 28423
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -7049,7 +7156,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:06:15 ; elapsed = 00:06:20 . Memory (MB): peak = 1813.426 ; gain = 857.504 ; free physical = 8019 ; free virtual = 28734
+Finished Renaming Generated Instances : Time (s): cpu = 00:06:22 ; elapsed = 00:06:26 . Memory (MB): peak = 1813.422 ; gain = 857.504 ; free physical = 7663 ; free virtual = 28423
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -7063,25 +7170,25 @@ Start Rebuilding User Hierarchy
 WARNING: [Synth 8-115] binding instance 'i_2_0' in module 'fifo_generator_v13_0_0_synth' to reference 'reset_blk_ramfifo_22' which has no pins
 WARNING: [Synth 8-115] binding instance 'i_2_0' in module 'fifo_generator_v13_0_0_synth__parameterized0' to reference 'reset_blk_ramfifo__parameterized1' which has no pins
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:16 ; elapsed = 00:06:21 . Memory (MB): peak = 1813.426 ; gain = 857.504 ; free physical = 8019 ; free virtual = 28734
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:24 ; elapsed = 00:06:28 . Memory (MB): peak = 1813.422 ; gain = 857.504 ; free physical = 7663 ; free virtual = 28422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:06:16 ; elapsed = 00:06:21 . Memory (MB): peak = 1813.426 ; gain = 857.504 ; free physical = 8019 ; free virtual = 28734
+Finished Renaming Generated Ports : Time (s): cpu = 00:06:24 ; elapsed = 00:06:28 . Memory (MB): peak = 1813.422 ; gain = 857.504 ; free physical = 7663 ; free virtual = 28422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:06:17 ; elapsed = 00:06:22 . Memory (MB): peak = 1813.426 ; gain = 857.504 ; free physical = 8019 ; free virtual = 28734
+Finished Handling Custom Attributes : Time (s): cpu = 00:06:24 ; elapsed = 00:06:28 . Memory (MB): peak = 1813.422 ; gain = 857.504 ; free physical = 7663 ; free virtual = 28422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:06:17 ; elapsed = 00:06:22 . Memory (MB): peak = 1813.426 ; gain = 857.504 ; free physical = 8019 ; free virtual = 28734
+Finished Renaming Generated Nets : Time (s): cpu = 00:06:24 ; elapsed = 00:06:28 . Memory (MB): peak = 1813.422 ; gain = 857.504 ; free physical = 7663 ; free virtual = 28422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -7133,11 +7240,11 @@ Report Cell Usage:
 |2     |BUFG     |     1|
 |3     |CARRY4   |    81|
 |4     |LUT1     |   263|
-|5     |LUT2     |   248|
-|6     |LUT3     |   678|
-|7     |LUT4     |   365|
-|8     |LUT5     |   359|
-|9     |LUT6     |   630|
+|5     |LUT2     |   250|
+|6     |LUT3     |   671|
+|7     |LUT4     |   368|
+|8     |LUT5     |   360|
+|9     |LUT6     |   629|
 |10    |MUXF7    |     1|
 |11    |PS7      |     1|
 |12    |RAM32M   |     4|
@@ -7149,15 +7256,15 @@ Report Cell Usage:
 |18    |FDPE     |    58|
 |19    |FDR      |    16|
 |20    |FDRE     |  2670|
-|21    |FDSE     |   116|
+|21    |FDSE     |   115|
 +------+---------+------+
 
 Report Instance Areas: 
 +------+--------------------------------------------------------------------+---------------------------------------------------------------------+------+
 |      |Instance                                                            |Module                                                               |Cells |
 +------+--------------------------------------------------------------------+---------------------------------------------------------------------+------+
-|1     |top                                                                 |                                                                     |  5869|
-|2     |  unusual_s2mm_sys_i                                                |unusual_s2mm_sys                                                     |  5869|
+|1     |top                                                                 |                                                                     |  5866|
+|2     |  unusual_s2mm_sys_i                                                |unusual_s2mm_sys                                                     |  5866|
 |3     |    axi_dma_0                                                       |unusual_s2mm_sys_axi_dma_0_0                                         |  2281|
 |4     |      U0                                                            |axi_dma                                                              |  2281|
 |5     |        \INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_DMA_MNGR             |axi_dma_s2mm_mngr                                                    |   109|
@@ -7309,9 +7416,9 @@ Report Instance Areas:
 |151   |                \GEN_CMD_QUEUE.cmd_queue                            |generic_baseblocks_v2_1_0_command_fifo                               |   194|
 |152   |              si_register_slice_inst                                |axi_register_slice_v2_1_6_axi_register_slice                         |   127|
 |153   |                aw_pipe                                             |axi_register_slice_v2_1_6_axic_register_slice                        |   127|
-|154   |    counter_stream_unusual_s2mm_hls_0                               |unusual_s2mm_sys_counter_stream_unusual_s2mm_hls_0_0                 |   596|
-|155   |      U0                                                            |counter_stream_unusual_s2mm_hls                                      |   596|
-|156   |        counter_stream_unusual_s2mm_hls_cpuControl_s_axi_U          |counter_stream_unusual_s2mm_hls_cpuControl_s_axi                     |   253|
+|154   |    counter_stream_unusual_s2mm_hls_0                               |unusual_s2mm_sys_counter_stream_unusual_s2mm_hls_0_0                 |   593|
+|155   |      U0                                                            |counter_stream_unusual_s2mm_hls                                      |   593|
+|156   |        counter_stream_unusual_s2mm_hls_cpuControl_s_axi_U          |counter_stream_unusual_s2mm_hls_cpuControl_s_axi                     |   251|
 |157   |    processing_system7_0                                            |unusual_s2mm_sys_processing_system7_0_0                              |   290|
 |158   |      inst                                                          |processing_system7_v5_5_processing_system7                           |   290|
 |159   |        xlnx_axi_wrshim_unwrap_inst_gp0                             |xlnx_axi_wrshim_unwrap                                               |    18|
@@ -7359,11 +7466,11 @@ Report Instance Areas:
 |201   |          SEQ_COUNTER                                               |upcnt_n                                                              |    14|
 +------+--------------------------------------------------------------------+---------------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:06:17 ; elapsed = 00:06:22 . Memory (MB): peak = 1813.426 ; gain = 857.504 ; free physical = 8019 ; free virtual = 28734
+Finished Writing Synthesis Report : Time (s): cpu = 00:06:24 ; elapsed = 00:06:28 . Memory (MB): peak = 1813.422 ; gain = 857.504 ; free physical = 7662 ; free virtual = 28422
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 302 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:05:58 ; elapsed = 00:06:02 . Memory (MB): peak = 1813.426 ; gain = 499.504 ; free physical = 8019 ; free virtual = 28734
-Synthesis Optimization Complete : Time (s): cpu = 00:06:17 ; elapsed = 00:06:22 . Memory (MB): peak = 1813.426 ; gain = 857.504 ; free physical = 8018 ; free virtual = 28734
+Synthesis Optimization Runtime : Time (s): cpu = 00:06:04 ; elapsed = 00:06:08 . Memory (MB): peak = 1813.422 ; gain = 499.504 ; free physical = 7662 ; free virtual = 28422
+Synthesis Optimization Complete : Time (s): cpu = 00:06:24 ; elapsed = 00:06:28 . Memory (MB): peak = 1813.422 ; gain = 857.504 ; free physical = 7662 ; free virtual = 28422
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 103 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -7376,8 +7483,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   SRL16 => SRL16E: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-942 Infos, 149 Warnings, 0 Critical Warnings and 0 Errors encountered.
+945 Infos, 182 Warnings, 33 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:06:15 ; elapsed = 00:06:19 . Memory (MB): peak = 1813.430 ; gain = 706.301 ; free physical = 8019 ; free virtual = 28735
-report_utilization: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1853.441 ; gain = 0.000 ; free physical = 8017 ; free virtual = 28734
-INFO: [Common 17-206] Exiting Vivado at Fri Sep  9 03:06:45 2016...
+synth_design: Time (s): cpu = 00:06:23 ; elapsed = 00:06:26 . Memory (MB): peak = 1813.426 ; gain = 706.301 ; free physical = 7662 ; free virtual = 28422
+report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1853.438 ; gain = 0.000 ; free physical = 7661 ; free virtual = 28422
+INFO: [Common 17-206] Exiting Vivado at Fri Sep  9 04:08:02 2016...

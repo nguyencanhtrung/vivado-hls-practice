@@ -34,6 +34,9 @@ set_property used_in_implementation false [get_files -all /home/ctnguyen/work/tu
 set_property is_locked true [get_files /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/sources_1/bd/unusual_s2mm_sys/unusual_s2mm_sys.bd]
 
 read_vhdl -library xil_defaultlib /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/sources_1/bd/unusual_s2mm_sys/hdl/unusual_s2mm_sys_wrapper.vhd
+read_xdc /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc
+set_property used_in_implementation false [get_files /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/project_1/project_1.srcs/constrs_1/new/debug.xdc]
+
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 synth_design -top unusual_s2mm_sys_wrapper -part xc7z020clg484-1
