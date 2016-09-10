@@ -689,7 +689,7 @@ begin
     end process;
 
     output_s_TDATA <= innerBRAM_q0;
-    output_s_TLAST <= ap_const_lv1_0;
+    output_s_TLAST <= ap_const_lv1_1;
 
     -- output_s_TVALID assign process. --
     output_s_TVALID_assign_proc : process(tmp_8_reg_314, ap_sig_cseq_ST_pp1_stg0_fsm_6, ap_reg_ppiten_pp1_it1, ap_reg_ioackin_output_s_TREADY)

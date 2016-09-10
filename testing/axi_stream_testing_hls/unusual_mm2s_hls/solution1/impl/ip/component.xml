@@ -1362,8 +1362,8 @@
         <xilinx:taxonomy>/VIVADO_HLS_IP</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>Unusual_mm2s_hls</xilinx:displayName>
-      <xilinx:coreRevision>1609110058</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2016-09-10T22:59:10Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1609110141</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2016-09-10T23:41:55Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2015.3</xilinx:xilinxVersion>

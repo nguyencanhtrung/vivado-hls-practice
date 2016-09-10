@@ -703,7 +703,7 @@ void unusual_mm2s_hls::thread_output_s_TDATA() {
 }
 
 void unusual_mm2s_hls::thread_output_s_TLAST() {
-    output_s_TLAST = ap_const_lv1_0;
+    output_s_TLAST = ap_const_lv1_1;
 }
 
 void unusual_mm2s_hls::thread_output_s_TVALID() {

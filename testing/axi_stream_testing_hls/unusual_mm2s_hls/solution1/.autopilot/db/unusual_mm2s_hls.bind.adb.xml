@@ -351,7 +351,7 @@
 
 <node id="24" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-.loopexit:3  br i1 %exitcond, label %6, label %.preheader13.preheader
+.loopexit:3  br i1 %exitcond, label %6, label %.preheader23.preheader
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -367,7 +367,7 @@
 
 <node id="26" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader13.preheader:0  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 10, i64 10, i64 10)
+.preheader23.preheader:0  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 10, i64 10, i64 10)
 
 ]]></node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -383,7 +383,7 @@
 
 <node id="27" bw="0" op_0_bw="0">
 <![CDATA[
-.preheader13.preheader:1  br label %.preheader13
+.preheader23.preheader:1  br label %.preheader23
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -417,7 +417,7 @@
 
 <node id="29" bw="31" op_0_bw="31" op_1_bw="0">
 <![CDATA[
-.preheader13:0  %i = phi i31 [ %i_1, %1 ], [ 0, %.preheader13.preheader ]
+.preheader23:0  %i = phi i31 [ %i_1, %1 ], [ 0, %.preheader23.preheader ]
 
 ]]></node>
 <StgValue><ssdm name="i"/></StgValue>
@@ -432,7 +432,7 @@
 
 <node id="30" bw="32" op_0_bw="31">
 <![CDATA[
-.preheader13:1  %i_cast = zext i31 %i to i32
+.preheader23:1  %i_cast = zext i31 %i to i32
 
 ]]></node>
 <StgValue><ssdm name="i_cast"/></StgValue>
@@ -447,7 +447,7 @@
 
 <node id="31" bw="1" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-.preheader13:2  %tmp = icmp slt i32 %i_cast, %iteration_read
+.preheader23:2  %tmp = icmp slt i32 %i_cast, %iteration_read
 
 ]]></node>
 <StgValue><ssdm name="tmp"/></StgValue>
@@ -462,7 +462,7 @@
 
 <node id="32" bw="31" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-.preheader13:3  %i_1 = add i31 %i, 1
+.preheader23:3  %i_1 = add i31 %i, 1
 
 ]]></node>
 <StgValue><ssdm name="i_1"/></StgValue>
@@ -477,7 +477,7 @@
 
 <node id="33" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-.preheader13:4  br i1 %tmp, label %1, label %2
+.preheader23:4  br i1 %tmp, label %1, label %2
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -637,7 +637,7 @@
 
 <node id="44" bw="0" op_0_bw="0">
 <![CDATA[
-:9  br label %.preheader13
+:9  br label %.preheader23
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -1098,7 +1098,7 @@
 
 <node id="76" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="1" op_3_bw="32" op_4_bw="1">
 <![CDATA[
-:6  call void @_ssdm_op_Write.axis.volatile.i32P.i1P(i32* %output_s_V_data, i1* %output_s_V_last_V, i32 %tmp_data_1, i1 false)
+:6  call void @_ssdm_op_Write.axis.volatile.i32P.i1P(i32* %output_s_V_data, i1* %output_s_V_last_V, i32 %tmp_data_1, i1 true)
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>

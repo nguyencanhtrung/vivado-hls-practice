@@ -1844,7 +1844,7 @@
 						<name></name>
 						<fileName>unusual_mm2s_hls/src/unusual_mm2s_hls.cpp</fileName>
 						<fileDirectory>/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls</fileDirectory>
-						<lineNumber>38</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>unusual_mm2s_hls</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1859,7 +1859,7 @@
 											<first>unusual_mm2s_hls/src/unusual_mm2s_hls.cpp</first>
 											<second>unusual_mm2s_hls</second>
 										</first>
-										<second>38</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -1930,7 +1930,7 @@
 						<name></name>
 						<fileName>unusual_mm2s_hls/src/unusual_mm2s_hls.cpp</fileName>
 						<fileDirectory>/home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls</fileDirectory>
-						<lineNumber>41</lineNumber>
+						<lineNumber>45</lineNumber>
 						<contextFuncName>unusual_mm2s_hls</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1945,7 +1945,7 @@
 											<first>unusual_mm2s_hls/src/unusual_mm2s_hls.cpp</first>
 											<second>unusual_mm2s_hls</second>
 										</first>
-										<second>41</second>
+										<second>45</second>
 									</item>
 								</second>
 							</item>
@@ -2171,7 +2171,7 @@
 					<bitwidth>1</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>0</content>
+				<content>1</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -2233,7 +2233,7 @@
 				<Obj>
 					<type>3</type>
 					<id>28</id>
-					<name>.preheader13.preheader</name>
+					<name>.preheader23.preheader</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -2256,7 +2256,7 @@
 				<Obj>
 					<type>3</type>
 					<id>34</id>
-					<name>.preheader13</name>
+					<name>.preheader23</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -3706,23 +3706,6 @@
 		<count>2</count>
 		<item_version>0</item_version>
 		<item class_id="33" tracking_level="1" version="0" object_id="_183">
-			<region_name>R_LOOP</region_name>
-			<basic_blocks>
-				<count>2</count>
-				<item_version>0</item_version>
-				<item>34</item>
-				<item>45</item>
-			</basic_blocks>
-			<nodes>
-				<count>0</count>
-				<item_version>0</item_version>
-			</nodes>
-			<anchor_node>-1</anchor_node>
-			<region_type>8</region_type>
-			<interval>1</interval>
-			<pipe_depth>1</pipe_depth>
-		</item>
-		<item class_id_reference="33" object_id="_184">
 			<region_name>S_LOOP</region_name>
 			<basic_blocks>
 				<count>2</count>
@@ -3738,6 +3721,23 @@
 			<region_type>8</region_type>
 			<interval>1</interval>
 			<pipe_depth>2</pipe_depth>
+		</item>
+		<item class_id_reference="33" object_id="_184">
+			<region_name>R_LOOP</region_name>
+			<basic_blocks>
+				<count>2</count>
+				<item_version>0</item_version>
+				<item>34</item>
+				<item>45</item>
+			</basic_blocks>
+			<nodes>
+				<count>0</count>
+				<item_version>0</item_version>
+			</nodes>
+			<anchor_node>-1</anchor_node>
+			<region_type>8</region_type>
+			<interval>1</interval>
+			<pipe_depth>1</pipe_depth>
 		</item>
 	</regions>
 	<dp_fu_nodes class_id="34" tracking_level="0" version="0">

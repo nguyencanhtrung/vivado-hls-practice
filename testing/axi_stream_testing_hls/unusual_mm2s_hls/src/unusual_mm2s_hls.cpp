@@ -34,7 +34,11 @@ void unusual_mm2s_hls (
 		#pragma HLS PIPELINE II=1
 			stream_t temp;
 			temp.data = innerBRAM[i];
-			temp.last = 0;
+			if(( i == iteration - 1) && (index == 9)){
+				temp.last = 1;
+			} else{
+				temp.last = 1;
+			}
 			output_s << temp;
 		}
 	}
