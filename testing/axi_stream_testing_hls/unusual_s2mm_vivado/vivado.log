@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Fri Sep  9 14:04:06 2016
+# Process ID: 95780
+# Current directory: /mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/unusual_s2mm_vivado
+# Command line: vivado
+# Log file: /mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/vivado.log
+# Journal file: /mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/unusual_s2mm_vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_hw
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.3/data/ip'.
+open_hw: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 5738.203 ; gain = 64.496 ; free physical = 552 ; free virtual = 7048
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.3
+  **** Build date : Sep 28 2015-20:24:25
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248451203
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).

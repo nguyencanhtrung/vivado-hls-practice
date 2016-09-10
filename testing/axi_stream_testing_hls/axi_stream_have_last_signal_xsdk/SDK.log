@@ -348,3 +348,4 @@ com.xilinx.sdk.targetmanager.TMException:
 18:29:11 INFO  : FPGA configured successfully with bitstream "/mnt/hgfs/GitHub/vivado_hls/testing/axi_stream_testing_hls/axi_stream_have_last_signal_xsdk/testing_stream_have_last_signal_system_wrapper_hw_platform_0/testing_stream_have_last_signal_system_wrapper.bit"
 18:29:12 INFO  : ps7_init is completed.
 18:29:12 INFO  : ps7_post_config is completed.
+14:03:47 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
