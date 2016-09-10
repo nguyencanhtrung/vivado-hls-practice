@@ -2,8 +2,8 @@
 # Vivado v2015.3 (64-bit)
 # SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
 # IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
-# Start of session at: Sat Sep 10 03:20:54 2016
-# Process ID: 19226
+# Start of session at: Sun Sep 11 00:58:56 2016
+# Process ID: 28808
 # Current directory: /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_mm2s_hls/solution1/impl/ip
 # Command line: vivado -notrace -mode batch -source run_ippack.tcl
 # Log file: /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_mm2s_hls/solution1/impl/ip/vivado.log
@@ -13,4 +13,4 @@ source run_ippack.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.3/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Sat Sep 10 03:21:08 2016...
+INFO: [Common 17-206] Exiting Vivado at Sun Sep 11 00:59:10 2016...

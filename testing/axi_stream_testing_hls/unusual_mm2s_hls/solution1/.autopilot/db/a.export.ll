@@ -27,43 +27,49 @@ define void @unusual_mm2s_hls(i32 %iteration, i32* %input_s_V_data, i1* %input_s
   call void (...)* @_ssdm_op_SpecInterface(i32* %input_s_V_data, i1* %input_s_V_last_V, [5 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
   call void (...)* @_ssdm_op_SpecInterface(i32 %iteration, [10 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [11 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
   call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [11 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
-  br label %1
+  br label %.loopexit
 
-; <label>:1                                       ; preds = %2, %0
-  %i = phi i31 [ 0, %0 ], [ %i_1, %2 ]
+.loopexit:                                        ; preds = %.preheader, %0
+  %index = phi i4 [ 0, %0 ], [ %index_1, %.preheader ]
+  %exitcond = icmp eq i4 %index, -6
+  %index_1 = add i4 %index, 1
+  br i1 %exitcond, label %6, label %.preheader13.preheader
+
+.preheader13.preheader:                           ; preds = %.loopexit
+  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 10, i64 10, i64 10)
+  br label %.preheader13
+
+.preheader13:                                     ; preds = %.preheader13.preheader, %1
+  %i = phi i31 [ %i_1, %1 ], [ 0, %.preheader13.preheader ]
   %i_cast = zext i31 %i to i32
   %tmp = icmp slt i32 %i_cast, %iteration_read
   %i_1 = add i31 %i, 1
-  br i1 %tmp, label %2, label %3
+  br i1 %tmp, label %1, label %2
 
-; <label>:2                                       ; preds = %1
+; <label>:1                                       ; preds = %.preheader13
   call void (...)* @_ssdm_op_SpecLoopName([7 x i8]* @p_str4) nounwind
-  %tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([7 x i8]* @p_str4)
+  %tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([7 x i8]* @p_str4)
   call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
-  %empty = call { i32, i1 } @_ssdm_op_Read.axis.volatile.i32P.i1P(i32* %input_s_V_data, i1* %input_s_V_last_V)
-  %tmp_data = extractvalue { i32, i1 } %empty, 0
+  %empty_3 = call { i32, i1 } @_ssdm_op_Read.axis.volatile.i32P.i1P(i32* %input_s_V_data, i1* %input_s_V_last_V)
+  %tmp_data = extractvalue { i32, i1 } %empty_3, 0
   %tmp_2 = zext i31 %i to i64
   %innerBRAM_addr = getelementptr inbounds [100 x i32]* %innerBRAM, i64 0, i64 %tmp_2
   store i32 %tmp_data, i32* %innerBRAM_addr, align 4
-  %empty_3 = call i32 (...)* @_ssdm_op_SpecRegionEnd([7 x i8]* @p_str4, i32 %tmp_3)
-  br label %1
+  %empty_4 = call i32 (...)* @_ssdm_op_SpecRegionEnd([7 x i8]* @p_str4, i32 %tmp_1)
+  br label %.preheader13
 
-; <label>:3                                       ; preds = %1
+; <label>:2                                       ; preds = %.preheader13
   store volatile i32 0, i32* %acc, align 4
-  br label %4
+  br label %3
 
-; <label>:4                                       ; preds = %5, %3
-  %i1 = phi i31 [ 0, %3 ], [ %i_2, %5 ]
+; <label>:3                                       ; preds = %4, %2
+  %i1 = phi i31 [ 0, %2 ], [ %i_2, %4 ]
   %i1_cast = zext i31 %i1 to i32
   %tmp_4 = icmp slt i32 %i1_cast, %iteration_read
   %i_2 = add i31 %i1, 1
-  br i1 %tmp_4, label %5, label %.preheader.preheader
+  br i1 %tmp_4, label %4, label %.preheader
 
-.preheader.preheader:                             ; preds = %4
-  %tmp_8 = add nsw i32 %iteration_read, -1
-  br label %.preheader
-
-; <label>:5                                       ; preds = %4
+; <label>:4                                       ; preds = %3
   call void (...)* @_ssdm_op_SpecLoopName([7 x i8]* @p_str5) nounwind
   %tmp_5 = zext i31 %i1 to i64
   %innerBRAM_addr_1 = getelementptr inbounds [100 x i32]* %innerBRAM, i64 0, i64 %tmp_5
@@ -71,28 +77,27 @@ define void @unusual_mm2s_hls(i32 %iteration, i32* %input_s_V_data, i1* %input_s
   %acc_load = load volatile i32* %acc, align 4
   %acc_1 = add nsw i32 %innerBRAM_load, %acc_load
   store volatile i32 %acc_1, i32* %acc, align 4
-  br label %4
+  br label %3
 
-.preheader:                                       ; preds = %6, %.preheader.preheader
-  %i2 = phi i31 [ %i_3, %6 ], [ 0, %.preheader.preheader ]
+.preheader:                                       ; preds = %3, %5
+  %i2 = phi i31 [ %i_3, %5 ], [ 0, %3 ]
   %i2_cast = zext i31 %i2 to i32
-  %tmp_9 = icmp slt i32 %i2_cast, %iteration_read
+  %tmp_8 = icmp slt i32 %i2_cast, %iteration_read
   %i_3 = add i31 %i2, 1
-  br i1 %tmp_9, label %6, label %7
+  br i1 %tmp_8, label %5, label %.loopexit
 
-; <label>:6                                       ; preds = %.preheader
+; <label>:5                                       ; preds = %.preheader
   call void (...)* @_ssdm_op_SpecLoopName([7 x i8]* @p_str6) nounwind
-  %tmp_7 = call i32 (...)* @_ssdm_op_SpecRegionBegin([7 x i8]* @p_str6)
+  %tmp_6 = call i32 (...)* @_ssdm_op_SpecRegionBegin([7 x i8]* @p_str6)
   call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
-  %tmp_s = zext i31 %i2 to i64
-  %innerBRAM_addr_2 = getelementptr inbounds [100 x i32]* %innerBRAM, i64 0, i64 %tmp_s
+  %tmp_9 = zext i31 %i2 to i64
+  %innerBRAM_addr_2 = getelementptr inbounds [100 x i32]* %innerBRAM, i64 0, i64 %tmp_9
   %tmp_data_1 = load i32* %innerBRAM_addr_2, align 4
-  %tmp_last_V = icmp eq i32 %i2_cast, %tmp_8
-  call void @_ssdm_op_Write.axis.volatile.i32P.i1P(i32* %output_s_V_data, i1* %output_s_V_last_V, i32 %tmp_data_1, i1 %tmp_last_V)
-  %empty_4 = call i32 (...)* @_ssdm_op_SpecRegionEnd([7 x i8]* @p_str6, i32 %tmp_7)
+  call void @_ssdm_op_Write.axis.volatile.i32P.i1P(i32* %output_s_V_data, i1* %output_s_V_last_V, i32 %tmp_data_1, i1 false)
+  %empty_5 = call i32 (...)* @_ssdm_op_SpecRegionEnd([7 x i8]* @p_str6, i32 %tmp_6)
   br label %.preheader
 
-; <label>:7                                       ; preds = %.preheader
+; <label>:6                                       ; preds = %.loopexit
   ret void
 }
 
@@ -127,6 +132,11 @@ entry:
   ret void
 }
 
+define weak i32 @_ssdm_op_SpecLoopTripCount(...) {
+entry:
+  ret i32 0
+}
+
 define weak void @_ssdm_op_SpecLoopName(...) nounwind {
 entry:
   ret void
@@ -150,9 +160,9 @@ entry:
 define weak { i32, i1 } @_ssdm_op_Read.axis.volatile.i32P.i1P(i32*, i1*) {
 entry:
   %empty = load i32* %0
-  %empty_5 = load i1* %1
+  %empty_6 = load i1* %1
   %mrv_0 = insertvalue { i32, i1 } undef, i32 %empty, 0
-  %mrv1 = insertvalue { i32, i1 } %mrv_0, i1 %empty_5, 1
+  %mrv1 = insertvalue { i32, i1 } %mrv_0, i1 %empty_6, 1
   ret { i32, i1 } %mrv1
 }
 

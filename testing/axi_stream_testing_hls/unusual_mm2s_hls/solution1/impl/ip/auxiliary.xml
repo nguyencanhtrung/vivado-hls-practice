@@ -7,5 +7,5 @@
   <xd:arg xd:name="output_s.data" xd:originalName="output_s" xd:direction="out" xd:interfaceRef="output_s" xd:busTypeRef="axis" xd:dataWidth="32"/>
   <xd:arg xd:name="output_s.last" xd:originalName="output_s" xd:direction="out" xd:interfaceRef="output_s" xd:busTypeRef="axis" xd:dataWidth="1"/>
   <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
-  <xd:resourceEstimates xd:LUT="441" xd:FF="306" xd:BRAM="1" xd:DSP="0"/>
+  <xd:resourceEstimates xd:LUT="408" xd:FF="281" xd:BRAM="1" xd:DSP="0"/>
 </xd:acceleratorMap>
