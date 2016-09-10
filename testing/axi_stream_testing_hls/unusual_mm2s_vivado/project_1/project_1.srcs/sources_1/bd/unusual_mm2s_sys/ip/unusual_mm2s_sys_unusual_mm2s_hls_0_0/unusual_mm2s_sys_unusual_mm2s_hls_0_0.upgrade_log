@@ -1,6 +1,48 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
+| Date         : Sun Sep 11 00:59:51 2016
+| Host         : finance.eit.uni-kl.de running 64-bit Scientific Linux release 6.7 (Carbon)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+--------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'unusual_mm2s_sys_unusual_mm2s_hls_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of unusual_mm2s_sys_unusual_mm2s_hls_0_0 (xilinx.com:hls:unusual_mm2s_hls:1.0) from (Rev. 1609100925) to (Rev. 1609110058)
+
+
+
+
+
+
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
+| Date         : Sat Sep 10 09:26:31 2016
+| Host         : finance.eit.uni-kl.de running 64-bit Scientific Linux release 6.7 (Carbon)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+--------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'unusual_mm2s_sys_unusual_mm2s_hls_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of unusual_mm2s_sys_unusual_mm2s_hls_0_0 (xilinx.com:hls:unusual_mm2s_hls:1.0) from (Rev. 1609100320) to (Rev. 1609100925)
+
+
+
+
+
+
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
 | Date         : Sat Sep 10 03:22:27 2016
 | Host         : finance.eit.uni-kl.de running 64-bit Scientific Linux release 6.7 (Carbon)
 | Command      : upgrade_ip

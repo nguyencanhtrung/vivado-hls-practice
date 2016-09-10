@@ -38497,27 +38497,30 @@ void unusual_mm2s_hls (
 #pragma empty_line
 #pragma HLS INTERFACE s_axilite port=iteration bundle=cpuControl
 #pragma HLS INTERFACE s_axilite port=return bundle=cpuControl
- /* Receiving data from DMA */
- int innerBRAM[100];
 #pragma empty_line
- R_LOOP: for(int i = 0; i < iteration; i++){
+ for(int index = 0; index < 10; index ++){
+  /* Receiving data from DMA */
+  int innerBRAM[100];
+#pragma empty_line
+  R_LOOP: for(int i = 0; i < iteration; i++){
 #pragma HLS PIPELINE II=1
  stream_t temp;
-  input_s >> temp;
-  innerBRAM[i] = temp.data;
- }
+   input_s >> temp;
+   innerBRAM[i] = temp.data;
+  }
 #pragma empty_line
- /* Make delay */
- volatile int acc = 0;
- D_LOOP: for(int i = 0; i < iteration; i++){
-  acc += innerBRAM[i];
- }
- /* Sending same data to DMA */
- S_LOOP: for(int i = 0; i < iteration; i++){
+  /* Make delay */
+  volatile int acc = 0;
+  D_LOOP: for(int i = 0; i < iteration; i++){
+   acc += innerBRAM[i];
+  }
+  /* Sending same data to DMA */
+  S_LOOP: for(int i = 0; i < iteration; i++){
 #pragma HLS PIPELINE II=1
  stream_t temp;
-  temp.data = innerBRAM[i];
-  temp.last = (i == iteration -1) ? 1:0;
-  output_s << temp;
+   temp.data = innerBRAM[i];
+   temp.last = 0;
+   output_s << temp;
+  }
  }
 }

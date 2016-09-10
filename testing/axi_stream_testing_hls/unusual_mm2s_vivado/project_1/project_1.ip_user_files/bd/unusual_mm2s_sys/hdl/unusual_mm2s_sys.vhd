@@ -1,7 +1,7 @@
 --Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
---Date        : Sat Sep 10 03:23:41 2016
+--Date        : Sun Sep 11 01:00:23 2016
 --Host        : finance.eit.uni-kl.de running 64-bit Scientific Linux release 6.7 (Carbon)
 --Command     : generate_target unusual_mm2s_sys.bd
 --Design      : unusual_mm2s_sys
@@ -1930,7 +1930,7 @@ xbar: component unusual_mm2s_sys_xbar_0
       m_axi_wready(0) => xbar_to_m00_couplers_WREADY,
       m_axi_wstrb(7 downto 0) => xbar_to_m00_couplers_WSTRB(7 downto 0),
       m_axi_wvalid(0) => xbar_to_m00_couplers_WVALID(0),
-      s_axi_araddr(63 downto 32) => B"00000000000000000000000000000000",
+      s_axi_araddr(63 downto 32) => B"00000000000000000000100000000000",
       s_axi_araddr(31 downto 0) => s00_couplers_to_xbar_ARADDR(31 downto 0),
       s_axi_arburst(3 downto 2) => B"00",
       s_axi_arburst(1 downto 0) => s00_couplers_to_xbar_ARBURST(1 downto 0),

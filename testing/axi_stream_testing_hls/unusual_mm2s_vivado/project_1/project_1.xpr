@@ -36,22 +36,22 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
         <CompFileExtendedInfo CompFileName="unusual_mm2s_sys.bd" FileRelPathName="ip/unusual_mm2s_sys_auto_us_0/unusual_mm2s_sys_auto_us_0.xci"/>
-        <CompFileExtendedInfo CompFileName="unusual_mm2s_sys.bd" FileRelPathName="ip/unusual_mm2s_sys_auto_us_1/unusual_mm2s_sys_auto_us_1.xci"/>
-        <CompFileExtendedInfo CompFileName="unusual_mm2s_sys.bd" FileRelPathName="unusual_mm2s_sys_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="unusual_mm2s_sys.bd" FileRelPathName="hdl/unusual_mm2s_sys.vhd"/>
         <CompFileExtendedInfo CompFileName="unusual_mm2s_sys.bd" FileRelPathName="ip/unusual_mm2s_sys_processing_system7_0_axi_periph_0/unusual_mm2s_sys_processing_system7_0_axi_periph_0.xci"/>
         <CompFileExtendedInfo CompFileName="unusual_mm2s_sys.bd" FileRelPathName="ip/unusual_mm2s_sys_rst_processing_system7_0_100M_0/unusual_mm2s_sys_rst_processing_system7_0_100M_0.xci"/>
-        <CompFileExtendedInfo CompFileName="unusual_mm2s_sys.bd" FileRelPathName="ip/unusual_mm2s_sys_auto_pc_0/unusual_mm2s_sys_auto_pc_0.xci"/>
+        <CompFileExtendedInfo CompFileName="unusual_mm2s_sys.bd" FileRelPathName="ip/unusual_mm2s_sys_auto_pc_1/unusual_mm2s_sys_auto_pc_1.xci"/>
         <CompFileExtendedInfo CompFileName="unusual_mm2s_sys.bd" FileRelPathName="ip/unusual_mm2s_sys_axi_dma_0_0/unusual_mm2s_sys_axi_dma_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="unusual_mm2s_sys.bd" FileRelPathName="ip/unusual_mm2s_sys_axi_mem_intercon_0/unusual_mm2s_sys_axi_mem_intercon_0.xci"/>
+        <CompFileExtendedInfo CompFileName="unusual_mm2s_sys.bd" FileRelPathName="ip/unusual_mm2s_sys_auto_pc_0/unusual_mm2s_sys_auto_pc_0.xci"/>
         <CompFileExtendedInfo CompFileName="unusual_mm2s_sys.bd" FileRelPathName="ip/unusual_mm2s_sys_xbar_0/unusual_mm2s_sys_xbar_0.xci"/>
         <CompFileExtendedInfo CompFileName="unusual_mm2s_sys.bd" FileRelPathName="ip/unusual_mm2s_sys_processing_system7_0_0/unusual_mm2s_sys_processing_system7_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="unusual_mm2s_sys.bd" FileRelPathName="ip/unusual_mm2s_sys_xbar_1/unusual_mm2s_sys_xbar_1.xci"/>
+        <CompFileExtendedInfo CompFileName="unusual_mm2s_sys.bd" FileRelPathName="hdl/unusual_mm2s_sys.vhd"/>
+        <CompFileExtendedInfo CompFileName="unusual_mm2s_sys.bd" FileRelPathName="unusual_mm2s_sys_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="unusual_mm2s_sys.bd" FileRelPathName="ip/unusual_mm2s_sys_auto_us_1/unusual_mm2s_sys_auto_us_1.xci"/>
         <CompFileExtendedInfo CompFileName="unusual_mm2s_sys.bd" FileRelPathName="hdl/unusual_mm2s_sys.hwdef"/>
         <CompFileExtendedInfo CompFileName="unusual_mm2s_sys.bd" FileRelPathName="hw_handoff/unusual_mm2s_sys_bd.tcl"/>
         <CompFileExtendedInfo CompFileName="unusual_mm2s_sys.bd" FileRelPathName="ip/unusual_mm2s_sys_unusual_mm2s_hls_0_0/unusual_mm2s_sys_unusual_mm2s_hls_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="unusual_mm2s_sys.bd" FileRelPathName="hw_handoff/unusual_mm2s_sys.hwh"/>
-        <CompFileExtendedInfo CompFileName="unusual_mm2s_sys.bd" FileRelPathName="ip/unusual_mm2s_sys_auto_pc_1/unusual_mm2s_sys_auto_pc_1.xci"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/unusual_mm2s_sys/hdl/unusual_mm2s_sys_wrapper.vhd">
         <FileInfo>

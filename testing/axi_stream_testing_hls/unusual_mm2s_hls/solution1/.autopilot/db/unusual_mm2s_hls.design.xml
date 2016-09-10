@@ -23,6 +23,12 @@
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
+<Loop1>
+<Name>Loop 1</Name>
+<TripCount>10</TripCount>
+<Latency>undef</Latency>
+<IterationLatency>undef</IterationLatency>
+<PipelineDepth>undef</PipelineDepth>
 <R_LOOP>
 <Name>R_LOOP</Name>
 <TripCount>undef</TripCount>
@@ -44,13 +50,14 @@
 <PipelineII>1</PipelineII>
 <PipelineDepth>2</PipelineDepth>
 </S_LOOP>
+</Loop1>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
 <BRAM_18K>1</BRAM_18K>
-<FF>306</FF>
-<LUT>441</LUT>
+<FF>281</FF>
+<LUT>408</LUT>
 <DSP48E>0</DSP48E>
 </Resources>
 </AreaEstimates>

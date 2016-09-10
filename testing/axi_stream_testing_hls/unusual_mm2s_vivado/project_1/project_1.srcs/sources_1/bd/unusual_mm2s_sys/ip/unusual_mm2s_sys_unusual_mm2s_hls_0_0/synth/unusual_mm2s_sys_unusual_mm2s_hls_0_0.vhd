@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:hls:unusual_mm2s_hls:1.0
--- IP Revision: 1609100320
+-- IP Revision: 1609110058
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -131,7 +131,7 @@ ARCHITECTURE unusual_mm2s_sys_unusual_mm2s_hls_0_0_arch OF unusual_mm2s_sys_unus
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF unusual_mm2s_sys_unusual_mm2s_hls_0_0_arch : ARCHITECTURE IS "unusual_mm2s_sys_unusual_mm2s_hls_0_0,unusual_mm2s_hls,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF unusual_mm2s_sys_unusual_mm2s_hls_0_0_arch: ARCHITECTURE IS "unusual_mm2s_sys_unusual_mm2s_hls_0_0,unusual_mm2s_hls,{x_ipProduct=Vivado 2015.3,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=unusual_mm2s_hls,x_ipVersion=1.0,x_ipCoreRevision=1609100320,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S_AXI_CPUCONTROL_ADDR_WIDTH=5,C_S_AXI_CPUCONTROL_DATA_WIDTH=32}";
+  ATTRIBUTE CORE_GENERATION_INFO OF unusual_mm2s_sys_unusual_mm2s_hls_0_0_arch: ARCHITECTURE IS "unusual_mm2s_sys_unusual_mm2s_hls_0_0,unusual_mm2s_hls,{x_ipProduct=Vivado 2015.3,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=unusual_mm2s_hls,x_ipVersion=1.0,x_ipCoreRevision=1609110058,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S_AXI_CPUCONTROL_ADDR_WIDTH=5,C_S_AXI_CPUCONTROL_DATA_WIDTH=32}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_cpuControl_AWADDR: SIGNAL IS "xilinx.com:interface:aximm:1.0 s_axi_cpuControl AWADDR";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_cpuControl_AWVALID: SIGNAL IS "xilinx.com:interface:aximm:1.0 s_axi_cpuControl AWVALID";

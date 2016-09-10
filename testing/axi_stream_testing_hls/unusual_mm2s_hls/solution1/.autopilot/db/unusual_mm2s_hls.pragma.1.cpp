@@ -38497,27 +38497,30 @@ _ssdm_op_SpecInterface(&input_s, "axis", 0, 0, 0, 0, "", "", "", "");
 
 _ssdm_op_SpecInterface(iteration, "s_axilite", 0, 0, 0, 0, "cpuControl", "", "", "");
 _ssdm_op_SpecInterface(0, "s_axilite", 0, 0, 0, 0, "cpuControl", "", "", "");
- /* Receiving data from DMA */
- int innerBRAM[100];
 
- R_LOOP: for(int i = 0; i < iteration; i++){
+ for(int index = 0; index < 10; index ++){
+  /* Receiving data from DMA */
+  int innerBRAM[100];
+
+  R_LOOP: for(int i = 0; i < iteration; i++){
 _ssdm_op_SpecPipeline(1, 1, 1, 0, "");
  stream_t temp;
-  input_s >> temp;
-  innerBRAM[i] = temp.data;
- }
+   input_s >> temp;
+   innerBRAM[i] = temp.data;
+  }
 
- /* Make delay */
- volatile int acc = 0;
- D_LOOP: for(int i = 0; i < iteration; i++){
-  acc += innerBRAM[i];
- }
- /* Sending same data to DMA */
- S_LOOP: for(int i = 0; i < iteration; i++){
+  /* Make delay */
+  volatile int acc = 0;
+  D_LOOP: for(int i = 0; i < iteration; i++){
+   acc += innerBRAM[i];
+  }
+  /* Sending same data to DMA */
+  S_LOOP: for(int i = 0; i < iteration; i++){
 _ssdm_op_SpecPipeline(1, 1, 1, 0, "");
  stream_t temp;
-  temp.data = innerBRAM[i];
-  temp.last = (i == iteration -1) ? 1:0;
-  output_s << temp;
+   temp.data = innerBRAM[i];
+   temp.last = 0;
+   output_s << temp;
+  }
  }
 }
