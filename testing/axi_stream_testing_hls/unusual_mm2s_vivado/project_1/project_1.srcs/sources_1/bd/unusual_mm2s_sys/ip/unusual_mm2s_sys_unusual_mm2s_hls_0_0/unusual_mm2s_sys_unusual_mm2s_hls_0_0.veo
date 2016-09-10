@@ -47,7 +47,7 @@
 // DO NOT MODIFY THIS FILE.
 
 // IP VLNV: xilinx.com:hls:unusual_mm2s_hls:1.0
-// IP Revision: 1609110058
+// IP Revision: 1609110141
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections

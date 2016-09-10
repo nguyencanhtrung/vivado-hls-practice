@@ -25,3 +25,15 @@
 01:16:06 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
 01:16:06 WARN  : Linker script will not be updated automatically. Users need to update it manually.
 01:16:24 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+01:58:00 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+01:58:02 INFO  : XSDB server has started successfully.
+01:58:03 INFO  : Processing command line option -hwspec /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_mm2s_vivado/project_1/project_1.sdk/unusual_mm2s_sys_wrapper.hdf.
+01:58:03 INFO  : Checking for hwspec changes in the project unusual_mm2s_sys_wrapper_hw_platform_0.
+01:58:08 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1473551845000,  Project:1473549308000
+01:58:08 INFO  : The hardware specification for project 'unusual_mm2s_sys_wrapper_hw_platform_0' is different from /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_mm2s_vivado/project_1/project_1.sdk/unusual_mm2s_sys_wrapper.hdf.
+01:58:08 INFO  : Copied contents of /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_mm2s_vivado/project_1/project_1.sdk/unusual_mm2s_sys_wrapper.hdf into /unusual_mm2s_sys_wrapper_hw_platform_0/system.hdf.
+01:58:15 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+01:58:15 INFO  : Clearing existing target manager status.
+01:58:18 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+01:58:18 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+01:58:24 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

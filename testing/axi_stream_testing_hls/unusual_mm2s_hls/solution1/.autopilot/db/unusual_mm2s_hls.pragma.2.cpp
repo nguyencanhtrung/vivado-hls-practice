@@ -38539,7 +38539,11 @@ _ssdm_op_SpecPipeline(1, 1, 1, 0, "");
 _ssdm_op_SpecPipeline(1, 1, 1, 0, "");
  stream_t temp;
    temp.data = innerBRAM[i];
-   temp.last = 0;
+   if(( i == iteration - 1) && (index == 9)){
+    temp.last = 1;
+   } else{
+    temp.last = 1;
+   }
    output_s << temp;
   }
  }

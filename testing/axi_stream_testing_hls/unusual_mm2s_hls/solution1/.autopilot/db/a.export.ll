@@ -33,20 +33,20 @@ define void @unusual_mm2s_hls(i32 %iteration, i32* %input_s_V_data, i1* %input_s
   %index = phi i4 [ 0, %0 ], [ %index_1, %.preheader ]
   %exitcond = icmp eq i4 %index, -6
   %index_1 = add i4 %index, 1
-  br i1 %exitcond, label %6, label %.preheader13.preheader
+  br i1 %exitcond, label %6, label %.preheader23.preheader
 
-.preheader13.preheader:                           ; preds = %.loopexit
+.preheader23.preheader:                           ; preds = %.loopexit
   %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 10, i64 10, i64 10)
-  br label %.preheader13
+  br label %.preheader23
 
-.preheader13:                                     ; preds = %.preheader13.preheader, %1
-  %i = phi i31 [ %i_1, %1 ], [ 0, %.preheader13.preheader ]
+.preheader23:                                     ; preds = %.preheader23.preheader, %1
+  %i = phi i31 [ %i_1, %1 ], [ 0, %.preheader23.preheader ]
   %i_cast = zext i31 %i to i32
   %tmp = icmp slt i32 %i_cast, %iteration_read
   %i_1 = add i31 %i, 1
   br i1 %tmp, label %1, label %2
 
-; <label>:1                                       ; preds = %.preheader13
+; <label>:1                                       ; preds = %.preheader23
   call void (...)* @_ssdm_op_SpecLoopName([7 x i8]* @p_str4) nounwind
   %tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([7 x i8]* @p_str4)
   call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
@@ -56,9 +56,9 @@ define void @unusual_mm2s_hls(i32 %iteration, i32* %input_s_V_data, i1* %input_s
   %innerBRAM_addr = getelementptr inbounds [100 x i32]* %innerBRAM, i64 0, i64 %tmp_2
   store i32 %tmp_data, i32* %innerBRAM_addr, align 4
   %empty_4 = call i32 (...)* @_ssdm_op_SpecRegionEnd([7 x i8]* @p_str4, i32 %tmp_1)
-  br label %.preheader13
+  br label %.preheader23
 
-; <label>:2                                       ; preds = %.preheader13
+; <label>:2                                       ; preds = %.preheader23
   store volatile i32 0, i32* %acc, align 4
   br label %3
 
@@ -93,7 +93,7 @@ define void @unusual_mm2s_hls(i32 %iteration, i32* %input_s_V_data, i1* %input_s
   %tmp_9 = zext i31 %i2 to i64
   %innerBRAM_addr_2 = getelementptr inbounds [100 x i32]* %innerBRAM, i64 0, i64 %tmp_9
   %tmp_data_1 = load i32* %innerBRAM_addr_2, align 4
-  call void @_ssdm_op_Write.axis.volatile.i32P.i1P(i32* %output_s_V_data, i1* %output_s_V_last_V, i32 %tmp_data_1, i1 false)
+  call void @_ssdm_op_Write.axis.volatile.i32P.i1P(i32* %output_s_V_data, i1* %output_s_V_last_V, i32 %tmp_data_1, i1 true)
   %empty_5 = call i32 (...)* @_ssdm_op_SpecRegionEnd([7 x i8]* @p_str6, i32 %tmp_6)
   br label %.preheader
 
