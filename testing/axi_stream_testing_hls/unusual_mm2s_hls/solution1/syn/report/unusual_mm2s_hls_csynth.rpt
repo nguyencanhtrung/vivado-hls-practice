@@ -1,0 +1,190 @@
+
+
+================================================================
+== Vivado HLS Report for 'unusual_mm2s_hls'
+================================================================
+* Date:           Sat Sep 10 03:19:25 2016
+
+* Version:        2015.3 (Build 1368829 on Mon Sep 28 20:31:51 PM 2015)
+* Project:        unusual_mm2s_hls
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      6.72|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- R_LOOP  |    ?|    ?|         1|          1|          1|     ?|    yes   |
+        |- D_LOOP  |    ?|    ?|         2|          -|          -|     ?|    no    |
+        |- S_LOOP  |    ?|    ?|         2|          1|          1|     ?|    yes   |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|    202|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        0|      -|      74|    104|
+|Memory           |        1|      -|       0|      0|
+|Multiplexer      |        -|      -|       -|    135|
+|Register         |        -|      -|     232|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        1|      0|     306|    441|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |    ~0   |      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +-------------------------------------+-----------------------------------+---------+-------+----+-----+
+    |               Instance              |               Module              | BRAM_18K| DSP48E| FF | LUT |
+    +-------------------------------------+-----------------------------------+---------+-------+----+-----+
+    |unusual_mm2s_hls_cpuControl_s_axi_U  |unusual_mm2s_hls_cpuControl_s_axi  |        0|      0|  74|  104|
+    +-------------------------------------+-----------------------------------+---------+-------+----+-----+
+    |Total                                |                                   |        0|      0|  74|  104|
+    +-------------------------------------+-----------------------------------+---------+-------+----+-----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    +-------------+----------------------------+---------+---+----+------+-----+------+-------------+
+    |    Memory   |           Module           | BRAM_18K| FF| LUT| Words| Bits| Banks| W*Bits*Banks|
+    +-------------+----------------------------+---------+---+----+------+-----+------+-------------+
+    |innerBRAM_U  |unusual_mm2s_hls_innerBRAM  |        1|  0|   0|   100|   32|     1|         3200|
+    +-------------+----------------------------+---------+---+----+------+-----+------+-------------+
+    |Total        |                            |        1|  0|   0|   100|   32|     1|         3200|
+    +-------------+----------------------------+---------+---+----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+-------+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+-------+---+----+------------+------------+
+    |acc_1_fu_209_p2       |     +    |      0|  0|  32|          32|          32|
+    |i_1_fu_160_p2         |     +    |      0|  0|  31|          31|           1|
+    |i_2_fu_190_p2         |     +    |      0|  0|  31|          31|           1|
+    |i_3_fu_229_p2         |     +    |      0|  0|  31|          31|           1|
+    |tmp_8_fu_201_p2       |     +    |      0|  0|  32|          32|           2|
+    |ap_sig_bdd_99         |    and   |      0|  0|   1|           1|           1|
+    |tmp_4_fu_185_p2       |   icmp   |      0|  0|  11|          32|          32|
+    |tmp_9_fu_224_p2       |   icmp   |      0|  0|  11|          32|          32|
+    |tmp_fu_155_p2         |   icmp   |      0|  0|  11|          32|          32|
+    |tmp_last_V_fu_240_p2  |   icmp   |      0|  0|  11|          32|          32|
+    +----------------------+----------+-------+---+----+------------+------------+
+    |Total                 |          |      0|  0| 202|         286|         166|
+    +----------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------+----+-----------+-----+-----------+
+    |              Name              | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------+----+-----------+-----+-----------+
+    |acc_fu_64                       |  32|          2|   32|         64|
+    |ap_NS_fsm                       |   2|          8|    1|          8|
+    |ap_sig_ioackin_output_s_TREADY  |   1|          2|    1|          2|
+    |i1_reg_129                      |  31|          2|   31|         62|
+    |i2_reg_140                      |  31|          2|   31|         62|
+    |i_reg_118                       |  31|          2|   31|         62|
+    |innerBRAM_address0              |   7|          4|    7|         28|
+    +--------------------------------+----+-----------+-----+-----------+
+    |Total                           | 135|         22|  134|        288|
+    +--------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------+----+----+-----+-----------+
+    |              Name              | FF | LUT| Bits| Const Bits|
+    +--------------------------------+----+----+-----+-----------+
+    |acc_fu_64                       |  32|   0|   32|          0|
+    |ap_CS_fsm                       |   7|   0|    7|          0|
+    |ap_reg_ioackin_output_s_TREADY  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp1_it0           |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp1_it1           |   1|   0|    1|          0|
+    |i1_reg_129                      |  31|   0|   31|          0|
+    |i2_reg_140                      |  31|   0|   31|          0|
+    |i_2_reg_272                     |  31|   0|   31|          0|
+    |i_reg_118                       |  31|   0|   31|          0|
+    |iteration_read_reg_245          |  32|   0|   32|          0|
+    |tmp_8_reg_282                   |  32|   0|   32|          0|
+    |tmp_9_reg_287                   |   1|   0|    1|          0|
+    |tmp_last_V_reg_301              |   1|   0|    1|          0|
+    +--------------------------------+----+----+-----+-----------+
+    |Total                           | 232|   0|  232|          0|
+    +--------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------+-----+-----+------------+-------------------+--------------+
+|         RTL Ports        | Dir | Bits|  Protocol  |   Source Object   |    C Type    |
++--------------------------+-----+-----+------------+-------------------+--------------+
+|s_axi_cpuControl_AWVALID  |  in |    1|    s_axi   |     cpuControl    |    scalar    |
+|s_axi_cpuControl_AWREADY  | out |    1|    s_axi   |     cpuControl    |    scalar    |
+|s_axi_cpuControl_AWADDR   |  in |    5|    s_axi   |     cpuControl    |    scalar    |
+|s_axi_cpuControl_WVALID   |  in |    1|    s_axi   |     cpuControl    |    scalar    |
+|s_axi_cpuControl_WREADY   | out |    1|    s_axi   |     cpuControl    |    scalar    |
+|s_axi_cpuControl_WDATA    |  in |   32|    s_axi   |     cpuControl    |    scalar    |
+|s_axi_cpuControl_WSTRB    |  in |    4|    s_axi   |     cpuControl    |    scalar    |
+|s_axi_cpuControl_ARVALID  |  in |    1|    s_axi   |     cpuControl    |    scalar    |
+|s_axi_cpuControl_ARREADY  | out |    1|    s_axi   |     cpuControl    |    scalar    |
+|s_axi_cpuControl_ARADDR   |  in |    5|    s_axi   |     cpuControl    |    scalar    |
+|s_axi_cpuControl_RVALID   | out |    1|    s_axi   |     cpuControl    |    scalar    |
+|s_axi_cpuControl_RREADY   |  in |    1|    s_axi   |     cpuControl    |    scalar    |
+|s_axi_cpuControl_RDATA    | out |   32|    s_axi   |     cpuControl    |    scalar    |
+|s_axi_cpuControl_RRESP    | out |    2|    s_axi   |     cpuControl    |    scalar    |
+|s_axi_cpuControl_BVALID   | out |    1|    s_axi   |     cpuControl    |    scalar    |
+|s_axi_cpuControl_BREADY   |  in |    1|    s_axi   |     cpuControl    |    scalar    |
+|s_axi_cpuControl_BRESP    | out |    2|    s_axi   |     cpuControl    |    scalar    |
+|ap_clk                    |  in |    1| ap_ctrl_hs |  unusual_mm2s_hls | return value |
+|ap_rst_n                  |  in |    1| ap_ctrl_hs |  unusual_mm2s_hls | return value |
+|interrupt                 | out |    1| ap_ctrl_hs |  unusual_mm2s_hls | return value |
+|input_s_TDATA             |  in |   32|    axis    |   input_s_V_data  |    pointer   |
+|input_s_TVALID            |  in |    1|    axis    |   input_s_V_data  |    pointer   |
+|input_s_TREADY            | out |    1|    axis    |  input_s_V_last_V |    pointer   |
+|input_s_TLAST             |  in |    1|    axis    |  input_s_V_last_V |    pointer   |
+|output_s_TDATA            | out |   32|    axis    |  output_s_V_data  |    pointer   |
+|output_s_TVALID           | out |    1|    axis    | output_s_V_last_V |    pointer   |
+|output_s_TREADY           |  in |    1|    axis    | output_s_V_last_V |    pointer   |
+|output_s_TLAST            | out |    1|    axis    | output_s_V_last_V |    pointer   |
++--------------------------+-----+-----+------------+-------------------+--------------+
+

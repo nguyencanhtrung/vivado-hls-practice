@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="unusual_mm2s_hls" xd:componentRef="unusual_mm2s_hls" xd:initiationInterval="x" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_cpuControl" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="iteration" xd:originalName="iteration" xd:direction="in" xd:interfaceRef="s_axi_cpuControl" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="input_s.data" xd:originalName="input_s" xd:direction="in" xd:interfaceRef="input_s" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="input_s.last" xd:originalName="input_s" xd:direction="in" xd:interfaceRef="input_s" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="output_s.data" xd:originalName="output_s" xd:direction="out" xd:interfaceRef="output_s" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="output_s.last" xd:originalName="output_s" xd:direction="out" xd:interfaceRef="output_s" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="441" xd:FF="306" xd:BRAM="1" xd:DSP="0"/>
+</xd:acceleratorMap>
