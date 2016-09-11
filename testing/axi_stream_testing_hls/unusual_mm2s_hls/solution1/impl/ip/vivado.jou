@@ -2,8 +2,8 @@
 # Vivado v2015.3 (64-bit)
 # SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
 # IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
-# Start of session at: Sun Sep 11 01:41:39 2016
-# Process ID: 15269
+# Start of session at: Sun Sep 11 02:10:10 2016
+# Process ID: 28586
 # Current directory: /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_mm2s_hls/solution1/impl/ip
 # Command line: vivado -notrace -mode batch -source run_ippack.tcl
 # Log file: /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/unusual_mm2s_hls/solution1/impl/ip/vivado.log

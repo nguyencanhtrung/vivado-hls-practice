@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:hls:unusual_mm2s_hls:1.0
--- IP Revision: 1609110141
+-- IP Revision: 1609110210
 
 -- The following code must appear in the VHDL architecture header.
 

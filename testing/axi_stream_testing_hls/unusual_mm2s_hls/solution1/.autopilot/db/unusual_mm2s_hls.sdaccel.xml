@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'unusual_mm2s_hls'" level="0">
-<item name = "Date">Sun Sep 11 01:41:28 2016
+<item name = "Date">Sun Sep 11 02:09:56 2016
 </item>
 <item name = "Version">2015.3 (Build 1368829 on Mon Sep 28 20:31:51 PM 2015)</item>
 <item name = "Project">unusual_mm2s_hls</item>
@@ -49,12 +49,12 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
 <column name="DSP">-, -, -, -</column>
-<column name="Expression">-, -, 0, 165</column>
+<column name="Expression">-, -, 0, 211</column>
 <column name="FIFO">-, -, -, -</column>
 <column name="Instance">0, -, 74, 104</column>
 <column name="Memory">1, -, 0, 0</column>
 <column name="Multiplexer">-, -, -, 139</column>
-<column name="Register">-, -, 207, -</column>
+<column name="Register">-, -, 241, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
 <specialColumn name="Utilization (%)">~0, 0, ~0, ~0</specialColumn>
 </table>
@@ -81,45 +81,52 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="acc_1_fu_238_p2">+, 0, 0, 32, 32, 32</column>
-<column name="i_1_fu_194_p2">+, 0, 0, 31, 31, 1</column>
-<column name="i_2_fu_224_p2">+, 0, 0, 31, 31, 1</column>
-<column name="i_3_fu_258_p2">+, 0, 0, 31, 31, 1</column>
-<column name="index_1_fu_179_p2">+, 0, 0, 4, 4, 1</column>
-<column name="ap_sig_bdd_110">and, 0, 0, 1, 1, 1</column>
-<column name="exitcond_fu_173_p2">icmp, 0, 0, 2, 4, 4</column>
-<column name="tmp_4_fu_219_p2">icmp, 0, 0, 11, 32, 32</column>
-<column name="tmp_8_fu_253_p2">icmp, 0, 0, 11, 32, 32</column>
-<column name="tmp_fu_189_p2">icmp, 0, 0, 11, 32, 32</column>
+<column name="acc_1_fu_252_p2">+, 0, 0, 32, 32, 32</column>
+<column name="i_1_fu_202_p2">+, 0, 0, 31, 31, 1</column>
+<column name="i_2_fu_232_p2">+, 0, 0, 31, 31, 1</column>
+<column name="i_3_fu_272_p2">+, 0, 0, 31, 31, 1</column>
+<column name="index_1_fu_187_p2">+, 0, 0, 4, 4, 1</column>
+<column name="tmp_fu_175_p2">+, 0, 0, 32, 32, 2</column>
+<column name="ap_sig_bdd_112">and, 0, 0, 1, 1, 1</column>
+<column name="tmp_last_V_fu_288_p2">and, 0, 0, 1, 1, 1</column>
+<column name="exitcond_fu_181_p2">icmp, 0, 0, 2, 4, 4</column>
+<column name="tmp_1_fu_197_p2">icmp, 0, 0, 11, 32, 32</column>
+<column name="tmp_4_fu_283_p2">icmp, 0, 0, 11, 32, 32</column>
+<column name="tmp_5_fu_227_p2">icmp, 0, 0, 11, 32, 32</column>
+<column name="tmp_9_fu_243_p2">icmp, 0, 0, 2, 4, 4</column>
+<column name="tmp_s_fu_267_p2">icmp, 0, 0, 11, 32, 32</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="acc_fu_74">32, 2, 32, 64</column>
+<column name="acc_fu_76">32, 2, 32, 64</column>
 <column name="ap_NS_fsm">2, 8, 1, 8</column>
 <column name="ap_sig_ioackin_output_s_TREADY">1, 2, 1, 2</column>
-<column name="i1_reg_151">31, 2, 31, 62</column>
-<column name="i2_reg_162">31, 2, 31, 62</column>
-<column name="i_reg_140">31, 2, 31, 62</column>
-<column name="index_reg_129">4, 2, 4, 8</column>
+<column name="i1_reg_153">31, 2, 31, 62</column>
+<column name="i2_reg_164">31, 2, 31, 62</column>
+<column name="i_reg_142">31, 2, 31, 62</column>
+<column name="index_reg_130">4, 2, 4, 8</column>
 <column name="innerBRAM_address0">7, 4, 7, 28</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="acc_fu_74">32, 0, 32, 0</column>
+<column name="acc_fu_76">32, 0, 32, 0</column>
 <column name="ap_CS_fsm">7, 0, 7, 0</column>
 <column name="ap_reg_ioackin_output_s_TREADY">1, 0, 1, 0</column>
 <column name="ap_reg_ppiten_pp1_it0">1, 0, 1, 0</column>
 <column name="ap_reg_ppiten_pp1_it1">1, 0, 1, 0</column>
-<column name="i1_reg_151">31, 0, 31, 0</column>
-<column name="i2_reg_162">31, 0, 31, 0</column>
-<column name="i_2_reg_304">31, 0, 31, 0</column>
-<column name="i_reg_140">31, 0, 31, 0</column>
-<column name="index_1_reg_287">4, 0, 4, 0</column>
-<column name="index_reg_129">4, 0, 4, 0</column>
-<column name="iteration_read_reg_269">32, 0, 32, 0</column>
-<column name="tmp_8_reg_314">1, 0, 1, 0</column>
+<column name="i1_reg_153">31, 0, 31, 0</column>
+<column name="i2_reg_164">31, 0, 31, 0</column>
+<column name="i_2_reg_333">31, 0, 31, 0</column>
+<column name="i_reg_142">31, 0, 31, 0</column>
+<column name="index_1_reg_316">4, 0, 4, 0</column>
+<column name="index_reg_130">4, 0, 4, 0</column>
+<column name="iteration_read_reg_293">32, 0, 32, 0</column>
+<column name="tmp_9_reg_343">1, 0, 1, 0</column>
+<column name="tmp_last_V_reg_362">1, 0, 1, 0</column>
+<column name="tmp_reg_307">32, 0, 32, 0</column>
+<column name="tmp_s_reg_348">1, 0, 1, 0</column>
 </table>
 </item>
 </section>

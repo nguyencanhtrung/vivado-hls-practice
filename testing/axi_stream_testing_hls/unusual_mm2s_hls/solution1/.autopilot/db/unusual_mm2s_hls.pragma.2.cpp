@@ -38542,7 +38542,7 @@ _ssdm_op_SpecPipeline(1, 1, 1, 0, "");
    if(( i == iteration - 1) && (index == 9)){
     temp.last = 1;
    } else{
-    temp.last = 1;
+    temp.last = 0;
    }
    output_s << temp;
   }
