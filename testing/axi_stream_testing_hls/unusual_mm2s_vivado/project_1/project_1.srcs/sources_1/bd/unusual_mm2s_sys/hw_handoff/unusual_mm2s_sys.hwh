@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Sep 11 01:43:19 2016" VIVADOVERSION="2015.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Sep 11 02:12:14 2016" VIVADOVERSION="2015.3">
 
   <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:zed:part0:1.3" DEVICE="7z020" NAME="unusual_mm2s_sys" PACKAGE="clg484" SPEEDGRADE="-1"/>
 

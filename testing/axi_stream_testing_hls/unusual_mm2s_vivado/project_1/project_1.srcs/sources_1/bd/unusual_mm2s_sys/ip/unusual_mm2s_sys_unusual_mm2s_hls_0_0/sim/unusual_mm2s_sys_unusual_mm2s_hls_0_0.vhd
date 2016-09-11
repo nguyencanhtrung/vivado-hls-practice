@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:hls:unusual_mm2s_hls:1.0
--- IP Revision: 1609110141
+-- IP Revision: 1609110210
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;

@@ -12,15 +12,15 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="@W [XFORM-542] Cannot flatten a loop nest 'Loop-1' (unusual_mm2s_hls/src/unusual_mm2s_hls.cpp:16:19) in function 'unusual_mm2s_hls' : &#xA;               more than one sub loop." projectName="unusual_mm2s_hls" solutionName="solution1" date="2016-09-11T01:41:27.879+0200" type="Warning"/>
-        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="unusual_mm2s_hls" solutionName="solution1" date="2016-09-11T01:41:04.324+0200" type="Warning"/>
-        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="unusual_mm2s_hls" solutionName="solution1" date="2016-09-11T01:41:04.289+0200" type="Warning"/>
+        <logs message="@W [XFORM-542] Cannot flatten a loop nest 'Loop-1' (unusual_mm2s_hls/src/unusual_mm2s_hls.cpp:16:19) in function 'unusual_mm2s_hls' : &#xA;               more than one sub loop." projectName="unusual_mm2s_hls" solutionName="solution1" date="2016-09-11T02:09:56.337+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="unusual_mm2s_hls" solutionName="solution1" date="2016-09-11T02:09:29.375+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="unusual_mm2s_hls" solutionName="solution1" date="2016-09-11T02:09:29.353+0200" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>
       <packageLog>
-        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="unusual_mm2s_hls" solutionName="solution1" date="2016-09-11T01:41:38.085+0200" type="Warning"/>
-        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="unusual_mm2s_hls" solutionName="solution1" date="2016-09-11T01:41:38.081+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="unusual_mm2s_hls" solutionName="solution1" date="2016-09-11T02:10:08.683+0200" type="Warning"/>
+        <logs message="@W [HLS-40] Environment variable 'C_INCLUDE_PATH' is set to /opt/opencv/include:/opt/quantlib/include:." projectName="unusual_mm2s_hls" solutionName="solution1" date="2016-09-11T02:10:08.670+0200" type="Warning"/>
       </packageLog>
       <csimLog/>
     </logs>
