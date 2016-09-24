@@ -1,0 +1,16 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
+| Date         : Sat Sep 24 17:29:05 2016
+| Host         : finance.eit.uni-kl.de running 64-bit Scientific Linux release 6.7 (Carbon)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+--------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mm2s_sys_mm2s_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mm2s_sys_mm2s_0_0 (xilinx.com:hls:mm2s:1.0) from (Rev. 1609231256) to (Rev. 1609241721)
+
