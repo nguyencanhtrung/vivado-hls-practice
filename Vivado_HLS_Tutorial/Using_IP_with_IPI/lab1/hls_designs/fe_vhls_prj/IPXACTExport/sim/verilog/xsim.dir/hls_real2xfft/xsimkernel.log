@@ -1,7 +1,0 @@
-Running: xsim.dir/hls_real2xfft/xsimk -maxdeltaid 10000 -simmode gui -wdb hls_real2xfft.wdb -simrunnum 0 -socket 52514
-Design successfully loaded
-Design Loading Memory Usage: 211232 KB (Peak: 211612 KB)
-Design Loading CPU Usage: 60 ms
-Simulation completed
-Simulation Memory Usage: 291268 KB (Peak: 352552 KB)
-Simulation CPU Usage: 1700 ms

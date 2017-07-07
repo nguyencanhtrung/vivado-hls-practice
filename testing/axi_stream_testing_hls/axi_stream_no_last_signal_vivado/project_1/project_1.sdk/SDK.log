@@ -1,3 +1,0 @@
-22:39:51 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
-22:39:58 INFO  : XSDB server has started successfully.
-22:40:02 INFO  : Processing command line option -hwspec /home/ctnguyen/work/tut_vivadohls/testing/axi_stream_testing_hls/axi_stream_no_last_signal_vivado/project_1/project_1.sdk/no_last_wrapper.hdf.
