@@ -1,8 +1,0 @@
-vhdl xil_defaultlib "AESL_sim_pkg.vhd"
-vhdl xil_defaultlib "hamming_window.autotb.vhd"
-vhdl xil_defaultlib "hamming_window.vhd"
-vhdl xil_defaultlib "AESL_automem_outdata.vhd"
-vhdl xil_defaultlib "hamming_window_mul_mul_16s_14ns_32_1.vhd"
-vhdl xil_defaultlib "AESL_automem_indata.vhd"
-vhdl xil_defaultlib "hamming_window_window_coeff.vhd"
-

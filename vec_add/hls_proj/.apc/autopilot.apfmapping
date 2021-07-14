@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="kernel.cpp" path="/media/trungnguyen/data/01.git/tutorial/hls_example/vec_add/kernel.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="testbench.cpp" path="/media/trungnguyen/data/01.git/tutorial/hls_example/vec_add/testbench.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,8 @@
+<VitisHLS:BurstInfo>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="MayExposeInDataFlowRegionMissed" src_info="kernel.cpp:39:2" msg_id="214-117" msg_severity="INFO" msg_body="Skip burst inference for loop 'anonymous'. It may be exposed into dataflow region"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="MayExposeInDataFlowRegionMissed" src_info="kernel.cpp:32:8" msg_id="214-117" msg_severity="INFO" msg_body="Skip burst inference for loop 'loop'. It may be exposed into dataflow region"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="MayExposeInDataFlowRegionMissed" src_info="kernel.cpp:29:2" msg_id="214-117" msg_severity="INFO" msg_body="Skip burst inference for loop 'anonymous'. It may be exposed into dataflow region"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="MayExposeInDataFlowRegionMissed" src_info="kernel.cpp:28:2" msg_id="214-117" msg_severity="INFO" msg_body="Skip burst inference for loop 'anonymous'. It may be exposed into dataflow region"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="MayExposeInDataFlowRegionMissed" src_info="kernel.cpp:27:2" msg_id="214-117" msg_severity="INFO" msg_body="Skip burst inference for loop 'anonymous'. It may be exposed into dataflow region"/>
+</VitisHLS:BurstInfo>
+

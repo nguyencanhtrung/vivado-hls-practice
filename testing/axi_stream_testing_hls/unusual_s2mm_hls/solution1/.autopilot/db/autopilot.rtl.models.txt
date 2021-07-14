@@ -1,3 +1,0 @@
-counter_stream_unusual_s2mm_hls_mul_32s_32s_32_6
-counter_stream_unusual_s2mm_hls_cpuControl_s_axi
-counter_stream_unusual_s2mm_hls

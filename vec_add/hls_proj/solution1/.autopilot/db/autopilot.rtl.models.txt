@@ -1,0 +1,9 @@
+kernel_fadd_32ns_32ns_32_4_full_dsp_1
+kernel_fmul_32ns_32ns_32_3_max_dsp_1
+kernel_Loop_1_proc3_a_local
+kernel_control_s_axi
+kernel_gmem0_m_axi
+kernel_gmem1_m_axi
+kernel_gmem2_m_axi
+Loop_1_proc3
+kernel

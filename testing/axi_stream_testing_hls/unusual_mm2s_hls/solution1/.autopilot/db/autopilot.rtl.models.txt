@@ -1,3 +1,0 @@
-unusual_mm2s_hls_innerBRAM
-unusual_mm2s_hls_cpuControl_s_axi
-unusual_mm2s_hls

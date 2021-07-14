@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /media/trungnguyen/data/01.git/tutorial/hls_example/vec_add/hls_proj/solution1/./sim/autowrap/testbench/kernel.cpp_pre.cpp.tb.cpp

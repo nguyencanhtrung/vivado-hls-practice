@@ -1,1 +1,0 @@
-lappend pragmaStatus0 {pragma "UNROLL" source "/home/ctnguyen/work/tut_vivadohls/Vivado_HLS_Tutorial/C_Validation/lab2/hamming_window.c" location "hamming_window/hamming_window_label1" found 1 funcFound 1 applied 1 ambiguous 0 reason "null"}

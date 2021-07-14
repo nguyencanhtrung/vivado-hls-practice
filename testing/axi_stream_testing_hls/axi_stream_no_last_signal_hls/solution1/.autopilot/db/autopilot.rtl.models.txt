@@ -1,2 +1,0 @@
-counter_stream_hls_cpuControl_s_axi
-counter_stream_hls

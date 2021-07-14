@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="memcpyHW" xd:componentRef="memcpyHW" xd:initiationInterval="67" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
-  <xd:arg xd:name="dataStream" xd:originalName="dataStream" xd:direction="in" xd:interfaceRef="DATA_S" xd:busTypeRef="axis" xd:arraySize="64" xd:dataWidth="32"/>
-  <xd:arg xd:name="offsetStream" xd:originalName="offsetStream" xd:direction="in" xd:interfaceRef="OFFSET_S" xd:busTypeRef="axis" xd:arraySize="64" xd:dataWidth="32"/>
-  <xd:arg xd:name="*(m)" xd:originalName="m" xd:direction="out" xd:interfaceRef="M_AXI_M" xd:busTypeRef="aximm" xd:arraySize="1024" xd:dataWidth="32" xd:bufferDirection="out"/>
-  <xd:arg xd:name="wr" xd:originalName="wr" xd:direction="in" xd:interfaceRef="wr" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
-  <xd:latencyEstimates xd:best-case="66" xd:worst-case="66" xd:average-case="66"/>
-  <xd:resourceEstimates xd:LUT="71" xd:FF="41" xd:BRAM="0" xd:DSP="0"/>
-</xd:acceleratorMap>
